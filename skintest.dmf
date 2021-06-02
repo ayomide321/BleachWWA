@@ -1,0 +1,1819 @@
+macro "macro"
+	elem 
+		name = "CENTER+REP"
+		command = ".center"
+	elem 
+		name = "SPACE+REP"
+		command = "Talk"
+	elem 
+		name = "NORTHEAST+REP"
+		command = ".northeast"
+	elem 
+		name = "SOUTHEAST+REP"
+		command = ".southeast"
+	elem 
+		name = "SOUTHWEST+REP"
+		command = ".southwest"
+	elem 
+		name = "NORTHWEST+REP"
+		command = ".northwest"
+	elem 
+		name = "WEST"
+		command = "MoveWest"
+	elem 
+		name = "WEST+UP"
+		command = "StopWest"
+	elem 
+		name = "NORTH"
+		command = "MoveNorth"
+	elem 
+		name = "NORTH+UP"
+		command = "StopNorth"
+	elem 
+		name = "EAST"
+		command = "MoveEast"
+	elem 
+		name = "EAST+UP"
+		command = "StopEast"
+	elem 
+		name = "SOUTH"
+		command = "MoveSouth"
+	elem 
+		name = "SOUTH+UP"
+		command = "StopSouth"
+	elem 
+		name = "0"
+		command = ".click M1"
+	elem 
+		name = "1"
+		command = ".click M4"
+	elem 
+		name = "2"
+		command = ".click M5"
+	elem 
+		name = "3"
+		command = ".click M6"
+	elem 
+		name = "4"
+		command = ".click M7"
+	elem 
+		name = "5"
+		command = ".click M8"
+	elem 
+		name = "6"
+		command = ".click M9"
+	elem 
+		name = "7"
+		command = ".click M0"
+	elem 
+		name = "8"
+		command = ".click Msub"
+	elem 
+		name = "9"
+		command = ".click Mequ"
+	elem 
+		name = "A"
+		command = "MoveWest"
+	elem 
+		name = "A+UP"
+		command = "StopWest"
+	elem 
+		name = "D"
+		command = "MoveEast"
+	elem 
+		name = "D+UP"
+		command = "StopEast"
+	elem 
+		name = "E"
+		command = ".click Me"
+	elem 
+		name = "F+UP"
+		command = "StopCharge"
+	elem 
+		name = "F+REP"
+		command = "Attack"
+	elem 
+		name = "G+REP"
+		command = "Get"
+	elem 
+		name = "I"
+		command = ".click Minventory"
+	elem 
+		name = "O"
+		command = ".click Mo"
+	elem 
+		name = "P"
+		command = ".click Mp"
+	elem 
+		name = "Q"
+		command = ".click Mq"
+	elem 
+		name = "R+REP"
+		command = "Target"
+	elem 
+		name = "S"
+		command = "MoveSouth"
+	elem 
+		name = "S+UP"
+		command = "StopSouth"
+	elem 
+		name = "U+REP"
+		command = "Untarget"
+	elem 
+		name = "W"
+		command = "MoveNorth"
+	elem 
+		name = "W+UP"
+		command = "StopNorth"
+	elem 
+		name = "F1+REP"
+		command = ".options"
+	elem 
+		name = "F2+REP"
+		command = ".screenshot"
+	elem 
+		name = "="
+		command = ".click M3"
+	elem 
+		name = "-"
+		command = ".click M2"
+
+
+menu "menu"
+	elem 
+		name = "&File"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Options and Messages...\tF1"
+		command = ".options"
+		category = "&File"
+		saved-params = "is-checked"
+	elem 
+		name = "&Save screenshot...\tF2"
+		command = ".screenshot"
+		category = "&File"
+		saved-params = "is-checked"
+	elem 
+		name = "&Quit"
+		command = ".quit"
+		category = "&File"
+		saved-params = "is-checked"
+	elem 
+		name = "&Icons"
+		command = ""
+		saved-params = "is-checked"
+	elem "stretch"
+		name = "&Stretch to fit"
+		command = ".winset \"mapwindow.map.icon-size=0\""
+		category = "&Icons"
+		is-checked = true
+		can-check = true
+		group = "size"
+		saved-params = "is-checked"
+	elem "icon32"
+		name = "&32x32"
+		command = ".winset \"mapwindow.map.icon-size=32\""
+		category = "&Icons"
+		can-check = true
+		group = "size"
+		saved-params = "is-checked"
+	elem "icon16"
+		name = "&16x16"
+		command = ".winset \"mapwindow.map.icon-size=16\""
+		category = "&Icons"
+		can-check = true
+		group = "size"
+		saved-params = "is-checked"
+	elem 
+		name = "48x48"
+		command = ".winset \"mapwindow.map.icon-size=48\""
+		category = "&Icons"
+		saved-params = "is-checked"
+	elem 
+		name = "40x40"
+		command = ".winset \"mapwindow.map.icon-size=40\""
+		category = "&Icons"
+		saved-params = "is-checked"
+	elem 
+		name = "37x37"
+		command = ".winset \"mapwindow.map.icon-size=37\""
+		category = "&Icons"
+		saved-params = "is-checked"
+	elem 
+		name = "43x43"
+		command = ".winset \"mapwindow.map.icon-size=43\""
+		category = "&Icons"
+		saved-params = "is-checked"
+	elem "textmode"
+		name = "&Text"
+		command = ".winset \"menu.textmode.is-checked=true?mapwindow.map.text-mode=true:mapwindow.map.text-mode=false\""
+		category = "&Icons"
+		can-check = true
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote Mute"
+		command = "Vote-Mute"
+		category = "&Vote"
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote Yes"
+		command = "Vote-Yes"
+		category = "&Vote"
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote No"
+		command = "Vote-No"
+		category = "&Vote"
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote Who"
+		command = "Vote-What"
+		category = "&Vote"
+		saved-params = "is-checked"
+	elem 
+		name = "&Events"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Espada Event"
+		command = "Join-Espada-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Reigai"
+		command = "Join-Reigai-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Gotei 13"
+		command = "Join-Battle-Royale"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Ichigo"
+		command = "Join-Ichigo-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join CTF"
+		command = "Join-Lost-Zan-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Race War"
+		command = "Join-Race-War"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "Join Wandenreich"
+		command = "Join-Vand-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Watch Event"
+		command = "Watch-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Leave Event"
+		command = "Leave-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "Team Deathmatch"
+		command = "Join-TDM"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Arena"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Challenge"
+		command = "Challenge"
+		category = "&Arena"
+		saved-params = "is-checked"
+	elem 
+		name = "&Accept"
+		command = "Accept"
+		category = "&Arena"
+		saved-params = "is-checked"
+	elem 
+		name = "&Decline"
+		command = "Decline"
+		category = "&Arena"
+		saved-params = "is-checked"
+	elem 
+		name = "&Tournament"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Enter"
+		command = "Enter-Tournament"
+		category = "&Tournament"
+		saved-params = "is-checked"
+	elem 
+		name = "&Leave"
+		command = "Leave-Tournament"
+		category = "&Tournament"
+		saved-params = "is-checked"
+	elem 
+		name = "&Watch"
+		command = "Watch-Tournament"
+		category = "&Tournament"
+		saved-params = "is-checked"
+	elem 
+		name = "&Character"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&View Players"
+		command = "Who"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&Drop Money"
+		command = "Drop-Money"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&Stuck"
+		command = "Stuck"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&GM Alert"
+		command = "GM-Help"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&Change Respawn"
+		command = "Change-Respawn"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&OOC Toggle"
+		command = "OOC-Toggle"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&Race Say Toggle"
+		command = "Race-Say-Toggle"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "Give EventPoint"
+		command = "GiveEventPoints"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "BWWA"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "Updates"
+		command = "Update"
+		category = "BWWA"
+		saved-params = "is-checked"
+
+
+window "bounty_list_pane"
+	elem "bounty_list_pane"
+		type = MAIN
+		pos = 281,0
+		size = 378x260
+		anchor1 = none
+		anchor2 = none
+		background-color = #9a540e
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "bounty_list_grid"
+		type = GRID
+		pos = 5,5
+		size = 368x235
+		anchor1 = 1,2
+		anchor2 = 99,92
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #65370a
+		border = sunken
+		saved-params = ""
+		cells = 2x1
+		current-cell = 1,1
+		show-lines = none
+		line-color = #3c2704
+		highlight-color = #000000
+	elem "button10"
+		type = BUTTON
+		pos = 5,240
+		size = 80x20
+		anchor1 = 1,92
+		anchor2 = 22,100
+		font-family = "Times New Roman"
+		font-size = 9
+		text-color = #eaf4ff
+		background-color = #754f00
+		is-default = true
+		border = sunken
+		saved-params = "is-checked"
+		text = "Stats"
+		command = ".winset \"left_top_child.left=full_stats_pane\""
+	elem "button9"
+		type = BUTTON
+		pos = 84,240
+		size = 80x20
+		anchor1 = 78,92
+		anchor2 = 99,100
+		font-family = "Times New Roman"
+		font-size = 9
+		text-color = #eaf4ff
+		background-color = #754f00
+		is-default = true
+		border = sunken
+		saved-params = "is-checked"
+		text = "Story"
+		command = ".winset \"left_top_child.left=squad_list_pane\""
+		group = "right_top_switch"
+
+window "browser-popup"
+	elem "browser-popup"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-maximized"
+		title = "Browser"
+		statusbar = false
+	elem "browser1"
+		type = BROWSER
+		pos = 0,0
+		size = 640x480
+		anchor1 = 0,0
+		anchor2 = 100,100
+		saved-params = ""
+		auto-format = false
+
+window "buyepdp"
+	elem "buyepdp"
+		type = MAIN
+		pos = 281,0
+		size = 559x339
+		anchor1 = none
+		anchor2 = none
+		background-color = #0080ff
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Bleach World Wide Adventures"
+		statusbar = false
+		outer-size = 575x378
+		inner-size = 559x339
+	elem "button3"
+		type = BUTTON
+		pos = 16,36
+		size = 176x76
+		anchor1 = none
+		anchor2 = none
+		background-color = #ffffff
+		saved-params = "is-checked"
+		text = "3x Leveling"
+		command = "buy3x()"
+
+window "combat_output_pane"
+	elem "combat_output_pane"
+		type = MAIN
+		pos = 281,0
+		size = 378x260
+		anchor1 = none
+		anchor2 = none
+		background-color = #9a540e
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "combat_output"
+		type = OUTPUT
+		pos = 5,5
+		size = 368x250
+		anchor1 = 1,2
+		anchor2 = 99,98
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaf4ff
+		background-color = #65370a
+		border = sunken
+		saved-params = "max-lines"
+
+window "default"
+	elem "default"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+
+window "default_left_pane"
+	elem "default_left_pane"
+		type = MAIN
+		pos = 281,0
+		size = 210x697
+		anchor1 = none
+		anchor2 = none
+		background-color = #9a540e
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "left_top_child"
+		type = CHILD
+		pos = 0,0
+		size = 210x264
+		anchor1 = 0,0
+		anchor2 = 100,38
+		background-color = #65370a
+		saved-params = "left"
+		left = "full_stats_pane"
+		is-vert = false
+	elem "button2"
+		type = BUTTON
+		pos = 176,272
+		size = 28x38
+		anchor1 = 84,39
+		anchor2 = 97,44
+		text-color = #9a540e
+		background-color = #9a540e
+		saved-params = "is-checked"
+		text = ""
+		image = 'Icons\\skintree.dmi'
+		command = "GoCust()"
+		is-flat = true
+	elem "skills_grid"
+		type = GRID
+		pos = 5,310
+		size = 200x383
+		anchor1 = 2,44
+		anchor2 = 98,99
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #65370a
+		is-default = true
+		border = sunken
+		saved-params = ""
+		cells = 1x0
+		current-cell = 1,1
+		show-lines = horizontal
+		line-color = #3c2704
+		highlight-color = #000000
+		is-list = true
+
+window "default_middle_pane"
+	elem "default_middle_pane"
+		type = MAIN
+		pos = 281,0
+		size = 554x699
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "left_top_child"
+		type = CHILD
+		pos = 0,0
+		size = 554x554
+		anchor1 = 0,0
+		anchor2 = 100,79
+		saved-params = ""
+		left = "map_pane"
+		is-vert = false
+	elem "left_bottom_child"
+		type = CHILD
+		pos = 0,554
+		size = 554x145
+		anchor1 = 0,79
+		anchor2 = 100,100
+		saved-params = ""
+		left = "stats_pane"
+		is-vert = false
+
+window "default_right_pane"
+	elem "default_right_pane"
+		type = MAIN
+		pos = 281,0
+		size = 435x699
+		anchor1 = none
+		anchor2 = none
+		background-color = #9a540e
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "button4"
+		type = BUTTON
+		pos = 348,612
+		size = 68x20
+		anchor1 = 1,93
+		anchor2 = 17,96
+		text-color = #eaf4ff
+		background-color = #754f00
+		saved-params = "is-checked"
+		text = "Whisper"
+		command = ".winset \"default_input.command=whisper\""
+		is-flat = true
+		group = "chat_commands"
+		button-type = pushbox
+	elem "button6"
+		type = BUTTON
+		pos = 160,608
+		size = 72x20
+		anchor1 = 1,93
+		anchor2 = 17,96
+		text-color = #eaf4ff
+		background-color = #754f00
+		saved-params = "is-checked"
+		text = "Party Chat"
+		command = ".winset \"default_input.command=Team-Say\""
+		is-flat = true
+		group = "chat_commands"
+		button-type = checkbox
+	elem "nooc_button"
+		type = BUTTON
+		pos = 80,608
+		size = 68x20
+		anchor1 = 1,93
+		anchor2 = 17,96
+		text-color = #eaf4ff
+		background-color = #754f00
+		saved-params = "is-checked"
+		text = "OOC"
+		command = ".winset \"default_input.command=OOC\""
+		is-flat = true
+		group = "chat_commands"
+		button-type = checkbox
+	elem "right_top_child"
+		type = CHILD
+		pos = 0,0
+		size = 435x232
+		anchor1 = 0,0
+		anchor2 = 100,37
+		saved-params = "left"
+		left = "combat_output_pane"
+		is-vert = false
+	elem "right_bottom_child"
+		type = CHILD
+		pos = 0,232
+		size = 435x368
+		anchor1 = 0,37
+		anchor2 = 100,92
+		saved-params = ""
+		left = "ooc_output_pane"
+		is-vert = false
+	elem "default_input"
+		type = INPUT
+		pos = 7,636
+		size = 425x28
+		anchor1 = 1,96
+		anchor2 = 99,99
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #65370a
+		is-default = true
+		border = sunken
+		saved-params = "command"
+		command = "Say \""
+	elem "say_button"
+		type = BUTTON
+		pos = 4,608
+		size = 68x20
+		anchor1 = 1,93
+		anchor2 = 17,96
+		text-color = #eaf4ff
+		background-color = #754f00
+		is-default = true
+		saved-params = "is-checked"
+		text = "Say"
+		command = ".winset \"default_input.command=Say\""
+		is-flat = true
+		group = "chat_commands"
+		button-type = checkbox
+
+window "full_stats_pane"
+	elem "full_stats_pane"
+		type = MAIN
+		pos = 281,0
+		size = 378x260
+		anchor1 = none
+		anchor2 = none
+		background-color = #9a540e
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "button5"
+		type = BUTTON
+		pos = 16,240
+		size = 80x20
+		anchor1 = 4,92
+		anchor2 = 25,100
+		font-family = "Times New Roman"
+		font-size = 9
+		text-color = #eaf4ff
+		background-color = #754f00
+		is-default = true
+		border = sunken
+		saved-params = "is-checked"
+		text = "Stats"
+		command = ".winset \"left_top_child.left=full_stats_pane\""
+	elem "button8"
+		type = BUTTON
+		pos = 232,240
+		size = 104x20
+		anchor1 = 61,92
+		anchor2 = 89,100
+		font-family = "Times New Roman"
+		font-size = 9
+		text-color = #eaf4ff
+		background-color = #754f00
+		is-default = true
+		border = sunken
+		saved-params = "is-checked"
+		text = "Kills"
+		command = ".winset \"left_top_child.left=bounty_list_pane\""
+	elem "story"
+		type = BUTTON
+		pos = 128,240
+		size = 80x24
+		anchor1 = 34,92
+		anchor2 = 55,100
+		font-family = "Times New Roman"
+		font-size = 9
+		text-color = #eaf4ff
+		background-color = #754f00
+		is-default = true
+		border = sunken
+		saved-params = "is-checked"
+		text = "Story"
+		command = ".winset \"left_top_child.left=squad_list_pane\""
+		group = "right_top_switch"
+	elem "full_stats_grid"
+		type = GRID
+		pos = 5,5
+		size = 368x235
+		anchor1 = 1,2
+		anchor2 = 99,92
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #65370a
+		border = sunken
+		saved-params = ""
+		cells = 2x1
+		current-cell = 1,1
+		show-lines = none
+		line-color = #3c2704
+		highlight-color = #000000
+
+window "goashopwind"
+	elem "goashopwind"
+		type = MAIN
+		pos = 418,0
+		size = 930x400
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		statusbar = false
+		can-minimize = false
+		can-resize = false
+	elem "goashop"
+		type = GRID
+		pos = 0,0
+		size = 930x400
+		anchor1 = 2,40
+		anchor2 = 100,100
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #65370a
+		is-default = true
+		border = sunken
+		saved-params = ""
+		cells = 1x0
+		current-cell = 1,1
+		show-lines = horizontal
+		line-color = #3c2704
+		highlight-color = #000000
+		is-list = true
+
+window "main"
+	elem "main"
+		type = MAIN
+		pos = 281,0
+		size = 930x669
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		is-default = true
+		saved-params = "pos;size;is-maximized"
+		title = "World Wide Adventures"
+		statusbar = false
+		icon = 'Icons\\PNG\\fbpick.jpg'
+		macro = "macro"
+		menu = "menu"
+	elem "left_side_child"
+		type = CHILD
+		pos = 0,0
+		size = 192x700
+		anchor1 = 0,0
+		anchor2 = 21,100
+		background-color = #eaeaff
+		saved-params = "splitter"
+		left = "default_left_pane"
+		is-vert = false
+	elem "middle_side_child"
+		type = CHILD
+		pos = 192,0
+		size = 464x700
+		anchor1 = 21,0
+		anchor2 = 71,100
+		saved-params = "splitter"
+		left = "default_middle_pane"
+		is-vert = false
+	elem "right_side_child"
+		type = CHILD
+		pos = 656,0
+		size = 274x700
+		anchor1 = 71,0
+		anchor2 = 100,100
+		saved-params = "splitter"
+		left = "default_right_pane"
+		is-vert = false
+
+window "map_pane"
+	elem "map_pane"
+		type = MAIN
+		pos = 281,0
+		size = 554x554
+		anchor1 = none
+		anchor2 = none
+		background-color = #9a540e
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "map"
+		type = MAP
+		pos = 5,5
+		size = 544x544
+		anchor1 = 1,1
+		anchor2 = 99,99
+		text-color = #000000
+		is-default = true
+		saved-params = "icon-size"
+	elem "map_border_tl"
+		type = LABEL
+		pos = 2,2
+		size = 3x3
+		anchor1 = 0,0
+		anchor2 = 0,0
+		saved-params = ""
+		text = ""
+		image-mode = stretch
+	elem "map_border_t"
+		type = LABEL
+		pos = 5,2
+		size = 544x3
+		anchor1 = 0,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image-mode = stretch
+	elem "map_border_tr"
+		type = LABEL
+		pos = 549,2
+		size = 3x3
+		anchor1 = 100,0
+		anchor2 = 100,0
+		saved-params = ""
+		text = ""
+		image-mode = stretch
+	elem "map_border_r"
+		type = LABEL
+		pos = 549,5
+		size = 3x544
+		anchor1 = 100,0
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image-mode = stretch
+	elem "map_border_br"
+		type = LABEL
+		pos = 549,549
+		size = 3x3
+		anchor1 = 100,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image-mode = stretch
+	elem "map_border_b"
+		type = LABEL
+		pos = 5,549
+		size = 544x3
+		anchor1 = 0,100
+		anchor2 = 100,100
+		saved-params = ""
+		text = ""
+		image-mode = stretch
+	elem "map_border_bl"
+		type = LABEL
+		pos = 2,549
+		size = 3x3
+		anchor1 = 0,100
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image-mode = stretch
+	elem "map_border_l"
+		type = LABEL
+		pos = 2,5
+		size = 3x544
+		anchor1 = 0,0
+		anchor2 = 0,100
+		saved-params = ""
+		text = ""
+		image-mode = stretch
+
+window "newinv"
+	elem "newinv"
+		type = MAIN
+		pos = 281,0
+		size = 411x220
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Inventory"
+		statusbar = false
+	elem "inventory_grid2"
+		type = GRID
+		pos = 0,0
+		size = 411x220
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 8
+		text-color = #eaeaff
+		background-color = #5e3d06
+		border = sunken
+		saved-params = ""
+		cells = 1x0
+		current-cell = 1,1
+		show-lines = none
+		line-color = #3c2704
+		highlight-color = #000000
+		is-list = true
+
+window "ooc_output_pane"
+	elem "ooc_output_pane"
+		type = MAIN
+		pos = 281,0
+		size = 378x384
+		anchor1 = none
+		anchor2 = none
+		background-color = #9a540e
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "ooc_output"
+		type = OUTPUT
+		pos = 6,5
+		size = 368x374
+		anchor1 = 2,1
+		anchor2 = 99,99
+		font-family = "Cambria,Times New Roman,serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #65370a
+		is-default = true
+		border = sunken
+		saved-params = "max-lines"
+		style = ".villageicon img.icon { width: 18; height: 14; }\na.admin_link:link { text-decoration: none; color: #ffffff; }\na.admin_link:visited { text-decoration: none; color: #ffffff; }\n.name { font-weight: bold; }\n.help .rank { color: #55acda; }\n.help .message { color: #448cca; }\n.help .interserver .name { font-style: italic; }\n.village_chat .faction, .village_chat .rank, .village_chat .name { color: #e4ca1f; }\n.village_chat .message { color: #29b41c; }\n.village_chat .interserver .faction { font-style: italic; }\n.village_chat .Konoha .faction, .village_chat .Konoha .rank { color: #40A000; }\n.village_chat .Konoha .name { color: #60C000; }\n.village_chat .Konoha .message { color: #FF6000; }\n.village_chat .Kiri .faction, .village_chat .Kiri .rank { color: #0080FF; }\n.village_chat .Kiri .name { color: #20A0FF; }\n.village_chat .Kiri .message { color: #8080FF; }\n.village_chat .Suna .faction, .village_chat .Suna .rank { color: #B0B080; }\n.village_chat .Suna .name { color: #D0D0A0; }\n.village_chat .Suna .message { color: #FFFF80; }\n.faction_chat .faction, .faction_chat .rank, .faction_chat .name { color: #e4ca1f; }\n.faction_chat .message { color: #29b41c; }\n.faction_chat .interserver .faction { font-style: italic; }\n.radio .chat_type, .radio .message { color: #8cbd73; }\n.radio .interserver .name { font-style: italic; }\n.say .chat_type, .say .message { color: #a6e6fc; }\n.mute_notify .interserver { font-style: italic;}\n.chuunin_exam { color: #448cca; font-weight: bold; }\n.war_info, .territory_info { color: #00b84d; font-weight: bold; }\n.death_info .betrayal { text-decoration: underline; font-style: italic; }"
+
+window "options"
+	elem "options"
+		type = MAIN
+		pos = 281,0
+		size = 618x524
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-maximized"
+		title = "Options"
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+	elem "options_tab"
+		type = TAB
+		pos = 0,0
+		size = 618x524
+		anchor1 = none
+		anchor2 = none
+		is-default = true
+		saved-params = ""
+		tabs = "options_macro_pane"
+		current-tab = "options_macro_pane"
+
+window "options_macro_pane"
+	elem "options_macro_pane"
+		type = MAIN
+		pos = 418,0
+		size = 500x436
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-maximized"
+		title = "Macros"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "button1"
+		type = BUTTON
+		pos = 384,384
+		size = 100x32
+		anchor1 = none
+		anchor2 = none
+		saved-params = "is-checked"
+		text = "Apply Changes"
+		command = "close-options"
+	elem "get"
+		type = LABEL
+		pos = 0,256
+		size = 100x24
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Pick Up Scroll:"
+		align = right
+	elem "get_input"
+		type = INPUT
+		pos = 104,260
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"get\" \""
+	elem "skill_equals_input"
+		type = INPUT
+		pos = 320,120
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-equals\" \""
+	elem "label23"
+		type = LABEL
+		pos = 216,120
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill = (equal):"
+		align = right
+	elem "skill_minus_input"
+		type = INPUT
+		pos = 320,100
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-minus\" \""
+	elem "label22"
+		type = LABEL
+		pos = 216,100
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill - (minus):"
+		align = right
+	elem "skill_tilde_input"
+		type = INPUT
+		pos = 104,0
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-tilde\" \""
+	elem "label21"
+		type = LABEL
+		pos = 0,0
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill ` (tilde):"
+		align = right
+	elem "label20"
+		type = LABEL
+		pos = 216,212
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Cycle Next Target: "
+		align = right
+	elem "next_target_input"
+		type = INPUT
+		pos = 320,212
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"target-next\" \""
+	elem "label19"
+		type = LABEL
+		pos = 216,232
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Cycle Prev. Target: "
+		align = right
+	elem "prev_target_input"
+		type = INPUT
+		pos = 320,232
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"target-prev\" \""
+	elem "label18"
+		type = LABEL
+		pos = 216,172
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Add Next Target: "
+		align = right
+	elem "add_next_target_input"
+		type = INPUT
+		pos = 320,172
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"target-plus-next\" \""
+	elem "label14"
+		type = LABEL
+		pos = 216,192
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Add Prev. Target: "
+		align = right
+	elem "add_prev_target_input"
+		type = INPUT
+		pos = 320,192
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"target-plus-next\" \""
+	elem "label1"
+		type = LABEL
+		pos = 0,20
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 1: "
+		align = right
+	elem "skill1_input"
+		type = INPUT
+		pos = 104,20
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-1\" \""
+	elem "label2"
+		type = LABEL
+		pos = 0,40
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 2: "
+		align = right
+	elem "skill2_input"
+		type = INPUT
+		pos = 104,40
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-2\" \""
+	elem "label3"
+		type = LABEL
+		pos = 0,60
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 3: "
+		align = right
+	elem "skill3_input"
+		type = INPUT
+		pos = 104,60
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-3\" \""
+	elem "label4"
+		type = LABEL
+		pos = 0,80
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 4: "
+		align = right
+	elem "skill4_input"
+		type = INPUT
+		pos = 104,80
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-4\" \""
+	elem "label5"
+		type = LABEL
+		pos = 0,100
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 5: "
+		align = right
+	elem "skill5_input"
+		type = INPUT
+		pos = 104,100
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-5\" \""
+	elem "label6"
+		type = LABEL
+		pos = 216,0
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 6: "
+		align = right
+	elem "skill6_input"
+		type = INPUT
+		pos = 320,0
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		is-default = true
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-6\" \""
+	elem "label7"
+		type = LABEL
+		pos = 216,20
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 7: "
+		align = right
+	elem "skill7_input"
+		type = INPUT
+		pos = 320,20
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-7\" \""
+	elem "label8"
+		type = LABEL
+		pos = 216,40
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 8: "
+		align = right
+	elem "skill8_input"
+		type = INPUT
+		pos = 320,40
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-8\" \""
+	elem "label9"
+		type = LABEL
+		pos = 216,60
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 9: "
+		align = right
+	elem "skill9_input"
+		type = INPUT
+		pos = 320,60
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-9\" \""
+	elem "label10"
+		type = LABEL
+		pos = 216,80
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Skill 0: "
+		align = right
+	elem "skill10_input"
+		type = INPUT
+		pos = 320,80
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use-skill-10\" \""
+	elem "label11"
+		type = LABEL
+		pos = 0,160
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Attack: "
+		align = right
+	elem "attack_input"
+		type = INPUT
+		pos = 104,160
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"attack\" \""
+	elem "label12"
+		type = LABEL
+		pos = 0,180
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Defend: "
+		align = right
+	elem "defend_input"
+		type = INPUT
+		pos = 104,180
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"defend\" \""
+	elem "label13"
+		type = LABEL
+		pos = 0,200
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Use Weapon: "
+		align = right
+	elem "use_weapon_input"
+		type = INPUT
+		pos = 104,200
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"use\" \""
+	elem "label15"
+		type = LABEL
+		pos = 0,240
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Trigger Skill: "
+		align = right
+	elem "trigger_input"
+		type = INPUT
+		pos = 104,240
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"trigger\" \""
+	elem "label16"
+		type = LABEL
+		pos = 216,252
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Untarget: "
+		align = right
+	elem "untarget_input"
+		type = INPUT
+		pos = 320,252
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"untarget\" \""
+	elem "label17"
+		type = LABEL
+		pos = 0,220
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = "Interact: "
+		align = right
+	elem "interact_input"
+		type = INPUT
+		pos = 104,220
+		size = 100x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		command = "set-macro \"interact\" \""
+
+window "partypane"
+	elem "partypane"
+		type = MAIN
+		pos = 281,0
+		size = 378x260
+		anchor1 = none
+		anchor2 = none
+		background-color = #9a540e
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "party_list_grid"
+		type = GRID
+		pos = 5,5
+		size = 368x235
+		anchor1 = 1,2
+		anchor2 = 99,92
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #65370a
+		is-default = true
+		border = sunken
+		saved-params = ""
+		cells = 1x0
+		current-cell = 1,1
+		show-lines = none
+		line-color = #3c2704
+		highlight-color = #000000
+		is-list = true
+	elem "button10"
+		type = BUTTON
+		pos = 5,240
+		size = 80x20
+		anchor1 = 1,92
+		anchor2 = 22,100
+		font-family = "Times New Roman"
+		font-size = 9
+		text-color = #eaf4ff
+		background-color = #754f00
+		is-default = true
+		border = sunken
+		saved-params = "is-checked"
+		text = "Stats"
+		command = ".winset \"left_top_child.left=full_stats_pane\""
+	elem "button9"
+		type = BUTTON
+		pos = 84,240
+		size = 80x20
+		anchor1 = 78,92
+		anchor2 = 99,100
+		font-family = "Times New Roman"
+		font-size = 9
+		text-color = #eaf4ff
+		background-color = #754f00
+		is-default = true
+		border = sunken
+		saved-params = "is-checked"
+		text = "Squad"
+		command = ".winset \"left_top_child.left=squad_list_pane\""
+		group = "right_top_switch"
+
+window "squad_list_pane"
+	elem "squad_list_pane"
+		type = MAIN
+		pos = 281,0
+		size = 378x260
+		anchor1 = none
+		anchor2 = none
+		background-color = #9a540e
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "story"
+		type = BUTTON
+		pos = 128,240
+		size = 80x20
+		anchor1 = 34,92
+		anchor2 = 55,100
+		font-family = "Times New Roman"
+		font-size = 9
+		text-color = #eaf4ff
+		background-color = #754f00
+		is-default = true
+		border = sunken
+		saved-params = "is-checked"
+		text = "Story"
+		command = ".winset \"left_top_child.left=squad_list_pane\""
+	elem "button5"
+		type = BUTTON
+		pos = 16,240
+		size = 80x20
+		anchor1 = 4,92
+		anchor2 = 25,100
+		font-family = "Times New Roman"
+		font-size = 9
+		text-color = #eaf4ff
+		background-color = #754f00
+		is-default = true
+		border = sunken
+		saved-params = "is-checked"
+		text = "Stats"
+		command = ".winset \"left_top_child.left=full_stats_pane\""
+	elem "button8"
+		type = BUTTON
+		pos = 232,240
+		size = 104x20
+		anchor1 = 61,92
+		anchor2 = 89,100
+		font-family = "Times New Roman"
+		font-size = 9
+		text-color = #eaf4ff
+		background-color = #754f00
+		is-default = true
+		border = sunken
+		saved-params = "is-checked"
+		text = "Kills"
+		command = ".winset \"left_top_child.left=bounty_list_pane\""
+	elem "squad_list_grid"
+		type = GRID
+		pos = 5,5
+		size = 368x235
+		anchor1 = 1,2
+		anchor2 = 99,92
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #65370a
+		border = sunken
+		saved-params = ""
+		cells = 1x0
+		current-cell = 1,1
+		show-lines = none
+		line-color = #3c2704
+		highlight-color = #000000
+		is-list = true
+
+window "whisper_popup"
+	elem "whisper_popup"
+		type = MAIN
+		pos = 281,0
+		size = 300x400
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-maximized"
+		title = "Whisper"
+		statusbar = false
+		can-minimize = false
+		can-resize = false
+		alpha = 249
+	elem "whisper_chat_output"
+		type = OUTPUT
+		pos = 5,5
+		size = 290x365
+		anchor1 = none
+		anchor2 = none
+		text-color = #eaf4ff
+		background-color = #754f00
+		saved-params = "max-lines"
+	elem "whisper_chat_input"
+		type = INPUT
+		pos = 5,375
+		size = 290x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #eaf4ff
+		background-color = #754f00
+		saved-params = ""
+		command = "Whisper"
+
+window "stats_pane"
+	elem "stats_pane"
+		type = MAIN
+		pos = 281,0
+		size = 554x145
+		anchor1 = none
+		anchor2 = none
+		background-color = #9a540e
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "stats_grid"
+		type = GRID
+		pos = 5,5
+		size = 544x43
+		anchor1 = 1,3
+		anchor2 = 99,39
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 8
+		text-color = #f4eaff
+		background-color = #5e3d06
+		border = sunken
+		right-click = true
+		saved-params = ""
+		cells = 1x2
+		current-cell = 1,1
+		show-lines = none
+		highlight-color = #000000
+		style = "margin-left: 0px;\n\nmargin-right: 0px;"
+	elem "inventory_grid"
+		type = GRID
+		pos = 5,48
+		size = 544x97
+		anchor1 = 1,44
+		anchor2 = 99,97
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 8
+		text-color = #eaeaff
+		background-color = #5e3d06
+		border = sunken
+		saved-params = ""
+		cells = 1x0
+		current-cell = 1,1
+		show-lines = none
+		line-color = #3c2704
+		highlight-color = #000000
+		is-list = true
+
+window "window20"
+	elem "bounty_list_pane"
+		type = MAIN
+		pos = 281,0
+		size = 378x260
+		anchor1 = none
+		anchor2 = none
+		background-color = #9a540e
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "bounty_list_grid"
+		type = GRID
+		pos = 5,5
+		size = 368x235
+		anchor1 = 1,2
+		anchor2 = 99,92
+		font-family = "Calibri,Arial,sans-serif"
+		font-size = 11
+		text-color = #eaeaff
+		background-color = #65370a
+		is-default = true
+		border = sunken
+		saved-params = ""
+		cells = 1x0
+		current-cell = 1,1
+		show-lines = none
+		line-color = #3c2704
+		highlight-color = #000000
+		is-list = true
+	elem "button10"
+		type = BUTTON
+		pos = 5,240
+		size = 80x20
+		anchor1 = 1,92
+		anchor2 = 22,100
+		font-family = "Times New Roman"
+		font-size = 9
+		text-color = #eaf4ff
+		background-color = #754f00
+		is-default = true
+		border = sunken
+		saved-params = "is-checked"
+		text = "Stats"
+		command = ".winset \"left_top_child.left=full_stats_pane\""
+	elem "button9"
+		type = BUTTON
+		pos = 84,240
+		size = 80x20
+		anchor1 = 78,92
+		anchor2 = 99,100
+		font-family = "Times New Roman"
+		font-size = 9
+		text-color = #eaf4ff
+		background-color = #754f00
+		is-default = true
+		border = sunken
+		saved-params = "is-checked"
+		text = "Squad"
+		command = ".winset \"left_top_child.left=squad_list_pane\""
+		group = "right_top_switch"
+

@@ -1,0 +1,1506 @@
+macro "macro"
+	elem "chat"
+		name = "Return"
+		command = "macchat"
+	elem "interact"
+		name = "Space"
+		command = "macinteract"
+	elem 
+		name = "Northeast"
+		command = "KeyDown northeast"
+	elem 
+		name = "Northeast+UP"
+		command = "KeyUp northeast"
+	elem 
+		name = "Southeast"
+		command = "KeyDown southeast"
+	elem 
+		name = "Southeast+UP"
+		command = "KeyUp southeast"
+	elem 
+		name = "Southwest"
+		command = "KeyDown southwest"
+	elem 
+		name = "Southwest+UP"
+		command = "KeyUp southwest"
+	elem 
+		name = "Northwest"
+		command = "KeyDown northwest"
+	elem 
+		name = "Northwest+UP"
+		command = "KeyUp northwest"
+	elem 
+		name = "West"
+		command = "KeyDown west"
+	elem 
+		name = "West+UP"
+		command = "KeyUp west"
+	elem 
+		name = "North"
+		command = "KeyDown north"
+	elem 
+		name = "North+UP"
+		command = "KeyUp north"
+	elem 
+		name = "East"
+		command = "KeyDown east"
+	elem 
+		name = "East+UP"
+		command = "KeyUp east"
+	elem 
+		name = "South"
+		command = "KeyDown south"
+	elem 
+		name = "South+UP"
+		command = "KeyUp south"
+	elem 
+		name = "0"
+		command = "mac0"
+	elem "use-skill-1"
+		name = "1"
+		command = "mac1"
+	elem "use-skill-1-up"
+		name = "1+UP"
+	elem "use-skill-2"
+		name = "2"
+		command = "mac2"
+	elem "use-skill-2-up"
+		name = "2+UP"
+	elem "use-skill-3"
+		name = "3"
+		command = "mac3"
+	elem "use-skill-3-up"
+		name = "3+UP"
+	elem "use-skill-4"
+		name = "4"
+		command = "mac4"
+	elem "use-skill-4-up"
+		name = "4+UP"
+	elem "use-skill-5"
+		name = "5"
+		command = "mac5"
+	elem "use-skill-5-up"
+		name = "5+UP"
+	elem "use-skill-6"
+		name = "6"
+		command = "mac6"
+	elem "use-skill-6-up"
+		name = "6+UP"
+	elem "use-skill-7"
+		name = "7"
+		command = "mac7"
+	elem "use-skill-7-up"
+		name = "7+UP"
+	elem "use-skill-8"
+		name = "8"
+		command = "mac8"
+	elem "use-skill-8-up"
+		name = "8+UP"
+	elem "use-skill-9"
+		name = "9"
+		command = "mac9"
+	elem "use-skill-9-up"
+		name = "9+UP"
+	elem "attack"
+		name = "A+REP"
+		command = "macattack"
+	elem 
+		name = "ALT+D+UP"
+		command = "macsense"
+	elem "defend"
+		name = "D+REP"
+		command = "macdefend"
+	elem "use"
+		name = "F+REP"
+		command = "macuse"
+	elem "get"
+		name = "G"
+		command = "get"
+	elem "use-skill-10-up"
+		name = "S+UP"
+	elem "untarget"
+		name = "U"
+		command = "macuntarget"
+	elem "trigger"
+		name = "Z"
+		command = "mactrigger"
+	elem 
+		name = "="
+		command = "mac12"
+	elem 
+		name = "-"
+		command = "mac11"
+	elem "use-skill-minus-up"
+		name = "-+UP"
+	elem 
+		name = "`"
+		command = "mac13"
+	elem "use-skill-tilde-up"
+		name = "`+UP"
+	elem "target-next"
+		name = "["
+		command = "mactarget-next"
+	elem "target-plus-next"
+		name = "SHIFT+["
+		command = "mactarget-plus-next"
+	elem "target-prev"
+		name = "]"
+		command = "mactarget-prev"
+	elem "target-plus-prev"
+		name = "SHIFT+]"
+		command = "mactarget-plus-prev"
+	elem 
+		name = "SHIFT"
+		command = "KeyDown shift"
+	elem 
+		name = "SHIFT+UP"
+		command = "KeyUp shift"
+
+
+menu "menu"
+	elem 
+		name = "&File"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Options and Messages...\tF1"
+		command = ".options"
+		category = "&File"
+		saved-params = "is-checked"
+	elem 
+		name = "&Save screenshot...\tF2"
+		command = ".screenshot"
+		category = "&File"
+		saved-params = "is-checked"
+	elem 
+		name = "&Quit"
+		command = ".quit"
+		category = "&File"
+		saved-params = "is-checked"
+	elem 
+		name = "&Icons"
+		command = ""
+		saved-params = "is-checked"
+	elem "stretch"
+		name = "&Stretch to fit"
+		command = ".winset \"mapwindow.map.icon-size=0\""
+		category = "&Icons"
+		is-checked = true
+		can-check = true
+		group = "size"
+		saved-params = "is-checked"
+	elem "icon32"
+		name = "&32x32"
+		command = ".winset \"mapwindow.map.icon-size=32\""
+		category = "&Icons"
+		can-check = true
+		group = "size"
+		saved-params = "is-checked"
+	elem "icon16"
+		name = "&16x16"
+		command = ".winset \"mapwindow.map.icon-size=16\""
+		category = "&Icons"
+		can-check = true
+		group = "size"
+		saved-params = "is-checked"
+	elem 
+		name = "48x48"
+		command = ".winset \"mapwindow.map.icon-size=48\""
+		category = "&Icons"
+		saved-params = "is-checked"
+	elem 
+		name = "40x40"
+		command = ".winset \"mapwindow.map.icon-size=40\""
+		category = "&Icons"
+		saved-params = "is-checked"
+	elem 
+		name = "37x37"
+		command = ".winset \"mapwindow.map.icon-size=37\""
+		category = "&Icons"
+		saved-params = "is-checked"
+	elem 
+		name = "43x43"
+		command = ".winset \"mapwindow.map.icon-size=43\""
+		category = "&Icons"
+		saved-params = "is-checked"
+	elem "textmode"
+		name = "&Text"
+		command = ".winset \"menu.textmode.is-checked=true?mapwindow.map.text-mode=true:mapwindow.map.text-mode=false\""
+		category = "&Icons"
+		can-check = true
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote Mute"
+		command = "Vote-Mute"
+		category = "&Vote"
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote Yes"
+		command = "Vote-Yes"
+		category = "&Vote"
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote No"
+		command = "Vote-No"
+		category = "&Vote"
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote Who"
+		command = "Vote-What"
+		category = "&Vote"
+		saved-params = "is-checked"
+	elem 
+		name = "&Events"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Espada Event"
+		command = "Join-Espada-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Reigai"
+		command = "Join-Reigai-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Gotei 13"
+		command = "Join-Battle-Royale"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Ichigo"
+		command = "Join-Ichigo-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join CTF"
+		command = "Join-Lost-Zan-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Race War"
+		command = "Join-Race-War"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "Join Wandenreich"
+		command = "Join-Vand-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Watch Event"
+		command = "Watch-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Leave Event"
+		command = "Leave-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "Team Deathmatch"
+		command = "Join-TDM"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Arena"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Challenge"
+		command = "Challenge"
+		category = "&Arena"
+		saved-params = "is-checked"
+	elem 
+		name = "&Accept"
+		command = "Accept"
+		category = "&Arena"
+		saved-params = "is-checked"
+	elem 
+		name = "&Decline"
+		command = "Decline"
+		category = "&Arena"
+		saved-params = "is-checked"
+	elem 
+		name = "&Tournament"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Enter"
+		command = "Enter-Tournament"
+		category = "&Tournament"
+		saved-params = "is-checked"
+	elem 
+		name = "&Leave"
+		command = "Leave-Tournament"
+		category = "&Tournament"
+		saved-params = "is-checked"
+	elem 
+		name = "&Watch"
+		command = "Watch-Tournament"
+		category = "&Tournament"
+		saved-params = "is-checked"
+	elem 
+		name = "&Character"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&View Players"
+		command = "Who"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&Drop Money"
+		command = "Drop-Money"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&Stuck"
+		command = "Stuck"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&GM Alert"
+		command = "GM-Help"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&Change Respawn"
+		command = "Change-Respawn"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&OOC Toggle"
+		command = "OOC-Toggle"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&Race Say Toggle"
+		command = "Race-Say-Toggle"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "Give EventPoint"
+		command = "GiveEventPoints"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "BWWA"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "Updates"
+		command = "Update"
+		category = "BWWA"
+		saved-params = "is-checked"
+
+
+window "DPBuy"
+	elem "DPBuy"
+		type = MAIN
+		pos = 281,0
+		size = 616x333
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		is-visible = false
+		border = line
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		image-mode = center
+	elem "DonorOut"
+		type = OUTPUT
+		pos = 72,43
+		size = 470x248
+		anchor1 = 12,13
+		anchor2 = 88,87
+		font-family = "Trebuchet MS"
+		font-size = 15
+		text-color = #ffffff
+		background-color = #000000
+		border = sunken
+		saved-params = "max-lines"
+	elem "button1"
+		type = BUTTON
+		pos = 549,0
+		size = 62x30
+		anchor1 = 89,0
+		anchor2 = 99,9
+		font-style = "underline"
+		text-color = #ffffff
+		background-color = #000000
+		border = sunken
+		saved-params = "is-checked"
+		text = "X"
+		command = "CloseDonor"
+
+window "DonorExp"
+	elem "DonorExp"
+		type = MAIN
+		pos = 281,0
+		size = 634x491
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		is-visible = false
+		border = line
+		saved-params = "pos;size;is-minimized;is-maximized"
+		statusbar = false
+		image-mode = tile
+	elem "DEx"
+		type = OUTPUT
+		pos = 24,24
+		size = 589x446
+		anchor1 = 4,5
+		anchor2 = 97,96
+		font-family = "Trebuchet MS"
+		font-size = 11
+		text-color = #80ff00
+		background-color = #000000
+		border = sunken
+		saved-params = "max-lines"
+
+window "UpdateLog"
+	elem "UpdateLog"
+		type = MAIN
+		pos = 281,0
+		size = 539x532
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		is-visible = false
+		border = line
+		saved-params = "pos;size;is-minimized;is-maximized"
+		statusbar = false
+		can-resize = false
+		image = 'bleach--memorias.jpeg'
+		image-mode = tile
+	elem "FEx"
+		type = OUTPUT
+		pos = 32,31
+		size = 472x463
+		anchor1 = 6,6
+		anchor2 = 94,93
+		font-family = "Verdana"
+		font-size = 11
+		text-color = #ffffff
+		background-color = #000000
+		border = sunken
+		saved-params = "max-lines"
+		enable-http-images = true
+
+window "mainwindow"
+	elem "mainwindow"
+		type = MAIN
+		pos = 281,0
+		size = 640x440
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		is-default = true
+		saved-params = "pos;size;is-maximized"
+		title = "Bleach World Wide Adventures 2.1"
+		macro = "macro"
+		menu = "menu"
+		outer-size = 656x518
+		inner-size = 640x459
+	elem "mainvsplit"
+		type = CHILD
+		pos = 0,1
+		size = 640x443
+		anchor1 = 0,0
+		anchor2 = 100,100
+		background-color = #000000
+		border = sunken
+		saved-params = "splitter"
+		right = "rpane"
+		is-vert = true
+		show-splitter = false
+
+window "mapwindow"
+	elem "mapwindow"
+		type = MAIN
+		pos = 281,0
+		size = 620x615
+		anchor1 = none
+		anchor2 = none
+		background-color = #00366c
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+		image = 'april 20th icons\\Lock-On_Interface_Design.jpg'
+		image-mode = tile
+		keep-aspect = true
+		outer-size = 634x629
+		inner-size = 620x615
+	elem "button8"
+		type = BUTTON
+		pos = 320,572
+		size = 80x20
+		anchor1 = 52,93
+		anchor2 = 65,96
+		text-color = #ffffff
+		background-color = #0067ce
+		saved-params = "is-checked"
+		text = "Whisper"
+		command = "Whisper"
+		is-flat = true
+	elem "button7"
+		type = BUTTON
+		pos = 216,572
+		size = 80x20
+		anchor1 = 35,93
+		anchor2 = 48,96
+		text-color = #ffffff
+		background-color = #0067ce
+		saved-params = "is-checked"
+		text = "Faction Say"
+		command = "Race-Say"
+		is-flat = true
+	elem "button6"
+		type = BUTTON
+		pos = 512,572
+		size = 80x20
+		anchor1 = 83,93
+		anchor2 = 95,96
+		text-color = #ffffff
+		background-color = #0066cc
+		saved-params = "is-checked"
+		text = "Suggestions"
+		command = "submitsuggestion"
+		is-flat = true
+	elem "button4"
+		type = BUTTON
+		pos = 416,572
+		size = 80x20
+		anchor1 = 67,93
+		anchor2 = 80,96
+		text-color = #ffffff
+		background-color = #0067ce
+		saved-params = "is-checked"
+		text = "Guild Say"
+		command = "Guild-Say"
+		is-flat = true
+	elem "button3"
+		type = BUTTON
+		pos = 120,572
+		size = 80x20
+		anchor1 = 19,93
+		anchor2 = 32,96
+		text-color = #ffffff
+		background-color = #0066cc
+		saved-params = "is-checked"
+		text = "OOC"
+		command = "OOC"
+		is-flat = true
+	elem "button2"
+		type = BUTTON
+		pos = 16,572
+		size = 80x20
+		anchor1 = 3,93
+		anchor2 = 15,96
+		text-color = #ffffff
+		background-color = #0067ce
+		saved-params = "is-checked"
+		text = "Say"
+		command = "Say"
+		is-flat = true
+	elem "map"
+		type = MAP
+		pos = 16,16
+		size = 576x528
+		anchor1 = 3,3
+		anchor2 = 95,88
+		text-color = #000000
+		is-default = true
+		border = sunken
+		saved-params = "icon-size"
+		icon-size = 32
+		zoom = 1
+		on-show = ".winset\"mainwindow.mainvsplit.left=mapwindow\""
+		on-hide = ".winset\"mainwindow.mainvsplit.left=\""
+
+window "outputwindow"
+	elem "outputwindow"
+		type = MAIN
+		pos = 281,0
+		size = 639x480
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "talk"
+		type = OUTPUT
+		pos = 321,0
+		size = 319x480
+		anchor1 = 50,0
+		anchor2 = 100,100
+		text-color = #ffffff
+		background-color = #000000
+		is-default = true
+		border = sunken
+		saved-params = "max-lines"
+		link-color = #ffffff
+		visited-color = #00aa00
+		style = ".system {color:#ff0000;}"
+	elem "output"
+		type = OUTPUT
+		pos = 0,0
+		size = 320x480
+		anchor1 = 0,0
+		anchor2 = 50,100
+		text-color = #ffffff
+		background-color = #000000
+		is-default = true
+		border = sunken
+		saved-params = "max-lines"
+		link-color = #ffffff
+		visited-color = #00aa00
+		style = ".system {color:#ff0000;}"
+
+window "rpane"
+	elem "rpane"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+		image = 'april 20th icons\\Lock-On_Interface_Design.jpg'
+		image-mode = tile
+	elem "rpanewindow"
+		type = CHILD
+		pos = 0,0
+		size = 640x483
+		anchor1 = 0,0
+		anchor2 = 100,100
+		background-color = #000000
+		border = sunken
+		saved-params = "splitter"
+		right = "outputwindow"
+		is-vert = false
+	elem "textb"
+		type = BUTTON
+		pos = 0,0
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		background-color = #004080
+		is-visible = false
+		saved-params = "is-checked"
+		text = "Text"
+		command = ".winset \"rpanewindow.left=;\""
+		is-checked = true
+		group = "rpanemode"
+		button-type = pushbox
+	elem "browseb"
+		type = BUTTON
+		pos = 65,0
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		background-color = #004080
+		is-visible = false
+		saved-params = "is-checked"
+		text = "Browser"
+		command = ".winset \"rpanewindow.left=browserwindow\""
+		group = "rpanemode"
+		button-type = pushbox
+	elem "infob"
+		type = BUTTON
+		pos = 130,0
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		background-color = #004080
+		is-visible = false
+		saved-params = "is-checked"
+		text = "Info"
+		command = ".winset \"rpanewindow.left=infowindow\""
+		group = "rpanemode"
+		button-type = pushbox
+
+window "browserwindow"
+	elem "browserwindow"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-maximized"
+		title = "Browser"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "input1"
+		type = INPUT
+		pos = 0,456
+		size = 640x80
+		anchor1 = none
+		anchor2 = none
+		background-color = #004080
+		saved-params = ""
+	elem "browserwindow"
+		type = BROWSER
+		pos = 0,0
+		size = 638x456
+		anchor1 = 0,0
+		anchor2 = 100,100
+		background-color = #004080
+		is-default = true
+		border = sunken
+		saved-params = ""
+		show-history = true
+		show-url = true
+		on-show = ".winset\"rpane.infob.is-visible=true?rpane.infob.pos=130,0;rpane.textb.is-visible=true;rpane.browseb.is-visible=true;rpane.browseb.is-checked=true;rpane.rpanewindow.pos=0,30;rpane.rpanewindow.size=0x0;rpane.rpanewindow.left=browserwindow\""
+		on-hide = ".winset\"rpane.browseb.is-visible=false;rpane.infob.is-visible=true?rpane.infob.is-checked=true rpane.infob.pos=65,0 rpane.rpanewindow.left=infowindow:rpane.rpanewindow.left=textwindow rpane.textb.is-visible=false rpane.rpanewindow.pos=0,0 rpane.rpanewindow.size=0x0\""
+
+window "infowindow"
+	elem "infowindow"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		saved-params = "pos;size;is-maximized"
+		title = "Info"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+		image = 'april 20th icons\\walk bleach moon kurosaki ichigo kuchiki byakuya espada artwork kuchiki rukia manga grimmjow jaegerj_www.wall321.com_56.jpg'
+		image-mode = tile
+		outer-size = 654x494
+	elem "info"
+		type = INFO
+		pos = 0,0
+		size = 640x480
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = "Trebuchet MS"
+		font-size = 10
+		text-color = #7dbeff
+		background-color = #001f3e
+		is-default = true
+		border = sunken
+		saved-params = ""
+		highlight-color = #00aa00
+		tab-text-color = #d5eaff
+		tab-background-color = #004080
+		tab-font-family = "Eras Demi ITC,sans-serif,Papyrus,Franklin Gothic Book"
+		tab-font-size = 10
+		tab-font-style = "bold"
+		allow-html = false
+		on-show = ".winset\"rpane.infob.is-visible=true;rpane.browseb.is-visible=true?rpane.infob.pos=130,0:rpane.infob.pos=65,0 rpane.textb.is-visible=true rpane.infob.is-checked=true rpane.rpanewindow.pos=0,30 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=infowindow\""
+		on-hide = ".winset\"rpane.infob.is-visible=false;rpane.browseb.is-visible=true?rpane.browseb.is-checked=true rpane.rpanewindow.left=browserwindow:rpane.textb.is-visible=false rpane.rpanewindow.pos=0,0 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=\""
+
+window "window1"
+	elem "window1"
+		type = MAIN
+		pos = 281,0
+		size = 576x42
+		anchor1 = none
+		anchor2 = none
+		background-color = #004080
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+		image-mode = tile
+	elem "story"
+		type = BUTTON
+		pos = 12,12
+		size = 60x20
+		anchor1 = 0,100
+		anchor2 = 0,100
+		text-color = #ffffff
+		background-color = #0080ff
+		saved-params = "is-checked"
+		text = "Story"
+		command = "Story"
+		is-flat = true
+
+window "Communication"
+	elem "Communication"
+		type = MAIN
+		pos = 281,0
+		size = 536x423
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		macro = "Macro"
+	elem "messagechild"
+		type = CHILD
+		pos = 184,16
+		size = 320x384
+		anchor1 = 34,4
+		anchor2 = 94,95
+		border = sunken
+		saved-params = "splitter"
+		is-vert = false
+	elem "button13"
+		type = BUTTON
+		pos = 25,201
+		size = 123x27
+		anchor1 = 5,48
+		anchor2 = 28,54
+		saved-params = "is-checked"
+		text = "Guild"
+		command = "ShowGuild"
+	elem "button12"
+		type = BUTTON
+		pos = 25,141
+		size = 123x26
+		anchor1 = 5,33
+		anchor2 = 28,39
+		saved-params = "is-checked"
+		text = "Friends"
+		command = "ShowFriends"
+	elem "button11"
+		type = BUTTON
+		pos = 25,78
+		size = 123x26
+		anchor1 = 5,18
+		anchor2 = 28,25
+		saved-params = "is-checked"
+		text = "Inbox"
+		command = "ShowInbox"
+
+window "Friends"
+	elem "Friends"
+		type = MAIN
+		pos = 281,0
+		size = 496x437
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "label25"
+		type = LABEL
+		pos = 96,8
+		size = 352x24
+		anchor1 = 19,2
+		anchor2 = 90,7
+		font-style = "bold"
+		background-color = #eaeaea
+		saved-params = ""
+		text = "Friends"
+	elem "FriendsGrid"
+		type = GRID
+		pos = 81,49
+		size = 402x315
+		anchor1 = 16,11
+		anchor2 = 97,83
+		background-color = #eaeaea
+		saved-params = ""
+		cells = 1x1
+		current-cell = 1,1
+		small-icons = true
+
+window "Inbox"
+	elem "Inbox"
+		type = MAIN
+		pos = 281,0
+		size = 540x402
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "button15"
+		type = BUTTON
+		pos = 136,8
+		size = 296x24
+		anchor1 = 25,2
+		anchor2 = 80,8
+		saved-params = "is-checked"
+		text = "Inbox"
+		command = "SendMsg"
+	elem "msgout"
+		type = OUTPUT
+		pos = 304,104
+		size = 224x232
+		anchor1 = 56,26
+		anchor2 = 98,84
+		saved-params = "max-lines"
+	elem "button14"
+		type = BUTTON
+		pos = 352,48
+		size = 128x40
+		anchor1 = 65,12
+		anchor2 = 89,22
+		saved-params = "is-checked"
+		text = "Send New Message"
+		command = "SendMsg"
+	elem "InboxGrid"
+		type = GRID
+		pos = 88,48
+		size = 200x288
+		anchor1 = 16,12
+		anchor2 = 53,84
+		saved-params = ""
+		small-icons = true
+
+window "Message"
+	elem "Message"
+		type = MAIN
+		pos = 281,0
+		size = 501x169
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "label11"
+		type = LABEL
+		pos = 225,2
+		size = 62x25
+		anchor1 = 45,1
+		anchor2 = 58,16
+		text-color = #ffffff
+		background-color = #303030
+		border = line
+		saved-params = ""
+		text = "Message:"
+	elem "label26"
+		type = LABEL
+		pos = 8,32
+		size = 488x139
+		anchor1 = 6,18
+		anchor2 = 94,100
+		font-family = "Calibri"
+		font-size = 12
+		text-color = #ffffff
+		background-color = #303030
+		border = line
+		saved-params = ""
+		text = ""
+		text-wrap = true
+	elem "Label"
+		type = LABEL
+		pos = 24,40
+		size = 456x131
+		anchor1 = 6,18
+		anchor2 = 94,100
+		font-family = "Calibri"
+		font-size = 12
+		text-color = #ffffff
+		background-color = #303030
+		saved-params = ""
+		text = ""
+		text-wrap = true
+	elem "button16"
+		type = BUTTON
+		pos = 464,136
+		size = 32x32
+		anchor1 = 93,80
+		anchor2 = 99,99
+		font-family = "Calibri"
+		font-size = 12
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #000000
+		border = line
+		saved-params = "is-checked"
+		text = "->"
+		command = "ProceedConvo"
+
+window "report"
+	elem "report"
+		type = MAIN
+		pos = 281,0
+		size = 425x471
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Got a bug? REPORT IT!"
+		statusbar = false
+		can-resize = false
+		on-close = ".clear"
+	elem "Name"
+		type = INPUT
+		pos = 50,124
+		size = 325x20
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		no-command = true
+	elem "label1"
+		type = LABEL
+		pos = 78,16
+		size = 269x65
+		anchor1 = none
+		anchor2 = none
+		font-family = "Arial Black"
+		font-size = 10
+		font-style = "bold"
+		text-color = #ff0000
+		background-color = #000000
+		border = sunken
+		saved-params = ""
+		text = "Bugs, Features, \nFixes, Glitches\nSuggestions"
+		text-wrap = true
+	elem "bug"
+		type = BUTTON
+		pos = 168,187
+		size = 89x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		border = line
+		saved-params = "is-checked"
+		text = "Bug"
+		command = ""
+		is-checked = true
+		group = "type"
+		button-type = radio
+	elem "NameR"
+		type = LABEL
+		pos = 148,100
+		size = 128x20
+		anchor1 = none
+		anchor2 = none
+		font-family = "Arial Black"
+		font-size = 10
+		font-style = "bold"
+		text-color = #ff0000
+		background-color = #000000
+		border = sunken
+		saved-params = ""
+		text = "Name (problem)"
+	elem "label2"
+		type = LABEL
+		pos = 185,164
+		size = 54x20
+		anchor1 = none
+		anchor2 = none
+		font-family = "Arial Black"
+		font-size = 10
+		font-style = "bold"
+		text-color = #ff0000
+		background-color = #000000
+		border = sunken
+		saved-params = ""
+		text = "Type"
+	elem "suggestion"
+		type = BUTTON
+		pos = 168,206
+		size = 89x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		border = line
+		saved-params = "is-checked"
+		text = "Suggestion"
+		command = ""
+		group = "type"
+		button-type = radio
+	elem "fix"
+		type = BUTTON
+		pos = 168,225
+		size = 89x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		border = line
+		saved-params = "is-checked"
+		text = "Fix"
+		command = ""
+		group = "type"
+		button-type = radio
+	elem "desc"
+		type = INPUT
+		pos = 50,288
+		size = 325x91
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = ""
+		multi-line = true
+		no-command = true
+	elem "prob"
+		type = LABEL
+		pos = 133,264
+		size = 159x20
+		anchor1 = none
+		anchor2 = none
+		font-family = "Arial Black"
+		font-size = 10
+		font-style = "bold"
+		text-color = #ff0000
+		background-color = #000000
+		border = sunken
+		saved-params = ""
+		text = "Problem Description"
+	elem "key"
+		type = LABEL
+		pos = 72,428
+		size = 94x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		border = line
+		saved-params = ""
+		text = "Key"
+		text-wrap = true
+	elem "ip"
+		type = LABEL
+		pos = 165,428
+		size = 94x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		border = line
+		saved-params = ""
+		text = "IP"
+	elem "id"
+		type = LABEL
+		pos = 258,428
+		size = 94x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		border = line
+		saved-params = ""
+		text = "Computer ID"
+	elem "submit"
+		type = BUTTON
+		pos = 152,385
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		saved-params = "is-checked"
+		text = "Submit"
+		command = ".submit"
+	elem "label3"
+		type = LABEL
+		pos = 101,450
+		size = 223x13
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		saved-params = ""
+		text = "The above items are logged upon submission."
+	elem "selected"
+		type = LABEL
+		pos = 266,206
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		is-visible = false
+		border = line
+		saved-params = ""
+		text = ""
+	elem "load"
+		type = LABEL
+		pos = 72,406
+		size = 280x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		border = line
+		saved-params = ""
+		text = ""
+	elem "clear"
+		type = BUTTON
+		pos = 214,385
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		saved-params = "is-checked"
+		text = "Clear"
+		command = ".clear"
+
+window "reportview"
+	elem "reportview"
+		type = MAIN
+		pos = 281,0
+		size = 425x471
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Bug Viewer!"
+		statusbar = false
+		can-resize = false
+		on-close = ".clearv"
+	elem "button2"
+		type = BUTTON
+		pos = 168,102
+		size = 90x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		border = line
+		saved-params = "is-checked"
+		text = "Delete this"
+		command = ".delete"
+	elem "viewing"
+		type = LABEL
+		pos = 78,77
+		size = 270x22
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		border = line
+		saved-params = ""
+		text = "Click View Reports to see a list of reports!"
+	elem "button1"
+		type = BUTTON
+		pos = 261,102
+		size = 87x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		border = line
+		saved-params = "is-checked"
+		text = "Delete All"
+		command = ".deleteall"
+	elem "rpt"
+		type = BUTTON
+		pos = 78,102
+		size = 87x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		border = line
+		saved-params = "is-checked"
+		text = "View Report"
+		command = ".view"
+	elem "reportbrowser"
+		type = BROWSER
+		pos = 14,150
+		size = 397x311
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+	elem "label1"
+		type = LABEL
+		pos = 78,8
+		size = 269x65
+		anchor1 = none
+		anchor2 = none
+		font-family = "Arial Black"
+		font-size = 10
+		font-style = "bold"
+		text-color = #ff0000
+		background-color = #000000
+		border = sunken
+		saved-params = ""
+		text = "Report Viewer"
+		text-wrap = true
+	elem "loadv"
+		type = LABEL
+		pos = 77,125
+		size = 270x22
+		anchor1 = none
+		anchor2 = none
+		text-color = #ff0000
+		background-color = #000000
+		saved-params = ""
+		text = ""
+
+window "GuildWin"
+	elem "GuildWin"
+		type = MAIN
+		pos = 281,0
+		size = 566x350
+		anchor1 = none
+		anchor2 = none
+		background-color = #3a3a3a
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Guild Menu"
+		statusbar = false
+		can-minimize = false
+		can-resize = false
+		image-mode = tile
+	elem "button5"
+		type = BUTTON
+		pos = 107,13
+		size = 91x25
+		anchor1 = 19,4
+		anchor2 = 35,11
+		text-color = #ffffff
+		background-color = #f4373c
+		border = line
+		saved-params = "is-checked"
+		text = "Create Guild"
+		command = "CreateGuild"
+		is-flat = true
+	elem "label40"
+		type = LABEL
+		pos = 8,8
+		size = 96x28
+		anchor1 = 1,2
+		anchor2 = 18,10
+		font-family = "Impact"
+		font-size = 20
+		text-color = #ffffff
+		is-transparent = true
+		saved-params = ""
+		text = "Guild"
+		align = left
+	elem "button39"
+		type = BUTTON
+		pos = 467,13
+		size = 92x25
+		anchor1 = 83,4
+		anchor2 = 99,11
+		text-color = #ffffff
+		background-color = #f4373c
+		border = line
+		saved-params = "is-checked"
+		text = "Guild Actions"
+		command = "GuildActions"
+		is-flat = true
+	elem "button38"
+		type = BUTTON
+		pos = 375,13
+		size = 92x25
+		anchor1 = 66,4
+		anchor2 = 83,11
+		text-color = #ffffff
+		background-color = #f4373c
+		border = line
+		saved-params = "is-checked"
+		text = "Territory Info"
+		command = "GuildCrystals"
+		is-flat = true
+	elem "button37"
+		type = BUTTON
+		pos = 285,13
+		size = 91x25
+		anchor1 = 50,4
+		anchor2 = 66,11
+		text-color = #ffffff
+		background-color = #f4373c
+		border = line
+		saved-params = "is-checked"
+		text = "Member List"
+		command = "GuildWho"
+		is-flat = true
+	elem "GuildInfoLab"
+		type = LABEL
+		pos = 8,38
+		size = 552x302
+		anchor1 = 1,11
+		anchor2 = 99,97
+		font-family = "@MS UI Gothic"
+		font-size = 12
+		text-color = #ffffff
+		background-color = #303030
+		border = line
+		saved-params = ""
+		text = ""
+		text-wrap = true
+	elem "button36"
+		type = BUTTON
+		pos = 196,13
+		size = 91x25
+		anchor1 = 35,4
+		anchor2 = 51,11
+		text-color = #ffffff
+		background-color = #f4373c
+		border = line
+		saved-params = "is-checked"
+		text = "Guild Info"
+		command = "GuildInfo"
+		is-flat = true
+
+window "combat_output_pane"
+	elem "combat_output_pane"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+		outer-size = 654x494
+	elem "combat_output"
+		type = OUTPUT
+		pos = 16,0
+		size = 616x456
+		anchor1 = none
+		anchor2 = none
+		background-color = #804000
+		saved-params = "max-lines"
+

@@ -1,0 +1,20 @@
+updates
+
+Hakuren cd is now 15 secs instead of 9 secs
+Kommamaru aoe nerfed 1 tile and small damage nerf
+Vasto Vaizard mask gives smaller speed boost
+Stinger bankai is now regular speed, but you can't flashstep
+Unohana's bankai can now attack with F
+Byakuya's petal dmg nerfed
+You must be lvl 400+ to get Aizen or Muramasa(still random)
+Mayuri's stun time in bankai is nerfed to 2 secs instead of 3.5
+Ikkaku shikai damage nerfed
+Ruthlessness now has a 60 sec cd
+Rikujourou now stuns the target from 2-4 secs
+Vasto Vai nerfed to 2x boost instead of 2.2x
+A ranks won't let you kill anyone below level 150
+Gotei 13 Walls are now dense
+Arrancars now get Negacion at level 800
+Charge combo is under construction(click the combo to get a refund)
+Gotei 13 rewards nerfed past level 900
+

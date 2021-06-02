@@ -1,0 +1,710 @@
+macro "macro"
+	elem 
+		name = "Center+REP"
+		command = ".center"
+	elem 
+		name = "Space+REP"
+		command = "Talk"
+	elem 
+		name = "Northeast+REP"
+		command = ".northeast"
+	elem 
+		name = "Southeast+REP"
+		command = ".southeast"
+	elem 
+		name = "Southwest+REP"
+		command = ".southwest"
+	elem 
+		name = "Northwest+REP"
+		command = ".northwest"
+	elem 
+		name = "West"
+		command = "MoveWest"
+	elem 
+		name = "West+UP"
+		command = "StopWest"
+	elem 
+		name = "North"
+		command = "MoveNorth"
+	elem 
+		name = "North+UP"
+		command = "StopNorth"
+	elem 
+		name = "East"
+		command = "MoveEast"
+	elem 
+		name = "East+UP"
+		command = "StopEast"
+	elem 
+		name = "South"
+		command = "MoveSouth"
+	elem 
+		name = "South+UP"
+		command = "StopSouth"
+	elem 
+		name = "0"
+		command = ".click M1"
+	elem 
+		name = "1"
+		command = ".click M4"
+	elem 
+		name = "2"
+		command = ".click M5"
+	elem 
+		name = "3"
+		command = ".click M6"
+	elem 
+		name = "4"
+		command = ".click M7"
+	elem 
+		name = "5"
+		command = ".click M8"
+	elem 
+		name = "6"
+		command = ".click M9"
+	elem 
+		name = "7"
+		command = ".click M0"
+	elem 
+		name = "8"
+		command = ".click Msub"
+	elem 
+		name = "9"
+		command = ".click Mequ"
+	elem 
+		name = "A"
+		command = "MoveWest"
+	elem 
+		name = "A+UP"
+		command = "StopWest"
+	elem 
+		name = "D"
+		command = "MoveEast"
+	elem 
+		name = "D+UP"
+		command = "StopEast"
+	elem 
+		name = "F+UP"
+		command = "StopCharge"
+	elem 
+		name = "F+REP"
+		command = "Attack"
+	elem 
+		name = "G+REP"
+		command = "Get"
+	elem 
+		name = "Q"
+		command = ".configure delay 0"
+	elem 
+		name = "R+REP"
+		command = "Target"
+	elem 
+		name = "S"
+		command = "MoveSouth"
+	elem 
+		name = "S+UP"
+		command = "StopSouth"
+	elem 
+		name = "U+REP"
+		command = "Untarget"
+	elem 
+		name = "W"
+		command = "MoveNorth"
+	elem 
+		name = "W+UP"
+		command = "StopNorth"
+	elem 
+		name = "F1+REP"
+		command = ".options"
+	elem 
+		name = "F2+REP"
+		command = ".screenshot"
+	elem 
+		name = "="
+		command = ".click M3"
+	elem 
+		name = "-"
+		command = ".click M2"
+
+
+menu "menu"
+	elem 
+		name = "&File"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Options and Messages...\tF1"
+		command = ".options"
+		category = "&File"
+		saved-params = "is-checked"
+	elem 
+		name = "&Save screenshot...\tF2"
+		command = ".screenshot"
+		category = "&File"
+		saved-params = "is-checked"
+	elem 
+		name = "&Quit"
+		command = ".quit"
+		category = "&File"
+		saved-params = "is-checked"
+	elem 
+		name = "&Icons"
+		command = ""
+		saved-params = "is-checked"
+	elem "stretch"
+		name = "&Stretch to fit"
+		command = ".winset \"mapwindow.map.icon-size=0\""
+		category = "&Icons"
+		is-checked = true
+		can-check = true
+		group = "size"
+		saved-params = "is-checked"
+	elem "icon32"
+		name = "&32x32"
+		command = ".winset \"mapwindow.map.icon-size=32\""
+		category = "&Icons"
+		can-check = true
+		group = "size"
+		saved-params = "is-checked"
+	elem "icon16"
+		name = "&16x16"
+		command = ".winset \"mapwindow.map.icon-size=16\""
+		category = "&Icons"
+		can-check = true
+		group = "size"
+		saved-params = "is-checked"
+	elem 
+		name = "48x48"
+		command = ".winset \"mapwindow.map.icon-size=48\""
+		category = "&Icons"
+		saved-params = "is-checked"
+	elem 
+		name = "40x40"
+		command = ".winset \"mapwindow.map.icon-size=40\""
+		category = "&Icons"
+		saved-params = "is-checked"
+	elem 
+		name = "37x37"
+		command = ".winset \"mapwindow.map.icon-size=37\""
+		category = "&Icons"
+		saved-params = "is-checked"
+	elem 
+		name = "43x43"
+		command = ".winset \"mapwindow.map.icon-size=43\""
+		category = "&Icons"
+		saved-params = "is-checked"
+	elem "textmode"
+		name = "&Text"
+		command = ".winset \"menu.textmode.is-checked=true?mapwindow.map.text-mode=true:mapwindow.map.text-mode=false\""
+		category = "&Icons"
+		can-check = true
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote Mute"
+		command = "Vote-Mute"
+		category = "&Vote"
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote Yes"
+		command = "Vote-Yes"
+		category = "&Vote"
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote No"
+		command = "Vote-No"
+		category = "&Vote"
+		saved-params = "is-checked"
+	elem 
+		name = "&Vote Who"
+		command = "Vote-What"
+		category = "&Vote"
+		saved-params = "is-checked"
+	elem 
+		name = "&Events"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Espada Event"
+		command = "Join-Espada-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Reigai"
+		command = "Join-Reigai-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Gotei 13"
+		command = "Join-Battle-Royale"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Ichigo"
+		command = "Join-Ichigo-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join CTF"
+		command = "Join-Lost-Zan-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Join Race War"
+		command = "Join-Race-War"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "Join Wandenreich"
+		command = "Join-Vand-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Watch Event"
+		command = "Watch-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Leave Event"
+		command = "Leave-Event"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "Team Deathmatch"
+		command = "Join-TDM"
+		category = "&Events"
+		saved-params = "is-checked"
+	elem 
+		name = "&Arena"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Challenge"
+		command = "Challenge"
+		category = "&Arena"
+		saved-params = "is-checked"
+	elem 
+		name = "&Accept"
+		command = "Accept"
+		category = "&Arena"
+		saved-params = "is-checked"
+	elem 
+		name = "&Decline"
+		command = "Decline"
+		category = "&Arena"
+		saved-params = "is-checked"
+	elem 
+		name = "&Tournament"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Enter"
+		command = "Enter-Tournament"
+		category = "&Tournament"
+		saved-params = "is-checked"
+	elem 
+		name = "&Leave"
+		command = "Leave-Tournament"
+		category = "&Tournament"
+		saved-params = "is-checked"
+	elem 
+		name = "&Watch"
+		command = "Watch-Tournament"
+		category = "&Tournament"
+		saved-params = "is-checked"
+	elem 
+		name = "&Character"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&View Players"
+		command = "Who"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&Drop Money"
+		command = "Drop-Money"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&Stuck"
+		command = "Stuck"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&GM Alert"
+		command = "GM-Help"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&Change Respawn"
+		command = "Change-Respawn"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&OOC Toggle"
+		command = "OOC-Toggle"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "&Race Say Toggle"
+		command = "Race-Say-Toggle"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "Give EventPoint"
+		command = "GiveEventPoints"
+		category = "&Character"
+		saved-params = "is-checked"
+	elem 
+		name = "BWWA"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "Updates"
+		command = "Update"
+		category = "BWWA"
+		saved-params = "is-checked"
+
+
+window "mainwindow"
+	elem "mainwindow"
+		type = MAIN
+		pos = 281,0
+		size = 640x440
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		is-default = true
+		saved-params = "pos;size;is-maximized"
+		title = "3.5 simulator"
+		macro = "macro"
+		menu = "menu"
+	elem "mainvsplit"
+		type = CHILD
+		pos = 0,1
+		size = 640x443
+		anchor1 = 0,0
+		anchor2 = 100,100
+		background-color = #000000
+		border = sunken
+		saved-params = "splitter"
+		left = "outputwindow"
+		right = "rpane"
+		is-vert = true
+
+window "outputwindow"
+	elem "outputwindow"
+		type = MAIN
+		pos = 281,0
+		size = 639x480
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "talk"
+		type = OUTPUT
+		pos = 0,240
+		size = 640x240
+		anchor1 = 0,50
+		anchor2 = 100,100
+		background-color = #0080ff
+		is-default = true
+		border = sunken
+		saved-params = "max-lines"
+		link-color = #ffffff
+		visited-color = #00aa00
+		style = ".system {color:#ff0000;}"
+	elem "output"
+		type = OUTPUT
+		pos = 0,0
+		size = 640x240
+		anchor1 = 0,0
+		anchor2 = 100,50
+		text-color = #ffffff
+		background-color = #000000
+		is-default = true
+		border = sunken
+		saved-params = "max-lines"
+		link-color = #ffffff
+		visited-color = #00aa00
+		style = ".system {color:#ff0000;}"
+
+window "rpane"
+	elem "rpane"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		border = sunken
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+		image-mode = tile
+	elem "rpanewindow"
+		type = CHILD
+		pos = 0,0
+		size = 640x483
+		anchor1 = 0,0
+		anchor2 = 100,100
+		background-color = #000000
+		border = sunken
+		saved-params = "splitter"
+		left = "outputwindow"
+		is-vert = true
+	elem "textb"
+		type = BUTTON
+		pos = 0,0
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		background-color = #004080
+		is-visible = false
+		saved-params = "is-checked"
+		text = "Text"
+		command = ".winset \"rpanewindow.left=;\""
+		is-checked = true
+		group = "rpanemode"
+		button-type = pushbox
+	elem "browseb"
+		type = BUTTON
+		pos = 65,0
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		background-color = #004080
+		is-visible = false
+		saved-params = "is-checked"
+		text = "Browser"
+		command = ".winset \"rpanewindow.left=browserwindow\""
+		group = "rpanemode"
+		button-type = pushbox
+	elem "infob"
+		type = BUTTON
+		pos = 130,0
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		background-color = #004080
+		is-visible = false
+		saved-params = "is-checked"
+		text = "Info"
+		command = ".winset \"rpanewindow.left=infowindow\""
+		group = "rpanemode"
+		button-type = pushbox
+
+window "browserwindow"
+	elem "browserwindow"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-maximized"
+		title = "Browser"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "input1"
+		type = INPUT
+		pos = 0,456
+		size = 640x80
+		anchor1 = none
+		anchor2 = none
+		background-color = #004080
+		saved-params = ""
+	elem "browserwindow"
+		type = BROWSER
+		pos = 0,0
+		size = 638x456
+		anchor1 = 0,0
+		anchor2 = 100,100
+		background-color = #004080
+		is-default = true
+		border = sunken
+		saved-params = ""
+		show-history = true
+		show-url = true
+		on-show = ".winset\"rpane.infob.is-visible=true?rpane.infob.pos=130,0;rpane.textb.is-visible=true;rpane.browseb.is-visible=true;rpane.browseb.is-checked=true;rpane.rpanewindow.pos=0,30;rpane.rpanewindow.size=0x0;rpane.rpanewindow.left=browserwindow\""
+		on-hide = ".winset\"rpane.browseb.is-visible=false;rpane.infob.is-visible=true?rpane.infob.is-checked=true rpane.infob.pos=65,0 rpane.rpanewindow.left=infowindow:rpane.rpanewindow.left=textwindow rpane.textb.is-visible=false rpane.rpanewindow.pos=0,0 rpane.rpanewindow.size=0x0\""
+
+window "infowindow"
+	elem "infowindow"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-maximized"
+		title = "Info"
+		is-pane = true
+	elem "info"
+		type = INFO
+		pos = 0,0
+		size = 640x472
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-family = "Trebuchet MS"
+		font-size = 10
+		text-color = #7dbeff
+		background-color = #001f3e
+		is-default = true
+		border = sunken
+		saved-params = ""
+		highlight-color = #00aa00
+		tab-text-color = #d5eaff
+		tab-background-color = #004080
+		tab-font-family = "Eras Demi ITC,sans-serif,Papyrus,Franklin Gothic Book"
+		tab-font-size = 10
+		tab-font-style = "bold"
+		allow-html = false
+		on-show = ".winset\"rpane.infob.is-visible=true;rpane.browseb.is-visible=true?rpane.infob.pos=130,0:rpane.infob.pos=65,0 rpane.textb.is-visible=true rpane.infob.is-checked=true rpane.rpanewindow.pos=0,30 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=infowindow\""
+		on-hide = ".winset\"rpane.infob.is-visible=false;rpane.browseb.is-visible=true?rpane.browseb.is-checked=true rpane.rpanewindow.left=browserwindow:rpane.textb.is-visible=false rpane.rpanewindow.pos=0,0 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=\""
+
+window "window1"
+	elem "window1"
+		type = MAIN
+		pos = 281,0
+		size = 576x42
+		anchor1 = none
+		anchor2 = none
+		background-color = #004080
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "story"
+		type = BUTTON
+		pos = 12,12
+		size = 60x20
+		anchor1 = 0,100
+		anchor2 = 0,100
+		text-color = #ffffff
+		background-color = #0080ff
+		saved-params = "is-checked"
+		text = "Story"
+		command = "Story"
+		is-flat = true
+
+window "mapwindow"
+	elem "mapwindow"
+		type = MAIN
+		pos = 281,0
+		size = 620x615
+		anchor1 = none
+		anchor2 = none
+		background-color = #00366c
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+		image-mode = tile
+		keep-aspect = true
+	elem "button8"
+		type = BUTTON
+		pos = 320,572
+		size = 80x20
+		anchor1 = 52,93
+		anchor2 = 65,96
+		text-color = #ffffff
+		background-color = #0067ce
+		saved-params = "is-checked"
+		text = "Whisper"
+		command = "Whisper"
+		is-flat = true
+	elem "button7"
+		type = BUTTON
+		pos = 216,572
+		size = 80x20
+		anchor1 = 35,93
+		anchor2 = 48,96
+		text-color = #ffffff
+		background-color = #0067ce
+		saved-params = "is-checked"
+		text = "Faction Say"
+		command = "Race-Say"
+		is-flat = true
+	elem "button6"
+		type = BUTTON
+		pos = 512,572
+		size = 80x20
+		anchor1 = 83,93
+		anchor2 = 95,96
+		text-color = #ffffff
+		background-color = #0066cc
+		saved-params = "is-checked"
+		text = "Forum"
+		command = "Forum"
+		is-flat = true
+	elem "button4"
+		type = BUTTON
+		pos = 416,572
+		size = 80x20
+		anchor1 = 67,93
+		anchor2 = 80,96
+		text-color = #ffffff
+		background-color = #0067ce
+		saved-params = "is-checked"
+		text = "Guild Say"
+		command = "Guild-Say"
+		is-flat = true
+	elem "button3"
+		type = BUTTON
+		pos = 120,572
+		size = 80x20
+		anchor1 = 19,93
+		anchor2 = 32,96
+		text-color = #ffffff
+		background-color = #0066cc
+		saved-params = "is-checked"
+		text = "OOC"
+		command = "OOC"
+		is-flat = true
+	elem "button2"
+		type = BUTTON
+		pos = 16,572
+		size = 80x20
+		anchor1 = 3,93
+		anchor2 = 15,96
+		text-color = #ffffff
+		background-color = #0067ce
+		saved-params = "is-checked"
+		text = "Say"
+		command = "Say"
+		is-flat = true
+	elem "map"
+		type = MAP
+		pos = 16,16
+		size = 576x544
+		anchor1 = 0,0
+		anchor2 = 100,100
+		text-color = #000000
+		is-default = true
+		border = sunken
+		saved-params = "icon-size"
+		icon-size = 32
+		on-show = ".winset\"mainwindow.mainvsplit.left=mapwindow\""
+		on-hide = ".winset\"mainwindow.mainvsplit.left=\""
+

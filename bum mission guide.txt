@@ -1,0 +1,39 @@
+1. go into Mob.dm
+2. goto Edit>>Advanced Find/Replace and type Bum
+3. copy and past it
+4. go into Icons>>NPCs.dmi
+5. make a new npc by using parts of other icons
+6. use Basetannew.dmi
+7. open up Hairs/Clothes
+8. Look for BleachShirt.dmi/BleachShoes.dmi
+9. Piece it all together in NPCs.dmi
+10.Save the icon_state as watever its called
+11.Go into Mob.dmi
+12.Change the icon_state=
+13.Change the name=
+14.Change the MissionNPC/Bum into something else, leave the missionNPC part tho
+15.Change level requirement
+16.Go into Vars.dm and go to line 92 or find mob/var
+17.Click enter and then tab then type a var that's equal to 0 (Example:Chiefmission=0)
+18.Go back into Mob.dm
+19.Anywhere it says Bummission change it to the new var
+20.Go into Vars.dm and make another var called rhy(name wat ur killing)kills=0 (Dont use space, this is so you don't accidentally interfere with preset killing vars)
+21.Go back into Mob.dm
+22.Change numkills to your new var
+23.Go into Procs.dm
+24.Used Adv Find/Replace and find numkills
+25.Copy from if(M.Bummission==1) all the way to M.numkills+=1
+26.Change these into your new vars
+27.Change numer into rhy (each time you make a new one add a y)
+28.Go back into vars and add it ass rhy=0 (each time you make a new one add a y)
+29.There's two ways you can do this
+	1. Make it so you have to kill specific npcs (like numero island)
+	2. Or any kind of that npc (like farmer mission)
+30.If you choose the first one go on the map and find the specific npcs
+31.Right click the mob then click edit
+32.Find the rhy(each time you make a new one add a y) var and put it to 1
+33.Now look in the object column to your left
+34.Find the npc and click it, now there will be 2 versions of it
+35.The 2nd Version will be the mission versions
+36.If you choose the 2nd one go into Enemies.dmi
+37.Find the specific npc under killable add your rhy(each time you make a new one add a y) var and make it =1

@@ -1,0 +1,110 @@
+	Translation of all Ichi's(Ichigo Kurosaki) sounds files are as follows
+*Words in () are my guesses, i either cant hear them, or understand them*
+*And the words in the ** are just my comments*
+
+*The P2/P3/etc. aparently mean part 2/part 3/etc.*
+
+Credit to (me)Edtion for ripping them
+These Sounds are from Bleach: The Blade of Fate on the DS
+
+*000-010 Are hit&scream sounds*
+000	Ha
+001	Su
+002	Chi
+003	Uh!
+004	Sai
+005	Huh
+006	()
+007	SUAA
+008	Hyahh!
+009	Come on
+010	Eyah!
+011	Uhh
+012	Ahhu
+013	AHHHuh
+014	Damn it!
+015	(Seya!)
+016	Crap!
+017	Not quite
+018	AHHHHHHHHHHHH *scream*
+019	Over here
+020	Zeh
+021	Too easy
+022	Had enough
+023	No effect at all
+024	You aint seen nothin yet
+025	()*Sigh*
+026	How's you like that
+027	Alright okay
+028	Sorry
+028P2	I aint ready to die yet
+029	Let's do it old man zangetsu!
+030	I dont like it
+031	Dont do something  you'll regret
+032	Ichigo Kurosaki
+032P2	The one who's gonna beat your ass
+032P3	How's it going
+033	Old man zangetsu
+033P2	Give me your strength
+034	I came to help, Renji
+035	Alright then
+035P2	Let's join forces
+036	Zangetsu
+03616	Zangetsu
+03622	Zangetsu
+037	(swan/swamp)
+03716	(swan/swamp)
+03722	(swan/swamp)
+038	It's over
+03816	It's over
+03822	It's over
+039	Die!
+03916	Die!
+03922	Die!	
+040	Get ready
+04016	()
+04022	()
+041	Im gonna kill you
+04116	Im gonna kill you
+04122	Im gonna kill you
+042	Bankai
+04216	Bankai
+04222	Bankai
+043	Tensa Zangetsu
+04316	Tensa Zangetsu
+04322	Tensa Zangetsu
+044	Getsuga Tenshou
+04416	Getsuga Tenshou
+04422	Getsuga Tenshou
+045	Take a good look
+04516	Take a good look
+04522	Take a good look
+045P2	This is
+045P216	This is
+045P222	This is
+046	My bankai
+04616	My bankai
+04622	My bankai
+047	*Roar*
+04716	*Roar*
+04722	*Roar*
+
+095	Move.MOVE!
+096	Let's start over
+097	Sorry everybody
+098	Bleach
+098P2	()
+100	Sega
+101	Congrats
+102	Way to go
+103	Story mode
+104	Arcade mode
+105	Versus mode
+106	Challenge mode
+107	Training mode
+108	Time Attack mode
+109	Survival mode
+110	Deck construction
+113	Urahara shop
+114	Options
+115	Gallery

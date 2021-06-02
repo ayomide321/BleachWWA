@@ -1,0 +1,19 @@
+"a" = (/turf/Grass,/area)
+"b" = (/obj/Items/Food/Egg,/turf/Grass,/area)
+"c" = (/obj/Items/Food/Potato,/turf/Grass,/area)
+"d" = (/obj/Items/Food/Egg,/obj/Items/Food/Potato,/turf/Grass,/area)
+"e" = (/obj/Items/Food/Fish,/turf/Grass,/area)
+"f" = (/obj/Items/Food/Fish,/obj/Items/Food/Fish,/turf/Grass,/area)
+
+(1,1,1) = {"
+aaaaaaaaaa
+aaaaabaaaa
+aacdaaaaaa
+aaaaeaaaaa
+aafaacacaa
+aceeeaeaaa
+aacacaeeaa
+aaaaaaaaaa
+aaaaaaaaaa
+aaaaaaaaaa
+"}

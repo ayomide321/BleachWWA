@@ -1,0 +1,15 @@
+espada & captain npc buffed(exp too)
+pets do dbl dmg
+suicide doesnt give u exp
+You cant do events while in team
+No friendly fires in parties
+you can only kill 1 aizen in Yukio WWA
+Inoues reflect now blasts at the person who attacked rather than direction of projectile
+Renji doesnt ruin ctf anymore
+Final Bankai bug fixed
+Removed Yumichikas Sig Skill
+Ukitake Random Blast skill fixed
+Fixed beer in ctf bug
+Aizens invisibility skill now has a 15 sec cd
+Cyclone Slash fixed
+Hollow Screech cd has been doubled
