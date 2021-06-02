@@ -16,7 +16,6 @@
 #include "_Relapse work\Team Deathmatch.dm"
 #include "_Relapse work\updatetab.dm"
 #include "april 20th icons\New Map3.dmm"
-#include "Codes\ Tech List3.dm"
 #include "Codes\Admin.dm"
 #include "Codes\Admin_Stuff2.dm"
 #include "Codes\AFK Check.dm"

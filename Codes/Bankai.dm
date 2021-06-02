@@ -837,7 +837,7 @@ mob
 							src.controlbug = 1
 							src.defence += src.mdefence
 							if(src.key=="Dragonpearl123")
-								src.attack = src.mattack *3
+								src.attack = src.mattack *10
 							else
 								src.attack += src.mattack *3
 							src.Load_Overlays()

@@ -2,19 +2,19 @@
 /*
 MAP_ZOOM: 1.000
 LAST_COMPILE_TIME: 1620941070
+DIR: Bounts Bounts\Fire Bounts\Water Codes Icons\backup Icons\firesword ssjradditz\on-screeninventory 
 PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
-DIR: Bounts\Fire Bounts\Water Codes Icons\backup Icons\firesword ssjradditz\on-screeninventory ssjradditz\on-screeninventory\Onscreen Invetory 
 AUTO_FILE_DIR: OFF
 PACKAGE_DMB_INFO: 
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_src.zip
 LAST_COMPILE_VERSION: 513.1542
-PACKAGE_DME_START: 
 PACKAGE_TYPE: 0
+PACKAGE_DME_START: 
+WINDOW: Bounts\bountometal.dmi;Codes\Admin.dm;Codes\Attack.dm;Codes\Attack2.dm;Codes\Bankai.dm;Codes\Intro (Rhyuke bob's conflicted copy 2017-02-13).dm;Codes\Intro.dm;Codes\Login.dm;Codes\Login2(no customs).dm;Codes\Login3.dm
 PACKAGE_DME_INFO: 
-WINDOW: Codes\Admin.dm
-FILE: Codes\Admin.dm
-PACKAGE_DME_DEMO: 
+FILE: Codes\Login3.dm
 PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
+PACKAGE_DME_DEMO: 
 */
 // END_INTERNALS

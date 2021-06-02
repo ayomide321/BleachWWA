@@ -572,6 +572,7 @@ mob
 					src.verbs|=/mob/CustomZan/verb/Change_To_FreezingPanther
 				if(src.key=="666rogue666"||src.key=="Zagros5000"||src.key=="Dragonpearl123" || src.key == "Awesome93")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Pheonix
+					src.contents|=new/obj/skillcard/RedHakuteiken
 				if(src.key=="Dragonpearl123" )
 					src.verbs|=/mob/CustomZan/verb/Luppi_Change
 					src.donor4levels=1
@@ -813,8 +814,9 @@ mob
 				if(src.key=="Devilkingben"|| src.key == "Awesome93")
 					src.verbs|=/mob/CustomZan/verb/Kenpachi
 					src.verbs|=/mob/CustomZan/verb/Luppi_Change
-				if(src.key=="Hotboy2423"||src.key=="Dragonpearl123"|| src.key == "Awesome93")
+				if(src.key=="Dragonpearl123"|| src.key == "Awesome93")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Floating
+					src.verbs|=/mob/CustomZan/verb/Dark_Rukia
 				if(src.key=="Awesome93" || src.key=="Sabakuryu")
 					src.contents |=new/obj/skillcard/Aces_Boost
 				if(src.key=="Fatboy12"|| src.key == "Awesome93")
@@ -1080,7 +1082,7 @@ mob
 					src.contents|=new/obj/items/equipable/Weapon/Sword
 				if(src.key=="Yip"||src.key in specialverbs)
 					src.verbs|=/mob/CustomZan/verb/Change_To_Aguila
-				if(src.key=="HanmaYujiro"||src.key=="Zagros5000"|| src.key=="Awesome93")
+				if(src.key=="HanmaYujiro"||src.key=="Zagros5000"|| src.key=="Awesome93"|| src.key =="Dragonpearl123")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Aguila
 			//		src.ftype="Ginjo"
 					src.contents |=new/obj/skillcard/Fullbring
@@ -1135,7 +1137,7 @@ mob
 				if(src.key=="Yip")
 					world<<output("<font size2><font color=white><B>The One True God Has Arrived.","output")
 				if(src.key=="Dragonpearl123")
-					world<<"<font color=red> Throm The Dragon has logged in."
+					world<<"<font color=red> Throm The Dragon has stretched his wings."
 				if(src.key=="WitchOfEastEnd")
 					src.Load_Overlays()
 				if(src.key=="Devilminions528")
