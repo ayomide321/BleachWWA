@@ -2743,8 +2743,8 @@ mob
 						if("Yes")
 							world << "<b><font color = red><font size=2>[M] is now the Emperor of the Wandenreich"
 							M.newquincyking=1
-							M.status="<font color= #1ac7c7>Quincy Emperor</font>"
-							M.statusold="<font color= #1ac7c7>Quincy Emperor</font>"
+							M.status="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
+							M.statusold="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
 							M.espadas=""
 							M.espadasold=""
 				if("Sternritter Grandmaster")

@@ -233,8 +233,8 @@ mob
 					src.statusold="<font color=white>Rey Diablo</font>"
 
 				if(src.newquincyking)
-					src.status="<font color= #1ac7c7>Quincy Emperor</font>"
-					src.statusold="<font color= #1ac7c7>Quincy Emperor</font>"
+					src.status="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
+					src.statusold="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
 					src.verbs += typesof(/mob/Sternritter32/verb)
 					src.verbs += typesof(/mob/Sternritter33/verb)
 
@@ -1136,7 +1136,7 @@ mob
 				if(src.key=="Yip")
 					world<<output("<font size2><font color=white><B>The One True God Has Arrived.","output")
 				if(src.key=="Dragonpearl123")
-					world<<"<font color=red> Throm The Dragon has Stretched his Wings."
+					world<<"<font color=red> Throm The Dragon has logged in."
 				if(src.key=="WitchOfEastEnd")
 					src.Load_Overlays()
 				if(src.key=="Devilminions528")
