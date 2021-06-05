@@ -233,8 +233,8 @@ mob
 					src.statusold="<font color=white>Rey Diablo</font>"
 
 				if(src.newquincyking)
-					src.status="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
-					src.statusold="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
+					src.status="<font color= #1ac7c7>Quincy Emperor</font>"
+					src.statusold="<font color= #1ac7c7>Quincy Emperor</font>"
 					src.verbs += typesof(/mob/Sternritter32/verb)
 					src.verbs += typesof(/mob/Sternritter33/verb)
 
@@ -572,8 +572,6 @@ mob
 					src.verbs|=/mob/CustomZan/verb/Change_To_FreezingPanther
 				if(src.key=="666rogue666"||src.key=="Zagros5000"||src.key=="Dragonpearl123" || src.key == "Awesome93")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Pheonix
-					src.contents|=new/obj/skillcard/RedHakuteiken
-					src.verbs|=/mob/CustomZan/verb/Special_Zangetsu
 				if(src.key=="Dragonpearl123" )
 					src.verbs|=/mob/CustomZan/verb/Luppi_Change
 					src.contents |=new/obj/skillcard/Zen
@@ -1007,7 +1005,7 @@ mob
 
 				if(src.key=="Cloudzs")
 					src.verbs|=/mob/CustomZan/verb/Vai_Fuse
-				if(src.key=="Dragonpearl123"||src.key == "")
+				if(src.key=="HanmaYujiro"||src.key == "")
 					if(!src.royshined2)
 						src.royshined2=1
 						src.donorstat+=3744
@@ -1019,7 +1017,6 @@ mob
 						src.royshined2=1
 						src.donor4levels=1
 						src.verbs|=/mob/CustomZan/verb/Vai_Fuse
-
 				if(src.key=="Awesome93" || src.key=="Audain1")
 					if(!src.royshined2)
 						src.royshined2=2000

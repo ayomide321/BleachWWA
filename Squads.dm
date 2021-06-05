@@ -1,6 +1,3 @@
-
-
-
 mob/Sternritter32
 	verb
 		Sternritter_Announcement(T as text)

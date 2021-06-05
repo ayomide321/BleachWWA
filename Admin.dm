@@ -1160,7 +1160,7 @@ mob/Owner
 
 
 
-
+/*
 		InviteToStern(mob/M in All_Clients())
 			set category="Owner"
 			set name="Invite To Sternritter"
@@ -1188,6 +1188,7 @@ mob/Owner
 			M.statusold="<font color=#1ac7c7>Sternritter A - The Almighty</font>"
 			checkstern()
 		//	M.verbs += typesof(/mob/Sternritter32/verb)
+		*/
 
 
 
@@ -2599,6 +2600,135 @@ mob/GM1
 
 
 					M<<output("<b><font color = red>(GM Talk)([usr]: [msg])","output")
+
+		Invite_To_Sternritter()
+			set category = "GM"
+			var/list/Menu = list()
+			for(var/mob/player/M in All_Clients())
+				if(M.race=="Quincy")
+					Menu.Add(M)
+			var/tmp
+				temp_status
+				temp_statusold
+
+			var/mob/M = input("Who do you want to invite to Sternritter?","") as null | anything in Menu
+			switch(input(usr,"Choose a letter") in list ("A","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","Cancel"))
+				if("Cancel")
+					return
+
+				if("A")
+					temp_status="<font color=#1ac7c7>Sternritter A - Antithesis</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter A - Antithesis </font>"
+
+				if("C")
+					temp_status="<font color=#1ac7c7>Sternritter C - The Compulsory</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter C - The Compulsory</font>"
+
+				if("D")
+					temp_status="<font color=#1ac7c7>Sternritter D - The Death Dealing </font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter D - The Death Dealing</font>"
+
+				if("E")
+					temp_status="<font color=#1ac7c7>Sternritter E - The Explode </font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter E - The Explode</font>"
+
+				if("F")
+					temp_status="<font color=#1ac7c7>Sternritter F - The Fear</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter F - The Fear </font>"
+
+				if("G")
+					temp_status="<font color=#1ac7c7>Sternritter G - The Glutton</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter G The Glutton </font>"
+
+				if("H")
+					temp_status="<font color=#1ac7c7>Sternritter H - The Heat</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter H - The Heat</font>"
+
+				if("I")
+					temp_status="<font color=#1ac7c7>Sternritter I - The Iron</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter I - The Iron</font>"
+
+				if("J")
+					temp_status="<font color=#1ac7c7>Sternritter J - The Jail</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter J - The Jail</font>"
+
+				if("K")
+					temp_status="<font color=#1ac7c7>Sternritter K</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter K</font>"
+
+				if("L")
+					temp_status="<font color=#1ac7c7>Sternritter L - The Love</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter L - The Love</font>"
+
+				if("M")
+					temp_status="<font color=#1ac7c7>Sternritter M - The Mircacle</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter M - The Miracle</font>"
+
+				if("N")
+					temp_status="<font color=#1ac7c7>Sternritter N</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter N</font>"
+
+				if("O")
+					temp_status="<font color=#1ac7c7>Sternritter O - The Overkill </font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter O - The Overkill </font>"
+
+				if("P")
+					temp_status="<font color=#1ac7c7>Sternritter P - The Power</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter P - The Power</font>"
+
+				if("Q")
+					temp_status="<font color=#1ac7c7>Sternritter Q - The Question</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter Q - The Question</font>"
+
+				if("R")
+					temp_status="<font color=#1ac7c7>Sternritter R - The Roar</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter R - The Roar</font>"
+
+				if("S")
+					temp_status="<font color=#1ac7c7>Sternritter S - The Superstar</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter S - The Superstar</font>"
+
+				if("T")
+					temp_status="<font color=#1ac7c7>Sternritter T - The Thunderbolt</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter T - The Thunderbolt</font>"
+
+				if("U")
+					temp_status="<font color=#1ac7c7>Sternritter U -  The Underbelly</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter U -  The Underbelly</font>"
+
+				if("V")
+					temp_status="<font color=#1ac7c7>Sternritter V - The Visionary</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter V - The Visionary</font>"
+
+				if("W")
+					temp_status="<font color=#1ac7c7>Sternritter W - The Wind</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter W - The Wind</font>"
+
+				if("X")
+					temp_status="<font color=#1ac7c7>Sternritter X - The X-Axis</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter X - The X-Axis</font>"
+
+				if("Y")
+					temp_status="<font color=#1ac7c7>Sternritter Y - The Yourself</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter Y - The Yourself</font>"
+
+				if("Z")
+					temp_status="<font color=#1ac7c7>Sternritter Z - The Zombie</font>"
+					temp_statusold="<font color=#1ac7c7>Sternritter Z - The Zombie</font>"
+
+			if(istype(M,/mob/player))
+				switch(alert(M,"Do you want to join Sternritter?","","Yes","No"))
+					if("Yes")
+						M.issternr=1
+						M.status=temp_status
+						M.statusold=temp_statusold
+						world<<"<b><font color = red>[M] is now a member of Sternritter."
+						alert(usr,"[M] accepted the invitation.")
+						checkstern()
+
+					if("No")
+						alert(usr,"[M] declined the invitation.")
+
 mob
 	GM2/verb
 
@@ -2743,8 +2873,8 @@ mob
 						if("Yes")
 							world << "<b><font color = red><font size=2>[M] is now the Emperor of the Wandenreich"
 							M.newquincyking=1
-							M.status="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
-							M.statusold="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
+							M.status="<font color= #1ac7c7>Quincy Emperor</font>"
+							M.statusold="<font color= #1ac7c7>Quincy Emperor</font>"
 							M.espadas=""
 							M.espadasold=""
 				if("Sternritter Grandmaster")

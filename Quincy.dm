@@ -128,10 +128,10 @@ mob
 						src.defence+=(src.mdefence/3)
 						src.attack+=(src.mattack/3)
 						src.reiatsu+=(src.mreiatsu/3)
-					if(src.newquincyking==1||src.status=="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>")
-						src.attack+=(src.attack/2)
-						src.defence+=(src.defence/2)
-						src.reiatsu+=(src.mreiatsu/2)
+					if(src.newquincyking==1||src.status=="<font color= #1ac7c7>Quincy Emperor</font>")
+						src.attack+=(src.attack/2.2)
+						src.defence+=(src.defence/2.2)
+						src.reiatsu+=(src.mreiatsu/2.2)
 
 					if(src.key=="")
 						src.defence+=src.mdefence
