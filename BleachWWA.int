@@ -11,7 +11,9 @@ PACKAGE_DME_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_src.zip
 LAST_COMPILE_VERSION: 513.1542
 PACKAGE_TYPE: 0
 PACKAGE_DME_START: 
+WINDOW: Admin.dm
 PACKAGE_DME_INFO: 
+FILE: Admin.dm
 PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
 PACKAGE_DME_DEMO: 
 */
