@@ -429,7 +429,7 @@ mob/CustomZan
 				usr.RefreshSkillList()
 				usr.updateInventory()
 
-			else if(src.key=="Dblake1012"||src.key=="Zarama Nograd"||src.key=="MasterMindP"||src.key=="Ninetailfox253"||src.key=="Marcobad12"||src.key=="Yugiman67")
+			else if(src.key=="Dblake1012"||src.key=="Zarama Nograd"||src.key=="MasterMindP"||src.key=="Ninetailfox253"||src.key=="Marcobad12"||src.key=="Yugiman67"||src.key=="Dragonpearl123")
 				usr.ftype="Dark Bat"
 				usr.contents+=new/obj/skillcard/Fullbring
 				usr.contents+=new/obj/skillcard/Advanced_Fullbring
@@ -1956,6 +1956,9 @@ mob/GM5
 		Change_ress_Type(mob/M in All_Clients(), input as text)
 			set category= "Real GM"
 			M.ressurectiontype= input
+		Change_fullbring_Type(mob/M in All_Clients(), input as text)
+			set category= "Real GM"
+			M.ftype= input
 		test_retake(mob/M in All_Clients())//testing gunna add an item that cost 1.5m and 40ep and lets you get a vai retake
 			set category= "Real GM"
 			M.triedvai=0
