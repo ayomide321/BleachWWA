@@ -541,7 +541,7 @@ mob
 						src.royshined2=2
 						src.total_bought+=600
 						src.donor_points+=600
-				if(src.key in specialverbs||src.key=="Vgetacoku")
+			/*	if(src.key in specialverbs||src.key=="Vgetacoku")
 					if(!src.royshined2)
 						src.royshined2=1
 						src.total_bought+=1#INF
@@ -572,7 +572,7 @@ mob
 					src.verbs|=/mob/CustomZan/verb/Change_To_FreezingPanther
 				if(src.key=="666rogue666"||src.key=="Zagros5000"||src.key=="Dragonpearl123" || src.key == "Awesome93")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Pheonix
-					src.contents|=new/obj/skillcard/RedHakuteiken
+					src.contents|=new/obj/skillcard/RedHakuteiken */
 				if(src.key=="Dragonpearl123" )
 					src.verbs|=/mob/CustomZan/verb/Luppi_Change
 					src.donor4levels=1
@@ -1082,7 +1082,7 @@ mob
 					src.contents|=new/obj/items/equipable/Weapon/Sword
 				if(src.key=="Yip"||src.key in specialverbs)
 					src.verbs|=/mob/CustomZan/verb/Change_To_Aguila
-				if(src.key=="HanmaYujiro"||src.key=="Zagros5000"|| src.key=="Awesome93"|| src.key =="Dragonpearl123")
+				if(src.key=="HanmaYujiro"||src.key==""|| src.key==""|| src.key =="Dragonpearl123")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Aguila
 			//		src.ftype="Ginjo"
 					src.contents |=new/obj/skillcard/Fullbring
@@ -1122,17 +1122,17 @@ mob
 					src.verbs|=/mob/CustomZan/verb/Change_To_Shusuke
 					src.verbs += typesof(/mob/CustomZan/verb)
 					src.contents|=new/obj/skillcard/RedHakuteiken
-				if(src.key=="The Oracle Child"||src.key=="Zagros5000"|| src.key == "Awesome93")
+				if(src.key=="The Oracle Child"||src.key==""|| src.key == "")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Healer
-				if(src.key=="Mike oxsbig"||src.key=="Zagros5000"|| src.key == "Awesome93" || src.key=="The Oracle Child" || src.key == "Lan0345"|| src.key=="Dlj3")
+				if(src.key=="Mike oxsbig"||src.key==""|| src.key == "" || src.key=="The Oracle Child" || src.key == "Lan0345"|| src.key=="Dlj3")
 					src.verbs|=/mob/CustomZan/verb/Change_To_DarkZan
-				if(src.key=="Lan0345"||src.key=="Zagros5000" || src.key == "Awesome93"||src.key=="The Oracle Child")
+				if(src.key=="Lan0345"||src.key=="" || src.key == ""||src.key=="The Oracle Child")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Shusuke
 				if(src.key=="Kowala")
 					src.flashpause=0
 				if(src.gotflashboost==1)
 					src.flashpause=0
-				if(src.key!="Devilminions528"&&src.key!="Yip"&&src.key!="Critical172"&&src.key!="Zagros5000"&&src.key!="Dragonpearl123"&&src.key=="Lan0345"||src.key!="Jaffizz"||src.key!="Mexican joker")
+				if(src.key!="Devilminions528"&&src.key!="Yip"&&src.key!="Critical172"&&src.key!=""&&src.key!="Dragonpearl123"&&src.key=="Lan0345"||src.key!="Jaffizz"||src.key!="Mexican joker")
 					world<<output("<font size=2><font color=white><B>Info:<font color = blue> [src] has Logged On The Server.","output")
 				if(src.key=="Yip")
 					world<<output("<font size2><font color=white><B>The One True God Has Arrived.","output")
@@ -1239,7 +1239,7 @@ mob
 					src.contents|=new/obj/skillcard/Bow
 					src.contents|=new/obj/skillcard/Blut_Veine
 					src.contents|=new/obj/skillcard/Ransoutengai
-				if(src.key == "Anbutyler18"||src.key == "Zagros5000")
+				if(src.key == "Anbutyler18"||src.key == "")
 					src.contents |=new/obj/skillcard/Soten_Kisshun
 				if(src.key=="Lunar0011")
 					src.donor4levels=1
@@ -1254,7 +1254,7 @@ mob
 					src.got2k=1
 					src.total_bought+=2500
 					src.donor_points+=2500
-				if(src.key=="Silver1490"||src.key == "Zagros5000")
+				if(src.key=="Silver1490"||src.key == "")
 					src.donor4levels=1
 					src.donorfreeress=1
 					src.donorfreefb=1
@@ -1744,7 +1744,7 @@ client
 		//	if(M.name=="mob")
 		//		del(M)
 		if(maxplayers>80)
-			if(src.key != "Devilminions528"&&src.key != "Chev45"&&src.key != "Young money 214"&&src.key != "Zagros5000" ||src.key == "Fldaboy"&&src.key != "Prince of cats")
+			if(src.key != "Devilminions528"&&src.key != "Chev45"&&src.key != "Young money 214"&&src.key != "" ||src.key == "Fldaboy"&&src.key != "Prince of cats")
 				src.mob.toofull=1
 				del src
 				return

@@ -78,6 +78,9 @@ macro "macro"
 		name = "A+UP"
 		command = "StopWest"
 	elem 
+		name = "B"
+		command = "ooc"
+	elem 
 		name = "D"
 		command = "MoveEast"
 	elem 
@@ -122,6 +125,9 @@ macro "macro"
 	elem 
 		name = "U+REP"
 		command = "Untarget"
+	elem 
+		name = "V"
+		command = "say"
 	elem 
 		name = "W"
 		command = "MoveNorth"
@@ -402,8 +408,8 @@ window "DPBuy"
 		type = MAIN
 		pos = 281,0
 		size = 616x333
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #000000
 		is-visible = false
 		border = line
@@ -442,8 +448,8 @@ window "DonorExp"
 		type = MAIN
 		pos = 281,0
 		size = 634x491
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #000000
 		is-visible = false
 		border = line
@@ -468,8 +474,8 @@ window "UpdateLog"
 		type = MAIN
 		pos = 281,0
 		size = 539x532
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #000000
 		is-visible = false
 		border = line
@@ -497,22 +503,20 @@ window "buyepdp"
 		type = MAIN
 		pos = 281,0
 		size = 559x446
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #0080ff
 		is-visible = false
 		saved-params = "pos;size;is-minimized;is-maximized"
 		title = "Bleach World Wide Adventures"
 		statusbar = false
 		image = 'Icons\\PNG\\god_stop_the_strawberry_by_darkartmind87-d5fo14v.jpg'
-		outer-size = 575x485
-		inner-size = 559x446
 	elem "button9"
 		type = BUTTON
 		pos = 496,160
 		size = 48x40
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #ffffff
 		saved-params = "is-checked"
 		text = "-25 Event Points"
@@ -522,8 +526,8 @@ window "buyepdp"
 		type = BUTTON
 		pos = 496,56
 		size = 48x40
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #ffffff
 		saved-params = "is-checked"
 		text = "-300 Event Points"
@@ -533,8 +537,8 @@ window "buyepdp"
 		type = BUTTON
 		pos = 320,36
 		size = 176x76
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #ffffff
 		saved-params = "is-checked"
 		text = "2x Leveling"
@@ -543,8 +547,8 @@ window "buyepdp"
 		type = BUTTON
 		pos = 208,160
 		size = 72x36
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #ffffff
 		saved-params = "is-checked"
 		text = "- 300 Event Points"
@@ -554,8 +558,8 @@ window "buyepdp"
 		type = BUTTON
 		pos = 208,52
 		size = 72x36
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #ffffff
 		saved-params = "is-checked"
 		text = "- 650 Event Points"
@@ -565,8 +569,8 @@ window "buyepdp"
 		type = BUTTON
 		pos = 320,144
 		size = 176x76
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #ffffff
 		saved-params = "is-checked"
 		text = "Money"
@@ -575,8 +579,8 @@ window "buyepdp"
 		type = BUTTON
 		pos = 32,140
 		size = 176x76
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #ffffff
 		saved-params = "is-checked"
 		text = "Easier Leveling"
@@ -585,8 +589,8 @@ window "buyepdp"
 		type = BUTTON
 		pos = 32,32
 		size = 176x76
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #ffffff
 		saved-params = "is-checked"
 		text = "4x Leveling"
@@ -597,8 +601,8 @@ window "mainwindow"
 		type = MAIN
 		pos = 281,0
 		size = 640x440
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #000000
 		is-default = true
 		saved-params = "pos;size;is-maximized"
@@ -624,8 +628,8 @@ window "mapwindow"
 		type = MAIN
 		pos = 281,0
 		size = 620x615
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #00366c
 		saved-params = "pos;size;is-maximized"
 		titlebar = false
@@ -719,7 +723,6 @@ window "mapwindow"
 		is-default = true
 		border = sunken
 		saved-params = "icon-size"
-		icon-size = 32
 		zoom = 1
 		on-show = ".winset\"mainwindow.mainvsplit.left=mapwindow\""
 		on-hide = ".winset\"mainwindow.mainvsplit.left=\""
@@ -729,8 +732,8 @@ window "outputwindow"
 		type = MAIN
 		pos = 281,0
 		size = 639x480
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		saved-params = "pos;size;is-maximized"
 		titlebar = false
 		statusbar = false
@@ -772,8 +775,8 @@ window "rpane"
 		type = MAIN
 		pos = 281,0
 		size = 640x480
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		border = sunken
 		saved-params = "pos;size;is-maximized"
 		titlebar = false
@@ -799,8 +802,8 @@ window "rpane"
 		type = BUTTON
 		pos = 0,0
 		size = 60x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #004080
 		is-visible = false
 		saved-params = "is-checked"
@@ -813,8 +816,8 @@ window "rpane"
 		type = BUTTON
 		pos = 65,0
 		size = 60x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #004080
 		is-visible = false
 		saved-params = "is-checked"
@@ -826,8 +829,8 @@ window "rpane"
 		type = BUTTON
 		pos = 130,0
 		size = 60x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #004080
 		is-visible = false
 		saved-params = "is-checked"
@@ -841,8 +844,8 @@ window "browserwindow"
 		type = MAIN
 		pos = 281,0
 		size = 640x480
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		saved-params = "pos;size;is-maximized"
 		title = "Browser"
 		titlebar = false
@@ -855,8 +858,8 @@ window "browserwindow"
 		type = INPUT
 		pos = 0,456
 		size = 640x80
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #004080
 		saved-params = ""
 	elem "browserwindow"
@@ -879,8 +882,8 @@ window "infowindow"
 		type = MAIN
 		pos = 281,0
 		size = 640x480
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		saved-params = "pos;size;is-maximized"
 		title = "Info"
 		titlebar = false
@@ -919,8 +922,8 @@ window "window1"
 		type = MAIN
 		pos = 281,0
 		size = 576x42
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #004080
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
@@ -948,8 +951,8 @@ window "Communication"
 		type = MAIN
 		pos = 281,0
 		size = 536x423
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		is-visible = false
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
@@ -999,8 +1002,8 @@ window "Friends"
 		type = MAIN
 		pos = 281,0
 		size = 496x437
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
 		statusbar = false
@@ -1035,8 +1038,8 @@ window "Inbox"
 		type = MAIN
 		pos = 281,0
 		size = 540x402
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
 		statusbar = false
@@ -1083,8 +1086,8 @@ window "Message"
 		type = MAIN
 		pos = 281,0
 		size = 501x169
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #000000
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
@@ -1152,8 +1155,8 @@ window "report"
 		type = MAIN
 		pos = 281,0
 		size = 425x471
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #000000
 		is-visible = false
 		saved-params = "pos;size;is-minimized;is-maximized"
@@ -1165,8 +1168,8 @@ window "report"
 		type = INPUT
 		pos = 50,124
 		size = 325x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		border = sunken
 		saved-params = ""
 		no-command = true
@@ -1174,8 +1177,8 @@ window "report"
 		type = LABEL
 		pos = 78,16
 		size = 269x65
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		font-family = "Arial Black"
 		font-size = 10
 		font-style = "bold"
@@ -1189,8 +1192,8 @@ window "report"
 		type = BUTTON
 		pos = 168,187
 		size = 89x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		border = line
@@ -1204,8 +1207,8 @@ window "report"
 		type = LABEL
 		pos = 148,100
 		size = 128x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		font-family = "Arial Black"
 		font-size = 10
 		font-style = "bold"
@@ -1218,8 +1221,8 @@ window "report"
 		type = LABEL
 		pos = 185,164
 		size = 54x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		font-family = "Arial Black"
 		font-size = 10
 		font-style = "bold"
@@ -1232,8 +1235,8 @@ window "report"
 		type = BUTTON
 		pos = 168,206
 		size = 89x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		border = line
@@ -1246,8 +1249,8 @@ window "report"
 		type = BUTTON
 		pos = 168,225
 		size = 89x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		border = line
@@ -1260,8 +1263,8 @@ window "report"
 		type = INPUT
 		pos = 50,288
 		size = 325x91
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		border = sunken
 		saved-params = ""
 		multi-line = true
@@ -1270,8 +1273,8 @@ window "report"
 		type = LABEL
 		pos = 133,264
 		size = 159x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		font-family = "Arial Black"
 		font-size = 10
 		font-style = "bold"
@@ -1284,8 +1287,8 @@ window "report"
 		type = LABEL
 		pos = 72,428
 		size = 94x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		border = line
@@ -1296,8 +1299,8 @@ window "report"
 		type = LABEL
 		pos = 165,428
 		size = 94x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		border = line
@@ -1307,8 +1310,8 @@ window "report"
 		type = LABEL
 		pos = 258,428
 		size = 94x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		border = line
@@ -1318,8 +1321,8 @@ window "report"
 		type = BUTTON
 		pos = 152,385
 		size = 60x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		saved-params = "is-checked"
@@ -1329,8 +1332,8 @@ window "report"
 		type = LABEL
 		pos = 101,450
 		size = 223x13
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		saved-params = ""
@@ -1339,8 +1342,8 @@ window "report"
 		type = LABEL
 		pos = 266,206
 		size = 60x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #000000
 		is-visible = false
 		border = line
@@ -1350,8 +1353,8 @@ window "report"
 		type = LABEL
 		pos = 72,406
 		size = 280x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		border = line
@@ -1361,8 +1364,8 @@ window "report"
 		type = BUTTON
 		pos = 214,385
 		size = 60x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		saved-params = "is-checked"
@@ -1374,8 +1377,8 @@ window "reportview"
 		type = MAIN
 		pos = 281,0
 		size = 425x471
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #000000
 		is-visible = false
 		saved-params = "pos;size;is-minimized;is-maximized"
@@ -1387,8 +1390,8 @@ window "reportview"
 		type = BUTTON
 		pos = 168,102
 		size = 90x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		border = line
@@ -1399,8 +1402,8 @@ window "reportview"
 		type = LABEL
 		pos = 78,77
 		size = 270x22
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		border = line
@@ -1410,8 +1413,8 @@ window "reportview"
 		type = BUTTON
 		pos = 261,102
 		size = 87x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		border = line
@@ -1422,8 +1425,8 @@ window "reportview"
 		type = BUTTON
 		pos = 78,102
 		size = 87x20
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		border = line
@@ -1434,15 +1437,15 @@ window "reportview"
 		type = BROWSER
 		pos = 14,150
 		size = 397x311
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		saved-params = ""
 	elem "label1"
 		type = LABEL
 		pos = 78,8
 		size = 269x65
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		font-family = "Arial Black"
 		font-size = 10
 		font-style = "bold"
@@ -1456,8 +1459,8 @@ window "reportview"
 		type = LABEL
 		pos = 77,125
 		size = 270x22
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		text-color = #ff0000
 		background-color = #000000
 		saved-params = ""
@@ -1468,8 +1471,8 @@ window "GuildWin"
 		type = MAIN
 		pos = 281,0
 		size = 566x350
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #3a3a3a
 		is-visible = false
 		saved-params = "pos;size;is-minimized;is-maximized"

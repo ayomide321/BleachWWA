@@ -10,11 +10,12 @@ mob/player
 <font face=cambria>
 <br>
 <br>
-<br><font size=5>-Thanks for playing! -Relapse(Devilminions528)
+<br><font size=5>-Aw shit...here we go again.
 <br>
 <br>
 <br>
 <u>Changes<font size=4></u>
+<br><font size=2>-All updates and fixes listed below are the work of Relapse(Devilminion528). his efforts are highly appreciated!
 <br><font size=2>-Captain test NPC will aggro against Shinigami now
 <br><font size=2>-Squad 10 exp and money boost perk from missions changed to a boost from everything(Money * 1.5, EXP * 1.25)
 <br><font size=2>-Fixed Garganta sometimes bugging out

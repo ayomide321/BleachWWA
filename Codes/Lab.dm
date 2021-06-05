@@ -100,16 +100,16 @@ mob
 							for(var/mob/player/M in view(8,src))
 								if(M.shinip==src.shinip&&M.hollow==src.hollow&&M.earth==src.earth)
 									M<<"For helping to retrieve the charge you get 5 free levels, 3 passive points, 20 event points and $100,000"
-									M.GainExp(M.mexp * 5)
+									M.GainExp(M.mexp * 15)
 									M.skillspassive+=3
 									M.GainMoney(100000)
-									M.eventpoints+=20
+									M.eventpoints+=200
 									if(M.squad==12)
-										M.GainExp(M.mexp * 3)
+										M.GainExp(M.mexp * 5)
 										M.combos+=1
 										M.skillspassive+=4
 										M.GainMoney(50000)
-										M.eventpoints+=5
+										M.eventpoints+=50
 										M<<"For being in Squad 12 you get bigger rewards and a combo point!"
 									M.Level_Up()
 					if(J.hm)
@@ -176,10 +176,10 @@ mob
 							for(var/mob/player/M in view(6,src))
 								if(M.shinip==src.shinip&&M.hollow==src.hollow&&M.earth==src.earth)
 									M<<"For helping to retrieve the charge you get 5 free levels, 3 passive points, 20 event points and $100,000"
-									M.GainExp(M.mexp * 5)
+									M.GainExp(M.mexp * 15)
 									M.skillspassive+=3
 									M.GainMoney(100000)
-									M.eventpoints+=20
+									M.eventpoints+=200
 
 
 					if(J.ss)
@@ -246,10 +246,10 @@ mob
 							for(var/mob/player/M in view(6,src))
 								if(M.shinip==src.shinip&&M.hollow==src.hollow&&M.earth==src.earth)
 									M<<"For helping to retrieve the charge you get 5 free levels, 3 passive points, 20 event points and $100,000"
-									M.GainExp(M.mexp * 5)
+									M.GainExp(M.mexp * 15)
 									M.skillspassive+=3
 									M.GainMoney(100000)
-									M.eventpoints+=20
+									M.eventpoints+=200
 			if(labtime)
 				if(winningrace==1)
 					src<<"<font color=lime><b>Humans/Vaizards have lab invincibility at the moment"
@@ -266,7 +266,7 @@ mob
 				if(M.shinip==src.shinip&&M.hollow==src.hollow&&M.earth==src.earth)
 					if(M.level>=150)
 						Jd+=1
-			if(Jd<2)
+			if(Jd<1)
 				src<<"You need at least 2 players over level 150 from your world to help you"
 				return
 			if(src in alreadywent)

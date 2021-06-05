@@ -98,6 +98,7 @@
 #include "Codes\Team.dm"
 #include "Codes\Tech List.dm"
 #include "Codes\Tech List2.dm"
+#include "Codes\Tech List3.dm"
 #include "Codes\Teleport.dm"
 #include "Codes\Text on Screen.dm"
 #include "Codes\Tournament Critic.dm"

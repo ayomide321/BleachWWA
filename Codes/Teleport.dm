@@ -39,15 +39,15 @@ turf
 								usr.GainExp(6000000)
 								usr<<"<font color=blue><b>You gained $400,000 and 6 million exp"
 								usr.Story_Talk("You have given the hougyoku to Urahara and he locks it away and gives you some of its power")
-								usr.mattack+=1000
-								usr.attack+=1000
-								usr.mreiatsu+=1000
-								usr.reiatsu+=1000
-								usr.mdefence+=1000
-								usr.defence+=1000
-								usr.rawbuff+=1000
-								usr.rei+=1500
-								usr.mrei+=1500
+								usr.mattack+=2500
+								usr.attack+=2500
+								usr.mreiatsu+=2500
+								usr.reiatsu+=2500
+								usr.mdefence+=2500
+								usr.defence+=2500
+								usr.rawbuff+=2500
+								usr.rei+=3500
+								usr.mrei+=3500
 								usr.evilgood="Good"
 							if("Evil(Absorb it's power)")
 								usr.Story_Talk("The friendly Arrancar takes complete control of you and kills you in the process. You now play as the Friendly Arrancar")
