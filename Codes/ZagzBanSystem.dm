@@ -10,7 +10,7 @@ var/Rebooting=0
 client/New()
 	..()
 	if(IsComputerBanned())
-		alert(src,"You have been banned ID Banned. If you wish to find out why or feel you've been improperly banned, please post in the Ban Appeal section of the forums. http://www.byond.com/forum/Zagros5000/AgeofMagic# Note:: You must fan the game..")
+		alert(src,"You have been banned ID Banned. If you wish to find out why or feel you've been improperly banned, please post in the Ban Appeal section of the discord.")
 		spawn(45)del(src)
 //	else
 //		mob:Login()

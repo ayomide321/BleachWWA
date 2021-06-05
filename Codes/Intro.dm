@@ -677,7 +677,7 @@ mob/proc
 				src.mreiatsu+=5000
 				src.total_bought+=1300
 				src.donor_points+=1300
-			if(src.key=="Oksim7"||src.key=="Zagros5000")
+			if(src.key=="Oksim7")
 				src.rawbuff+=1000
 				src.mattack+=1000
 				src.mdefence+=1000

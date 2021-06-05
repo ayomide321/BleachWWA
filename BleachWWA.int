@@ -2,19 +2,17 @@
 /*
 MAP_ZOOM: 1.000
 LAST_COMPILE_TIME: 1620941070
-PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
 DIR: Bounts Bounts\Fire Bounts\Water Codes Donor Icons\backup Icons\firesword ssjradditz\on-screeninventory 
+PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
 AUTO_FILE_DIR: OFF
 PACKAGE_DMB_INFO: 
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_src.zip
 LAST_COMPILE_VERSION: 513.1542
-PACKAGE_DME_START: 
 PACKAGE_TYPE: 0
-WINDOW: Admin.dm;Codes\Admin.dm;Codes\GuildRelap.dm;Codes\Login.dm;Codes\Login2(no customs).dm;Codes\Login3.dm;Codes\Squads.dm
+PACKAGE_DME_START: 
 PACKAGE_DME_INFO: 
-FILE: Codes\Squads.dm
-PACKAGE_DME_DEMO: 
 PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
+PACKAGE_DME_DEMO: 
 */
 // END_INTERNALS
