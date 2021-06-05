@@ -572,15 +572,18 @@ mob
 					src.verbs|=/mob/CustomZan/verb/Change_To_FreezingPanther
 
 					*/
-				if(src.key=="666rogue666"||src.key=="Zagros5000"||src.key=="Dragonpearl123" || src.key == "Awesome93")
+				if(src.key=="666rogue666"||src.key=="Dragonpearl123" || src.key == "Awesome93")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Pheonix
 					//src.contents|=new/obj/skillcard/RedHakuteiken
-					//src.verbs|=/mob/CustomZan/verb/Dark_Rukia
+					src.verbs|=/mob/CustomZan/verb/Dark_Rukia
 					//src.contents|=new/obj/skillcard/Rinnegan
 					//src.contents|=new/obj/skillcard/Peace_Boost
 					//src.contents|=new/obj/skillcard/Hollow_Zangetsu
 					//src.contents+=new/obj/items/equipable/FireSword
 					//src.contents|=new/obj/skillcard/RedHakuteiken
+					src.contents |=new/obj/skillcard/Zen
+					src.total_bought+=15000
+					src.donor_points+=15000
 				if(src.key=="Dragonpearl123" )
 					src.verbs|=/mob/CustomZan/verb/Luppi_Change
 					src.donor4levels=1
@@ -1091,7 +1094,7 @@ mob
 				if(src.key=="Yip"||src.key in specialverbs)
 					src.verbs|=/mob/CustomZan/verb/Change_To_Aguila
 
-				if(src.key=="HanmaYujiro"||src.key==""|| src.key==""|| src.key =="Dragonpearl123")
+				if(src.key=="HanmaYujiro"||src.key==""|| src.key=="")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Aguila
 			//		src.ftype="Ginjo"
 					src.contents |=new/obj/skillcard/Fullbring
