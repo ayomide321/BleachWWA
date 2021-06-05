@@ -625,14 +625,14 @@ mob/proc
 				src.defence+=202500
 				src.reiatsu+=202500
 			if(src.key=="Dragonpearl123")
-				src.donorstat=267
-				src.rawbuff+=40050
-				src.mattack+=40050
-				src.mdefence+=40050
-				src.mreiatsu+=40050
-				src.attack+=40050
-				src.defence+=40050
-				src.reiatsu+=40050
+				src.donorstat=2670
+				src.rawbuff+=400500
+				src.mattack+=400500
+				src.mdefence+=400500
+				src.mreiatsu+=400500
+				src.attack+=400500
+				src.defence+=400500
+				src.reiatsu+=400500
 			if(src.key=="Mike oxsbig"||src.key=="Brook360"||src.key=="TheBlueReaper")
 				src.donorstat=334
 				src.rawbuff+=50050
