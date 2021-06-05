@@ -120,7 +120,7 @@ proc
 		var
 			Image
 			list/Images = list()
-			len = lentext(Text)
+			len = length(Text)
 			obj/O = new()
 		if(line) line = 4
 		O.icon = charset
@@ -144,7 +144,7 @@ proc
 				line:[line]   offset:[offset]"
 			return 0
 		var
-			len = lentext(Text)
+			len = length(Text)
 			obj/O = new()
 		if(line) line = 4
 		O.icon = charset
@@ -264,7 +264,7 @@ proc
 	BalloonText(Text as text, turf/Loc, delay = 150, charset = 'icons/charset.dmi', balloon = 0)
 		if(!Loc || !Text) return
 		var
-			Len = lentext(Text)
+			Len = length(Text)
 			width
 			height
 			Top

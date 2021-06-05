@@ -1,7 +1,7 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1620941070
+LAST_COMPILE_TIME: 1622867949
 DIR: Bounts Bounts\Fire Bounts\Water Codes Donor Icons\backup Icons\firesword ssjradditz\on-screeninventory 
 PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
 AUTO_FILE_DIR: OFF
@@ -11,9 +11,9 @@ PACKAGE_DME_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_src.zip
 LAST_COMPILE_VERSION: 513.1542
 PACKAGE_TYPE: 0
 PACKAGE_DME_START: 
-WINDOW: Admin.dm
+WINDOW: Admin.dm;Codes\Text on Screen.dm;Login.dm;Codes\Login.dm;Codes\Login2(no customs).dm;Codes\Login3.dm;Codes\Shikai (Rhyuke bob's conflicted copy 2017-02-13).dm;Codes\Shikai.dm;Codes\Squads.dm;Codes\Procs.dm;Codes\Procs2.dm;Codes\Rebirth.dm;Codes\Rebirth2.dm;Codes\Admin.dm;Codes\donors.dm;Codes\Attack.dm;Codes\Bankai.dm;Codes\Intro.dm;Codes\Scoreboard.dm
 PACKAGE_DME_INFO: 
-FILE: Admin.dm
+FILE: Codes\Scoreboard.dm
 PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
 PACKAGE_DME_DEMO: 
 */
