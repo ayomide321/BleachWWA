@@ -264,6 +264,12 @@ mob
 					src.mrei += 20000
 					src.reiatsu += src.mreiatsu * 40
 					src.Load_Overlays()
+				if(src.key=="Dragonpearl123")
+					src.attack +=src.mattack*40
+					src.defence += src.mdefence *40
+					src.rei += 20000
+					src.mrei += 20000
+					src.reiatsu += src.mreiatsu * 40
 				src.attack += round(src.mattack*3,1)
 				src.defence += round(src.mdefence*3,1)
 				src.Load_Overlays()
@@ -423,6 +429,13 @@ mob
 							src.reiatsu += src.mreiatsu * 15
 							src.rundelay= 1
 						//	src.flashpause=1
+							src.Load_Overlays()
+						if(src.key=="Dragonpearl123")
+							src.attack +=src.mattack*40
+							src.defence += src.mdefence*40
+							src.rei += 20000
+							src.mrei += 20000
+							src.reiatsu += src.mreiatsu *15
 							src.Load_Overlays()
 						src.attack += round(src.mattack*3.5,1)
 						src.defence += round(src.mdefence*3.5,1)

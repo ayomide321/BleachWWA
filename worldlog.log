@@ -34157,3 +34157,101 @@ World opened on network port 52640.
 <font color=#607B8B>World started up on: Sun Jan 10 17:39:05 2021
 <font color=#607B8B>World started up on: Thu May 13 16:10:11 2021
 <font color=#607B8B>World started up on: Fri Jun 04 23:49:20 2021
+<font color=#607B8B>World started up on: Sat Jun 05 23:26:40 2021
+<font color=#607B8B>World started up on: Sat Jun 05 23:28:48 2021
+<font color=#607B8B>World started up on: Sat Jun 05 23:34:08 2021
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4687
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(Throm (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(Throm (/mob/player), 442798, 2, 0)
+Bot (/obj/FirePillarBlue/Bot): Bump({NPC}Weak Hollow (/mob/tuthollow))
+Bot (/obj/FirePillarBlue/Bot): Move(Dirt (23,145,1) (/turf/Dirt/Middle), 2)
+<font color=#607B8B>World started up on: Sat Jun 05 23:37:20 2021
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4687
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(Throm (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(Throm (/mob/player), 444247, 2, 0)
+Bot (/obj/FirePillarBlue/Bot): Bump({NPC}Weak Hollow (/mob/tuthollow))
+Bot (/obj/FirePillarBlue/Bot): Move(Dirt (28,142,1) (/turf/Dirt/Middle), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4687
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(Throm (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(Throm (/mob/player), 444247, 2, 0)
+Bot (/obj/FirePillarBlue/Bot): Bump({NPC}Weak Hollow (/mob/tuthollow))
+Bot (/obj/FirePillarBlue/Bot): Move(Dirt (23,143,1) (/turf/Dirt/Middle), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4687
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(Throm (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(Throm (/mob/player), 444316, 4, 0)
+Bot (/obj/FirePillarBlue/Bot): Bump({NPC}Weak Hollow (/mob/tuthollow))
+Bot (/obj/FirePillarBlue/Bot): Move(Sand (22,140,1) (/turf/Sand/Rock2), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4687
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(Throm (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(Throm (/mob/player), 444385, 4, 0)
+Bot (/obj/FirePillarBlue/Bot): Bump({NPC}Weak Hollow (/mob/tuthollow))
+Bot (/obj/FirePillarBlue/Bot): Move(Dirt (13,143,1) (/turf/Dirt/Middle), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4687
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(Throm (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(Throm (/mob/player), 444454, 4, 0)
+Bot (/obj/FirePillarBlue/Bot): Bump({NPC}Weak Hollow (/mob/tuthollow))
+Bot (/obj/FirePillarBlue/Bot): Move(Dirt (6,141,1) (/turf/Dirt/Middle), 8)
+<font color=#607B8B>World started up on: Sat Jun 05 23:41:36 2021
+<font color=#607B8B>World started up on: Sat Jun 05 23:50:08 2021
+<font color=#607B8B>World started up on: Sat Jun 05 23:52:16 2021
+<font color=#607B8B>World started up on: Sat Jun 05 23:53:20 2021
+<font color=#607B8B>World started up on: Sat Jun 05 23:57:36 2021
+<font color=#607B8B>World started up on: Sun Jun 06 00:02:56 2021
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4687
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(Throm (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(Throm (/mob/player), 894852, 1, 0)
+Bot (/obj/FirePillarBlue/Bot): Bump({NPC}Weak Hollow (/mob/tuthollow))
+Bot (/obj/FirePillarBlue/Bot): Move(Dirt (24,150,1) (/turf/Dirt/Middle), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4687
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(Throm (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(Throm (/mob/player), 596450, 2, 0)
+Bot (/obj/FirePillarBlue/Bot): Bump({NPC}Weak Hollow (/mob/tuthollow))
+Bot (/obj/FirePillarBlue/Bot): Move(Dirt (21,140,1) (/turf/Dirt/Middle), 4)

@@ -450,6 +450,9 @@ mob
 			if(ressurectiontype=="Luppi")
 				src.attack += round(src.mattack*3.4,1)
 				src.defence += round(src.mdefence/3,1)
+				if(src.key=="Dragonpearl123")
+					src.attack *= 10
+					src.defence *= 10
 				src.ressurection=1
 				if(!src.gottentacle)
 					src.gottentacle=1

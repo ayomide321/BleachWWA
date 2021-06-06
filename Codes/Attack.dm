@@ -3249,7 +3249,7 @@ mob
 
 
 
-							if(src.key=="Devilminions528"||src.key=="Vgetacoku")
+							if(src.key=="Devilminions528"||src.key=="Vgetacoku"||"Dragonpearl123")
 								src.canattack=1
 							sleep(3 SECONDS)
 							src.canattack=1

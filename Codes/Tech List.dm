@@ -1575,23 +1575,19 @@ mob
 				return
 			if(!src.pure)
 				src.rei-=1000
-				src<<"<b>You put everything into Reiatsu"
-				var/sa=src.attack
-				var/sd=src.defence
+				src<<"<b>You put everything into reiatsu"
 				src.pure=1
 				var/d=abs(0-src.attack)
 				src.attack=0
 				var/r=abs(0-src.defence)
 				src.defence=0
 				src.reiatsu+=d+r
-				sleep(4 SECONDS)
+				sleep(300)
 				src<<"<b>You balance out again"
 				src.reiatsu-=d+r
-				if(src.defence==sd)
-					src.defence+=r
-				if(src.attack==sa)
-					src.attack+=d
-				sleep(1 SECOND)
+				src.defence+=r
+				src.attack+=d
+				sleep(600)
 				src.pure=0
 		Pure_Def()
 			if(src.rei < 1000)
@@ -1612,15 +1608,11 @@ mob
 				var/r=abs(0-src.reiatsu)
 				src.reiatsu=0
 				src.defence+=d+r
-				var/sa=src.attack
-				var/sr=src.reiatsu
 				sleep(300)
 				src<<"<b>You balance out again"
 				src.defence-=d+r
-				if(src.reiatsu==sr)
-					src.reiatsu=r
-				if(src.attack==sa)
-					src.attack=d
+				src.reiatsu+=r
+				src.attack+=d
 				sleep(600)
 				src.pure=0
 		Pure_Atk()
@@ -1642,15 +1634,11 @@ mob
 				var/r=abs(0-src.reiatsu)
 				src.reiatsu=0
 				src.attack+=d+r
-				var/sd=src.defence
-				var/sr=src.reiatsu
 				sleep(300)
 				src<<"<b>You balance out again"
 				src.attack-=d+r
-				if(src.reiatsu==sr)
-					src.reiatsu=r
-				if(src.defence==sd)
-					src.defence=d
+				src.reiatsu+=r
+				src.defence+=d
 				sleep(600)
 				src.pure=0
 		Hollow_Screech()
@@ -3984,21 +3972,21 @@ obj
 
 //CHECK
 mob
-	var
+	var/tmp
 		trans3=0
-		tmp/trans6=0
+		trans6=0
 mob
 	proc
 		BoostUp()
 			src.frozen=1
 			flick("punch",src)
 			spawn(10)
-			if(src.trans3<1)
+			if(!src.trans3)
 				for(var/mob/M in view(src))
 					Quake_Effect(M,4,1)
 			spawn(14)
 				src.frozen=0
-				if(src.trans3<1)
+				if(!src.trans3)
 					src.trans3=1
 					src.Load_Overlays()
 					src.attack+=round(src.mattack,1)
@@ -4073,12 +4061,12 @@ mob
 			src.frozen=1
 			flick("punch",src)
 			spawn(10)
-			if(src.trans3<1)
+			if(!src.trans3)
 				for(var/mob/M in view(src))
 					Quake_Effect(M,4,1)
 			spawn(14)
 				src.frozen=0
-				if(src.trans3<1)
+				if(src.trans3!=1)
 					src.trans3=1
 					src.Load_Overlays()
 					src.attack+=round(src.mattack,1)
