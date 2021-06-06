@@ -34255,3 +34255,4 @@ proc name: Deathd (/mob/proc/Deathd)
 {NPC}Weak Hollow (/mob/tuthollow): Death(Throm (/mob/player), 596450, 2, 0)
 Bot (/obj/FirePillarBlue/Bot): Bump({NPC}Weak Hollow (/mob/tuthollow))
 Bot (/obj/FirePillarBlue/Bot): Move(Dirt (21,140,1) (/turf/Dirt/Middle), 4)
+<font color=#607B8B>World started up on: Sun Jun 06 01:54:56 2021

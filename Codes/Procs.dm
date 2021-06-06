@@ -4453,7 +4453,7 @@ mob
 				del src
 				return
 	//		if(src.enemy&&src.health<=0||src.enemy&&src.wound>=200||src.health<=0&&src.Demon_Boss==1||src.health<=0&&src.newkomaboss==1||src.health<=0&&src.lorelei==1||src.health<=0&&src.Yokai1==1||src.health<=0&&src.Yokai2==1||src.health<=0&&src.Yokai3==1||src.health<=0&&src.Yokai4==1)
-			if(src.enemy&&src.health <= 0&&!src.bossss||src.enemy&&src.wound>=200&&!src.bossss||src.health<=0&&src.Demon_Boss==1||src.health<=0&&src.newkomaboss==1||src.health<=0&&src.crownprince==1||src.health<=0&&src.lorelei==1||src.health<=0&&src.swampboss==1||src.health<=0&&src.Yokai1==1||src.health<=0&&src.Yokai2==1||src.health<=0&&src.Yokai3==1||src.health<=0&&src.Yokai4==1||src.health<=0&&src.bossyama==1||src.bossyama2==1)
+			if(src.enemy&&src.health <= 0&&!src.bossss||src.enemy&&src.wound>=200&&!src.bossss||src.health<=0&&src.Demon_Boss==1||src.health<=0&&src.newkomaboss==1||src.health<=0&&src.crownprince==1||src.health<=0&&src.lorelei==1||src.health<=0&&src.swampboss==1||src.health<=0&&src.Yokai1==1||src.health<=0&&src.Yokai2==1||src.health<=0&&src.Yokai3==1||src.health<=0&&src.Yokai4==1||src.health<=0&&src.bossyama==1||src.health<=0&&src.bossyama2==1)
 				if(M.missiontarget==src&&M.mission==5)
 					M.CompleteMish(2000,rand(100,150),view(20,M))
 				for(var/mob/Di in oview(20,src))
