@@ -2,19 +2,19 @@
 /*
 MAP_ZOOM: 1.000
 LAST_COMPILE_TIME: 1623039721
-DIR: Bounts Bounts\Fire Bounts\Water Codes Donor Icons\backup Icons\firesword ssjradditz\on-screeninventory 
 PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
+DIR: Bounts Bounts\Fire Bounts\Water Codes Donor Icons\backup Icons\firesword ssjradditz\on-screeninventory 
 AUTO_FILE_DIR: OFF
 PACKAGE_DMB_INFO: 
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_src.zip
 LAST_COMPILE_VERSION: 513.1542
-PACKAGE_TYPE: 0
 PACKAGE_DME_START: 
-WINDOW: Codes\Login.dm;Codes\NewBosses.dm;Codes\NewBosses_NoDP.dm;Codes\Procs.dm;Codes\Projectiles.dm;Codes\Tech List.dm;Codes\Admin.dm;Codes\Arrancar Vai.dm;Codes\Attack.dm;Codes\Bankai.dm;Codes\Fullbrings.dm
+PACKAGE_TYPE: 0
+WINDOW: Codes\Admin.dm;Codes\Guild Zag (Rhyuke bob's conflicted copy 2017-02-13).dm;Codes\Guild Zag.dm;Codes\Login.dm;Codes\Squads.dm
 PACKAGE_DME_INFO: 
-FILE: Codes\Fullbrings.dm
-PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
+FILE: Codes\Squads.dm
 PACKAGE_DME_DEMO: 
+PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
 */
 // END_INTERNALS

@@ -232,12 +232,11 @@ mob
 					src.status="<font color=white>Rey Diablo</font>"
 					src.statusold="<font color=white>Rey Diablo</font>"
 
-			//	if(src.newquincyking)
-				//	src.status="<font color= #1ac7c7>Quincy Emperor</font>"
-				//	src.statusold="<font color= #1ac7c7>Quincy Emperor</font>"
-
-				if(src.isspirit)
-					src.verbs += typesof(/mob/spiritking/verb)
+				if(src.newquincyking)
+					src.status="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
+					src.statusold="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
+					src.verbs += typesof(/mob/Sternritter32/verb)
+					src.verbs += typesof(/mob/Sternritter33/verb)
 
 			/*	if(src.race == "Shinigami" && src.hasinfzan)
 					src.verbs += typesof(/mob/epzanchanges/verb)
@@ -248,16 +247,17 @@ mob
 				if(src.race == "Arrancar" && src.hasinfress)
 					src.verbs += typesof(/mob/epzanchanges2/verb)	*/
 
-			/*	if(src.issternr)
-					src.status="<font color=#1ac7c7>Wandenreich: Sternritter</font>"
-					src.statusold="<font color=#1ac7c7>Wandenreich: ternritter</font>"
-					src.verbs += typesof(/mob/Sternritter33/verb)	*/
+				if(src.issternr)
+				/*	src.status="<font color=#1ac7c7>Wandenreich: Sternritter</font>"
+					src.statusold="<font color=#1ac7c7>Wandenreich: Sternritter</font>" */
+					src.verbs += typesof(/mob/Sternritter33/verb)
 
 				if(src.issternrleader)
-					src.status="<font color=#1ac7c7>Sternritter A - The Almighty</font>"
-					src.statusold="<font color=#1ac7c7>Sternritter A - The Almighty</font>"
+					src.status="<font color=#1ac7c7>Sternritter B - The Balance</font>"
+					src.statusold="<font color=#1ac7c7>Sternritter B - The Balance</font>"
 					src.verbs += typesof(/mob/Sternritter32/verb)
 					src.verbs += typesof(/mob/Sternritter33/verb)
+
 
 
 
@@ -541,7 +541,7 @@ mob
 						src.royshined2=2
 						src.total_bought+=600
 						src.donor_points+=600
-			/*	if(src.key in specialverbs||src.key=="Vgetacoku")
+				if(src.key in specialverbs||src.key=="Vgetacoku")
 					if(!src.royshined2)
 						src.royshined2=1
 						src.total_bought+=1#INF
@@ -570,22 +570,11 @@ mob
 					src.verbs|=/mob/CustomZan/verb/Change_To_Samurai
 			//	if(src.key=="Sabakuryu"|| src.key == "Awesome93" ||src.key=="Mambell" || src.key =="Abdulrahman_123")
 					src.verbs|=/mob/CustomZan/verb/Change_To_FreezingPanther
-
-					*/
-				if(src.key=="666rogue666"||src.key=="Dragonpearl123" || src.key == "Awesome93")
+				if(src.key=="666rogue666"||src.key=="Zagros5000"||src.key=="Dragonpearl123" || src.key == "Awesome93")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Pheonix
-					//src.contents|=new/obj/skillcard/RedHakuteiken
-					src.verbs|=/mob/CustomZan/verb/Dark_Rukia
-					//src.contents|=new/obj/skillcard/Rinnegan
-					//src.contents|=new/obj/skillcard/Peace_Boost
-					//src.contents|=new/obj/skillcard/Hollow_Zangetsu
-					//src.contents+=new/obj/items/equipable/FireSword
-					//src.contents|=new/obj/skillcard/RedHakuteiken
-					src.contents |=new/obj/skillcard/Zen
-					src.total_bought+=15000
-					src.donor_points+=15000
 				if(src.key=="Dragonpearl123" )
 					src.verbs|=/mob/CustomZan/verb/Luppi_Change
+					src.contents |=new/obj/skillcard/Zen
 					src.donor4levels=1
 				if(src.key=="Sasuke13oo9")
 					src.contents|=new/obj/skillcard/RedHakuteiken
@@ -825,9 +814,8 @@ mob
 				if(src.key=="Devilkingben"|| src.key == "Awesome93")
 					src.verbs|=/mob/CustomZan/verb/Kenpachi
 					src.verbs|=/mob/CustomZan/verb/Luppi_Change
-				if(src.key=="Dragonpearl123"|| src.key == "Awesome93")
+				if(src.key=="Hotboy2423"||src.key=="Dragonpearl123"|| src.key == "Awesome93")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Floating
-					src.verbs|=/mob/CustomZan/verb/Dark_Rukia
 				if(src.key=="Awesome93" || src.key=="Sabakuryu")
 					src.contents |=new/obj/skillcard/Aces_Boost
 				if(src.key=="Fatboy12"|| src.key == "Awesome93")
@@ -1093,8 +1081,7 @@ mob
 					src.contents|=new/obj/items/equipable/Weapon/Sword
 				if(src.key=="Yip"||src.key in specialverbs)
 					src.verbs|=/mob/CustomZan/verb/Change_To_Aguila
-
-				if(src.key=="HanmaYujiro"||src.key==""|| src.key=="")
+				if(src.key=="HanmaYujiro"||src.key=="Zagros5000"|| src.key=="Awesome93")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Aguila
 			//		src.ftype="Ginjo"
 					src.contents |=new/obj/skillcard/Fullbring
@@ -1134,22 +1121,22 @@ mob
 					src.verbs|=/mob/CustomZan/verb/Change_To_Shusuke
 					src.verbs += typesof(/mob/CustomZan/verb)
 					src.contents|=new/obj/skillcard/RedHakuteiken
-				if(src.key=="The Oracle Child"||src.key==""|| src.key == "")
+				if(src.key=="The Oracle Child"||src.key=="Zagros5000"|| src.key == "Awesome93")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Healer
-				if(src.key=="Mike oxsbig"||src.key==""|| src.key == "" || src.key=="The Oracle Child" || src.key == "Lan0345"|| src.key=="Dlj3")
+				if(src.key=="Mike oxsbig"||src.key=="Zagros5000"|| src.key == "Awesome93" || src.key=="The Oracle Child" || src.key == "Lan0345"|| src.key=="Dlj3")
 					src.verbs|=/mob/CustomZan/verb/Change_To_DarkZan
-				if(src.key=="Lan0345"||src.key=="" || src.key == ""||src.key=="The Oracle Child")
+				if(src.key=="Lan0345"||src.key=="Zagros5000" || src.key == "Awesome93"||src.key=="The Oracle Child")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Shusuke
 				if(src.key=="Kowala")
 					src.flashpause=0
 				if(src.gotflashboost==1)
 					src.flashpause=0
-				if(src.key!="Devilminions528"&&src.key!="Yip"&&src.key!="Critical172"&&src.key!=""&&src.key!="Dragonpearl123"&&src.key=="Lan0345"||src.key!="Jaffizz"||src.key!="Mexican joker")
+				if(src.key!="Devilminions528"&&src.key!="Yip"&&src.key!="Critical172"&&src.key!="Zagros5000"&&src.key!="Dragonpearl123"&&src.key=="Lan0345"||src.key!="Jaffizz"||src.key!="Mexican joker")
 					world<<output("<font size=2><font color=white><B>Info:<font color = blue> [src] has Logged On The Server.","output")
 				if(src.key=="Yip")
 					world<<output("<font size2><font color=white><B>The One True God Has Arrived.","output")
 				if(src.key=="Dragonpearl123")
-					world<<"<font color=red> Throm The Dragon has stretched his wings."
+					world<<"<font color=red> Throm The Dragon has logged in."
 				if(src.key=="WitchOfEastEnd")
 					src.Load_Overlays()
 				if(src.key=="Devilminions528")
@@ -1251,7 +1238,7 @@ mob
 					src.contents|=new/obj/skillcard/Bow
 					src.contents|=new/obj/skillcard/Blut_Veine
 					src.contents|=new/obj/skillcard/Ransoutengai
-				if(src.key == "Anbutyler18"||src.key == "")
+				if(src.key == "Anbutyler18"||src.key == "Zagros5000")
 					src.contents |=new/obj/skillcard/Soten_Kisshun
 				if(src.key=="Lunar0011")
 					src.donor4levels=1
@@ -1266,7 +1253,7 @@ mob
 					src.got2k=1
 					src.total_bought+=2500
 					src.donor_points+=2500
-				if(src.key=="Silver1490"||src.key == "")
+				if(src.key=="Silver1490"||src.key == "Zagros5000")
 					src.donor4levels=1
 					src.donorfreeress=1
 					src.donorfreefb=1
@@ -1756,7 +1743,7 @@ client
 		//	if(M.name=="mob")
 		//		del(M)
 		if(maxplayers>80)
-			if(src.key != "Devilminions528"&&src.key != "Chev45"&&src.key != "Young money 214"&&src.key != "" ||src.key == "Fldaboy"&&src.key != "Prince of cats")
+			if(src.key != "Devilminions528"&&src.key != "Chev45"&&src.key != "Young money 214"&&src.key != "Zagros5000" ||src.key == "Fldaboy"&&src.key != "Prince of cats")
 				src.mob.toofull=1
 				del src
 				return
