@@ -1,20 +1,20 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1622962472
-PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
+LAST_COMPILE_TIME: 1623039721
 DIR: Bounts Bounts\Fire Bounts\Water Codes Donor Icons\backup Icons\firesword ssjradditz\on-screeninventory 
+PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
 AUTO_FILE_DIR: OFF
 PACKAGE_DMB_INFO: 
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_src.zip
 LAST_COMPILE_VERSION: 513.1542
-PACKAGE_DME_START: 
 PACKAGE_TYPE: 0
-WINDOW: Codes\Level Up.dm;Codes\Mob.dm;Codes\Procs.dm;Codes\Projectiles.dm;Codes\AI.dm;Codes\Arrancar Vai.dm;Codes\Bankai.dm;Codes\CustomZanSkills.dm;Codes\Enemies.dm;Codes\Attack.dm;Codes\Inner Self.dm;Codes\Teleport.dm;Codes\NewBosses_NoDP.dm;Codes\NewBosses.dm;Codes\Oversized Icons.dm;Codes\Tech List.dm;Codes\Changer.dm;Codes\Clothes.dm;Codes\Admin.dm;Codes\Procs2.dm
+PACKAGE_DME_START: 
+WINDOW: Codes\Login.dm;Codes\NewBosses.dm;Codes\NewBosses_NoDP.dm;Codes\Procs.dm;Codes\Projectiles.dm;Codes\Tech List.dm;Codes\Admin.dm;Codes\Arrancar Vai.dm;Codes\Attack.dm;Codes\Bankai.dm;Codes\Fullbrings.dm
 PACKAGE_DME_INFO: 
-FILE: Codes\Procs.dm
-PACKAGE_DME_DEMO: 
+FILE: Codes\Fullbrings.dm
 PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
+PACKAGE_DME_DEMO: 
 */
 // END_INTERNALS

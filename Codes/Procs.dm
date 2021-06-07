@@ -4797,7 +4797,7 @@ mob
 				src.protected=0
 				src.ko=0
 //			if(src.health<=0&&src.wound<=100&&!src.enemy||src.wound<=200&&!src.enemy||src.health<=0&&src.Demon_Boss==1||src.health<=0&&src.newkomaboss==1||src.health<=0&&src.lorelei==1||src.health<=0&&src.Yokai1==1||src.health<=0&&src.Yokai2==1||src.health<=0&&src.Yokai3==1||src.health<=0&&src.Yokai4==1||src.health <= 0&&src.wound>=100||src.wound>=200&&src.lorelei==0&&src.newkomaboss==0&&src.Yokai3==0&&src.Yokai4==0&&src.Yokai1==0&&src.Yokai2==0&&src.Demon_Boss==0)
-			if(src.health <= 0&&src.wound>=100&&!src.bossss||src.wound>=200&&!src.bossss||src.health<=0&&src.Demon_Boss==1||src.health<=0&&src.newkomaboss==1||src.health<=0&&src.crownprince==1||src.health<=0&&src.lorelei==1||src.health<=0&&src.swampboss==1||src.health<=0&&src.Yokai1==1||src.health<=0&&src.Yokai2==1||src.health<=0&&src.Yokai3==1||src.health<=0&&src.Yokai4==1||src.health<=0&&src.bossyama==1||src.bossyama2==1)
+			if(src.health <= 0&&src.wound>=100&&!src.bossss||src.wound>=200&&!src.bossss||src.health<=0&&src.Demon_Boss==1||src.health<=0&&src.newkomaboss==1||src.health<=0&&src.crownprince==1||src.health<=0&&src.lorelei==1||src.health<=0&&src.swampboss==1||src.health<=0&&src.Yokai1==1||src.health<=0&&src.Yokai2==1||src.health<=0&&src.Yokai3==1||src.health<=0&&src.Yokai4==1||src.health<=0&&src.bossyama==1||src.health<=0&&src.bossyama2==1)
 				src.controlled=0
 				if(src.wound<=180)
 					if(src.ichimoment)
