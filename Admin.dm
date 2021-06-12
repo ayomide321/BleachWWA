@@ -2877,6 +2877,7 @@ mob
 							M.statusold="<font color= #1ac7c7>Quincy Emperor</font>"
 							M.espadas=""
 							M.espadasold=""
+
 				if("Sternritter Grandmaster")
 					switch(input("Are you sure?") in list ("Yes","No"))
 						if("Yes")

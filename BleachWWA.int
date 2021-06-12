@@ -1,7 +1,7 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1623039721
+LAST_COMPILE_TIME: 1623482708
 PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
 DIR: Bounts Bounts\Fire Bounts\Water Codes Donor Icons\backup Icons\firesword ssjradditz\on-screeninventory 
 AUTO_FILE_DIR: OFF
@@ -11,9 +11,7 @@ PACKAGE_DME_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_src.zip
 LAST_COMPILE_VERSION: 513.1542
 PACKAGE_DME_START: 
 PACKAGE_TYPE: 0
-WINDOW: Codes\Admin.dm;Codes\Guild Zag (Rhyuke bob's conflicted copy 2017-02-13).dm;Codes\Guild Zag.dm;Codes\Login.dm;Codes\Squads.dm
 PACKAGE_DME_INFO: 
-FILE: Codes\Squads.dm
 PACKAGE_DME_DEMO: 
 PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
 */
