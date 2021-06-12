@@ -237,6 +237,8 @@ mob
 					src.statusold="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
 					src.verbs += typesof(/mob/Sternritter32/verb)
 					src.verbs += typesof(/mob/Sternritter33/verb)
+					src.contents |=new/obj/skillcard/Take_Power
+					src.contents |=new/obj/skillcard/Give_Power
 
 			/*	if(src.race == "Shinigami" && src.hasinfzan)
 					src.verbs += typesof(/mob/epzanchanges/verb)

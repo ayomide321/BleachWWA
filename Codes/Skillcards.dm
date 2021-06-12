@@ -689,6 +689,10 @@ obj
 					usr.HollowZangetsu()
 				if(src.names=="Gedon Kido")
 					usr.GedonKido()
+				if(src.names=="TakePower")
+					usr.TakePower()
+				if(src.names=="GivePower")
+					usr.GivePower()
 				if(prob(10))
 					if(usr.truereiatsu>=20000)
 						return
@@ -2581,6 +2585,16 @@ obj/skillcard
 		names="Hollow Zangetsu"
 		icon='Icons/gui.dmi'
 		icon_state="hollowzangetsu"
+		layer=MOB_LAYER+100
+	Take_Power
+		names="TakePower"
+		icon='Icons/gui.dmi'
+		icon_state="wind pull"
+		layer=MOB_LAYER+100
+	Give_Power
+		names="GivePower"
+		icon='Icons/gui.dmi'
+		icon_state="wind push"
 		layer=MOB_LAYER+100
 	//end matsuricopy
 mob/proc/Test_Proc_Usage() //Proc to show example under interact with obj

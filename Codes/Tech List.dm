@@ -1575,19 +1575,23 @@ mob
 				return
 			if(!src.pure)
 				src.rei-=1000
-				src<<"<b>You put everything into reiatsu"
+				src<<"<b>You put everything into Reiatsu"
+				var/sa=src.attack
+				var/sd=src.defence
 				src.pure=1
 				var/d=abs(0-src.attack)
 				src.attack=0
 				var/r=abs(0-src.defence)
 				src.defence=0
 				src.reiatsu+=d+r
-				sleep(300)
+				sleep(4 SECONDS)
 				src<<"<b>You balance out again"
 				src.reiatsu-=d+r
-				src.defence+=r
-				src.attack+=d
-				sleep(600)
+				if(src.defence==sd)
+					src.defence+=r
+				if(src.attack==sa)
+					src.attack+=d
+				sleep(1 SECOND)
 				src.pure=0
 		Pure_Def()
 			if(src.rei < 1000)
@@ -1608,11 +1612,15 @@ mob
 				var/r=abs(0-src.reiatsu)
 				src.reiatsu=0
 				src.defence+=d+r
+				var/sa=src.attack
+				var/sr=src.reiatsu
 				sleep(300)
 				src<<"<b>You balance out again"
 				src.defence-=d+r
-				src.reiatsu+=r
-				src.attack+=d
+				if(src.reiatsu==sr)
+					src.reiatsu=r
+				if(src.attack==sa)
+					src.attack=d
 				sleep(600)
 				src.pure=0
 		Pure_Atk()
@@ -1634,11 +1642,15 @@ mob
 				var/r=abs(0-src.reiatsu)
 				src.reiatsu=0
 				src.attack+=d+r
+				var/sd=src.defence
+				var/sr=src.reiatsu
 				sleep(300)
 				src<<"<b>You balance out again"
 				src.attack-=d+r
-				src.reiatsu+=r
-				src.defence+=d
+				if(src.reiatsu==sr)
+					src.reiatsu=r
+				if(src.defence==sd)
+					src.defence=d
 				sleep(600)
 				src.pure=0
 		Hollow_Screech()
@@ -3972,21 +3984,21 @@ obj
 
 //CHECK
 mob
-	var/tmp
+	var
 		trans3=0
-		trans6=0
+		tmp/trans6=0
 mob
 	proc
 		BoostUp()
 			src.frozen=1
 			flick("punch",src)
 			spawn(10)
-			if(!src.trans3)
+			if(src.trans3<1)
 				for(var/mob/M in view(src))
 					Quake_Effect(M,4,1)
 			spawn(14)
 				src.frozen=0
-				if(!src.trans3)
+				if(src.trans3<1)
 					src.trans3=1
 					src.Load_Overlays()
 					src.attack+=round(src.mattack,1)
@@ -4061,12 +4073,12 @@ mob
 			src.frozen=1
 			flick("punch",src)
 			spawn(10)
-			if(!src.trans3)
+			if(src.trans3<1)
 				for(var/mob/M in view(src))
 					Quake_Effect(M,4,1)
 			spawn(14)
 				src.frozen=0
-				if(src.trans3!=1)
+				if(src.trans3<1)
 					src.trans3=1
 					src.Load_Overlays()
 					src.attack+=round(src.mattack,1)
@@ -9217,3 +9229,72 @@ mob
 				src << "<b>You put on your boost!"
 				src.Load_Overlays()
 			//	src.overlays+=/obj/Vandauranew
+
+/*mob
+	var
+		tmp/pow=0
+	proc
+		TakePower()
+				for(var/mob/player/M in All_Clients())
+					if(M.race=="Quincy")
+						rei=M.mreiatsu-M.donorstat*150
+						src.reiatsu += pow
+						src << "You've absorbed the Collective power of your Subjects!"
+
+
+					else
+						if(src.pow==1)
+							src << "You can't Take Any More power!" */ // old take power
+
+mob/
+	var
+		tmp
+			tpow=0
+			gpow=0
+	proc
+		TakePower()
+			if(!tpow)
+				if(gpow) return;
+				for(var/mob/player/M in All_Clients())
+					if(M.race=="Quincy")
+						tpow+=(M.mreiatsu-M.donorstat*150)
+				src.reiatsu += (tpow / 10)
+				src << "You've absorbed power from the other Quincies!"
+			else
+				src << "You've given the reiatsu back!"
+				src.reiatsu -= (tpow / 10)
+				tpow = 0
+
+	proc
+		GivePower()
+			if(!gpow)
+				if(tpow) return;
+				gpow = src.mreiatsu-src.donorstat*150
+				for(var/mob/player/M in All_Clients())
+					if(M.race=="Quincy")
+						M.reiatsu += gpow
+				world << "<b><font color = red>World News: [src] Has Gifted Their Fellow Quincy some of their Power!"
+			else
+				src << "Your Power Returns to you!"
+				src.reiatsu=src.mreiatsu
+				for(var/mob/player/M in All_Clients())
+					if(M.race=="Quincy")
+						M.reiatsu -= gpow
+				gpow = 0
+				world << "<b><font color = red>World News: [src] Has Reclaimed their Power!"
+
+/*	proc    // this is the backup/ original attempt haha
+		GivePower()
+			if(!pow)
+				for(var/mob/player/M in All_Clients())
+					if(M.race=="Quincy")
+						pow= src.reiatsu-=src.donorstat*150
+					M.reiatsu += (pow/10)
+				world << "<b><font color = red>World News: [usr] Has Gifted Their Fellow Quincy some of their Power!"
+			else
+				src << "Your Power Returns to you!"
+				for(var/mob/player/M in All_Clients())
+					if(M.race=="Quincy")
+						src.reiatsu=src.mreiatsu
+						M.reiatsu=M.mreiatsu
+						pow = 0 */
