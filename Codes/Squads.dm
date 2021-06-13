@@ -482,7 +482,7 @@ mob/Login()
 		src.verbs+=/mob/CustomZan/verb/RebirthMyself
 	if(first_play==0)//dont remove. for some reason login gets called twice -_-*
 		first_play=1
-		src<<sound(pick('bop1.ogg','bop2.ogg','bop3.ogg','bop4.ogg','bop5.ogg'),0,0,1,15)
+		src<<sound(pick('ytbop1.mp3','ytbop2.mp3','ytbop3.mp3','ytbop4.mp3','ytbop5.mp3'),0,0,1,15)
 	CreateStatBars()
 	src.loc = locate(9,10,1)
 	src.client.view=8
@@ -516,7 +516,7 @@ mob/Login()
 		winshow(src,"AdminW",1);winset(src,"AdminW", "is-visible=true")
 
 
-	if(src.key=="MasterGOA"|| src.key == "Vgetacoku"|| src.key == "WSHGC" || src.key == "WorldStar")
+	if(src.key==""|| src.key == ""|| src.key == "" || src.key == "")
 		src.verbs += typesof(/mob/Owner/verb)
 		src.verbs += /mob/special/verb/Ninja_Activate
 		src.verbs += typesof(/mob/GM1/verb)

@@ -12,6 +12,8 @@ LAST_COMPILE_VERSION: 513.1542
 PACKAGE_DME_START: 
 PACKAGE_TYPE: 0
 PACKAGE_DME_INFO: 
+WINDOW: BleachWWA.dm;Codes\Squads.dm;Codes\Turf.dm;Codes\Admin.dm;Codes\Login.dm
+FILE: Codes\Squads.dm
 PACKAGE_DME_DEMO: 
 PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
 */
