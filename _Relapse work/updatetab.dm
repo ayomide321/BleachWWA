@@ -14,6 +14,14 @@ mob/player
 <br>
 <br>
 <br>
+<u>07/07/2022 Updates<font size=4></u>
+<br><font size=3>-Every update now and henceforth is the work of Throm your BWWA god.
+<br><font size=2>-I never thought I'd be the one to do it, but yes DP is confirmedly revamped anybody can get it now :)
+<br><font size=2>-There's an DP NPC somewhere around the map just talk to him and he will give you what you need if you can afford it
+<br><font size=2>-Demon Boss of Hell, Mr. Brazo now drops DP Sado Arm again (0.5% drop rate)
+<br><font size=2>-If you're wondering where your DP and stats are, I took it away <3. Work like the rest of us (you can still keep your customs though, you're welcome)
+<br>
+<br>
 <u>Changes<font size=4></u>
 <br><font size=2>-All updates and fixes listed below are the work of Relapse(Devilminion528). his efforts are highly appreciated!
 <br><font size=2>-Captain test NPC will aggro against Shinigami now

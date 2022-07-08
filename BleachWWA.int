@@ -1,20 +1,20 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1623482708
+LAST_COMPILE_TIME: 1657250486
+DIR: _Relapse work april 20th icons Bounts\Fire Bounts\Water Codes Icons Icons\backup Icons\firesword ssjradditz\on-screeninventory 
 PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
-DIR: Bounts Bounts\Fire Bounts\Water Codes Donor Icons\backup Icons\firesword ssjradditz\on-screeninventory 
 AUTO_FILE_DIR: OFF
 PACKAGE_DMB_INFO: 
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_src.zip
-LAST_COMPILE_VERSION: 513.1542
-PACKAGE_DME_START: 
+LAST_COMPILE_VERSION: 514.1575
 PACKAGE_TYPE: 0
+PACKAGE_DME_START: 
+WINDOW: Codes\CustomZanSkills.dm;Codes\donors.dm;_Relapse work\updatetab.dm;Codes\Procs.dm;_Relapse work\Team Deathmatch.dm;Codes\Intro.dm;Codes\Login.dm;Codes\Login2(no customs).dm;Codes\Login3.dm;Codes\Changer.dm
 PACKAGE_DME_INFO: 
-WINDOW: BleachWWA.dm;Codes\Squads.dm;Codes\Turf.dm;Codes\Admin.dm;Codes\Login.dm
-FILE: Codes\Squads.dm
-PACKAGE_DME_DEMO: 
+FILE: Codes\donors.dm
 PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
+PACKAGE_DME_DEMO: 
 */
 // END_INTERNALS

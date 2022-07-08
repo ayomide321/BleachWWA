@@ -534,7 +534,7 @@ mob/proc
 			src<<"You found and consume an Ultra experience pill! You got [src.mexp*7] exp!"
 
 	Crownrare()
-		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21)
 		if(t==1)
 			src.contents+=new/obj/skillcard/Sharingan
 			src.gotsharingan = 1
@@ -596,10 +596,13 @@ mob/proc
 		if(t==20)
 			src.contents+=new/obj/skillcard/Hyosuke_Stun
 			src<<"<b><font color=yellow>You have found a scroll containing the second skill the prince taught to his underlings</font></b>"
+		if(t==21)
+			src.donor_points += 5
+			src<<"You have earned 5 DP, you now have [src.donor_points]!"
 
 
 	RelapseChest()
-		var/t=pick(1,2,3)
+		var/t=pick(1,2,3,4)
 		if(t==1)
 			src.GainExp(src.mexp*4)
 			src<<"You found and consume an experience pill!"
@@ -609,6 +612,10 @@ mob/proc
 		if(t==3)
 			src.GainExp(src.mexp*6)
 			src<<"You found and consume an experience pill!"
+		if(t==4)
+			src.donor_points += 5
+			src.GainExp(src.mexp*3)
+			src<<"You have earned 5 DP and consumed an experience pill, you now have [src.donor_points]!"
 
 	Respawn(time=600)
 		src.noboost=0
@@ -3591,6 +3598,12 @@ mob
 					new/obj/items/usable/Chests/Rare_Chest(src.x-1,src.y,src.z)
 				if(prob(1))
 					world <<"<b><font size=2>[M] has found the autograph of the famous Relapse!!"
+				if(prob(0.5))
+					donorarm=1
+					contents+=new/obj/skillcard/Sado_ArmDP
+					src.RefreshSkillList()
+					M<<"You have learned how to utilize the Devil's arm."
+					world<<"Power surges through [M.name]"
 //-----------------------------------------------------------------------------------------------------------------------lorelei area
 			if(src.newkomaboss==1 && src.health <=0)
 				world<<"<b><font color=purple><font size=3>[M] has defeated the Samurai King!</b></font>"
@@ -3634,13 +3647,7 @@ mob
 				new/obj/items/usable/Chests/Relapse_Chest(src.x-1,src.y,src.z)
 				M <<"<b> You gained [src.expgain] experience!"
 				if(src.yamadropfiresword)
-					if(M.yamabosskills<200 && M.key=="Devilminions528")
-						if(prob(100))
-							M.gotfiresword=1
-							M.contents+=new/obj/skillcard/FireSlash
-							M.contents+=new/obj/items/equipable/FireSword
-							world<<"<b><font color=red><font size=3>In the death of Genryusai Shigekuni Yamamoto, he left behind a Fire Sword and a new technique for his killer, [M]!</b></font>"
-					if(prob(1))
+					if(prob(1) || M.key=="Dragonpearl123")
 						M.gotfiresword=1
 						M.contents+=new/obj/skillcard/FireSlash
 						M.contents+=new/obj/items/equipable/FireSword

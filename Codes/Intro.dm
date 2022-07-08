@@ -480,7 +480,7 @@ mob/proc
 			src.needrespec=2
 			src.nextrespec=1
 			src.changed=1 // fix the donor stats shit here by replacing with stat ups
-			if(src.key=="Fatboy12"||src.key=="Blaxkshiba")
+			/*if(src.key=="Fatboy12"||src.key=="Blaxkshiba")
 				src.mattack+=8100
 				src.mdefence+=8100
 				src.mreiatsu+=8100
@@ -623,16 +623,16 @@ mob/proc
 				src.mreiatsu+=202500
 				src.attack+=202500
 				src.defence+=202500
-				src.reiatsu+=202500
+				src.reiatsu+=202500*/
 			if(src.key=="Dragonpearl123")
-				src.donorstat=267
-				src.rawbuff+=40050
-				src.mattack+=40050
-				src.mdefence+=40050
-				src.mreiatsu+=40050
-				src.attack+=40050
-				src.defence+=40050
-				src.reiatsu+=40050
+				src.donorstat=1800
+				src.rawbuff+=270000
+				src.mattack+=270000
+				src.mdefence+=270000
+				src.mreiatsu+=270000
+				src.attack+=270000
+				src.defence+=270000
+				src.reiatsu+=270000/*
 			if(src.key=="Mike oxsbig"||src.key=="Brook360"||src.key=="TheBlueReaper")
 				src.donorstat=334
 				src.rawbuff+=50050
@@ -682,7 +682,7 @@ mob/proc
 				src.mattack+=1000
 				src.mdefence+=1000
 				src.mreiatsu+=1000
-				src.mrei+=2500
+				src.mrei+=2500 */
 			src.attack=src.mattack
 			src.defence=src.mdefence
 			src.reiatsu=src.mreiatsu

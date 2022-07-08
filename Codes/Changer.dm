@@ -107,6 +107,8 @@ mob
 								if(s.iszan)
 									usr.contents-=s
 									usr.RefreshSkillList()
+
+
 mob
  Zanpakuto_Changer
 		name = "{NPC}Zanpakuto Changer"
@@ -535,3 +537,167 @@ mob
 									usr.contents+=new/obj/skillcard/Power_Monsters
 									usr.RefreshSkillList()
 									usr<<"You can now power your monsters"
+mob
+	DP_Shop_NPC
+		name = "{NPC}DP Shop Owner"
+		npc = 1
+		New()
+			..()
+		verb
+			Talk()
+				set category = "NPC's"
+				set src in oview(2)
+				if(usr.donor_points>0)
+					var/rebirthcount = usr.timesRebirthed
+					var/list/DPList = new
+					DPList += "2x Level Up"
+					DPList += "4x Level Up"
+					DPList += "Easier Leveling"
+					DPList += "Free Zans"
+					DPList += "Vaizard Retake"
+					DPList += "Black Flames of God"
+					DPList += "Free Ress"
+					DPList += "Free Fullbring"
+					DPList += "Squad Change"
+					DPList += "Stat Up"
+					DPList += "Exp Burst"
+					DPList += "Good Fortune"
+					DPList += "Vasto Form Hollowification"
+					DPList += "Sado Arm"
+					DPList += "Boosted"
+					DPList += "Red Hakuteiken"
+
+
+					var/mob/U = input("Which item from the DP store do you want to purchase?", "DP Shop Owner") in DPList
+					switch(U)
+						if("Red Hakuteiken")
+							if(usr.redH==0)
+								if(usr.UseDP(2000))
+									usr.redH=1
+									usr.contents|=new/obj/skillcard/RedHakuteiken
+									usr.RefreshSkillList()
+									usr<<"You've learned the ultimate boost needed to take on your enemies."
+							else
+								usr<<"You already have Red Hakuteiken."
+						if("2x Level Up")
+							if(usr.donor2levels==0)
+								if(usr.UseDP(200))
+									usr.donor2levels=1
+									usr<<"You have unlocked 2x leveling, you now gain 2 levels/level."
+							else
+								usr<<"You have already unlocked 2x Leveling."
+						if("4x Level Up")
+							if(usr.donor4levels==0)
+								if(usr.UseDP(500))
+									usr.donor4levels=1
+									usr<<"You have unlocked 4x leveling."
+
+							else
+								usr<<"You have already unlocked 4x Leveling."
+						if("Easier Leveling")
+							if(usr.donorhalfexp==0)
+								if(usr.UseDP(250))
+									usr.donorhalfexp=1
+									usr<<"You have unlocked easier leveling (half the required exp to level up)."
+
+							else
+								usr<<"You have already unlocked Easier Leveling."
+						if("Free Zans")
+							if(usr.donorfreezans==0)
+								if(usr.UseDP(150))
+									usr.donorfreezans=1
+									usr<<"You have unlocked free zan changes."
+
+							else
+								src<<"You have already unlocked Free Zan changes."
+						if("Free Ress")
+							if(donorfreeress==0)
+								if(UseDP(150))
+									donorfreeress=1
+									src<<"You have unlocked free ress changes."
+
+							else
+								usr<<"You have already unlocked Free Ress changes."
+						if("Free Fullbring")
+							if(usr.donorfreefb==0)
+								if(usr.UseDP(150))
+									usr.donorfreefb=1
+									usr<<"You have unlocked free fullbring changes."
+
+							else
+								usr<<"You have already unlocked Free Fullbring changes."
+						if("Vaizard Retake")
+							if(usr.UseDP(60))
+								usr.triedvai=0
+								usr.gotvai=0
+								usr<<"You may now attempt to retake your vaizard test."
+						if("Squad Change")
+							if(usr.UseDP(75))
+								usr.squad=input(src,"Choose your squad.")in list(1,2,3,4,5,6,7,8,9,10,11,12,13,"Kido Corps")
+								usr<<"Your squad has been set to squad : [squad]."
+								if(usr.squad == "Kido Corps"||usr.squad==4)
+									usr.contents+=new/obj/skillcard/Kido_Corp_Heal
+									usr.RefreshSkillList()
+								else
+									var obj/skillcard/Kido_Corp_Heal/z = locate() in usr.contents
+									if(!isnull(z))
+										usr.contents-=z
+								//	src.contents-=new/obj/skillcard/Kido_Corp_Heal
+									usr.RefreshSkillList()
+						if("Vasto Form Hollowification")
+							if(usr.donormask==0)
+								if(usr.UseDP(500))
+									usr.donormask=1
+									usr.contents+=new/obj/skillcard/Vasto_FormDP
+									usr.RefreshSkillList()
+									usr.maskuses=1000
+								//	world<<"Power surges through [src.name] as a syringe injects a monstrous DNA into him"
+									usr<<"Hollow genes have been added to your DNA and you can now transform into a Vasto rank Hollow.The hollow seems to be tamed and the mask is mastered"
+							else
+								usr<<"You already have the vasto mask."
+						if("Sado Arm")
+							if(usr.donorarm==0)
+								if(usr.UseDP(500))
+									usr.donorarm=1
+									usr.contents+=new/obj/skillcard/Sado_ArmDP
+									usr.RefreshSkillList()
+									usr<<"You have learned how to utilize the Devil's arm."
+									world<<"Power surges through [usr.name]"
+							else
+								usr<<"You've already unlocked Sado Arm."
+						if("Black Flames of God")
+							if(usr.blackflames==0)
+								if(usr.UseDP(400))
+									usr.blackflames=1
+									usr.contents+=new/obj/skillcard/Amaterasu
+									usr.RefreshSkillList()
+									usr<<"You've learned the skill used to slay the ONE"
+							else
+								usr<<"You already have black flames."
+						if("Stat Up")
+							if(usr.UseDP(50))
+								for(var/zzz=0;zzz<5;zzz++)
+									usr.donorstat++
+									usr.rawbuff+=150
+									usr.mattack+=150
+									usr.mdefence+=150
+									usr.mreiatsu+=150
+								usr<<"Attack,Reiatsu and Defence have all increased by <b>+750</b>,you've also gained a permanent stat CAP increase. This can be done multiple times."
+
+						if("Exp Burst")
+							if(usr.UseDP(100))
+								usr.GetExpBurst()
+
+						if("Good Fortune")
+							if(usr.UseDP(100))
+								usr.GetFortune()
+
+							else
+								usr<<"You are already have a fortune boost."
+
+						else
+							usr<<"Feature coming soon."
+
+					usr.saveproc()
+				else
+					usr<<"You don't have any donor points to spend."

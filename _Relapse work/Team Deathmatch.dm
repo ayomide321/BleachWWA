@@ -249,6 +249,7 @@ team_deathmatch
 					winning.GainExp(winning.mexp * 2)
 					winning.money += 150000
 					winning.eventpoints += 30
+					winning.donor_points += 5
 					if(winning.client) Respawn(winning)
 					winning.intdm = 0
 					winning.lost=0
@@ -262,6 +263,7 @@ team_deathmatch
 					winning.GainExp(winning.mexp/2)
 					winning.money += 350000
 					winning.eventpoints += 30
+					winning.donor_points += 5
 					if(winning.client) Respawn(winning)
 					winning.intdm = 0
 					winning.lost=0

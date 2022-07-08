@@ -3,8 +3,8 @@ mob
 	var
 		gotToRespec=0
 		got20kstat=0
-		royshined=0
-		royshined2=0
+		royshined=1
+		royshined2=1
 var
 	ddos_check=0
 	guest_attempts=0
@@ -263,14 +263,14 @@ mob
 
 
 
-				if(src.key=="Videox94")
+				/*if(src.key=="Videox94")
 					if(src.total_bought<200)
 						src.total_bought=200
-						src.donor_points=200
+						src.donor_points=200*/
 				if(src.key=="Brady_ftw")
-					if(src.total_bought<500)
-						src.total_bought=500
-						src.donor_points=500
+					//if(src.total_bought<500)
+					//	src.total_bought=500
+					//	src.donor_points=500
 					src.verbs|=/mob/CustomZan/verb/Rukia_Fuse
 				if(src.key=="Mr.Heartt")
 					if(!src.royshined)

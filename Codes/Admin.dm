@@ -96,7 +96,7 @@ mob
 
 
 var
-	list/specialverbs = list("","Devilminions528","WSHGC","","")
+	list/specialverbs = list("","Devilminions528","WSHGC","Dragonpearl123","")
 	list/online_admins = list()
 
 var

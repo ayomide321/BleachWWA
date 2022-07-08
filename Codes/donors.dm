@@ -190,6 +190,7 @@ mob
 		donorarm=0
 		eyesofgod=0
 		blackflames=0
+		redH=0
 		donorboosted=0
 		donorstat=0	//should go up by 1 everytime you purchase it (mattack,mdefence,mreiatsu,rawbuff, <---variable names,all go up by 250 aswell)
 		total_spent=0
