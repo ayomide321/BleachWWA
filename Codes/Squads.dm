@@ -478,8 +478,10 @@ mob/Login()
 //	if(client)
 //		UpdateLog()
 //		DonorInfo()
+/*
 	if(src.key=="Dragonpearl123" || src.key=="Sexytime_explosion"|| src.key=="Pizza1992"|| usr.key == "Rioshima" || usr.key == "Royshin" || usr.key == "Brook360"||usr.key=="CoreBreaker"||usr.key=="Yoruziro"||src.key=="Yip")
 		src.verbs+=/mob/CustomZan/verb/RebirthMyself
+		*/
 	if(first_play==0)//dont remove. for some reason login gets called twice -_-*
 		first_play=1
 		src<<sound(pick('ytbop1.mp3','ytbop2.mp3','ytbop3.mp3','ytbop4.mp3','ytbop5.mp3'),0,0,1,15)

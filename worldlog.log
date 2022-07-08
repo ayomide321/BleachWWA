@@ -34264,3 +34264,38 @@ Bot (/obj/FirePillarBlue/Bot): Move(Dirt (21,140,1) (/turf/Dirt/Middle), 4)
 <font color=#607B8B>World started up on: Thu Jul 07 20:09:52 2022
 <font color=#607B8B>World started up on: Thu Jul 07 20:13:04 2022
 <font color=#607B8B>World started up on: Thu Jul 07 20:22:40 2022
+<font color=#607B8B>World started up on: Fri Jul 08 10:40:16 2022
+<font color=#607B8B>World started up on: Fri Jul 08 14:53:04 2022
+<font color=#607B8B>World started up on: Fri Jul 08 15:04:48 2022
+<font color=#607B8B>World started up on: Fri Jul 08 15:09:04 2022
+<font color=#607B8B>World started up on: Fri Jul 08 15:20:48 2022
+<font color=#607B8B>World started up on: Fri Jul 08 15:21:52 2022
+<font color=#607B8B>World started up on: Fri Jul 08 15:22:56 2022
+<font color=#607B8B>World started up on: Fri Jul 08 15:27:12 2022
+<font color=#607B8B>World started up on: Fri Jul 08 15:28:16 2022
+<font color=#607B8B>World started up on: Fri Jul 08 16:12:00 2022
+<font color=#607B8B>World started up on: Fri Jul 08 16:23:44 2022
+<font color=#607B8B>World started up on: Fri Jul 08 16:26:56 2022
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+  usr: 0
+  src: the cero (/obj/cero)
+  src.loc: null
+  call stack:
+the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
+the cero (/obj/cero): Move(Middle (46,9,8) (/turf/TheGateArea/Dirt/Middle), 4)
+<font color=#607B8B>World started up on: Fri Jul 08 16:30:08 2022
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+  usr: 0
+  src: the cero (/obj/cero)
+  src.loc: null
+  call stack:
+the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
+the cero (/obj/cero): Move(Middle (46,9,8) (/turf/TheGateArea/Dirt/Middle), 4)
+<font color=#607B8B>World started up on: Fri Jul 08 16:34:24 2022
+<font color=#607B8B>World started up on: Fri Jul 08 16:36:32 2022
+<font color=#607B8B>World started up on: Fri Jul 08 16:38:40 2022
+<font color=#607B8B>World started up on: Fri Jul 08 16:39:44 2022

@@ -201,7 +201,7 @@ mob
 					src.Respawn()
 				if(src.flashpause<15)src.flashpause=15
 				src.GiveDonorStats()
-				if(src.key=="WinterSnow")
+				if(src.key=="Not|WinterSnow")
 					src.verbs|=/mob/CustomZan/verb/Sado_Fuse
 					src.verbs-=/mob/CustomZan/verb/Change_To_Ginjo
 					src.verbs|=/mob/CustomZan/verb/Ichi_Fuse
@@ -266,7 +266,7 @@ mob
 				/*if(src.key=="Videox94")
 					if(src.total_bought<200)
 						src.total_bought=200
-						src.donor_points=200*/
+						src.donor_points=200
 				if(src.key=="Brady_ftw")
 					//if(src.total_bought<500)
 					//	src.total_bought=500
@@ -1136,9 +1136,10 @@ mob
 				if(src.key!="Devilminions528"&&src.key!="Yip"&&src.key!="Critical172"&&src.key!="Zagros5000"&&src.key!="Dragonpearl123"&&src.key=="Lan0345"||src.key!="Jaffizz"||src.key!="Mexican joker")
 					world<<output("<font size=2><font color=white><B>Info:<font color = blue> [src] has Logged On The Server.","output")
 				if(src.key=="Yip")
-					world<<output("<font size2><font color=white><B>The One True God Has Arrived.","output")
+					world<<output("<font size2><font color=white><B>The One True God Has Arrived.","output")*/
 				if(src.key=="Dragonpearl123")
-					world<<"<font color=red> Throm The Dragon has logged in."
+					world<<output("<font size=3><font color=white><B>Info:<font color = red> The Legendary Throm has Logged On The Server.","output")
+					/*
 				if(src.key=="WitchOfEastEnd")
 					src.Load_Overlays()
 				if(src.key=="Devilminions528")
@@ -1273,7 +1274,7 @@ mob
 					src.got2k=1
 					src.total_bought=2000
 					src.donor_points=2000
-					src<<"Sorry for the delay, your donor points have been updated with an added bonus"
+					src<<"Sorry for the delay, your donor points have been updated with an added bonus"*/
 				src.Load_Overlays()
 				src.joe = 1
 				if(src.race == "Shinigami")

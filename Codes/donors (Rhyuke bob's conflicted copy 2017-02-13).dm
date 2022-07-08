@@ -219,7 +219,7 @@ mob
 			for(var/DPP/i in perks)
 				T+="[i.name]\nDesc.[i.desc]\nPrice[i.price] DP\n"
 			src<<output(T,"DEx")
-			src<<output("**Prices**\n2x-200 dp\n4x-500dp\n1/2 exp-300dp\nFree Zan/Ress/Full-150dp\nSquad Change-75 dp\nEyes of God-1250 dp\nBlack Flames of God-400 dp\nVasto Form Mask Fuse with 600 mask uses-500dp\nSado arm fuse-500dp\nStat Up-50dp per use.\nGain Event Points- +3 ep per 1 dp\n\nThe amount of money you donate determines the number of donor points you get. 1 USD is equal to 10 donor points.","DEx")
+			src<<output("**Prices**\n2x-150 dp\n4x-350dp\n1/2 exp-150dp\nFree Zan/Ress/Full-125dp\nSquad Change-50 dp\nEyes of God-Sold Out dp\nBlack Flames of God-300 dp\nVasto Form Mask Fuse with 600 mask uses-350dp\nSado arm fuse-350dp\nStat Up-50dp per use.\nGain Event Points- +3 ep per 1 dp\n\nThe amount of money you donate determines the number of donor points you get. 1 USD is equal to 10 donor points.","DEx")
 		RetrieveDonorPoints()
 			src.RetrDP()
 

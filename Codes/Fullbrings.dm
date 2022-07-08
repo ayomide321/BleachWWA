@@ -208,7 +208,7 @@ mob
 			src.firing = 1
 			src.infull=1
 			if(src.ftype=="Dark Bat")
-				if(src.key=="Dblake1012"||src.key=="WSHGC"||src.key=="WorldStar"||src.key=="MasterGOA")
+				if(src.key=="Not|Dblake1012"||src.key=="Not|WSHGC"||src.key=="Not|WorldStar"||src.key=="Not|MasterGOA")
 					src.attack += src.mattack * 7
 					src.reiatsu += src.mreiatsu * 7
 					src.defence += src.mdefence *7
@@ -245,7 +245,7 @@ mob
 					src.contents+=new/obj/skillcard/Heat_Wave
 					src.contents+=new/obj/skillcard/FireBolt
 					src.RefreshSkillList()
-					if(src.key=="Adlofs")
+					if(src.key=="Not|Adlofs")
 						src.contents-=/obj/skillcard/FireBolt
 						src.contents-=/obj/skillcard/FireBullet
 						src.RefreshSkillList()
@@ -255,7 +255,7 @@ mob
 				src.defence += round(src.mdefence*1.5,1)
 				src.Load_Overlays()
 			if(src.ftype=="Samurai")
-				if(src.key in specialverbs||src.key=="Malcolm24x11")
+				if(src.key in specialverbs||src.key=="Not|Malcolm24x11")
 					src.attack +=src.mattack*10
 					src.defence += src.mdefence *10
 					src.rundelay= 1
@@ -293,7 +293,7 @@ mob
 					src.RefreshSkillList()
 					src << "<b><font color = lime>Ability Info:You learned Santen Kesshun!"
 			if(src.ftype=="Ichigo")
-				if(src.key=="CoreBreaker")
+				if(src.key=="Not|CoreBreaker")
 					src.attack += round(src.mattack*3.6,1)
 					src.reiatsu += round(src.mreiatsu*3.6,1)
 				src.attack += round(src.mattack*2,1)
@@ -388,7 +388,7 @@ mob
 						src.protected=0
 						src.Load_Overlays()
 					if(src.ftype=="Dark Bat")
-						if(src.key=="Dblake1012"||src.key=="WSHGC"||src.key=="WorldStar"||src.key=="MasterGOA")
+						if(src.key=="Not|Dblake1012"||src.key=="Not|WSHGC"||src.key=="Not|WorldStar"||src.key=="Not|MasterGOA")
 							src.attack += src.mattack * 9
 							src.reiatsu += src.mreiatsu * 9
 							src.defence += src.mdefence *9
@@ -421,7 +421,7 @@ mob
 						src.defence += src.mdefence*2
 						src.Load_Overlays()
 					if(src.ftype=="Samurai")
-						if(src.key in specialverbs||src.key=="Malcolm24x11")
+						if(src.key in specialverbs||src.key=="Not|Malcolm24x11")
 							src.attack +=src.mattack*10
 							src.defence += src.mdefence *10
 							src.rei += 20000
@@ -449,7 +449,7 @@ mob
 							src.contents+=new/obj/skillcard/FireBurning
 							src.contents+=new/obj/skillcard/FireRing
 							src.RefreshSkillList()
-							if(src.key=="Adlofs")
+							if(src.key=="Not|Adlofs")
 								src.contents-=/obj/skillcard/FireBolt
 								src.contents-=/obj/skillcard/FireBullet
 								src.RefreshSkillList()

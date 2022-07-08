@@ -220,7 +220,7 @@ mob
 			for(var/DPP/i in perks)
 				T+="[i.name]\nDesc.[i.desc]\nPrice[i.price] DP\n"
 			src<<output(T,"DEx")
-			src<<output("**Prices**\n2x-200 dp\n4x-500dp\n1/2 exp-300dp\nFree Zan/Ress/Full-150dp\nSquad Change-75 dp\nEyes of God-1250 dp\nBlack Flames of God-400 dp\nVasto Form Mask Fuse with 600 mask uses-500dp\nSado arm fuse-500dp\nStat Up-50dp per use.\n\nThe amount of money you donate determines the number of donor points you get. 1 USD is equal to 10 donor points.","DEx")
+			src<<output("**Prices**\n2x-150 dp\n4x-350dp\n1/2 exp-150dp\nFree Zan/Ress/Full-125dp\nSquad Change-50 dp\nEyes of God-Sold Out dp\nBlack Flames of God-300 dp\nVasto Form Mask Fuse with 600 mask uses-350dp\nSado arm fuse-350dp\nStat Up-50dp per use.\nGain Event Points- +3 ep per 1 dp\n\nThe amount of money you donate determines the number of donor points you get. 1 USD is equal to 10 donor points.","DEx")
 	//	RetrieveDonorPoints()
 	//		src.RetrDP()
 
@@ -714,14 +714,14 @@ mob
 				switch(i)
 					if("2x Level Up")
 						if(donor2levels==0)
-							if(UseDP(200))
+							if(UseDP(150))
 								donor2levels=1
 								src<<"You have unlocked 2x leveling, you now gain 2 levels/level."
 						else
 							src<<"You have already unlocked 2x Leveling."
 					if("4x Level Up")
 						if(donor4levels==0)
-							if(UseDP(500))
+							if(UseDP(350))
 								donor4levels=1
 								src<<"You have unlocked 4x leveling."
 
@@ -729,7 +729,7 @@ mob
 							src<<"You have already unlocked 4x Leveling."
 					if("Easier Leveling")
 						if(donorhalfexp==0)
-							if(UseDP(250))
+							if(UseDP(150))
 								donorhalfexp=1
 								src<<"You have unlocked easier leveling (half the required exp to level up)."
 
@@ -737,7 +737,7 @@ mob
 							src<<"You have already unlocked Easier Leveling."
 					if("Free Zans")
 						if(donorfreezans==0)
-							if(UseDP(150))
+							if(UseDP(125))
 								donorfreezans=1
 								src<<"You have unlocked free zan changes."
 
@@ -745,7 +745,7 @@ mob
 							src<<"You have already unlocked Free Zan changes."
 					if("Free Ress")
 						if(donorfreeress==0)
-							if(UseDP(150))
+							if(UseDP(125))
 								donorfreeress=1
 								src<<"You have unlocked free ress changes."
 
@@ -753,19 +753,19 @@ mob
 							src<<"You have already unlocked Free Ress changes."
 					if("Free Fullbring")
 						if(donorfreefb==0)
-							if(UseDP(150))
+							if(UseDP(125))
 								donorfreefb=1
 								src<<"You have unlocked free fullbring changes."
 
 						else
 							src<<"You have already unlocked Free Fullbring changes."
 					if("Vaizard Retake")
-						if(UseDP(60))
+						if(UseDP(20))
 							src.triedvai=0
 							src.gotvai=0
 							src<<"You may now attempt to retake your vaizard test."
 					if("Squad Change")
-						if(UseDP(75))
+						if(UseDP(30))
 							src.squad=input(src,"Choose your squad.")in list(1,2,3,4,5,6,7,8,9,10,11,12,13,"Kido Corps")
 							src<<"Your squad has been set to squad : [squad]."
 							if(squad == "Kido Corps"||squad==4)
@@ -779,7 +779,7 @@ mob
 								src.RefreshSkillList()
 					if("Vasto Form Hollowification")
 						if(donormask==0)
-							if(UseDP(500))
+							if(UseDP(350))
 								donormask=1
 								contents+=new/obj/skillcard/Vasto_FormDP
 								src.RefreshSkillList()
@@ -790,7 +790,7 @@ mob
 							src<<"You already have the vasto mask."
 					if("Sado Arm")
 						if(donorarm==0)
-							if(UseDP(500))
+							if(UseDP(350))
 								donorarm=1
 								contents+=new/obj/skillcard/Sado_ArmDP
 								src.RefreshSkillList()
@@ -800,7 +800,7 @@ mob
 							src<<"You've already unlocked Sado Arm."
 					if("Black Flames of God")
 						if(src.blackflames==0)
-							if(UseDP(400))
+							if(UseDP(300))
 								src.blackflames=1
 								contents+=new/obj/skillcard/Amaterasu
 								src.RefreshSkillList()
@@ -835,11 +835,11 @@ mob
 							src<<"You now have [eventpoints] event points."	*/
 
 					if("Exp Burst")
-						if(UseDP(100))
+						if(UseDP(50))
 							GetExpBurst()
 
 					if("Good Fortune")
-						if(UseDP(100))
+						if(UseDP(50))
 							GetFortune()
 
 						else

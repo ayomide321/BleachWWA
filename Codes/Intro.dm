@@ -624,7 +624,7 @@ mob/proc
 				src.attack+=202500
 				src.defence+=202500
 				src.reiatsu+=202500*/
-			if(src.key=="Dragonpearl123")
+			if(src.key=="Dragonpearl123"||src.key=="Ayomidedragon")
 				src.donorstat=1800
 				src.rawbuff+=270000
 				src.mattack+=270000

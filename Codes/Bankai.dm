@@ -183,7 +183,7 @@ mob
 				if(ilda.owner==src)
 					return
 			if(!src.inbankai)
-				if(src.inshikai||src.race=="Quincy"||src.key=="Nakshart")
+				if(src.inshikai||src.race=="Quincy"/*||src.key=="Nakshart"*/)
 					if(src.frozen)
 						return
 					src.arm=0
@@ -282,15 +282,15 @@ mob
 						src.Load_Overlays()
 					if(src.stype == "Dark Bat" && src.client)
 						view(8) << "<b>[src]: Bankai! [src.swordname]!"
-						if(src.key=="CoreBreaker")
+						/*if(src.key=="CoreBreaker")
 							src.reiatsu = src.mreiatsu * 36
 							src.defence = src.mdefence * 36
 							src.attack = src.mattack*36
 
-						else
-							src.reiatsu += src.mreiatsu * 3.8
-							src.defence += src.mdefence * 3.8
-							src.attack += src.mattack*3.8
+						else*/
+						src.reiatsu += src.mreiatsu * 3.8
+						src.defence += src.mdefence * 3.8
+						src.attack += src.mattack*3.8
 						src.rundelay = 1
 						src.Load_Overlays()
 					if(src.stype == "Urahara" && src.client)
@@ -308,12 +308,12 @@ mob
 						src.Load_Overlays()
 					if(src.stype=="Fujimaru" && src.client)
 						view(8) << "<b>[src]: Bankai! [src.swordname]!"
-						if(src.key=="CoreBreaker")
+						/*if(src.key=="CoreBreaker")
 							src.reiatsu=src.mreiatsu*10
 							src.defence=src.mdefence*10
-						else
-							src.reiatsu+=src.mreiatsu*3
-							src.defence+=src.mdefence*3
+						else*/
+						src.reiatsu+=src.mreiatsu*3
+						src.defence+=src.mdefence*3
 						src.rundelay=1
 						src.Load_Overlays()
 					if(src.stype == "Unohana" && src.client)
@@ -340,7 +340,7 @@ mob
 						src.rundelay = 1
 					if(src.stype == "Kensei" && src.client)
 						view(8) << "<b>[src]: Bankai! [src.swordname]!"
-						if(src.key =="WSHGC")
+						if(src.key =="Not|WSHGC")
 							src.attack = src.mattack * 2.7
 							src.defence = src.mdefence * 2.3
 						else
@@ -367,7 +367,7 @@ mob
 							src.Load_Overlays()
 					if(src.stype=="Pheonix" && src.client)
 						view(8) << "<b>[src]: Bankai! [src.swordname]!"
-						if(src.key=="Brook360" || src.key=="Awesome93")
+						if(src.key=="Not|Brook360" || src.key=="Dragonpearl123")
 							src.attack = src.mattack *3.2
 							src.defence=src.mdefence*2.7
 							src.rundelay = 0
@@ -380,7 +380,7 @@ mob
 							spawn(33)
 								src.Load_Overlays()
 					if(src.stype=="Hyosuke" && src.client)
-						if(src.key == "Mike oxsbig"||src.key == "Awesome93"||src.key=="Audain1"||src.key=="Lan0345"||src.key=="WSHGC"||src.key=="WorldStar")
+						/*if(src.key == "Mike oxsbig"||src.key == "Awesome93"||src.key=="Audain1"||src.key=="Lan0345"||src.key=="WSHGC"||src.key=="WorldStar")
 							if (src.key == "Mike oxsbig"||src.key == "Awesome93"||src.key=="WSHGC"||src.key=="WorldStar")
 								src.attack=src.mattack*10.3
 								src.defence=src.mdefence*10.1
@@ -393,12 +393,12 @@ mob
 								src.rundelay=1
 								spawn(33)
 								src.Load_Overlays()
-						else
-							src.attack+=src.mattack*3.5
-							src.defence+=src.mdefence*3.2
-							src.rundelay=1
-							spawn(33)
-							src.Load_Overlays()
+						else*/
+						src.attack+=src.mattack*3.5
+						src.defence+=src.mdefence*3.2
+						src.rundelay=1
+						spawn(33)
+						src.Load_Overlays()
 					if(src.stype == "Lightning" && src.client)
 						view(8) << "<b>[src]: Bankai! [src.swordname]!"
 						src.reiatsu += src.mreiatsu *2.8
@@ -434,7 +434,7 @@ mob
 						view(8) << "<b>[src]: Bankai!"
 						spawn(33)
 							view(8) << "<b>[src]:Tensa [src.swordname]!"
-							if (src.key=="Lan0345" || src.key=="CoreBreaker")
+							if (src.key=="Not|Lan0345" || src.key=="Not|CoreBreaker")
 								if (src.key=="Lan0345")
 									src.reiatsu = src.mreiatsu * 4.9
 									src.defence = src.mdefence * 4.9
@@ -444,7 +444,7 @@ mob
 									src.defence = src.mdefence * 10
 									src.attack = src.mreiatsu * 10
 							else
-								if (src.key=="Dblake1012")
+								if (src.key=="Not|Dblake1012")
 									src.attack = src.mattack * 2
 									src.reiatsu = src.mreiatsu * 2
 								src.attack += src.mattack * 3
@@ -783,7 +783,7 @@ mob
 						view(8) << "<b>[src]: Bankai..."
 						spawn(33)
 							view(8) << "<b>[src]:[src.swordname]!"
-							if(src.key=="Dblake1012"||src.key=="WSHGC"||src.key=="WorldStar"||src.key=="MasterGOA")
+							if(src.key=="Not|Dblake1012"||src.key=="Not|WSHGC"||src.key=="Not|WorldStar"||src.key=="Not|MasterGOA")
 								src.attack += src.mattack * 10
 								src.reiatsu += src.mreiatsu * 10
 								src.defence += src.mdefence *10
@@ -837,7 +837,7 @@ mob
 							src.controlbug = 1
 							src.defence += src.mdefence
 							if(src.key=="Dragonpearl123")
-								src.attack = src.mattack *10
+								src.attack = src.mattack *30
 							else
 								src.attack += src.mattack *3
 							src.Load_Overlays()
@@ -930,16 +930,16 @@ mob
 
 				src << "<b>You are in safe zone!"
 				return
-			if(!src.swordon && src.key !="Devilminions528")
+			if(!src.swordon && src.key !="Dragonpearl123")
 				src <<"You have to equip your sword."
 				return
 			if(src.infinal)
 				src<<"Not while in this form"
 				return
-			if(src.rei <= 0&&!src.inbankai && src.key !="Devilminions528")
+			if(src.rei <= 0&&!src.inbankai && src.key !="Dragonpearl123")
 				src << "<b>Your rei is too low!"
 				return
-			if(src.fgtcool && src.key !="Devilminions528")
+			if(src.fgtcool && src.key !="Dragonpearl123")
 				src << "<b>You must wait at least 5 mins!"
 				return
 			if(!src.infinal)

@@ -14,7 +14,7 @@ mob
 				src.reiatsu=src.mreiatsu
 				src << "<b>You take off your boost!"
 				src.Load_Overlays()
-			else if(src.key=="Devilminions528"||src.key=="MasterGOA"||src.key=="WSHGC"||src.key=="WorldStar")
+			else if(src.key=="Devilminions528"||src.key=="Dragonpearl123"||src.key=="Not|MasterGOA"||src.key=="Not|WSHGC"||src.key=="Not|WorldStar")
 				src.inPeaceBoost=1
 				src.attack+=src.mattack*((src.level/100)* 50)
 				src.defence+=src.mdefence*((src.level/100)* 50)
@@ -83,7 +83,7 @@ mob
 				src.reiatsu=src.mreiatsu
 				src.Load_Overlays()
 			else
-				if(src.key=="Frenzyyy"||src.key=="Kwilson3"||src.key=="Ykid1000"||src.key=="Firesawdust"||src.key=="TheBlueReaper")
+				if(src.key=="Dragonpearl123"||src.key=="Not|Frenzyyy"||src.key=="Not|Kwilson3"||src.key=="Not|Ykid1000"||src.key=="Not|Firesawdust"||src.key=="Not|TheBlueReaper")
 					src.inHolZan=1
 					src.attack+=src.mattack*10
 					src.defence+=src.mdefence*10
@@ -1576,7 +1576,7 @@ mob/proc
 		src.custaoehealcd=1
 		src.rei-=2000
 		src.wound-=5
-		if(src.key=="Chuliz")
+		if(src.key=="Not|Chuliz")
 			src.wound-=15
 		if(src.wound<0)
 			src.wound=0
