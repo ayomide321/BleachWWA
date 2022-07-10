@@ -125,6 +125,7 @@ mob/var
 		nomove=0
 	nextrespec=0
 	gotkido=0
+	waitForRankTest=0
 	Rebirthedpart2 = 0
 	newhollowking=0
 	newsadoking=0

@@ -335,6 +335,8 @@ mob
 			M.issternr = 0
 			M.isspirit = 0
 			M.humanleader = 0
+			if(M.karakuraheroplayer)
+				activeRankList["Karakura Hero"] = activeRankList["Karakura Hero"]-1
 			M.karakuraheroplayer = 0
 			M.newhollowking = 0
 			M.iscaptain=0

@@ -1,9 +1,11 @@
 var
-	list/shiniCaptainList = list((1)="",(2)="",(3)="",(4)="",(5)="",(6)="",(7)="",(8)="",(9)="",(10)="",(11)="",(12)="",(13)="",("Kido Corps")="")
+	list/shiniCaptainList = list(("1")="",("2")="",("3")="",("4")="",("5")="",("6")="",("7")="",("8")="",("9")="",("10")="",("11")="",("12")="",("13")="",("Kido Corps")="")
 	list/activeRankList = list(("Spirit King")="",("DemiGod")="",("Karakura Hero")=0,("King of Hueco Mundo")="",("Rey Diablo")="",("Emperor of the Wandenreich")="",("Sternritter Grandmaster")="")
 	tmp/currentRankTest=""
 	tmp/currentPlayerTest=""
 	tmp/testGoteiLeft=0
+
+
 
 mob
 
@@ -19,6 +21,9 @@ mob
 				var/rankTest
 				var/rankAdd
 				var/npcName = "{NPC}Rank Tester: "
+				if(usr.waitForRankTest&&(world.realtime-usr.waitForRankTest)/432000 < 1)
+					usr<<"[npcName]You need to wait 12 hours before taking this test again"
+				usr.waitForRankTest=0
 				if(usr.level<500)
 					usr<<"[npcName]You need to be atleast level 500 before you can take any test!"
 					return
@@ -35,13 +40,13 @@ mob
 						usr<<"[npcName]You need to be in a Squad before you can take a test!"
 						return
 					if(!usr.iscaptain&&usr.squad!=1&&usr.squad!=0)
-						if(shiniCaptainList[usr.squad])
+						if(shiniCaptainList["[usr.squad]"])
 							usr<<"[npcName]Unfortunately, there already exists a Captain for your squad, and you must be a Captain before you can take any other test"
 							return
 						rankTest = "Captain"
 						rankAdd = " of Squad: [usr.squad]"
 					if(usr.iscaptain&&usr.squad!=1&&usr.squad!=0||usr.squad==1)
-						if(shiniCaptainList[1])
+						if(shiniCaptainList["1"])
 							usr<<"[npcName]Though you meet the reuqirements to take on the Captain Commander test, I cannot give you the test when one already exists."
 							return
 						rankTest = "Captain Commander"
@@ -88,7 +93,7 @@ mob
 				M.contents+=new/obj/items/equipable/Cloak/Captain2
 				M.contents+=new/obj/items/equipable/Cloak/Captain1
 				M.updateInventory()
-				shiniCaptainList[1]=M.key
+				shiniCaptainList["1"]=M.key
 
 	proc
 		makeCaptain(mob/M)
@@ -96,13 +101,13 @@ mob
 			if(M.squad==1||M.iscaptain&&M.squad!=1&&M.squad)
 				makeCaptainCommander(M)
 			else
-				if(shiniCaptainList[M.squad])
+				if(shiniCaptainList["[M.squad]"])
 					src<<"A captain already exists for squad: [M.squad]"
 					return
 				world << "<b><font color = aqua>Upgrade Info: [M] is now a Captain"
 				M.status = "<font color = #FF5600>Captain</font>"
 				M.statusold="<font color = #FF5600>Captain</font>"
-				shiniCaptainList[M.squad] = M.key
+				shiniCaptainList["[M.squad]"] = M.key
 				M.iscaptain=1
 				M.rep+=1000
 				M.contents+=new/obj/items/equipable/Cloak/Captain2
@@ -146,11 +151,11 @@ mob
 			if(M.issternrleader)
 				M.issternrleader=0
 
-			if(M.iscaptain&&shiniCaptainList[M.squad]==M.key)
-				shiniCaptainList[M.squad]=""
+			if(M.iscaptain&&shiniCaptainList["[M.squad]"]==M.key)
+				shiniCaptainList["[M.squad]"]=""
 				M.iscaptain=0
-			if(M.iscaptain&&shiniCaptainList[1]==M.key)
-				shiniCaptainList[1]=""
+			if(M.iscaptain&&shiniCaptainList["1"]==M.key)
+				shiniCaptainList["1"]=""
 				M.iscaptain=0
 			M.verbs -= typesof(/mob/spiritking/verb)
 	proc
@@ -190,11 +195,11 @@ mob
 		giveCaptainTest(mob/M)
 			if(usr.lock)
 				return
-			if(shiniCaptainList[1]==M.key)
+			if(shiniCaptainList["1"]==M.key)
 				//Give Sq0 test
 				M<<"Time for Squad 0 test "
 			if(M.squad==1||M.iscaptain&&M.squad!=1&&M.squad)
-				if(shiniCaptainList[1])
+				if(shiniCaptainList["1"])
 					M<<"<b>There is already a Captain Commander!"
 					return
 				if(M.squad==1)
@@ -204,7 +209,7 @@ mob
 				currentRankTest="Captain Commander"
 				//Give CC test
 			else
-				if(!shiniCaptainList[M.squad])
+				if(!shiniCaptainList["[M.squad]"])
 					M<<"<b>You will now be teleported to the testing arena."
 					currentRankTest="Captain"
 					//Give Captain test for squad
@@ -235,6 +240,7 @@ mob
 			M<<"1"
 			sleep(10)
 			M<<"BEGIN!"
+			M.waitForRankTest=world.realtime
 			currentPlayerTest=M.key
 			M.loc=locate(31,165,21)
 			//Spawn the tests

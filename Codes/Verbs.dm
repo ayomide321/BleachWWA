@@ -15,10 +15,28 @@ mob
 				k.mvalue=msg
 
 
-	/*	Track_Leaders()
+		Track_Leaders()
 			set category = "Commands"
-			for(name in captainNames)
-				usr<< output("<b><font color = yellow>[name]","output")	*/
+			var/rank
+			/*
+			for(rank in shiniCaptainList)
+				usr << output("<b><font color = yellow>[rank]: [activeRankList[rank]]","output")
+
+				if(rank == "1")
+					usr << output("<b><font color = yellow>Captain Commander: [shiniCaptainList[rank]]","output")
+				if(rank != "Kido Corps" && rank != "1")
+					usr << output("<b><font color = yellow>Captain of Squad [rank]: [shiniCaptainList[rank]]","output")
+				if(rank == "Kido Corps Captain")
+					usr << output("<b><font color = yellow>[rank] Caprain: [shiniCaptainList[rank]]","output")
+					*/
+
+			for(rank in activeRankList)
+				if(rank == "Karakura Hero")
+					usr << output("<b><font color = yellow>Number of [rank]'s: [activeRankList[rank]]","output")
+				else
+					usr << output("<b><font color = yellow>[rank]: [activeRankList[rank]]","output")
+
+
 mob
 	verb
 		GM_Help()

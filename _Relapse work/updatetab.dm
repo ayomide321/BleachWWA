@@ -15,9 +15,11 @@ mob/player
 <br>
 <br>
 
-<u>07/`0/2022 Updates<font size=4></u>
+<u>07/10/2022 Updates<font size=4></u>
 <br><font size=2>-Made DP Shop Fuses only to shorten the list
 <br><font size=2>-Added Captain Test fella, no need to wait on admin just talk to him and ask for the test
+<br><font size=2>-Events now give DP. Gotei/Espada/CTF give 3, every other one gives 1
+<br><font size=2>-Rare and above chests now give DP (Golden, Dungeon, Crown Prince, Boss Yama)
 <br>
 <br>
 <u>07/07/2022 Updates<font size=4></u>

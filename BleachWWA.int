@@ -1,9 +1,9 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1657480734
+LAST_COMPILE_TIME: 1657489687
 PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
-DIR: Bounts\Fire Bounts\Water Codes Codes\db Icons Icons\backup Icons\firesword ssjradditz\on-screeninventory 
+DIR: _Relapse work Bounts\Fire Bounts\Water Codes Codes\db Icons Icons\backup Icons\firesword ssjradditz\on-screeninventory 
 AUTO_FILE_DIR: OFF
 PACKAGE_DMB_INFO: 
 MAP_ICON_TYPE: 0
@@ -11,9 +11,9 @@ PACKAGE_DME_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_src.zip
 LAST_COMPILE_VERSION: 514.1575
 PACKAGE_DME_START: 
 PACKAGE_TYPE: 0
-WINDOW: BleachWWA.dm;Codes\Admin.dm;Codes\donors (Rhyuke bob's conflicted copy 2017-02-13).dm
+WINDOW: Codes\Admin.dm;Codes\Changer.dm
 PACKAGE_DME_INFO: 
-FILE: Codes\donors (Rhyuke bob's conflicted copy 2017-02-13).dm
+FILE: Codes\Admin.dm
 PACKAGE_DME_DEMO: 
 PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
 */

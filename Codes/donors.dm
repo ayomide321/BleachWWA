@@ -774,7 +774,7 @@ mob
 								src.Load_Overlays()
 							usr.rep-=5000
 							var/S=input(src,"Choose your squad.")in list(1,2,3,4,5,6,7,8,9,10,11,12,13,"Kido Corps")
-							shiniCaptainList[S]=""
+							shiniCaptainList["[S]"]=""
 							src.squad=S
 							src<<"Your squad has been set to squad : [squad]."
 							if(squad == "Kido Corps"||squad==4)

@@ -2739,30 +2739,33 @@ mob
 				del(m)
 
 
+		Reset_Test_Timer(mob/M in All_Clients())
+			set category = "GM"
+			M.waitForRankTest=0
+			M<<"Your test timer was reset by [src]"
+			src<<"You reset [M]'s test timer"
 
 		Make_Captain(mob/M in All_Clients())
 			set category = "GM"
 			if(usr.lock)
 				return
-			if(shiniCaptainList[M.squad])
+			if(!M.iscaptain&&!M.squad)
+				src<<"[M] needs to be in a squad"
+				return
+			if(shiniCaptainList["[M.squad]"])
 				src<<"A captain already exists for squad: [M.squad]"
 				return
+			if(M.squad==1)
+				src<<"Use the Make Captain Commander verb, since they are in Squad 1"
+				return
+
+			removeRank(M)
 			world << "<b><font color = aqua>Upgrade Info: [M] is now a Captain"
 			M.status = "<font color = #FF5600>Captain</font>"
 			M.statusold="<font color = #FF5600>Captain</font>"
-			shiniCaptainList[M.squad] = M.key
+			shiniCaptainList["[M.squad]"] = M.key
 			M.iscaptain=1
-			if(M.squad==1)
-				world << "<b><font color = aqua>Upgrade Info: [M] is now a Captain Commander!"
-			//	M.verbs +=/mob/GM4/CaptainTest
-				M.status = "<font color = #f0f217>Captain Commander</font>"
-				M.statusold = "<font color = #f0f217>Captain Commander</font>"
-				M.iscaptain=1
-				M.verbs += typesof(/mob/Captain_Command/verb)
-				M.contents+=new/obj/items/equipable/Cloak/Captain2
-				M.contents+=new/obj/items/equipable/Cloak/Captain1
 
-				M.rep+=1000
 			if(M.squad!=1&&M.squad!=0)
 				M.rep+=1000
 				M.contents+=new/obj/items/equipable/Cloak/Captain2
@@ -2775,10 +2778,11 @@ mob
 			if(usr.lock)
 				return
 			if(M.race == "Shinigami")
-				if(shiniCaptainList[1])
+				if(shiniCaptainList["1"])
 					src<<"There is already a Captain Commander!"
 					return
-				shiniCaptainList[1] = M.key
+				removeRank(M)
+				shiniCaptainList["1"] = M.key
 				world << "<b><font color = aqua>Upgrade Info: [M] is now a Captain Commander!"
 				M.status = "<font color = #f0f217>Captain Commander</font>"
 				M.statusold = "<font color = #f0f217>Captain Commander</font>"
@@ -2793,17 +2797,14 @@ mob
 			if(usr.lock)
 				return
 			world << "<b><font color = aqua>Upgrade Info: [M] is not a Captain Commander anymore!"
+			removeRank(M)
 			M.status = ""
 			M.statusold =""
 			M.iscaptain=0
 			M.verbs -= typesof(/mob/Captain_Command/verb)
-			if(M.iscaptain&&shiniCaptainList[1]==M.key)
-				shiniCaptainList[1]=""
+			if(M.iscaptain&&shiniCaptainList["1"]==M.key)
+				shiniCaptainList["1"]=""
 				M.iscaptain=0
-			if(M.iscaptain&&shiniCaptainList[1]!=M.key&&M.status == "<font color = #f0f217>Captain Commander</font>")
-				shiniCaptainList[1]=""
-				M.iscaptain=0
-				world<<"Theres a bug in the ranking system, please contact Throm"
 		Remove_Captain(mob/M in All_Clients())
 			set category = "GM"
 			if(usr.lock)
@@ -2811,7 +2812,7 @@ mob
 			world << "<b><font color = aqua>Upgrade Info: [M] is not a Captain anymore!"
 			M.status = ""
 			M.statusold=""
-
+			removeRank(M)
 			for(var/obj/items/equipable/Cloak/K in M)
 				del K
 				M.cloak=0
@@ -2829,13 +2830,9 @@ mob
 			if(M.isspirit)M.isspirit=0
 			if(M.issternr)M.issternr=0
 			if(M.issternrleader)M.issternrleader=0
-			if(M.iscaptain&&shiniCaptainList[M.squad]==M.key)
-				shiniCaptainList[M.squad]=""
+			if(M.iscaptain&&shiniCaptainList["[M.squad]"]==M.key)
+				shiniCaptainList["[M.squad]"]=""
 				M.iscaptain=0
-			if(M.iscaptain&&shiniCaptainList[M.squad]!=M.key)
-				shiniCaptainList[M.squad]=""
-				M.iscaptain=0
-				world<<"Theres a bug in the ranking system, please contact Throm"
 			M.verbs -= typesof(/mob/spiritking/verb)
 
 

@@ -3278,6 +3278,8 @@ mob
 						if(Kd.dmgdone>Kd.mhealth||Kd.wnddone>=1)
 							Kd <<"<b>You have defeated the Wandenreich Prince!"
 							Kd.eventpoints+=20
+							Kd.donor_points+=5
+							Kd.total_bought+=5
 							Kd<<"<b><font color=lime green>You have gained 20 event points and a Chest (check your inventory)!"
 							Kd.contents+=new/obj/items/usable/Chests/Rare_Chest
 							Kd.aftereventbuffs()
