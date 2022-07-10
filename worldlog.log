@@ -34299,3 +34299,48 @@ the cero (/obj/cero): Move(Middle (46,9,8) (/turf/TheGateArea/Dirt/Middle), 4)
 <font color=#607B8B>World started up on: Fri Jul 08 16:36:32 2022
 <font color=#607B8B>World started up on: Fri Jul 08 16:38:40 2022
 <font color=#607B8B>World started up on: Fri Jul 08 16:39:44 2022
+<font color=#607B8B>World started up on: Sat Jul 09 20:23:44 2022
+<font color=#607B8B>World started up on: Sat Jul 09 20:24:48 2022
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+  usr: 0
+  src: the cero (/obj/cero)
+  src.loc: null
+  call stack:
+the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
+the cero (/obj/cero): Move(Middle (46,7,8) (/turf/TheGateArea/Dirt/Middle), 4)
+<font color=#607B8B>World started up on: Sat Jul 09 21:13:52 2022
+<font color=#607B8B>World started up on: Sat Jul 09 21:24:32 2022
+runtime error: bad index
+proc name: Edit (/mob/Owner/verb/Edit)
+  source file: Admin.dm,1250
+  usr: (src)
+  src: ShiniThrom (/mob/player)
+  src.loc: Middle (36,168,21) (/turf/TheGateArea/Middle)
+  call stack:
+ShiniThrom (/mob/player): Edit(ShiniThrom (/mob/player))
+<font color=#607B8B>World started up on: Sun Jul 10 11:18:40 2022
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4701
+  usr: 0
+  src: {NPC}Gin (/mob/Test_Gotei_13/C3)
+  src.loc: null
+  call stack:
+{NPC}Gin (/mob/Test_Gotei_13/C3): Deathd(ShiniThrom (/mob/player))
+{NPC}Gin (/mob/Test_Gotei_13/C3): Death(ShiniThrom (/mob/player), 8.988e+012, 3, 0)
+the getsugaring (/obj/getsugaring): Bump({NPC}Gin (/mob/Test_Gotei_13/C3))
+<font color=#607B8B>World started up on: Sun Jul 10 12:19:28 2022
+runtime error: Cannot read null.z
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,5111
+  usr: null
+  src: Throm (/mob/player)
+  src.loc: Middle (23,160,21) (/turf/TheGateArea/Middle)
+  call stack:
+Throm (/mob/player): Deathd(null)
+Throm (/mob/player): Death(null, 776151, 1, 0)
+Attack()
+<font color=#607B8B>World started up on: Sun Jul 10 12:33:20 2022
+<font color=#607B8B>World started up on: Sun Jul 10 12:42:56 2022

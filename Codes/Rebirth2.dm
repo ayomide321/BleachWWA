@@ -148,7 +148,12 @@ mob/proc
 						M.contents+=new/obj/items/equipable/Armor/Shunsui_Hat
 					M.contents+=new/obj/skillcard/Release_Color
 
-
+					for(rank in activeRankList)
+						if(activeRankList[rank]==M.key)
+							activeRankList[rank]=""
+					for(rank in shiniCaptainList)
+						if(shiniCaptainList[rank]==M.key)
+							shiniCaptainList[rank]=""
 				//	M.eventpoints = 0
 				//	M.money += 20000
 					M.shinipassive=0

@@ -1,20 +1,18 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1657323490
+LAST_COMPILE_TIME: 1657480734
+DIR: _Relapse work april 20th icons Bounts\Fire Bounts\Water Codes Codes\db Icons Icons\backup Icons\firesword ssjradditz\on-screeninventory 
 PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
-DIR: _Relapse work Bounts\Fire Bounts\Water Codes Icons Icons\backup Icons\firesword ssjradditz\on-screeninventory 
 AUTO_FILE_DIR: OFF
 PACKAGE_DMB_INFO: 
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_src.zip
 LAST_COMPILE_VERSION: 514.1575
-PACKAGE_DME_START: 
 PACKAGE_TYPE: 0
-WINDOW: Codes\Login.dm;Codes\Skillcards.dm;Codes\Changer.dm;Codes\Admin.dm;Admin.dm;Codes\Attack.dm;Codes\Items.dm;Codes\Tech List.dm;Codes\donors.dm;Codes\Rebirth.dm;BleachWWA.dm;BWWA2.dm;Mob.dm;Squads.dm;Codes\CustomZanSkills.dm;Codes\Fullbrings.dm;Codes\Intro (Rhyuke bob's conflicted copy 2017-02-13).dm;Codes\Intro.dm
+PACKAGE_DME_START: 
 PACKAGE_DME_INFO: 
-FILE: Codes\Changer.dm
-PACKAGE_DME_DEMO: 
 PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
+PACKAGE_DME_DEMO: 
 */
 // END_INTERNALS

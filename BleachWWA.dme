@@ -77,6 +77,7 @@
 #include "Codes\Quincy.dm"
 #include "Codes\QuincyVandSkills.dm"
 #include "Codes\Raid System.dm"
+#include "Codes\RankSystem.dm"
 #include "Codes\Rebirth.dm"
 #include "Codes\Rebirth2.dm"
 #include "Codes\Regeneration.dm"

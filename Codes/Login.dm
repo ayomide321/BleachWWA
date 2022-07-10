@@ -195,7 +195,7 @@ mob
 					if(!isnull(y))
 						src.contents-=y
 				//if(src.z==13||src.z==14||src.z==15||src.z==16||src.z==17||src.z==10||src.z==9||src.z==8||src.z==6||src.z==22&&src.y>50)
-				if(src.z==6||src.z==8||src.z==10||src.z==13||src.z==14||src.z==16||src.z==20||src.z==19&&src.x>100&&src.y>100||src.z==27||src.z==28)
+				if(src.z==6||src.z==8||src.z==10||src.z==13||src.z==14||src.z==16||src.z==20||src.z==19&&src.x>100&&src.y>100||src.z==27||src.z==28||src.z==21&&src.x<=54&&src.y>=145)
 					src.contents-=/obj/skillcard/Dungeon_Heal
 					src.contents-=/obj/skillcard/Dungeon_AOE_Heal
 					src.Respawn()
@@ -2065,6 +2065,8 @@ client
 	//	if(src.mob.talkingtorb)
 	//		src.mob.eventpoints = 0
 
+		if(src == currentPlayerTest)
+			src.mob.resetRankTest()
 		if(team_deathmatch)
 			if(src in team_deathmatch.white_team) team_deathmatch.white_team -= src
 			if(src in team_deathmatch.black_team) team_deathmatch.black_team -= src

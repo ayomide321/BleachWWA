@@ -766,7 +766,16 @@ mob
 							src<<"You may now attempt to retake your vaizard test."
 					if("Squad Change")
 						if(UseDP(30))
-							src.squad=input(src,"Choose your squad.")in list(1,2,3,4,5,6,7,8,9,10,11,12,13,"Kido Corps")
+							src.status = ""
+							src.statusold=""
+							for(var/obj/items/equipable/Cloak/K in src)
+								del K
+								src.cloak=0
+								src.Load_Overlays()
+							usr.rep-=5000
+							var/S=input(src,"Choose your squad.")in list(1,2,3,4,5,6,7,8,9,10,11,12,13,"Kido Corps")
+							shiniCaptainList[S]=""
+							src.squad=S
 							src<<"Your squad has been set to squad : [squad]."
 							if(squad == "Kido Corps"||squad==4)
 								src.contents+=new/obj/skillcard/Kido_Corp_Heal

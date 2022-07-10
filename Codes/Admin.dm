@@ -2744,9 +2744,13 @@ mob
 			set category = "GM"
 			if(usr.lock)
 				return
+			if(shiniCaptainList[M.squad])
+				src<<"A captain already exists for squad: [M.squad]"
+				return
 			world << "<b><font color = aqua>Upgrade Info: [M] is now a Captain"
 			M.status = "<font color = #FF5600>Captain</font>"
 			M.statusold="<font color = #FF5600>Captain</font>"
+			shiniCaptainList[M.squad] = M.key
 			M.iscaptain=1
 			if(M.squad==1)
 				world << "<b><font color = aqua>Upgrade Info: [M] is now a Captain Commander!"
@@ -2757,6 +2761,7 @@ mob
 				M.verbs += typesof(/mob/Captain_Command/verb)
 				M.contents+=new/obj/items/equipable/Cloak/Captain2
 				M.contents+=new/obj/items/equipable/Cloak/Captain1
+
 				M.rep+=1000
 			if(M.squad!=1&&M.squad!=0)
 				M.rep+=1000
@@ -2770,6 +2775,10 @@ mob
 			if(usr.lock)
 				return
 			if(M.race == "Shinigami")
+				if(shiniCaptainList[1])
+					src<<"There is already a Captain Commander!"
+					return
+				shiniCaptainList[1] = M.key
 				world << "<b><font color = aqua>Upgrade Info: [M] is now a Captain Commander!"
 				M.status = "<font color = #f0f217>Captain Commander</font>"
 				M.statusold = "<font color = #f0f217>Captain Commander</font>"
@@ -2788,6 +2797,13 @@ mob
 			M.statusold =""
 			M.iscaptain=0
 			M.verbs -= typesof(/mob/Captain_Command/verb)
+			if(M.iscaptain&&shiniCaptainList[1]==M.key)
+				shiniCaptainList[1]=""
+				M.iscaptain=0
+			if(M.iscaptain&&shiniCaptainList[1]!=M.key&&M.status == "<font color = #f0f217>Captain Commander</font>")
+				shiniCaptainList[1]=""
+				M.iscaptain=0
+				world<<"Theres a bug in the ranking system, please contact Throm"
 		Remove_Captain(mob/M in All_Clients())
 			set category = "GM"
 			if(usr.lock)
@@ -2795,20 +2811,31 @@ mob
 			world << "<b><font color = aqua>Upgrade Info: [M] is not a Captain anymore!"
 			M.status = ""
 			M.statusold=""
+
 			for(var/obj/items/equipable/Cloak/K in M)
 				del K
 				M.cloak=0
 				M.Load_Overlays()
 			M.rep-=5000
-			if(M.humanleader)M.humanleader=0
-			if(M.karakuraheroplayer)M.karakuraheroplayer=0
+			if(M.humanleader)
+				M.humanleader=0
+				activeRankList["DemiGod"]=""
+			if(M.karakuraheroplayer)
+				activeRankList["Karakura Hero"]=activeRankList["Karakura Hero"]-1
+				M.karakuraheroplayer=0
 			if(M.newhollowking)M.newhollowking=0
 			if(M.newsadoking)M.newsadoking=0
 			if(M.newquincyking)M.newquincyking=0
 			if(M.isspirit)M.isspirit=0
 			if(M.issternr)M.issternr=0
 			if(M.issternrleader)M.issternrleader=0
-			if(M.iscaptain)M.iscaptain=0
+			if(M.iscaptain&&shiniCaptainList[M.squad]==M.key)
+				shiniCaptainList[M.squad]=""
+				M.iscaptain=0
+			if(M.iscaptain&&shiniCaptainList[M.squad]!=M.key)
+				shiniCaptainList[M.squad]=""
+				M.iscaptain=0
+				world<<"Theres a bug in the ranking system, please contact Throm"
 			M.verbs -= typesof(/mob/spiritking/verb)
 
 

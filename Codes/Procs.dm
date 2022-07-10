@@ -291,7 +291,7 @@ mob/proc
 			src.GainExp(src.mexp/2)
 			src<<"You gain 50% experience"
 	Rare()
-		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18)
+		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19)
 		if(t==1)
 			src.contents+=new/obj/skillcard/Sharingan
 			src.gotsharingan = 1
@@ -347,8 +347,12 @@ mob/proc
 		if(t==18)
 			src.GainExp(src.mexp*6)
 			src<<"You found and consume an experience pill!"
+		if(t==19)
+			src<<"You have found 1 Donor Points!"
+			src.donor_points+=1
+			src.total_bought+=1
 	DungeonR1()
-		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18)
+		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19)
 		if(t==1)
 			src.contents+=new/obj/skillcard/Sharingan
 			src.gotsharingan = 1
@@ -408,9 +412,13 @@ mob/proc
 		if(t==18)
 			src.GainExp(src.mexp*7)
 			src<<"You found and consume an Ultra experience pill! You got [src.mexp*7] exp!"
+		if(t==19)
+			src<<"You have found 3 Donor Points!"
+			src.donor_points+=3
+			src.total_bought+=3
 
 	DungeonR2()
-		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18)
+		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19)
 		if(t==1)
 			src.contents+=new/obj/skillcard/Sharingan
 			src.gotsharingan = 1
@@ -470,9 +478,13 @@ mob/proc
 		if(t==18)
 			src.GainExp(src.mexp*7)
 			src<<"You found and consume an Ultra experience pill! You got [src.mexp*7] exp!"
+		if(t==19)
+			src<<"You have found 3 Donor Points!"
+			src.donor_points+=3
+			src.total_bought+=3
 
 	DungeonR3()
-		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18)
+		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19)
 		if(t==1)
 			src.contents+=new/obj/skillcard/Sharingan
 			src.gotsharingan = 1
@@ -532,6 +544,10 @@ mob/proc
 		if(t==18)
 			src.GainExp(src.mexp*7)
 			src<<"You found and consume an Ultra experience pill! You got [src.mexp*7] exp!"
+		if(t==19)
+			src<<"You have found 4 Donor Points!"
+			src.donor_points+=4
+			src.total_bought+=4
 
 	Crownrare()
 		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21)
@@ -598,6 +614,7 @@ mob/proc
 			src<<"<b><font color=yellow>You have found a scroll containing the second skill the prince taught to his underlings</font></b>"
 		if(t==21)
 			src.donor_points += 5
+			src.total_bought += 5
 			src<<"You have earned 5 DP, you now have [src.donor_points]!"
 
 
@@ -614,6 +631,7 @@ mob/proc
 			src<<"You found and consume an experience pill!"
 		if(t==4)
 			src.donor_points += 5
+			src.total_bought += 5
 			src.GainExp(src.mexp*3)
 			src<<"You have earned 5 DP and consumed an experience pill, you now have [src.donor_points]!"
 
@@ -4276,6 +4294,8 @@ mob
 										expe=k.mexp
 										k.Level_Up()
 									k.eventpoints+=15
+									k.donor_points+=3
+									k.total_bought += 3
 									k<<"<b><font color=lime green>You have gained 15 event points"
 									k.Level_Up()
 									k << "<b>You gained [expe] experience!"
@@ -4326,6 +4346,8 @@ mob
 										expe=k.mexp
 										k.Level_Up()
 									k.eventpoints+=10
+									k.donor_points+=2
+									k.total_bought += 2
 									k<<"<b><font color=lime green>You have gained 10 event points"
 									k.Level_Up()
 									k << "<b>You gained [expe] experience!"
@@ -4461,6 +4483,12 @@ mob
 				return
 	//		if(src.enemy&&src.health<=0||src.enemy&&src.wound>=200||src.health<=0&&src.Demon_Boss==1||src.health<=0&&src.newkomaboss==1||src.health<=0&&src.lorelei==1||src.health<=0&&src.Yokai1==1||src.health<=0&&src.Yokai2==1||src.health<=0&&src.Yokai3==1||src.health<=0&&src.Yokai4==1)
 			if(src.enemy&&src.health <= 0&&!src.bossss||src.enemy&&src.wound>=200&&!src.bossss||src.health<=0&&src.Demon_Boss==1||src.health<=0&&src.newkomaboss==1||src.health<=0&&src.crownprince==1||src.health<=0&&src.lorelei==1||src.health<=0&&src.swampboss==1||src.health<=0&&src.Yokai1==1||src.health<=0&&src.Yokai2==1||src.health<=0&&src.Yokai3==1||src.health<=0&&src.Yokai4==1||src.health<=0&&src.bossyama==1||src.health<=0&&src.bossyama2==1)
+				if(src.test_gotei&&currentRankTest)
+					testGoteiLeft = max(0, testGoteiLeft-1)
+					if(testGoteiLeft == 0 && currentPlayerTest == M.key)
+						M.giveRank(currentRankTest)
+						resetRankTest()
+						M.GiveDonorStats()
 				if(M.missiontarget==src&&M.mission==5)
 					M.CompleteMish(2000,rand(100,150),view(20,M))
 				for(var/mob/Di in oview(20,src))
@@ -4880,6 +4908,8 @@ mob
 						lostcaps-=1
 						if(src.dmgdone>src.mhealth||src.wnddone>=1)
 							src.eventpoints+=4
+							src.donor_points+=1
+							src.total_bought += 1
 							src.aftereventbuffs()
 							src<<"<b><font color=lime green>You have gained 4 event points"
 						if(!lostcaps)
@@ -4899,6 +4929,8 @@ mob
 						lostesp-=1
 						if(src.dmgdone>src.mhealth||src.wnddone>=1)
 							src.eventpoints+=3
+							src.donor_points+=1
+							src.total_bought += 1
 							src.aftereventbuffs()
 							src<<"<b><font color=lime green>You have gained 3 event points"
 						if(!lostesp)
@@ -4944,6 +4976,8 @@ mob
 												var/catch2 = Ka.mexp*5
 												Ka.GainMoney(150000)
 												Ka.eventpoints+=15
+												Ka.donor_points+=3
+												Ka.total_bought += 3
 												Ka.Level_Up()
 												Ka<<"<b><font color=blue>You got [catch2] exp!"
 												Ka<<"<b><font color=blue>You got $150,000"
@@ -4971,6 +5005,8 @@ mob
 												Ka.GainExp(Ka.mexp*5)
 												var/catch2 = Ka.mexp*5
 												Ka.GainMoney(150000)
+												Ka.donor_points+=3
+												Ka.total_bought+=3
 												Ka.eventpoints+=15
 												Ka.Level_Up()
 												Ka<<"<b><font color=blue>You got [catch2] exp!"
@@ -5000,6 +5036,8 @@ mob
 												var/catch2 = Ka.mexp*5
 												Ka.GainMoney(150000)
 												Ka.eventpoints+=15
+												Ka.donor_points+=3
+												Ka.total_bought+=3
 												Ka.Level_Up()
 												Ka<<"<b><font color=blue>You got [catch2] exp!"
 												Ka<<"<b><font color=blue>You got $150,000"
@@ -5028,6 +5066,8 @@ mob
 												var/catch2 = Ka.mexp*5
 												Ka.GainMoney(150000)
 												Ka.eventpoints+=15
+												Ka.donor_points+=3
+												Ka.total_bought+=3
 												Ka.Level_Up()
 												Ka<<"<b><font color=blue>You got [catch2] exp!"
 												Ka<<"<b><font color=blue>You got $150,000"
@@ -5062,6 +5102,10 @@ mob
 				src.limitrelease=0
 				src.segunda=0
 				src.ceroback=0
+				if(currentPlayerTest == src.key)
+					world<<"<b><font color=red>[src] has failed the test for [currentRankTest], he only needed [testGoteiLeft] more kill(s) to go :("
+					resetRankTest()
+					src.GiveDonorStats()
 				if(src.rudecomment)src.Talks("[M], you suck")
 				if(M.z==5)
 					M.Respawn()

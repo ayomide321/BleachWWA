@@ -14,6 +14,12 @@ mob/player
 <br>
 <br>
 <br>
+
+<u>07/`0/2022 Updates<font size=4></u>
+<br><font size=2>-Made DP Shop Fuses only to shorten the list
+<br><font size=2>-Added Captain Test fella, no need to wait on admin just talk to him and ask for the test
+<br>
+<br>
 <u>07/07/2022 Updates<font size=4></u>
 <br><font size=3>-Every update now and henceforth is the work of Throm your BWWA god.
 <br><font size=2>-I never thought I'd be the one to do it, but yes DP is confirmedly revamped anybody can get it now :)

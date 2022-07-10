@@ -441,6 +441,7 @@ mob/var
 	tmp/poison=0
 	tmp/poisoncool=0
 	tsukishima=0
+	test_gotei=0
 	kicks=0
 	tmp/senkad=0
 	tmp/senkacool=0

@@ -167,6 +167,7 @@ mob/Test_Gotei_13
 	hostile=1
 	killable=1
 	delay=0
+	test_gotei=1
 	healthwas = 990000
 	mrei = 590000
 	rei=590000

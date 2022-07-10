@@ -43,6 +43,10 @@ proc
 	NameSave()
 		var/savefile/B = new("CaptainNames.sav")
 		B["captainNames"] << captainNames
+		var/savefile/Bs = new("CaptainRanks.sav")
+		Bs["captainSaves"] << shiniCaptainList
+		var/savefile/Ra = new("GlobalRanks.sav")
+		Ra["globalRanks"] << activeRankList
 		var/savefile/Fs = new("BWWAPoints.sav")
 		Fs["pointnames"] << pointnames
 		var/savefile/F = new("BWWA.sav")
@@ -56,6 +60,12 @@ proc
 		if(fexists("CaptainNames.sav"))
 			var/savefile/B = new("CaptainNames.sav")
 			if(B["captainNames"]&&istype(B["captainNames"],/list)) B["captainNames"] >> captainNames
+		if(fexists("CaptainRanks.sav"))
+			var/savefile/Bs = new("CaptainRanks.sav")
+			if(Bs["captainSaves"]&&istype(Bs["captainSaves"],/list)) Bs["captainSaves"] >> shiniCaptainList
+		if(fexists("GlobalRanks.sav"))
+			var/savefile/Ra = new("GlobalRanks.sav")
+			if(Ra["globalRanks"]&&istype(Ra["globalRanks"],/list)) Ra["globalRanks"] >> activeRankList
 		if(fexists("BWWAPoints.sav"))
 			var/savefile/S = new("BWWAPoints.sav")
 			if(S["pointnames"]&&istype(S["pointnames"],/list)) S["pointnames"] >> pointnames

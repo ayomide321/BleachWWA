@@ -168,7 +168,12 @@ mob
 			M.instinct=0
 			M.quickflash=0
 			M.berserk=0
-
+			for(rank in activeRankList)
+				if(activeRankList[rank]==M.key)
+					activeRankList[rank]=""
+			for(rank in shiniCaptainList)
+				if(shiniCaptainList[rank]==M.key)
+					shiniCaptainList[rank]=""
 		//	M.gotha=0
 		/*	M.gotmini=0
 			M.gotshar= 0
