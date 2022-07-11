@@ -35,6 +35,8 @@ mob
 							return
 					resetRankTest()
 					usr<<"[npcName]It seems I was mistaken, contact Throm about this and please continue your test!"
+				if(usr.race != "Shinigami" && usr.race != "Sado"&& usr.race != "Chad" && usr.race == "Quincy" && usr.race == "Fullbringer")
+					usr<<"[npcName]There is no exam for hollows yet"
 				if(usr.race == "Shinigami")
 					if(!usr.iscaptain&&!usr.squad)
 						usr<<"[npcName]You need to be in a Squad before you can take a test!"
@@ -195,6 +197,8 @@ mob
 		giveCaptainTest(mob/M)
 			if(usr.lock)
 				return
+			if(M.race != "Shinigami")
+				M<<"You cannot take the test for captains! Please contact Throm."
 			if(shiniCaptainList["1"]==M.key)
 				//Give Sq0 test
 				M<<"Time for Squad 0 test "
