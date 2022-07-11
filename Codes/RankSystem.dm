@@ -99,23 +99,25 @@ mob
 
 	proc
 		makeCaptain(mob/M)
-
-			if(M.squad==1||M.iscaptain&&M.squad!=1&&M.squad)
-				makeCaptainCommander(M)
-			else
-				if(shiniCaptainList["[M.squad]"])
-					src<<"A captain already exists for squad: [M.squad]"
-					return
-				world << "<b><font color = aqua>Upgrade Info: [M] is now a Captain"
-				M.status = "<font color = #FF5600>Captain</font>"
-				M.statusold="<font color = #FF5600>Captain</font>"
-				shiniCaptainList["[M.squad]"] = M.key
-				M.iscaptain=1
-				M.rep+=1000
-				M.contents+=new/obj/items/equipable/Cloak/Captain2
-				M.contents+=new/obj/items/equipable/Cloak/Captain1
-				M.verbs += typesof(/mob/Squad_Captain/verb)
-				M.verbs += typesof(/mob/Squad_Verbs/verb)
+			if(M.race == "Shinigami")
+				if(M.squad==1||M.iscaptain&&M.squad!=1&&M.squad)
+					makeCaptainCommander(M)
+				else
+					if(!M.squad)
+						M<<"You need to be in a squad to become the captain!"
+					if(shiniCaptainList["[M.squad]"])
+						M<<"A captain already exists for squad: [M.squad]"
+						return
+					world << "<b><font color = aqua>Upgrade Info: [M] is now a Captain"
+					M.status = "<font color = #FF5600>Captain</font>"
+					M.statusold="<font color = #FF5600>Captain</font>"
+					shiniCaptainList["[M.squad]"] = M.key
+					M.iscaptain=1
+					M.rep+=1000
+					M.contents+=new/obj/items/equipable/Cloak/Captain2
+					M.contents+=new/obj/items/equipable/Cloak/Captain1
+					M.verbs += typesof(/mob/Squad_Captain/verb)
+					M.verbs += typesof(/mob/Squad_Verbs/verb)
 	proc
 		removeRank(mob/M)
 			M.status = ""
