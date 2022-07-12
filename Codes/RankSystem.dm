@@ -14,6 +14,9 @@ mob
 		npc = 1
 		New()
 			..()
+			src.ClothesGen()
+			src.HairGen()
+			src.Load_Overlays()
 		verb
 			Talk()
 				set category = "NPC's"
@@ -23,6 +26,7 @@ mob
 				var/npcName = "{NPC}Rank Tester: "
 				if(usr.waitForRankTest&&(world.realtime-usr.waitForRankTest)/432000 < 1)
 					usr<<"[npcName]You need to wait 12 hours before taking this test again"
+					return
 				usr.waitForRankTest=0
 				if(usr.level<500)
 					usr<<"[npcName]You need to be atleast level 500 before you can take any test!"
@@ -35,8 +39,9 @@ mob
 							return
 					resetRankTest()
 					usr<<"[npcName]It seems I was mistaken, contact Throm about this and please continue your test!"
-				if(usr.race != "Shinigami" && usr.race != "Sado"&& usr.race != "Chad" && usr.race == "Quincy" && usr.race == "Fullbringer")
+				if(usr.race != "Shinigami" && usr.race != "Sado"&& usr.race != "Chad" && usr.race != "Quincy" && usr.race != "Fullbringer" && usr.race != "Vaizard" && usr.race != "Arrancar")
 					usr<<"[npcName]There is no exam for hollows yet"
+					return
 				if(usr.race == "Shinigami")
 					if(!usr.iscaptain&&!usr.squad)
 						usr<<"[npcName]You need to be in a Squad before you can take a test!"
@@ -52,13 +57,29 @@ mob
 							usr<<"[npcName]Though you meet the reuqirements to take on the Captain Commander test, I cannot give you the test when one already exists."
 							return
 						rankTest = "Captain Commander"
-				if(usr.race == "Sado"||usr.race == "Chad"||usr.race == "Quincy"||usr.race == "Fullbringer")
-					var/list/availableRank= new
+				var/list/availableRank= new
+				if(usr.race == "Arrancar")
+					availableRank += "King of Hueco Mundo"
+					availableRank += "Cancel"
+					var/U=input("Which test do you want to take?", text) in availableRank
+					if(U=="Cancel")
+						return
+					currentRankTest=U
+					startTest(usr)
+					return
+				if(usr.race == "Sado"||usr.race == "Chad"||usr.race == "Quincy"||usr.race == "Fullbringer" || usr.race == "Vaizard")
 					if(usr.karakuraheroplayer&&!activeRankList["DemiGod"])
 						availableRank += "DemiGod"
 					if(!usr.karakuraheroplayer&&!usr.humanleader&&activeRankList["Karakura Hero"]<3)
 						availableRank += "Karakura Hero"
-
+					if(usr.race == "Quincy")
+						if(!usr.issternrleader&&!activeRankList["Sternritter Grandmaster"])
+							availableRank += "Sternritter Grandmaster"
+						if(usr.issternrleader&&!usr.newquincyking&&!activeRankList["Emperor of the Wandenreich"])
+							availableRank += "Emperor of the Wandenreich"
+					if(usr.race == "Sado"||usr.race == "Chad")
+						if(!activeRankList["Rey Diablo"])
+							availableRank += "Rey Diablo"
 					availableRank += "Cancel"
 					var/U=input("Which test do you want to take?", text) in availableRank
 					if(U=="Cancel")
@@ -90,6 +111,7 @@ mob
 				M.status = "<font color = #f0f217>Captain Commander</font>"
 				M.statusold = "<font color = #f0f217>Captain Commander</font>"
 				M.iscaptain=1
+				M.iscaptaincommander=1
 				M.squad=null
 				M.verbs += typesof(/mob/Captain_Command/verb)
 				M.contents+=new/obj/items/equipable/Cloak/Captain2
@@ -154,13 +176,13 @@ mob
 				M.issternr=0
 			if(M.issternrleader)
 				M.issternrleader=0
-
 			if(M.iscaptain&&shiniCaptainList["[M.squad]"]==M.key)
 				shiniCaptainList["[M.squad]"]=""
 				M.iscaptain=0
 			if(M.iscaptain&&shiniCaptainList["1"]==M.key)
 				shiniCaptainList["1"]=""
 				M.iscaptain=0
+				M.iscaptaincommander=0
 			M.verbs -= typesof(/mob/spiritking/verb)
 	proc
 		giveRank(rank)
@@ -191,6 +213,54 @@ mob
 				src.espadas=""
 				src.espadasold=""
 				src.contents+=new/obj/items/equipable/Cloak/Squad0
+				return
+			if(rank=="Spirit King")
+				world << "<b><font color = red><font size=2>Soul Society News: [src] is now the king of Seireitei"
+				src.squad=0
+				activeRankList[rank] = src.key
+				src.status="<font color= #e68a51>Spirit King</font>"
+				src.statusold="<font color= #e68a51>Spirit King</font>"
+				src.isspirit=1
+				src.espadas=""
+				src.espadasold=""
+				src.contents+=new/obj/items/equipable/Cloak/Squad0
+				src.verbs += typesof(/mob/spiritking/verb)
+				return
+			if(rank=="King of Hueco Mundo")
+				world << "<b><font color = red><font size=2>[src] is now the King of Hueco Mundo"
+				src.newhollowking=1
+				activeRankList[rank] = src.key
+				src.status="<font color=red>King of Hueco Mundo</font>"
+				src.statusold="<font color=red>King of Hueco Mundo</font>"
+				src.espadas=""
+				src.espadasold=""
+				return
+			if(rank=="Rey Diablo")
+				world << "<b><font color = red><font size=2>[src] is now the Sado King"
+				src.newsadoking=1
+				src.status="<font color= white>Rey Diablo</font>"
+				src.statusold="<font color= white>Rey Diablo</font>"
+				src.espadas=""
+				src.espadasold=""
+				activeRankList[rank] = src.key
+				return
+			if(rank=="Emperor of the Wandenreich")
+				world << "<b><font color = red><font size=2>[src] is now the Emperor of the Wandenreich"
+				src.newquincyking=1
+				src.status="<font color= #1ac7c7>Quincy Emperor - The Almighty</font>"
+				src.statusold="<font color= #1ac7c7>Quincy Emperor - The Almighty</font>"
+				src.espadas=""
+				src.espadasold=""
+				activeRankList[rank] = src.key
+				return
+			if(rank=="Sternritter Grandmaster")
+				world << "<b><font color = red><font size = 2> [src] is now the Sternritter Grandmaster"
+				src.issternrleader=1
+				src.status="<font color=#1ac7c7>Sternritter Grandmaster</font>"
+				src.statusold="<font color=#1ac7c7>Sternritter Grandmaster</font>"
+				src.espadas=""
+				src.espadasold=""
+				activeRankList[rank] = src.key
 				return
 
 
@@ -280,7 +350,7 @@ mob
 				else
 					new/mob/Test_Gotei_13/C13(locate(31,168,21))
 
-			if(currentRankTest=="Captain Commander"||currentRankTest=="Karakura Hero")
+			if(currentRankTest=="Captain Commander"||currentRankTest=="Karakura Hero"||currentRankTest=="Sternritter Grandmaster")
 				testGoteiLeft=12
 				new/mob/Test_Gotei_13/C1(locate(31,168,21))
 				new/mob/Test_Gotei_13/C2(locate(28,168,21))
@@ -294,7 +364,7 @@ mob
 				new/mob/Test_Gotei_13/C10(locate(34,168,21))
 				new/mob/Test_Gotei_13/C11(locate(35,168,21))
 				new/mob/Test_Gotei_13/C12(locate(32,168,21))
-			if(currentRankTest=="DemiGod")
+			if(currentRankTest=="DemiGod"||currentRankTest=="Emperor of the Wandenreich"||currentRankTest=="Rey Diablo"||currentRankTest=="King of Hueco Mundo")
 				testGoteiLeft=18
 				new/mob/Test_Gotei_13/C1(locate(31,168,21))
 				new/mob/Test_Gotei_13/C2(locate(28,168,21))

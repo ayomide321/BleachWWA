@@ -34356,3 +34356,27 @@ Attack()
 <font color=#607B8B>World started up on: Sun Jul 10 14:20:00 2022
 <font color=#607B8B>World started up on: Sun Jul 10 14:22:08 2022
 <font color=#607B8B>World started up on: Mon Jul 11 15:42:08 2022
+<font color=#607B8B>World started up on: Tue Jul 12 13:23:28 2022
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4731
+  usr: 0
+  src: {NPC}Ukitake (/mob/Test_Gotei_13/C13)
+  src.loc: null
+  call stack:
+{NPC}Ukitake (/mob/Test_Gotei_13/C13): Deathd(Throm (/mob/player))
+{NPC}Ukitake (/mob/Test_Gotei_13/C13): Death(Throm (/mob/player), 3.58958e+012, 2, 1)
+Bot (/obj/FirePillar/Bot): Bump({NPC}Ukitake (/mob/Test_Gotei_13/C13))
+Bot (/obj/FirePillar/Bot): Move(Alchemic Circle (32,162,21) (/turf/TheGateArea/Alchemic_Circle), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4731
+  usr: 0
+  src: {NPC}Shonsui (/mob/Test_Gotei_13/C8)
+  src.loc: null
+  call stack:
+{NPC}Shonsui (/mob/Test_Gotei_13/C8): Deathd(Throm (/mob/player))
+{NPC}Shonsui (/mob/Test_Gotei_13/C8): Death(Throm (/mob/player), 3.58958e+012, 2, 1)
+Bot (/obj/FirePillar/Bot): Bump({NPC}Shonsui (/mob/Test_Gotei_13/C8))
+Bot (/obj/FirePillar/Bot): Move(Alchemic Circle (31,166,21) (/turf/TheGateArea/Alchemic_Circle), 1)
+<font color=#607B8B>World started up on: Tue Jul 12 13:36:16 2022

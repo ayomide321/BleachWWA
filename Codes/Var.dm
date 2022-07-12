@@ -146,6 +146,7 @@ mob/var
 	tmp/neged=0
 	dualon=0
 	iscaptain=0
+	iscaptaincommander=0
 	gotdualswords=0
 	chargewins=0
 	failcharge=0

@@ -100,7 +100,7 @@ var
 	list/online_admins = list()
 
 var
-	list/hascustoms = list("Surgund","Haterkey2","Dblake1012","WorldStar","Natsu375","Yugiman67","Nate1shorty","Crazieoreo","KillManiac","Stonerman000420","666rogue666","Dragonpearl123","Sasuke13oo9","Blaxkshiba","The Shinigami Ryu","Maka90988",\
+	list/hascustoms = list()//list("Surgund","Haterkey2","Dblake1012","WorldStar","Natsu375","Yugiman67","Nate1shorty","Crazieoreo","KillManiac","Stonerman000420","666rogue666","Dragonpearl123","Sasuke13oo9","Blaxkshiba","The Shinigami Ryu","Maka90988",\
 	"Dashikan","CoreBreaker","Ichigozangetsu199677","Pdieg0","soso lobi","Yoruziro","Frenzyyy","Huskywolf","Lan0345","Marcobad12","Bambino_jr","TheBlueReaper","Halo2master3","JJNH60c",\
 	"Mexican joker","Dannyd100","246810daquarn","Kwilson2","Kwilson3","Dracola1636","Nakshart","Pizza1992","Adlofs","TheRealKaz","Nekrom","CommanderJohnShepard","Zapatron","Shishigawara",\
 	"Reuden","Yip","Royshin","Rioshima","HanmaYujiro","Audain1","Zeandrejade","The Oracle Child","Coller74","Mike oxsbig",\

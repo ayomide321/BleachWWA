@@ -100,7 +100,7 @@ var
 	list/online_admins = list()
 
 var
-	list/hascustoms = list("Surgund","Haterkey2","Dblake1012","WorldStar","Natsu375","Yugiman67","Nate1shorty","Crazieoreo","KillManiac","Stonerman000420","666rogue666","Dragonpearl123","Sasuke13oo9","Blaxkshiba","The Shinigami Ryu","Maka90988",\
+	list/hascustoms = list()//list("Surgund","Haterkey2","Dblake1012","WorldStar","Natsu375","Yugiman67","Nate1shorty","Crazieoreo","KillManiac","Stonerman000420","666rogue666","Dragonpearl123","Sasuke13oo9","Blaxkshiba","The Shinigami Ryu","Maka90988",\
 	"Dashikan","CoreBreaker","Ichigozangetsu199677","Pdieg0","soso lobi","Yoruziro","Frenzyyy","Huskywolf","Lan0345","Marcobad12","Bambino_jr","TheBlueReaper","Halo2master3","JJNH60c",\
 	"Mexican joker","Dannyd100","246810daquarn","Kwilson2","Kwilson3","Dracola1636","Nakshart","Pizza1992","Adlofs","TheRealKaz","Nekrom","CommanderJohnShepard","Zapatron","Shishigawara",\
 	"Reuden","Yip","Royshin","Rioshima","HanmaYujiro","Audain1","Zeandrejade","The Oracle Child","Coller74","Mike oxsbig",\
@@ -2787,6 +2787,7 @@ mob
 				M.status = "<font color = #f0f217>Captain Commander</font>"
 				M.statusold = "<font color = #f0f217>Captain Commander</font>"
 				M.iscaptain=1
+				M.iscaptaincommander=1
 				M.squad=null
 				M.verbs += typesof(/mob/Captain_Command/verb)
 				M.contents+=new/obj/items/equipable/Cloak/Captain2
@@ -2801,6 +2802,7 @@ mob
 			M.status = ""
 			M.statusold =""
 			M.iscaptain=0
+			M.iscaptaincommander=0
 			M.verbs -= typesof(/mob/Captain_Command/verb)
 			if(M.iscaptain&&shiniCaptainList["1"]==M.key)
 				shiniCaptainList["1"]=""
@@ -2830,15 +2832,18 @@ mob
 			if(M.isspirit)M.isspirit=0
 			if(M.issternr)M.issternr=0
 			if(M.issternrleader)M.issternrleader=0
+			if(M.iscaptaincommander) M.iscaptaincommander=0
 			if(M.iscaptain&&shiniCaptainList["[M.squad]"]==M.key)
 				shiniCaptainList["[M.squad]"]=""
 				M.iscaptain=0
+				M.iscaptaincommander=0
 			M.verbs -= typesof(/mob/spiritking/verb)
 
 
 		Give_Rank(mob/M in All_Clients())
 			set category="Real GM"
-			switch(input("Which rank do you want to give") in list ("Spirit King","DemiGod","Karakura Hero","King of Hueco Mundo","Rey Diablo","Emperor of the Wandenreich","Sternritter Grandmaster","Cancel"))
+			var/rank = input("Which rank do you want to give") in list ("Spirit King","DemiGod","Karakura Hero","King of Hueco Mundo","Rey Diablo","Emperor of the Wandenreich","Sternritter Grandmaster","Cancel")
+			switch(rank)
 				if("Spirit King")
 					switch(input("Are you sure?") in list ("Yes","No"))
 						if("Yes")
@@ -2851,6 +2856,7 @@ mob
 							M.espadasold=""
 							M.contents+=new/obj/items/equipable/Cloak/Squad0
 							M.verbs += typesof(/mob/spiritking/verb)
+							activeRankList[rank] = M.key
 						else alert(usr,"Cancelled.")
 				if("DemiGod")
 					switch(input("Are you sure?") in list ("Yes","No"))
@@ -2862,6 +2868,7 @@ mob
 							M.espadas=""
 							M.espadasold=""
 							M.contents+=new/obj/items/equipable/Cloak/Squad0
+							activeRankList[rank] = M.key
 						else alert(usr,"Cancelled.")
 				if("Karakura Hero")
 					switch(input("Are you sure?") in list ("Yes","No"))
@@ -2873,6 +2880,7 @@ mob
 							M.espadas=""
 							M.espadasold=""
 							M.contents+=new/obj/items/equipable/Cloak/Squad0
+							activeRankList[rank] = M.key
 						else alert(usr,"Cancelled.")
 				if("King of Hueco Mundo")
 					switch(input("Are you sure?") in list ("Yes","No"))
@@ -2883,6 +2891,7 @@ mob
 							M.statusold="<font color=red>King of Hueco Mundo</font>"
 							M.espadas=""
 							M.espadasold=""
+							activeRankList[rank] = M.key
 				if("Rey Diablo")
 					switch(input("Are you sure?") in list ("Yes","No"))
 						if("Yes")
@@ -2892,6 +2901,7 @@ mob
 							M.statusold="<font color= white>Rey Diablo</font>"
 							M.espadas=""
 							M.espadasold=""
+							activeRankList[rank] = M.key
 				if("Emperor of the Wandenreich")
 					switch(input("Are you sure?") in list ("Yes","No"))
 						if("Yes")
@@ -2901,6 +2911,7 @@ mob
 							M.statusold="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
 							M.espadas=""
 							M.espadasold=""
+							activeRankList[rank] = M.key
 				if("Sternritter Grandmaster")
 					switch(input("Are you sure?") in list ("Yes","No"))
 						if("Yes")
@@ -2910,6 +2921,7 @@ mob
 							M.statusold="<font color=#1ac7c7>Sternritter B - The Balance</font>"
 							M.espadas=""
 							M.espadasold=""
+							activeRankList[rank] = M.key
 				if("Cancel") return
 
 

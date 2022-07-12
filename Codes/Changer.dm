@@ -598,6 +598,9 @@ mob
 		npc = 1
 		New()
 			..()
+			src.ClothesGen()
+			src.HairGen()
+			src.Load_Overlays()
 		verb
 			Talk()
 				set category = "NPC's"

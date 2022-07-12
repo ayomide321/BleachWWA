@@ -3844,7 +3844,10 @@ mob
 							Kd.Level_Up()
 							Kd <<"<b>You have defeated Final Getsuga Tenshou Ichigo!"
 							Kd.eventpoints+=15
+							Kd.donor_points+=2
+							Kd.total_bought+=2
 							Kd<<"<b><font color=lime green>You have gained 15 event points"
+							Kd<<"<b><font color=lime green>You have gained 2 Donor Points"
 							Kd.Level_Up()
 							Kd.skill()
 							Kd << "<b>You gained [src.expgain*4] experience and 3 levels!"
@@ -4224,6 +4227,8 @@ mob
 										k.Level_Up()
 										k.GainExp(k.mexp)
 										k.Level_Up()
+										k.donor_points += 1
+										k.total_bought += 1
 									if(k.level<=900)
 										k.GainExp(k.mexp)
 										k.Level_Up()
@@ -4248,6 +4253,8 @@ mob
 										k.Level_Up()
 										k.GainExp(k.mexp)
 										k.Level_Up()
+										k.donor_points += 2
+										k.total_bought += 2
 				else
 					M.loc = locate(11,195,5)
 				del src

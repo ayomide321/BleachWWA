@@ -201,6 +201,7 @@ mob/proc
 					M.newhollowking = 0
 					M.newsadoking=0
 					M.iscaptain=0
+					M.iscaptaincommander=0
 					M.newquincyking=0
 					M.islieu=0
 					M.spyp=0

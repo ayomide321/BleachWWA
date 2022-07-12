@@ -14,8 +14,6 @@ mob
 		EnterEPDP()
 			winshow(usr, "buyepdp", 1);winset(usr,"buyepdp", "is-visible=true")
 
-
-
 		buy2x()
 			set hidden = 1
 			switch(alert(usr,"Are you sure you want to buy 2x leveling for 300 EP? When leveling, instead of gaining 1 level when leveling up\

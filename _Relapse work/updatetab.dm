@@ -14,7 +14,13 @@ mob/player
 <br>
 <br>
 <br>
-
+<u>07/12/2022 Updates<font size=4></u>
+<br><font size=2>-Added more ranks to take from Auto Ranker
+<br><font size=2>-Fixed bug where not all events gave DP
+<br><font size=2>-Added clothes to NPC
+<br><font size=2>-Minor bug fixed and adjustments
+<br>
+<br>
 <u>07/10/2022 Updates<font size=4></u>
 <br><font size=2>-Made DP Shop Fuses only to shorten the list
 <br><font size=2>-Added Captain Test fella, no need to wait on admin just talk to him and ask for the test
