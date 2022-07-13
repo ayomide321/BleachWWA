@@ -19,6 +19,11 @@ mob/player
 <br><font size=2>-Fixed bug where not all events gave DP
 <br><font size=2>-Added clothes to NPC
 <br><font size=2>-Minor bug fixed and adjustments
+<br><font size=2>-Fixed the abundance of unecessary admins
+<br><font size=2>-Fixed some residual DP
+<br><font size=2>-Lowered Labs EP reward from 200 to 75, but buffed DP reward from 0 to 20
+<br><font size=2>-Squad 10 now gets 40 DP from complering labs
+<br><font size=2>-Edited available skills to use for Auto Tests
 <br>
 <br>
 <u>07/10/2022 Updates<font size=4></u>

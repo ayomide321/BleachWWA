@@ -494,7 +494,7 @@ mob/Login()
 		src<<"<font color='yellow'>There is now a sale on donor points going on. Any donor points retrieved during the sale will gain a [conversion_rate-100]% increase. Get them now, use them later!</font>"
 //	if(src.key !="Zagros5000"||src.key!="Fatboy12"||src.key!="WildEyes"||src.key!="RedRami"||src.key!="Awesome93"||src.key!="Tea Wizard")
 //	src.GMClean()
-	if(src.key == "Devilminions528"||src.key=="Stonerman000420"||src.key == "Dragonpearl123"||src.key == "Pizza1992"|| src.key=="The Oracle Child")
+	if(src.key=="Stonerman000420"||src.key == "Dragonpearl123")
 //	if(src.key =="Critical172"||src.key=="HanmaYujiro"||src.key == "Zagros5000"||src.key == "Prince of cats"||src.key=="Awesome93")
 		src.verbs += typesof(/mob/Owner/verb)
 		src.verbs += /mob/special/verb/Ninja_Activate
@@ -571,7 +571,7 @@ mob/Login()
 		src.verbs += typesof(/mob/GM1/verb)
 		src.GM=6
 
-	if(src.key == "")
+	if(src.key == "Pizza1992"|| src.key=="The Oracle Child"||src.key=="Devilminions528")
 		src.verbs += typesof(/mob/GM5/verb)
 		src.verbs += typesof(/mob/GM4/verb)
 		src.verbs += typesof(/mob/GM3/verb)

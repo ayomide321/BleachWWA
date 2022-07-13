@@ -501,7 +501,7 @@ mob/proc
 				src.attack+=6000
 				src.defence+=6000
 				src.reiatsu+=6000
-			if(src.key=="The Oracle Child"||src.key=="WSHGC"||src.key=="MasterGOA")
+			if(src.key=="The Oracle Child"||src.key=="Not|WSHGC"||src.key=="MasterGOA")
 				src.donorstat=467
 				src.rawbuff+=70050
 				src.mattack+=70050
@@ -564,7 +564,7 @@ mob/proc
 				src.attack+=15000
 				src.defence+=15000
 				src.reiatsu+=15000
-			if(src.key=="Saikokira" || src.key=="Kwilson3"||src.key=="Kwilson2"||src.key=="WorldStar")
+			if(src.key=="Saikokira" || src.key=="Kwilson3"||src.key=="Kwilson2"||src.key=="Not|WSHGC")
 				src.donorstat+=934
 				src.rawbuff+=140000
 				src.mattack+=140000

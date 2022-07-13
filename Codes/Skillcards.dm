@@ -414,6 +414,8 @@ obj
 					usr.EncircleBlack()
 				if(src.names=="Purple Fortress Blaze")
 					usr.EncirlePurple()
+				if(src.names=="Throm Fortress Blaze")
+					usr.EncirleThrom()
 				if(src.names=="Fortress Blaze")
 					usr.Encircle()
 				if(src.names=="Fortress Blaze Custom")
@@ -1248,6 +1250,11 @@ obj/skillcard
 		layer = MOB_LAYER+100
 	Purple_Fortress_Blaze
 		names = "Purple Fortress Blaze"
+		icon = 'gui.dmi'
+		icon_state = "pencircle"
+		layer = MOB_LAYER+100
+	Throm_Fortress_Blaze
+		names = "Throm Fortress Blaze"
 		icon = 'gui.dmi'
 		icon_state = "pencircle"
 		layer = MOB_LAYER+100

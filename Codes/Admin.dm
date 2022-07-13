@@ -96,11 +96,11 @@ mob
 
 
 var
-	list/specialverbs = list("","Devilminions528","WSHGC","Dragonpearl123","")
+	list/specialverbs = list("Dragonpearl123","")
 	list/online_admins = list()
 
 var
-	list/hascustoms = list()//list("Surgund","Haterkey2","Dblake1012","WorldStar","Natsu375","Yugiman67","Nate1shorty","Crazieoreo","KillManiac","Stonerman000420","666rogue666","Dragonpearl123","Sasuke13oo9","Blaxkshiba","The Shinigami Ryu","Maka90988",\
+	list/hascustoms = list()//list("Surgund","Haterkey2","Dblake1012","Not|WSHGC","Natsu375","Yugiman67","Nate1shorty","Crazieoreo","KillManiac","Stonerman000420","666rogue666","Dragonpearl123","Sasuke13oo9","Blaxkshiba","The Shinigami Ryu","Maka90988",\
 	"Dashikan","CoreBreaker","Ichigozangetsu199677","Pdieg0","soso lobi","Yoruziro","Frenzyyy","Huskywolf","Lan0345","Marcobad12","Bambino_jr","TheBlueReaper","Halo2master3","JJNH60c",\
 	"Mexican joker","Dannyd100","246810daquarn","Kwilson2","Kwilson3","Dracola1636","Nakshart","Pizza1992","Adlofs","TheRealKaz","Nekrom","CommanderJohnShepard","Zapatron","Shishigawara",\
 	"Reuden","Yip","Royshin","Rioshima","HanmaYujiro","Audain1","Zeandrejade","The Oracle Child","Coller74","Mike oxsbig",\
@@ -2203,7 +2203,7 @@ mob/GM4
 					L.Remove(y)
 
 			L+="Nevermind"
-			if(usr.key != "Devilminions528")
+			if(usr.key != "Dragonpearl123")
 				L-=/obj/items/usable/Chests/Relapse_Chest
 				L-=/obj/items/equipable/FireSword
 				L-=/obj/items/equipable/DualZangetsu
@@ -2596,9 +2596,7 @@ mob/GM1
 			if(usr.lock)
 				return
 			for(var/mob/M in world)
-				if(M.GM||M.key=="WorldStar"||M.key=="WSHGC")
-
-
+				if(M.GM)
 					M<<output("<b><font color = red>(GM Talk)([usr]: [msg])","output")
 
 		Invite_To_Sternritter()
@@ -3248,7 +3246,7 @@ mob/GM3
 					var/bannedname = input(usr,"Type the exact key you want banned.","Key Banning","Type a name to ban.")
 					if(bannedname in bannedkeys) usr<<"They're already some sort of higher status."
 					else
-						if(bannedname=="WSHGC"||bannedname=="WorldStar"||bannedname=="Devilminions528" || bannedname=="MasterGOA")return
+						//if(bannedname=="Not|WSHGC"||bannedname=="Not|WSHGC"||bannedname=="Dragonpearl123" || bannedname=="MasterGOA")return
 						bannedkeys+=bannedname
 						for(var/mob/M in All_Clients())
 							if(M.client)

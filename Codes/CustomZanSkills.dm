@@ -14,7 +14,7 @@ mob
 				src.reiatsu=src.mreiatsu
 				src << "<b>You take off your boost!"
 				src.Load_Overlays()
-			else if(src.key=="Devilminions528"||src.key=="Dragonpearl123"||src.key=="Not|MasterGOA"||src.key=="Not|WSHGC"||src.key=="Not|WorldStar")
+			else if(src.key=="Dragonpearl123"||src.key=="Not|MasterGOA"||src.key=="Not|WSHGC"||src.key=="Not|WorldStar")
 				src.inPeaceBoost=1
 				src.attack+=src.mattack*((src.level/100)* 50)
 				src.defence+=src.mdefence*((src.level/100)* 50)
@@ -1490,6 +1490,9 @@ mob/proc
 	HyosukeStun()
 		if(src.safe||src.fireback)
 			return
+		if(src.key == currentPlayerTest)
+			src << "<b>You cannot use this during a ranked test!"
+			return
 		if(src.rei <= 2000)
 			src << "<b>Your reiatsu is too low [src.rei]/2000!"
 			return
@@ -1563,6 +1566,9 @@ mob/proc
 	Healingcustom()
 		if(src.lost&& lastevent==5||src.lost&&lastevent==4)
 			src<<"<b>You cannot do that during this event!"
+			return
+		if(src.key == currentPlayerTest)
+			src << "<b>You cannot use this during a ranked test!"
 			return
 		if(src.custaoehealcd)
 			src<<"<b>You have to wait a little!"

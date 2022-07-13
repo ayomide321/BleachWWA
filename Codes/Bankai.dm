@@ -380,8 +380,8 @@ mob
 							spawn(33)
 								src.Load_Overlays()
 					if(src.stype=="Hyosuke" && src.client)
-						/*if(src.key == "Mike oxsbig"||src.key == "Awesome93"||src.key=="Audain1"||src.key=="Lan0345"||src.key=="WSHGC"||src.key=="WorldStar")
-							if (src.key == "Mike oxsbig"||src.key == "Awesome93"||src.key=="WSHGC"||src.key=="WorldStar")
+						/*if(src.key == "Mike oxsbig"||src.key == "Awesome93"||src.key=="Audain1"||src.key=="Lan0345"||src.key=="Not|WSHGC"||src.key=="Not|WSHGC")
+							if (src.key == "Mike oxsbig"||src.key == "Awesome93"||src.key=="Not|WSHGC"||src.key=="Not|WSHGC")
 								src.attack=src.mattack*10.3
 								src.defence=src.mdefence*10.1
 								src.rundelay=1

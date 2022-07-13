@@ -1853,7 +1853,7 @@ obj/purpleFire
 			for(var/obj/purpleFire/f in view(0,src))
 				if(f.straight&&!src.straight)
 					del f
-		spawn(300)
+		spawn(500)
 			if(!isnull(src))
 				var/mob/G=src.Gowner
 				G.encircle=0

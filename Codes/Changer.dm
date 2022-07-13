@@ -176,6 +176,7 @@ mob
 							usr.getsugaring=0
 							usr.bringerblast=0
 							usr.gotlightccskills=0
+							usr.gotThromSkills=0
 							usr.gotlightccskills2=0
 							usr.gotnewkennyskill=0
 							usr.shielduses=0

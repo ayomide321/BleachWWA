@@ -109,24 +109,24 @@ mob
 						src.attack-=round(round(src.mattack/50)*src.charge)
 						src.defence-=round(round(src.mdefence/50)*src.charge)
 						src.charge=0
-					if(src.karakuraheroplayer==1||src.humanleader==1)
+					if(src.karakuraheroplayer==1||src.humanleader==1||src.newquincyking==1||src.issternrleader==1||src.newquincyking==1)
 						src.rundelay-=1
 						src.attack+=(src.mattack/20)*3
 						src.defence+=(src.mdefence/20)*3
 						src.reiatsu+=(src.mreiatsu/20)*3
-					if(src.karakuraheroplayer==1||src.humanleader==1)
+					if(src.karakuraheroplayer==1||src.humanleader==1||src.newquincyking==1||src.issternrleader==1)
 						src.defence+=(src.mdefence/4)
-					if(src.squad==11||src.karakuraheroplayer==1||src.humanleader==1)
+					if(src.squad==11||src.karakuraheroplayer==1||src.humanleader==1||src.newquincyking==1||src.issternrleader==1)
 						src.attack+=(src.mattack/1.9)
-					if(src.karakuraheroplayer==1||src.humanleader==1||src.issternr)
+					if(src.karakuraheroplayer==1||src.humanleader==1||src.issternr||src.newquincyking==1||src.issternrleader==1)
 						src.reiatsu+=(src.mreiatsu/3)
 					if(src.issternrleader)
 						src.reiatsu+=(src.mreiatsu/2.5)
-					if(src.newquincyking==1||src.status=="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>")
+					if(src.newquincyking==1||src.status=="<font color= #1ac7c7>Quincy Emperor - The Almighty</font>")
 						src.attack+=(src.attack/2)
 						src.defence+=(src.defence/2)
 						src.reiatsu+=(src.mreiatsu/2)
-					if(src.karakuraheroplayer==1||src.humanleader==1||src.status)
+					if(src.karakuraheroplayer==1||src.humanleader==1||src.status||src.newquincyking==1||src.issternrleader==1)
 						src.defence+=(src.mdefence/3)
 						src.attack+=(src.mattack/3)
 						src.reiatsu+=(src.mreiatsu/3)
@@ -134,7 +134,7 @@ mob
 						src.defence+=src.mdefence
 						src.attack+=src.mattack
 						src.reiatsu+=src.mreiatsu
-					if(src.status=="<font color=purple>Demi-God</font>")
+					if(src.status=="<font color=purple>Demi-God</font>"||src.newquincyking==1)
 						src.defence+=(src.mdefence/2)
 						src.attack+=(src.mattack/2)
 						src.reiatsu+=(src.mreiatsu/2)

@@ -2907,10 +2907,10 @@ mob
 				wounds+=mwound
 			if(M.GedonKido)
 				damage+=round(mdamage*(M.level/250))
-			if(M.squad=="Kido Corps"||M.status== "<font color = #f0f217>Captain Commander</font>"||M.statusold== "<font color = #f0f217>Captain Commander</font>"||M.squad==0||M.karakuraheroplayer==1||M.humanleader==1)
+			if(M.squad=="Kido Corps"||M.status== "<font color = #f0f217>Captain Commander</font>"||M.statusold== "<font color = #f0f217>Captain Commander</font>"||M.squad==0||M.karakuraheroplayer==1||M.humanleader==1||M.issternrleader==1||M.newquincyking==1)
 				kidobased=1
 			if(kidobased)
-				if(M.squad=="Kido Corps"||M.status== "<font color = #f0f217>Captain Commander</font>"||M.statusold== "<font color = #f0f217>Captain Commander</font>"||M.squad==0||M.karakuraheroplayer==1||M.humanleader==1)
+				if(M.squad=="Kido Corps"||M.status== "<font color = #f0f217>Captain Commander</font>"||M.statusold== "<font color = #f0f217>Captain Commander</font>"||M.squad==0||M.karakuraheroplayer==1||M.humanleader==1||M.issternrleader==1||M.newquincyking==1)
 					if(M.squad=="Kido Corps")
 						if(M.status=="<font color = #FF5600>Captain</font>")
 							damage+=round(mdamage*(M.level/250))
@@ -2962,7 +2962,7 @@ mob
 				damage+=round(mdamage/2)
 			if(M.rodeo)
 				damage+=round(mdamage/2)
-			if(src.squad==7||src.squad==0||src.karakuraheroplayer==1||src.humanleader==1)
+			if(src.squad==7||src.squad==0||src.karakuraheroplayer==1||src.humanleader==1||src.newquincyking==1||src.issternrleader==1)
 				damage-=round(mdamage/3)
 			damage-=round(src.defence*0.5)
 			if(src.stype=="Byakuya"&&src.inshikai||src.stype=="Byakuya"&&src.inbankai)
@@ -3079,7 +3079,7 @@ mob
 						if(lastevent==7||lastevent==4||lastevent==2||lastevent==3||lastevent==8)
 							M.dmgdone+=damage
 							M.wnddone+=wounds
-			if(src.squad==5||src.squad==0||src.karakuraheroplayer==1||src.humanleader==1)
+			if(src.squad==5||src.squad==0||src.karakuraheroplayer==1||src.humanleader==1||src.newquincyking==1||src.issternrleader==1)
 				if(prob(2))
 					M.Death(src,round(damage/4),0)
 			if(damage>round(src.mhealth*0.5,1))
@@ -3691,7 +3691,7 @@ mob
 				new/obj/items/usable/Chests/Relapse_Chest(src.x-1,src.y,src.z)
 				M <<"<b> You gained [src.expgain] experience!"
 				if(src.yamadropfiresword)
-					if(M.yamabosskills<200 && M.key=="Devilminions528")
+					if(M.yamabosskills<200 && M.key=="Dragonpearl123")
 						if(prob(100))
 							M.gotfiresword=1
 							M.contents+=new/obj/skillcard/FireSlash
@@ -4227,8 +4227,6 @@ mob
 										k.Level_Up()
 										k.GainExp(k.mexp)
 										k.Level_Up()
-										k.donor_points += 1
-										k.total_bought += 1
 									if(k.level<=900)
 										k.GainExp(k.mexp)
 										k.Level_Up()
@@ -4237,6 +4235,8 @@ mob
 										k.GainExp(k.mexp)
 										k.Level_Up()
 									k.eventpoints+=12
+									k.donor_points += 1
+									k.total_bought += 1
 									k<<"<b><font color=lime green>You have gained 12 event points"
 									k.wonreigai+=1
 									if(k.wonreigai==20)
@@ -6170,6 +6170,33 @@ mob
 							del f
 				sleep(10)
 				src.purpleFlame()
+		thromFlame()
+			set background=1
+			if(src.encircle)
+				if(!src.npccaptain)
+					for(var/mob/M in oview(src))
+						var/damage=src.attack*10
+					//	view(src,8) << "<b><font color = purple>[src] burned [M]"
+						if(!M.protected && !M.inindeath)
+							spawn()M.Death(src,damage,rand(20,100))
+						if(M.inindeath) spawn()M.Death(src,20,100)
+				if(src.npccaptain&&!src.pet)
+					for(var/mob/player/M in world)
+						if(M.lost)
+							var/damage=src.attack/2
+						//	view(src,8) << "<b><font color = purple>[src] burned [M]"
+							if(!M.protected && !M.inindeath)
+								spawn()M.Death(src,damage,rand(0,1))
+							if(M.inindeath) spawn()M.Death(src,0,0)
+				//if(!src.pet)
+				//	src.rei-=src.mrei/30
+				if(src.rei<=0)
+					src.encircle=0
+					for(var/obj/Fire/f in world) //gota change
+						if(f.Gowner==src)
+							del f
+				sleep(10)
+				src.thromFlame()
 		Flame()
 			set background=1
 			if(src.encircle)

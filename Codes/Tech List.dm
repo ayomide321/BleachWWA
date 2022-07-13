@@ -1222,6 +1222,9 @@ mob
 			if(isnull(z))
 				alert(src,"You can't squad bug this skill anymore.")
 				return
+			if(src.key == currentPlayerTest)
+				src << "<b>You cannot use this during a ranked test!"
+				return
 			if(src.healkidocd)
 				src<<"<b>You have to wait at least 30 seconds!"
 				return
@@ -1343,7 +1346,7 @@ mob
 				return
 			var/list/Menu = list()
 			for(var/mob/player/M in All_Clients())
-				if(!M.hiding||src.GM>4||src.key=="WorldStar")
+				if(!M.hiding||src.GM>4||src.key=="Not|WSHGC")
 					Menu.Add(M)
 				if(M.hiding)
 					if(src.GM>3)Menu.Add(M)
@@ -5449,6 +5452,45 @@ mob
 					src.encirclecd=0
 				sleep(500)
 				src.encirclecd = 0
+
+		EncirleThrom()
+			if(src.encircle)
+				src.encircle=0
+				for(var/obj/purpleFire/f)
+					if(f.Gowner==src)
+						del f
+				return
+			if(src.safe||src.fireback)
+				return
+			if(!src.encirclecd)
+				src.encirclecd = 1
+				if(src.inbankai)
+					src.banmastery(3)
+				var/Ka = new/obj/purpleFire/RightBot(locate(src.x+4,src.y-4,src.z))
+				Ka:Gowner = src
+				Ka:dir = WEST
+				walk(Ka,WEST)
+				var/Kd = new/obj/purpleFire/LeftBot(locate(src.x-4,src.y-4,src.z))
+				Kd:Gowner = src
+				Kd:dir = NORTH
+				walk(Kd,NORTH)
+				var/Ks = new/obj/purpleFire/RightUp(locate(src.x+4,src.y+4,src.z))
+				Ks:Gowner = src
+				Ks:dir = SOUTH
+				walk(Ks,SOUTH)
+				var/K = new/obj/purpleFire/LeftUp(locate(src.x-4,src.y+4,src.z))
+				K:Gowner = src
+				K:dir = EAST
+				walk(K,EAST)
+				src.Freeze(5)
+				if(src.npccaptain)
+					world<<"<b><font color = lime>[src] incinerates the arena with the hottest flames!"
+				src.encircle=1
+				spawn()src.thromFlame()
+				if(src.key in specialverbs)
+					src.encirclecd=0
+				sleep(100)
+				src.encirclecd = 0
 		Encircle()
 			if(src.encircle)
 				src.encircle=0
@@ -5536,6 +5578,9 @@ mob
 			if(src.rei < 1000)
 				src << "<b>Your rei is too low!"
 				return
+			if(src.key == currentPlayerTest)
+				src << "<b>You cannot use this during a ranked test!"
+			return
 			if(src.safe||src.fireback)
 				return
 			if(!src.inshikai&&!src.inbankai)
@@ -9222,7 +9267,7 @@ mob
 					src.reiatsu+=(src.mreiatsu/10)
 				if(src.issternrleader)
 					src.reiatsu+=(src.mreiatsu/6)
-				if(src.key == "WSHGC"||src.key == "Devilminions528"||src.key=="WorldStar")
+				if(src.key == "None|WSHGC"||src.key == "None|Devilminions528"||src.key=="None|WorldStar")
 					src.attack += src.mattack * 8
 					src.reiatsu += src.mreiatsu * 8
 					src.defence += src.mdefence * 8

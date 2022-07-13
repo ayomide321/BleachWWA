@@ -98,7 +98,7 @@ mob
 						else
 							src.Use_Petals(0,null)
 						return
-			if(usr.key=="Devilminions528"&&usr.inPeaceBoost)
+			if(usr.key=="Dragonpearl123"&&usr.inPeaceBoost)
 				src.Fire_Petals()
 				if(src.etarget)
 					var/d=get_dist(src,src.etarget)
@@ -1743,7 +1743,7 @@ mob
 					return
 
 
-				if(src.stype == "Byakuya" && src.inbankai&&src.safezone&&src.client||src.key=="Devilminions528"&&src.inPeaceBoost)
+				if(src.stype == "Byakuya" && src.inbankai&&src.safezone&&src.client||src.key=="Dragonpearl123"&&src.inPeaceBoost)
 					flick("punch",src)
 					if(src.dir==EAST)
 						var/obj/Petalsword/A = new /obj/Petalsword(locate(src.x+1,src.y,src.z))
@@ -3249,7 +3249,7 @@ mob
 
 
 
-							if(src.key=="Devilminions528"||src.key=="Vgetacoku"||"Dragonpearl123")
+							if(src.key=="Dragonpearl123")
 								src.canattack=1
 							sleep(3 SECONDS)
 							src.canattack=1

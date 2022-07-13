@@ -63,7 +63,7 @@ mob
 				sleep(60)
 				src.getsugacd = 0
 		CCLightning_Bolt()
-			if(!src.inbankai && src.key != "WSHGC")
+			if(!src.inbankai && src.key != "Not|WSHGC")
 				src<<"You need to be in bankai."
 				return
 			if(src.rei < 1000)

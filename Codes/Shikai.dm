@@ -1,6 +1,7 @@
 mob/var
 	gotfujimaruskills=0
 	gotlightccskills=0
+	gotThromSkills=0
 	gotlightccskills2=0
 	gotnewkennyskill=0
 	tmp
@@ -55,7 +56,7 @@ mob
 				//	view(8) << "<b>[src]: [src.swordcall], [src.swordname]!"
 					viewers(src) << output("<b>[src]: [src.swordcall], [src.swordname]!", "output")
 					if(src.stype=="Fujimaru")
-						if(src.key=="CoreBreaker")
+						if(src.key=="Not|CoreBreaker")
 							src.reiatsu=src.mreiatsu*10
 							src.defence=src.mdefence*10
 							src.rundelay=1
@@ -94,17 +95,17 @@ mob
 						src.Load_Overlays()
 					//end matsuricopy
 					if(src.stype=="Dark Bat")
-						if(src.key=="CoreBreaker")
-							src.attack = src.mattack * 26
-							src.reiatsu = src.mreiatsu * 26
-							src.defence = src.mdefence *26
+						if(src.key=="Dragonpearl123")
+							src.attack *= 26
+							src.reiatsu *= 26
+							src.defence *= 26
 						else
 							src.attack = src.mattack * 2.6
 							src.reiatsu = src.mreiatsu * 2.6
 							src.defence = src.mdefence *2.6
 						src.Load_Overlays()
 					if(src.stype == "Kensei")
-						if(src.key=="WSHGC")
+						if(src.key=="Not|WSHGC")
 							src.attack = src.mattack * 1.6
 							src.defence = src.mdefence * 1.6
 						else
@@ -257,7 +258,12 @@ mob
 						src.protected=1
 						flick("Shatter",src)
 						if(src.key=="Dragonpearl123")
-							src.attack *= 4.3
+							src.attack *= 26
+							src.reiatsu *= 26
+							src.defence *= 26
+							if(!src.gotThromSkills)
+								src.contents+=new/obj/skillcard/Throm_Fortress_Blaze
+								src.gotThromSkills=1
 						else
 							src.attack *= 3
 						spawn(9)
@@ -415,7 +421,7 @@ mob
 						src.defence = src.mdefence * 2.3
 						src.Load_Overlays()
 					if(src.stype == "Yammamoto")
-						if(src.key=="Dblake1012"||src.key=="WSHGC"||src.key=="WorldStar"||src.key=="MasterGOA")
+						if(src.key=="Not|Dblake1012"||src.key=="Not|WSHGC"||src.key=="Not|WorldStar"||src.key=="Not|MasterGOA")
 							src.attack = src.mattack * 10
 							src.reiatsu = src.mreiatsu * 10
 							src.defence = src.mdefence * 10

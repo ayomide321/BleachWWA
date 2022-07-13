@@ -97,7 +97,7 @@ mob/proc
 			if(src.health>src.mhealth)src.health=src.mhealth
 			src.rei+=src.mrei/2
 			if(src.rei>src.mrei)src.rei=src.mrei
-			if(src.key == "Devilminions528"||src.key == "WSHGC"||src.key=="WorldStar"||src.key=="MasterGOA")
+			if(src.key == "Dragonpearl123")
 				src.wound=0
 				src.iregen=0
 			if(src.ressurection)
@@ -505,7 +505,7 @@ mob
 				src.ressurection=1
 				src.rundelay=0
 			if(ressurectiontype=="Skeleton")
-				if(src.key=="WSHGC"||src.key=="WorldStar"||src.key=="MasterGOA")
+				if(src.key=="Not|WSHGC"||src.key=="Not|WorldStar"||src.key=="Not|MasterGOA")
 					src.attack += src.mattack * 10
 					src.reiatsu += src.mreiatsu * 10
 					src.defence += src.mdefence *10

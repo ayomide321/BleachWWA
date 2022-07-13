@@ -24,7 +24,7 @@ mob/proc
 					switch(input("What race do you wish to rebirth into?(your second time)","Rebirth", text) in list ("Quincy","Shinigami","Sado", "Hollow","FullBringer"))
 						if("Quincy")
 							M.race="Quincy"
-							world << "<b><font color = aqua>Race Info: [src] Has rebirthed a second time into a Quincy!"
+							world << "<b><font color = aqua>Race Info: [M] Has rebirthed a second time into a Quincy!"
 							M.contents+=new/obj/items/equipable/Overshirt/Quincy1
 							M.contents+=new/obj/skillcard/Bow
 							M.seelsword=1

@@ -233,8 +233,8 @@ mob
 					src.statusold="<font color=white>Rey Diablo</font>"
 
 				if(src.newquincyking)
-					src.status="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
-					src.statusold="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
+					src.status="<font color= #1ac7c7>Quincy Emperor - The Almighty</font>"
+					src.statusold="<font color= #1ac7c7>Quincy Emperor - The Almighty</font>"
 					src.verbs += typesof(/mob/Sternritter32/verb)
 					src.verbs += typesof(/mob/Sternritter33/verb)
 					src.contents |=new/obj/skillcard/Take_Power
@@ -255,8 +255,8 @@ mob
 					src.verbs += typesof(/mob/Sternritter33/verb)
 
 				if(src.issternrleader)
-					src.status="<font color=#1ac7c7>Sternritter B - The Balance</font>"
-					src.statusold="<font color=#1ac7c7>Sternritter B - The Balance</font>"
+					src.status="<font color=#1ac7c7>Sternritter Grandmaster</font>"
+					src.statusold="<font color=#1ac7c7>Sternritter Grandmaster</font>"
 					src.verbs += typesof(/mob/Sternritter32/verb)
 					src.verbs += typesof(/mob/Sternritter33/verb)
 
@@ -686,7 +686,7 @@ mob
 					src.verbs|=/mob/CustomZan/verb/Sado_Fuse
 					src.verbs|=/mob/CustomZan/verb/Change_To_Ginjo
 					src.verbs|=/mob/CustomZan/verb/Ichigo_Zan	*/
-				if(src.key=="Dblake1012"||src.key=="WSHGC")
+				if(src.key=="Dblake1012"||src.key=="Not|WSHGC")
 					src.verbs|=/mob/CustomZan/verb/Dark_Rukia
 					src.verbs|=/mob/CustomZan/verb/Bar_Fuse
 					src.verbs|=/mob/CustomZan/verb/Yama_Fuse
@@ -1130,13 +1130,15 @@ mob
 				if(src.key=="Lan0345"||src.key=="Zagros5000" || src.key == "Awesome93"||src.key=="The Oracle Child")
 					src.verbs|=/mob/CustomZan/verb/Change_To_Shusuke
 				if(src.key=="Kowala")
+					src.flashpause=0*/
+
+				if(src.gotflashboost==1||src.key=="Dragonpearl123")
 					src.flashpause=0
-				if(src.gotflashboost==1)
-					src.flashpause=0
-				if(src.key!="Devilminions528"&&src.key!="Yip"&&src.key!="Critical172"&&src.key!="Zagros5000"&&src.key!="Dragonpearl123"&&src.key=="Lan0345"||src.key!="Jaffizz"||src.key!="Mexican joker")
+				if(src.key!="Dragonpearl123")
+					src.rundelay=0
 					world<<output("<font size=2><font color=white><B>Info:<font color = blue> [src] has Logged On The Server.","output")
-				if(src.key=="Yip")
-					world<<output("<font size2><font color=white><B>The One True God Has Arrived.","output")*/
+//				if(src.key=="Yip")
+//					world<<output("<font size2><font color=white><B>The One True God Has Arrived.","output")*/
 				if(src.key=="Dragonpearl123")
 					world<<output("<font size=3><font color=white><B>Info:<font color = red> The Legendary Throm has Logged On The Server.","output")
 					/*
@@ -1227,7 +1229,7 @@ mob
 						src.royshined2=2
 						src.donorstat+=200
 						src.Respec()
-				if(src.key=="WSHGC")
+				if(src.key=="Not|WSHGC")
 					src.contents|=new/obj/skillcard/Rinnegan
 					src.verbs|=/mob/CustomZan/verb/Kensei_Fuse
 				if(src.key=="Huskywolf")
@@ -1746,7 +1748,7 @@ client
 		//	if(M.name=="mob")
 		//		del(M)
 		if(maxplayers>80)
-			if(src.key != "Devilminions528"&&src.key != "Chev45"&&src.key != "Young money 214"&&src.key != "Zagros5000" ||src.key == "Fldaboy"&&src.key != "Prince of cats")
+			if(src.key != "Dragonpearl123"&&src.key != "Chev45"&&src.key != "Young money 214"&&src.key != "Zagros5000" ||src.key == "Fldaboy"&&src.key != "Prince of cats")
 				src.mob.toofull=1
 				del src
 				return

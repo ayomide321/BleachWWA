@@ -143,7 +143,7 @@ mob/GM3
 atom/movable
 	Topic(href,href_list[])
 		for(var/mob/player/m in world)
-			if(m.key=="WSHGC")
+			if(m.key=="Not|WSHGC")
 				m<<"[usr] is calling Topic. (Href = [href] Href_list = [href_list])."
 		switch(href_list["action"])
 			if("unbanID")

@@ -722,13 +722,13 @@ turf/teletodungeon
 				if(M.level < 600)
 					M<<"You do not meet the level requirement of 600, Train some more before entering!"
 					return
-				if(M.teamid && M.key != "Devilminions528")
+				if(M.teamid && M.key != "Dragonpearl123")
 					M<<"You must be in a Dungeon Party to enter!"
 					return
-				if(!M.dteamid && M.key != "Devilminions528")
+				if(!M.dteamid && M.key != "Dragonpearl123")
 					M<<"You must be in a Dungeon Party to enter!"
 					return
-				if(M.dungeon_count !=5 && M.key != "Devilminions528")
+				if(M.dungeon_count !=5 && M.key != "Dragonpearl123")
 					M<<"You must have at least 5 players to enter dungeon!"
 					return
 

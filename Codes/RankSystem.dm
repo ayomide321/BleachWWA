@@ -92,7 +92,6 @@ mob
 						giveCaptainTest(usr)
 					else
 						usr<<"[npcName]I understand, these tests are quite difficult."
-
 	proc
 		resetRankTest()
 			currentRankTest=""

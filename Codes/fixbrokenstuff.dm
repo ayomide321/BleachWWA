@@ -567,7 +567,7 @@ mob/proc
 		if(src.segunda)
 			L+=/obj/blacktail
 			L+=/obj/horns
-		if(src.limitrelease && src.key != "WSHGC")
+		if(src.limitrelease && src.key != "Not|WSHGC")
 			if(src.race=="Shinigami")
 				L+=/obj/lrelease/a1
 				L+=/obj/lrelease/a2
@@ -977,7 +977,7 @@ mob/proc
 			if(src.inshikai||src.inbankai)
 				L += /obj/Zanpakutou/Kira
 				L -= weapon
-		if(src.stype == "Byakuya"||src.stype == "Rangiku" && src.key != "Devilminions528")
+		if(src.stype == "Byakuya"||src.stype == "Rangiku" && src.key != "Dragonpearl123")
 			if(src.inshikai||src.inbankai)
 				L += /obj/Zanpakutou/Byakuya
 				L -= weapon
@@ -989,7 +989,7 @@ mob/proc
 					L +=/obj/petalpieces/left
 					L +=/obj/petalpieces/right
 					L +=/obj/petalpieces/middle
-		if(src.stype=="Byakuya"&&src.key=="Devilminions528")
+		if(src.stype=="Byakuya"&&src.key=="Dragonpearl123")
 			if(src.inshikai||src.inbankai)
 				if(!src.senkei&&!src.safezone)
 					L +=/obj/petalpieces/up
@@ -999,7 +999,7 @@ mob/proc
 					L +=/obj/petalpieces/middle
 					L += /obj/rage
 					L += /obj/rage1
-		if(src.stype == "Rangiku"&&src.key=="Devilminions528")
+		if(src.stype == "Rangiku"&&src.key=="Dragonpearl123")
 			if(src.inshikai)
 				L +=/obj/smokepieces/up
 				L +=/obj/smokepieces/down
