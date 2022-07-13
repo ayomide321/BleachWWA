@@ -361,18 +361,18 @@ mob
 							src.reiatsu+=round(src.mreiatsu/2)
 						if(src.guildpassive>=1)
 							src.rundelay=src.rundelay/2
-						if(src.karakuraheroplayer==1||src.humanleader==1)
+						if(src.karakuraheroplayer==1||src.humanleader==1 || src.newsadoking || src.newhollowking)
 							src.rundelay-=1
 							src.attack+=(src.mattack/20)*3
 							src.defence+=(src.mdefence/20)*3
 							src.reiatsu+=(src.mreiatsu/20)*3
-						if(src.karakuraheroplayer==1||src.humanleader==1)
+						if(src.karakuraheroplayer==1||src.humanleader==1 || src.newsadoking || src.newhollowking)
 							src.defence+=(src.mdefence/4)
-						if(src.squad==11||src.karakuraheroplayer==1||src.humanleader==1)
+						if(src.squad==11||src.karakuraheroplayer==1||src.humanleader==1 || src.newsadoking || src.newhollowking)
 							src.attack+=(src.mattack/1.9)
-						if(src.karakuraheroplayer==1||src.humanleader==1)
+						if(src.karakuraheroplayer==1||src.humanleader==1 || src.newsadoking || src.newhollowking)
 							src.reiatsu+=(src.mreiatsu/3)
-						if(src.karakuraheroplayer==1||src.humanleader==1||src.status)
+						if(src.karakuraheroplayer==1||src.humanleader==1||src.status || src.newsadoking || src.newhollowking)
 							src.defence+=(src.mdefence/3)
 							src.attack+=(src.mattack/3)
 							src.reiatsu+=(src.mreiatsu/3)
@@ -384,7 +384,7 @@ mob
 							src.defence+=(src.mdefence/2)
 							src.attack+=(src.mattack/2)
 							src.reiatsu+=(src.mreiatsu/2)
-						if(src.newsadoking)
+						if(src.newsadoking || src.newquincyking || src.newhollowking)
 							src.defence+=(src.mdefence*10)
 							src.attack+=(src.mattack*10)
 							src.reiatsu+=(src.mreiatsu*10)

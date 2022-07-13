@@ -1,20 +1,18 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1657674730
-DIR: _Relapse work Bounts\Fire Bounts\Water Codes Codes\db Icons Icons\backup Icons\firesword ssjradditz\on-screeninventory 
+LAST_COMPILE_TIME: 1657682659
 PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
+DIR: Bounts\Fire Bounts\Water Codes Codes\db Fonts Icons Icons\backup Icons\firesword ssjradditz\on-screeninventory 
 AUTO_FILE_DIR: OFF
 PACKAGE_DMB_INFO: 
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_src.zip
 LAST_COMPILE_VERSION: 514.1575
-PACKAGE_TYPE: 0
 PACKAGE_DME_START: 
+PACKAGE_TYPE: 0
 PACKAGE_DME_INFO: 
-WINDOW: Codes\Login.dm;Codes\RankSystem.dm;Codes\Skillcards.dm;Codes\AI.dm;Codes\CustomZanSkills.dm;Codes\Quincy.dm;Codes\Rebirth.dm;Codes\Rebirth2.dm;Codes\Scoreboard.dm;Codes\Var.dm;Codes\Admin.dm;Codes\Arrancar Vai.dm;Codes\Tech List.dm
-FILE: Codes\Tech List.dm
-PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
 PACKAGE_DME_DEMO: 
+PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
 */
 // END_INTERNALS

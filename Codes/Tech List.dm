@@ -9291,42 +9291,44 @@ mob
 						if(src.pow==1)
 							src << "You can't Take Any More power!" */ // old take power
 
-mob/
+mob
 	var
-		tmp
-			tpow=0
-			gpow=0
+		tpow=0
+		gpow=0
+		tmp/haspower=0
 	proc
 		TakePower()
 			if(!tpow)
 				if(gpow) return;
 				for(var/mob/player/M in All_Clients())
 					if(M.race=="Quincy")
-						tpow+=(M.mreiatsu-M.donorstat*150)
-				src.reiatsu += (tpow / 10)
+						tpow+=(M.reiatsu)
+				src.reiatsu += (tpow / 5)
 				src << "You've absorbed power from the other Quincies!"
 			else
 				src << "You've given the reiatsu back!"
-				src.reiatsu -= (tpow / 10)
+				src.reiatsu -= (tpow / 5)
 				tpow = 0
 
 	proc
 		GivePower()
 			if(!gpow)
 				if(tpow) return;
-				gpow = src.mreiatsu-src.donorstat*150
+				gpow = src.mreiatsu
 				for(var/mob/player/M in All_Clients())
 					if(M.race=="Quincy")
 						M.reiatsu += gpow
-				world << "<b><font color = red>World News: [src] Has Gifted Their Fellow Quincy some of their Power!"
+						M.haspower=gpow
+				world << "<b><font color = lightblue>World News: [src] Has Gifted Their Fellow Quincy some of their Power!"
 			else
 				src << "Your Power Returns to you!"
 				src.reiatsu=src.mreiatsu
 				for(var/mob/player/M in All_Clients())
-					if(M.race=="Quincy")
-						M.reiatsu -= gpow
+					if(M.race=="Quincy"&&M.haspower)
+						M.reiatsu -= M.haspower
+						M.haspower=0
 				gpow = 0
-				world << "<b><font color = red>World News: [src] Has Reclaimed their Power!"
+				world << "<b><font color = lightblue>World News: [src] Has Reclaimed their Power!"
 
 /*	proc    // this is the backup/ original attempt haha
 		GivePower()

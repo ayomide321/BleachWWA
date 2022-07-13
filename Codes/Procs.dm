@@ -2907,10 +2907,10 @@ mob
 				wounds+=mwound
 			if(M.GedonKido)
 				damage+=round(mdamage*(M.level/250))
-			if(M.squad=="Kido Corps"||M.status== "<font color = #f0f217>Captain Commander</font>"||M.statusold== "<font color = #f0f217>Captain Commander</font>"||M.squad==0||M.karakuraheroplayer==1||M.humanleader==1||M.issternrleader==1||M.newquincyking==1)
+			if(M.squad=="Kido Corps"||M.status== "<font color = #f0f217>Captain Commander</font>"||M.statusold== "<font color = #f0f217>Captain Commander</font>"||M.squad==0||M.karakuraheroplayer==1||M.humanleader==1||M.issternrleader==1||M.newquincyking==1 || src.newsadoking || src.newhollowking)
 				kidobased=1
 			if(kidobased)
-				if(M.squad=="Kido Corps"||M.status== "<font color = #f0f217>Captain Commander</font>"||M.statusold== "<font color = #f0f217>Captain Commander</font>"||M.squad==0||M.karakuraheroplayer==1||M.humanleader==1||M.issternrleader==1||M.newquincyking==1)
+				if(M.squad=="Kido Corps"||M.status== "<font color = #f0f217>Captain Commander</font>"||M.statusold== "<font color = #f0f217>Captain Commander</font>"||M.squad==0||M.karakuraheroplayer==1||M.humanleader==1||M.issternrleader==1||M.newquincyking==1 || src.newsadoking || src.newhollowking)
 					if(M.squad=="Kido Corps")
 						if(M.status=="<font color = #FF5600>Captain</font>")
 							damage+=round(mdamage*(M.level/250))
@@ -2962,7 +2962,7 @@ mob
 				damage+=round(mdamage/2)
 			if(M.rodeo)
 				damage+=round(mdamage/2)
-			if(src.squad==7||src.squad==0||src.karakuraheroplayer==1||src.humanleader==1||src.newquincyking==1||src.issternrleader==1)
+			if(src.squad==7||src.squad==0||src.karakuraheroplayer==1||src.humanleader==1||src.newquincyking==1||src.issternrleader==1 || src.newsadoking || src.newhollowking)
 				damage-=round(mdamage/3)
 			damage-=round(src.defence*0.5)
 			if(src.stype=="Byakuya"&&src.inshikai||src.stype=="Byakuya"&&src.inbankai)
@@ -3079,7 +3079,7 @@ mob
 						if(lastevent==7||lastevent==4||lastevent==2||lastevent==3||lastevent==8)
 							M.dmgdone+=damage
 							M.wnddone+=wounds
-			if(src.squad==5||src.squad==0||src.karakuraheroplayer==1||src.humanleader==1||src.newquincyking==1||src.issternrleader==1)
+			if(src.squad==5||src.squad==0||src.karakuraheroplayer==1||src.humanleader==1||src.newquincyking==1||src.issternrleader==1 || src.newsadoking || src.newhollowking)
 				if(prob(2))
 					M.Death(src,round(damage/4),0)
 			if(damage>round(src.mhealth*0.5,1))
