@@ -3618,10 +3618,10 @@ mob
 					new/obj/items/usable/Chests/Rare_Chest(src.x-1,src.y,src.z)
 				if(prob(1))
 					world <<"<b><font size=2>[M] has found the autograph of the famous Relapse!!"
-				if(prob(0.5))
-					donorarm=1
-					contents+=new/obj/skillcard/Sado_ArmDP
-					src.RefreshSkillList()
+				if(prob(1.5))
+					M.donorarm=1
+					M.contents+=new/obj/skillcard/Sado_ArmDP
+					M.RefreshSkillList()
 					M<<"You have learned how to utilize the Devil's arm."
 					world<<"Power surges through [M.name]"
 //-----------------------------------------------------------------------------------------------------------------------lorelei area
@@ -3897,7 +3897,7 @@ mob
 					M.curmis="Bring the Hougyoku to Aizen"
 					M.storycom=98
 					M.beatandget=1
-				world <<"<b>font color=gray><h2>[M] defeated Aizen!</h2>"
+				world <<"<b><font color=gray><h2>[M] defeated Aizen!</h2>"
 				M.exp += src.expgain
 				M.Level_Up()
 				M.skill()
@@ -4495,9 +4495,10 @@ mob
 				if(src.test_gotei&&currentRankTest)
 					testGoteiLeft = max(0, testGoteiLeft-1)
 					if(testGoteiLeft == 0 && currentPlayerTest == M.key)
+						M.Respawn()
+						M.GiveDonorStats()
 						M.giveRank(currentRankTest)
 						resetRankTest()
-						M.GiveDonorStats()
 				if(M.missiontarget==src&&M.mission==5)
 					M.CompleteMish(2000,rand(100,150),view(20,M))
 				for(var/mob/Di in oview(20,src))
@@ -5112,6 +5113,8 @@ mob
 				src.segunda=0
 				src.ceroback=0
 				if(currentPlayerTest == src.key)
+					src.Respawn()
+					src.GiveDonorStats()
 					world<<"<b><font color=red>[src] has failed the test for [currentRankTest], he only needed [testGoteiLeft] more kill(s) to go :("
 					resetRankTest()
 					src.GiveDonorStats()

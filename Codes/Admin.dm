@@ -2905,8 +2905,8 @@ mob
 						if("Yes")
 							world << "<b><font color = red><font size=2>[M] is now the Emperor of the Wandenreich"
 							M.newquincyking=1
-							M.status="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
-							M.statusold="<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"
+							M.status="<font color= #1ac7c7>Quincy Emperor - The Almighty</font>"
+							M.statusold="<font color= #1ac7c7>Quincy Emperor - The Almighty</font>"
 							M.espadas=""
 							M.espadasold=""
 							activeRankList[rank] = M.key
@@ -2915,8 +2915,8 @@ mob
 						if("Yes")
 							world << "<b><font color = red><font size = 2> [M] is now the Sternritter Grandmaster"
 							M.issternrleader=1
-							M.status="<font color=#1ac7c7>Sternritter B - The Balance</font>"
-							M.statusold="<font color=#1ac7c7>Sternritter B - The Balance</font>"
+							M.status="<font color=#1ac7c7>Sternritter Grandmaster</font>"
+							M.statusold="<font color=#1ac7c7>Sternritter Grandmaster</font>"
 							M.espadas=""
 							M.espadasold=""
 							activeRankList[rank] = M.key

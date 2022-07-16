@@ -273,8 +273,6 @@ proc/Start_Lost_Zan_Event()
 		entry=1
 		sleep(1200)
 		entry=0
-		spawn(1 MINUTE)
-			world<<"<font color=teal><font size=3>1 minute left to join the Capture the Flag event."
 		world<<"<font color=teal>Capture the Flag has started."
 		if(ppl<=4)
 			world<<"<font color=teal>Not enough players."

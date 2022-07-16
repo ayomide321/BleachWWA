@@ -1587,14 +1587,14 @@ mob
 				var/r=abs(0-src.defence)
 				src.defence=0
 				src.reiatsu+=d+r
-				sleep(4 SECONDS)
+				sleep(300)
 				src<<"<b>You balance out again"
 				src.reiatsu-=d+r
 				if(src.defence==sd)
 					src.defence+=r
 				if(src.attack==sa)
 					src.attack+=d
-				sleep(1 SECOND)
+				sleep(600)
 				src.pure=0
 		Pure_Def()
 			if(src.rei < 1000)
@@ -4575,11 +4575,11 @@ mob
 				src <<"<b>You have too many wounds"
 				return
 			if(src.traveltime)
-				src<<"<b>You have to wait 10 seconds"
+				src<<"<b>You have to wait 45 seconds"
 				return
 			if(!src.firing)
 				src.frozen=1
-				src.traveltime=10
+				src.traveltime=45
 				if(src.hollow)
 					new/obj/garganta(src.loc)
 				if(!src.hollow)
@@ -4588,7 +4588,7 @@ mob
 					src.loc = locate(147,103,1)
 					src.safe = 0
 					src.frozen=0
-				sleep(10 SECONDS)
+				sleep(45 SECONDS)
 				src.traveltime=0
 
 mob/proc/Reap()

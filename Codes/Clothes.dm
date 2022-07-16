@@ -147,9 +147,9 @@ obj/items/equipable/DualZangetsu
 
 		if(usr.dualwield)
 			usr.dualwield=0
-			usr.attack=usr.mattack
-			usr.defence=usr.mdefence
-			usr.reiatsu=usr.mreiatsu
+			usr.attack=max(usr.mattack, usr.attack-55000)
+			usr.defence=max(usr.mdefence, usr.defence-55000)
+			usr.reiatsu=max(usr.mreiatsu, usr.reiatsu-55000)
 			usr.overlays-='Icons/EndedZangetsus.dmi'
 			return
 

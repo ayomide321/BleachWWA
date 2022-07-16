@@ -320,6 +320,7 @@ mob
 			M.gotcero = 0
 			M.gotcero2 = 0
 			M.bala = 0
+			M.waitForRankTest=0
 			M.kido1 = 0
 			M.kido2 = 0
 			M.kido3 = 0

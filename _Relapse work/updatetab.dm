@@ -14,6 +14,13 @@ mob/player
 <br>
 <br>
 <br>
+
+<u>07/15/2022 Updates<font size=4></u>
+<br><font size=2>-Fixed lots of bugs (too many to specify)
+<br><font size=2>-Increased sado arm chance from 0.5% to 1.5%
+<br><font size=2>-Made DZ not debuff (this is going to be the test while I try to apply this to all buffs)
+<br>
+<br>
 <u>07/12/2022 Updates<font size=4></u>
 <br><font size=2>-Added more ranks to take from Auto Ranker
 <br><font size=2>-Fixed bug where not all events gave DP

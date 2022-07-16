@@ -186,6 +186,7 @@ mob
 	proc
 		giveRank(rank)
 			if(rank)
+				src.waitForRankTest=0
 				removeRank(src)
 			if(rank == "Captain")
 				makeCaptain(src)
@@ -296,7 +297,14 @@ mob
 
 	proc
 		startTest(mob/M)
+			if(currentPlayerTest)
+				usr<<"There seems to be technical difficulties with starting your test, please wait."
+				for(var/mob/K in All_Clients())
+					if(K.key == currentPlayerTest)
+						usr<<"Unfortunately, [K] is currently taking the [currentRankTest] test."
+						return
 			M.loc=locate(31,165,21)
+			currentPlayerTest=M.key
 			M.RemoveDonorStats()
 			M<<"Prepare yourself, your exam begins in 30 seconds. To truly test your abilities, we will be strpiping any extra stat boosts you may have earned."
 			sleep(200)
@@ -316,11 +324,11 @@ mob
 			sleep(10)
 			M<<"BEGIN!"
 			M.waitForRankTest=world.realtime
-			currentPlayerTest=M.key
+
 			M.loc=locate(31,165,21)
 			//Spawn the tests
 			if(currentRankTest=="Captain")
-				testGoteiLeft=1
+				testGoteiLeft=2
 				if(M.squad==1)
 					M<<"Due to technical issues, your test has been postponed. Contact Throm for further assistance"
 					return;
@@ -346,8 +354,9 @@ mob
 					new/mob/Test_Gotei_13/C11(locate(31,168,21))
 				if(M.squad==12)
 					new/mob/Test_Gotei_13/C12(locate(31,168,21))
-				else
+				if(M.squad==13)
 					new/mob/Test_Gotei_13/C13(locate(31,168,21))
+				new/mob/Test_Gotei_13/C1(locate(31,169,21))
 
 			if(currentRankTest=="Captain Commander"||currentRankTest=="Karakura Hero"||currentRankTest=="Sternritter Grandmaster")
 				testGoteiLeft=12

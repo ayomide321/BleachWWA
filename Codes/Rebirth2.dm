@@ -337,6 +337,7 @@ mob/proc
 					M.silver3 = 0
 					M.silver4 = 0
 					M.silver5 = 0
+					M.waitForRankTest=0
 					M.skillq=null
 					M.skille=null
 					M.skillo=null

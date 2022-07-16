@@ -543,7 +543,7 @@ mob
 		fuseCount=0
 
 		/*
-		fuseList = list(/mob/CustomZan/verb/Kensei_Fuse,
+		fuseList = /mob/CustomZan/verb/Kensei_Fuse,
 					/mob/CustomZan/verb/Vai_Fuse,
 					/mob/CustomZan/verb/Sado_Fuse,
 					/mob/CustomZan/verb/Tousen_Fuse,
@@ -567,7 +567,33 @@ mob
 					/mob/CustomZan/verb/Change_To_Ginjo,
 					/mob/CustomZan/verb/Change_To_Tsuki,
 					/mob/CustomZan/verb/Change_To_Samurai)
+
 		*/
+		hasFuse = list(/mob/CustomZan/verb/Kensei_Fuse=0,
+					/mob/CustomZan/verb/Vai_Fuse=0,
+					/mob/CustomZan/verb/Sado_Fuse=0,
+					/mob/CustomZan/verb/Tousen_Fuse=0,
+					/mob/CustomZan/verb/Yama_Fuse=0,
+					/mob/CustomZan/verb/Szayel_Fuse=0,
+					/mob/CustomZan/verb/Volcanica_Fuse=0,
+					/mob/CustomZan/verb/Hitsu_Fuse=0,
+					/mob/CustomZan/verb/Ulq_Fuse=0,
+					/mob/CustomZan/verb/Grimm_Fuse=0,
+					/mob/CustomZan/verb/Ichi_Fuse=0,
+					/mob/CustomZan/verb/Halibel_Fuse=0,
+					/mob/CustomZan/verb/Rukia_Fuse=0,
+					/mob/CustomZan/verb/Bar_Fuse=0,
+					/mob/CustomZan/verb/Jackie_Fuse=0,
+					/mob/CustomZan/verb/Nell_Fuse=0,
+					/mob/CustomZan/verb/Gamer_Fuse=0,
+					/mob/CustomZan/verb/Fire_Doll_Fuse=0,
+					/mob/CustomZan/verb/Fuji_Fuse=0,
+					/mob/CustomZan/verb/Byak_Fuse=0,
+					/mob/CustomZan/verb/Kaien_Fuse=0,
+					/mob/CustomZan/verb/Change_To_Ginjo=0,
+					/mob/CustomZan/verb/Change_To_Tsuki=0,
+					/mob/CustomZan/verb/Change_To_Samurai=0)
+
 		fuseList = list(("Kensei Fuse") = /mob/CustomZan/verb/Kensei_Fuse,
 						("Vaizard Fuse") = /mob/CustomZan/verb/Vai_Fuse,
 						("Sado Fuse") = /mob/CustomZan/verb/Sado_Fuse,
@@ -653,7 +679,7 @@ mob
 					DPList += "Red Hakuteiken"
 
 					var/mob/U = input("Which item from the DP store do you want to purchase?", "DP Shop Owner") as null|anything in DPList
-					O = fuseList[U]
+					O = usr.fuseList[U]
 					if(!O)
 						switch(U)
 							if("Red Hakuteiken")
@@ -668,8 +694,10 @@ mob
 							else
 								usr<<"Feature coming soon."
 					else
-						if((O in usr.verbs)== 0)
+						//if((O in usr.verbs)== 0 && !usr.hasFuse[O])
+						if(!usr.hasFuse[O])
 							if(usr.UseDP(FuseCost))
+								usr.hasFuse[O] = 1
 								usr.verbs|=O
 								usr<<"You've attained the [U]"
 								usr.fuseCount++

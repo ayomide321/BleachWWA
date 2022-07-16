@@ -34382,3 +34382,142 @@ Bot (/obj/FirePillar/Bot): Move(Alchemic Circle (31,166,21) (/turf/TheGateArea/A
 <font color=#607B8B>World started up on: Tue Jul 12 13:36:16 2022
 <font color=#607B8B>World started up on: Tue Jul 12 17:32:00 2022
 <font color=#607B8B>World started up on: Tue Jul 12 17:36:16 2022
+<font color=#607B8B>World started up on: Thu Jul 14 10:06:08 2022
+<font color=#607B8B>World started up on: Fri Jul 15 10:08:16 2022
+runtime error: cannot read from list
+proc name: load (/mob/proc/load)
+  source file: Login.dm,222
+  usr: Dragonpearl123 (/mob/player)
+  src: ShiniThrom (/mob/player)
+  usr.loc: BleachWWAZag (9,10,1) (/turf/BleachWWAZag)
+  src.loc: DangaiFloor (124,102,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+ShiniThrom (/mob/player): load()
+the load (8,3,1) (/turf/load): Click(the load (8,3,1) (/turf/load), "mapwindow.map", "icon-x=29;icon-y=32;left=1;but...")
+runtime error: cannot read from list
+proc name: Talk (/mob/DP_Shop_NPC/verb/Talk)
+  source file: Changer.dm,656
+  usr: ShiniThrom (/mob/player)
+  src: {NPC}DP Shop Owner (/mob/DP_Shop_NPC)
+  usr.loc: DangaiFloor (143,105,1) (/turf/NewDangai/DangaiFloor)
+  src.loc: DangaiFloor (145,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+{NPC}DP Shop Owner (/mob/DP_Shop_NPC): Talk()
+<font color=#607B8B>World started up on: Fri Jul 15 10:11:28 2022
+runtime error: cannot read from list
+proc name: load (/mob/proc/load)
+  source file: Login.dm,222
+  usr: Dragonpearl123 (/mob/player)
+  src: Throm (/mob/player)
+  usr.loc: BleachWWAZag (9,10,1) (/turf/BleachWWAZag)
+  src.loc: the floor (49,133,1) (/turf/Bar/floor)
+  call stack:
+Throm (/mob/player): load()
+the load (9,4,1) (/turf/load): Click(the load (9,4,1) (/turf/load), "mapwindow.map", "icon-x=26;icon-y=1;left=1;butt...")
+runtime error: cannot read from list
+proc name: Talk (/mob/DP_Shop_NPC/verb/Talk)
+  source file: Changer.dm,656
+  usr: Throm (/mob/player)
+  src: {NPC}DP Shop Owner (/mob/DP_Shop_NPC)
+  usr.loc: DangaiFloor (145,105,1) (/turf/NewDangai/DangaiFloor)
+  src.loc: DangaiFloor (145,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+{NPC}DP Shop Owner (/mob/DP_Shop_NPC): Talk()
+runtime error: cannot read from list
+proc name: Talk (/mob/DP_Shop_NPC/verb/Talk)
+  source file: Changer.dm,656
+  usr: Throm (/mob/player)
+  src: {NPC}DP Shop Owner (/mob/DP_Shop_NPC)
+  usr.loc: DangaiFloor (146,104,1) (/turf/NewDangai/DangaiFloor)
+  src.loc: DangaiFloor (145,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+{NPC}DP Shop Owner (/mob/DP_Shop_NPC): Talk()
+<font color=#607B8B>World started up on: Fri Jul 15 10:14:40 2022
+runtime error: cannot read from list
+proc name: load (/mob/proc/load)
+  source file: Login.dm,222
+  usr: Dragonpearl123 (/mob/player)
+  src: ShiniThrom (/mob/player)
+  usr.loc: BleachWWAZag (9,10,1) (/turf/BleachWWAZag)
+  src.loc: DangaiFloor (124,102,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+ShiniThrom (/mob/player): load()
+the load (8,4,1) (/turf/load): Click(the load (8,4,1) (/turf/load), "mapwindow.map", "icon-x=24;icon-y=8;left=1;butt...")
+runtime error: cannot read from list
+proc name: Talk (/mob/DP_Shop_NPC/verb/Talk)
+  source file: Changer.dm,656
+  usr: ShiniThrom (/mob/player)
+  src: {NPC}DP Shop Owner (/mob/DP_Shop_NPC)
+  usr.loc: DangaiFloor (143,104,1) (/turf/NewDangai/DangaiFloor)
+  src.loc: DangaiFloor (145,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+{NPC}DP Shop Owner (/mob/DP_Shop_NPC): Talk()
+runtime error: cannot read from list
+proc name: Talk (/mob/DP_Shop_NPC/verb/Talk)
+  source file: Changer.dm,656
+  usr: ShiniThrom (/mob/player)
+  src: {NPC}DP Shop Owner (/mob/DP_Shop_NPC)
+  usr.loc: DangaiFloor (143,104,1) (/turf/NewDangai/DangaiFloor)
+  src.loc: DangaiFloor (145,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+{NPC}DP Shop Owner (/mob/DP_Shop_NPC): Talk()
+<font color=#607B8B>World started up on: Fri Jul 15 10:18:56 2022
+runtime error: cannot read from list
+proc name: load (/mob/proc/load)
+  source file: Login.dm,222
+  usr: Dragonpearl123 (/mob/player)
+  src: ShiniThrom (/mob/player)
+  usr.loc: BleachWWAZag (9,10,1) (/turf/BleachWWAZag)
+  src.loc: DangaiFloor (124,102,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+ShiniThrom (/mob/player): load()
+the load (8,4,1) (/turf/load): Click(the load (8,4,1) (/turf/load), "mapwindow.map", "icon-x=24;icon-y=19;left=1;but...")
+runtime error: cannot read from list
+proc name: Talk (/mob/DP_Shop_NPC/verb/Talk)
+  source file: Changer.dm,658
+  usr: ShiniThrom (/mob/player)
+  src: {NPC}DP Shop Owner (/mob/DP_Shop_NPC)
+  usr.loc: DangaiFloor (143,104,1) (/turf/NewDangai/DangaiFloor)
+  src.loc: DangaiFloor (145,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+{NPC}DP Shop Owner (/mob/DP_Shop_NPC): Talk()
+<font color=#607B8B>World started up on: Fri Jul 15 10:33:52 2022
+runtime error: list index out of bounds
+proc name: Talk (/mob/DP_Shop_NPC/verb/Talk)
+  source file: Changer.dm,703
+  usr: ShiniThrom (/mob/player)
+  src: {NPC}DP Shop Owner (/mob/DP_Shop_NPC)
+  usr.loc: DangaiFloor (143,105,1) (/turf/NewDangai/DangaiFloor)
+  src.loc: DangaiFloor (145,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+{NPC}DP Shop Owner (/mob/DP_Shop_NPC): Talk()
+runtime error: list index out of bounds
+proc name: Talk (/mob/DP_Shop_NPC/verb/Talk)
+  source file: Changer.dm,703
+  usr: ShiniThrom (/mob/player)
+  src: {NPC}DP Shop Owner (/mob/DP_Shop_NPC)
+  usr.loc: DangaiFloor (143,105,1) (/turf/NewDangai/DangaiFloor)
+  src.loc: DangaiFloor (145,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+{NPC}DP Shop Owner (/mob/DP_Shop_NPC): Talk()
+<font color=#607B8B>World started up on: Fri Jul 15 10:37:04 2022
+runtime error: list index out of bounds
+proc name: Talk (/mob/DP_Shop_NPC/verb/Talk)
+  source file: Changer.dm,704
+  usr: ShiniThrom (/mob/player)
+  src: {NPC}DP Shop Owner (/mob/DP_Shop_NPC)
+  usr.loc: DangaiFloor (144,105,1) (/turf/NewDangai/DangaiFloor)
+  src.loc: DangaiFloor (145,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+{NPC}DP Shop Owner (/mob/DP_Shop_NPC): Talk()
+runtime error: list index out of bounds
+proc name: Talk (/mob/DP_Shop_NPC/verb/Talk)
+  source file: Changer.dm,704
+  usr: ShiniThrom (/mob/player)
+  src: {NPC}DP Shop Owner (/mob/DP_Shop_NPC)
+  usr.loc: DangaiFloor (144,105,1) (/turf/NewDangai/DangaiFloor)
+  src.loc: DangaiFloor (145,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+{NPC}DP Shop Owner (/mob/DP_Shop_NPC): Talk()
+<font color=#607B8B>World started up on: Fri Jul 15 10:39:12 2022
+<font color=#607B8B>World started up on: Fri Jul 15 10:42:24 2022

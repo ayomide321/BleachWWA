@@ -216,6 +216,12 @@ mob
 					and a custom mayuri, can use bankai skills in shikai and have own shikai icon
 				*/
 
+
+				for(var/fuse in src.fuseList)
+					var/currentFuse = src.fuseList[fuse]
+					if(src.hasFuse[currentFuse])
+						src.verbs|= currentFuse
+
 				if(src.karakuraheroplayer)
 					src.status="<font color=green>Karakura Hero</font>"
 					src.statusold="<font color=green>Karakura Hero</font>"
@@ -239,6 +245,9 @@ mob
 					src.verbs += typesof(/mob/Sternritter33/verb)
 					src.contents |=new/obj/skillcard/Take_Power
 					src.contents |=new/obj/skillcard/Give_Power
+				else
+					src.contents -=new/obj/skillcard/Take_Power
+					src.contents -=new/obj/skillcard/Give_Power
 
 			/*	if(src.race == "Shinigami" && src.hasinfzan)
 					src.verbs += typesof(/mob/epzanchanges/verb)
@@ -1137,6 +1146,7 @@ mob
 				if(src.key!="Dragonpearl123")
 					src.rundelay=0
 					world<<output("<font size=2><font color=white><B>Info:<font color = blue> [src] has Logged On The Server.","output")
+					src<<output("<font size=2><font color=red><B>Join our Discord: https://discord.gg/WHRnKk8Av9 !", "output")
 //				if(src.key=="Yip")
 //					world<<output("<font size2><font color=white><B>The One True God Has Arrived.","output")*/
 				if(src.key=="Dragonpearl123")

@@ -576,7 +576,7 @@ obj
 				if(src.names=="Cyclone Slash")
 					usr.Cyclone_Slash()
 				if(src.names=="Garganta")
-					if(usr.z==23||usr.z==22||usr.z==24||usr.z==25||usr.z==17||usr.z==26)
+					if(usr.z==23||usr.z==22||usr.z==24||usr.z==25||usr.z==17||usr.z==26||usr.key==currentPlayerTest)
 						usr<<"Your powers are restricted here?!"
 						return
 					usr.Garganta()
@@ -691,9 +691,9 @@ obj
 					usr.HollowZangetsu()
 				if(src.names=="Gedon Kido")
 					usr.GedonKido()
-				if(src.names=="TakePower")
+				if(src.names=="Take Power")
 					usr.TakePower()
-				if(src.names=="GivePower")
+				if(src.names=="Give Power")
 					usr.GivePower()
 				if(prob(10))
 					if(usr.truereiatsu>=20000)
@@ -2594,12 +2594,12 @@ obj/skillcard
 		icon_state="hollowzangetsu"
 		layer=MOB_LAYER+100
 	Take_Power
-		names="TakePower"
+		names="Take Power"
 		icon='Icons/gui.dmi'
 		icon_state="wind pull"
 		layer=MOB_LAYER+100
 	Give_Power
-		names="GivePower"
+		names="Give Power"
 		icon='Icons/gui.dmi'
 		icon_state="wind push"
 		layer=MOB_LAYER+100

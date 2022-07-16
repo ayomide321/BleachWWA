@@ -258,6 +258,15 @@ mob
 									M.eventpoints+=75
 									M.donor_points += 20
 									M.total_bought += 20
+									if(M.squad==10)
+										M.GainExp(M.mexp * 5)
+										M.combos+=1
+										M.skillspassive+=4
+										M.GainMoney(50000)
+										M.eventpoints+=25
+										M.total_bought += 20
+										M.donor_points += 20
+										M<<"For being in Squad 10 you get bigger rewards and a combo point!"
 			if(labtime)
 				if(winningrace==1)
 					src<<"<font color=lime><b>Humans/Vaizards have lab invincibility at the moment"
