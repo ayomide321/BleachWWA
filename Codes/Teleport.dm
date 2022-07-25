@@ -1267,7 +1267,7 @@ turf
 					if(M.client&&M.redwolfkills>19)
 						usr.loc = locate(51,83,24)
 					if(M.redwolfkills<20)
-						usr<<"You must defeat 20/[usr.redwolfkills] before entering"
+						usr<<"You must defeat [usr.redwolfkills]/20 before entering"
 				else
 					if(istype(A,/obj/)) return
 		teleFromPheonix
