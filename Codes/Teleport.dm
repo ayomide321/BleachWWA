@@ -1283,11 +1283,11 @@ turf
 				if(ismob(A))
 					var/mob/M = A
 					if(M.client)
-						if(M.demonbosskills<5)
-							usr<<"You Must kill the demon boss [usr.demonbosskills]/5 times before entering"
+						if(M.demonbosskills<10)
+							usr<<"You Must kill the demon boss [usr.demonbosskills]/10 times before entering"
 							return
-						if(M.gatecreatorkills<5)
-							usr<<"You Must kill the gate creator [usr.gatecreatorkills]/5 times before entering"
+						if(M.gatecreatorkills<10)
+							usr<<"You Must kill the gategit creator [usr.gatecreatorkills]/10 times before entering"
 							return
 						if(M.client&&M.gatecreatorkills>9&&M.demonbosskills>9)
 							usr.loc = locate(51,2,24)
