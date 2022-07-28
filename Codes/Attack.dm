@@ -2698,10 +2698,10 @@ mob
 							damage =(src.reiatsu+src.attack)*1.8
 							if(damage <= 1)
 								damage =rand(25,1000)
-								src.health += damage /3
-								if(M.killable)src.shimastery(3)
-								if(src.health >= src.mhealth*1.2)
-									src.health = src.mhealth*1.2
+							src.health += damage /3
+							if(M.killable)src.shimastery(3)
+							if(src.health >= src.mhealth*1.2)
+								src.health = src.mhealth*1.2
 
 
 						if(src.stype == "Yumichika" && src.inbankai && src.client)
@@ -2720,10 +2720,10 @@ mob
 							if(prob(src.headpassive*3))
 								view(src,8) << "<font color = red>[src] hit [M] in the head!"
 								M.BrokenHead()
-								src.health += damage /4
-								if(M.killable)src.banmastery(3)
-								if(src.health >= src.mhealth*1.3)
-									src.health = src.mhealth*1.3
+							src.health += damage /4
+							if(M.killable)src.banmastery(3)
+							if(src.health >= src.mhealth*1.3)
+								src.health = src.mhealth*1.3
 
 
 						if(prob(src.bodypassive*3))
@@ -2798,7 +2798,7 @@ mob
 									view(8,src)<<"<b><font color=yellow>SUPER JACK POT!</b></font>"
 								if(prob(25))
 									damage=damage*5
-									view(8,src)<<"<b><font color=redJackPot!</b>"
+									view(8,src)<<"<b><font color=red>JackPot!"
 								if(prob(src.bodypassive*6))
 									view(src,8) << "<font color = red>[src] hit [MM] in the core!"
 									MM.BrokenCore()

@@ -340,10 +340,12 @@ mob
 				activeRankList["Karakura Hero"] = activeRankList["Karakura Hero"]-1
 			M.karakuraheroplayer = 0
 			M.newhollowking = 0
+			M.isEspadaLeader=0
 			M.iscaptain=0
 			M.iscaptaincommander=0
 			M.islieu=0
 			M.newsadoking=0
+			M.boughtlevelpoints=0
 			M.newquincyking=0
 			M.skillq=null
 			M.skille=null

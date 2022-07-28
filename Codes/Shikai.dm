@@ -40,6 +40,9 @@ mob
 			if(src.rei <= 0&&!src.inshikai)
 				src << "<b>Your rei is too low!"
 				return
+			if(src.key == currentPlayerTest)
+				if(src.race != "Shinigami" || src.race != "Vaizard")
+					src << "<b>You can't use this during a Ranked test"
 			if(!src.inshikai)
 				if(src.inbankai == 0)
 					src.arm=0
@@ -233,12 +236,12 @@ mob
 							src.protected=0
 							src.Load_Overlays()
 					if(src.stype == "Ichigo")
-						if (src.key=="Lan0345" || src.key=="CoreBreaker")
+						if (src.key=="Lan0345" || src.key=="Not|CoreBreaker")
 							if(src.key=="Lan0345")
 								src.reiatsu = src.mreiatsu * 2.9
 								src.defence = src.mdefence *2.9
 								src.attack = src.mreiatsu * 2.9
-							if(src.key=="CoreBreaker")
+							if(src.key=="Not|CoreBreaker")
 								src.reiatsu = src.mreiatsu * 5
 								src.defence = src.mdefence *5
 								src.attack = src.mreiatsu * 5

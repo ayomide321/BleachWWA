@@ -160,6 +160,10 @@ mob
 			if(src.lostpowers)
 				src << "<b>You lost your powers!"
 				return
+			if(src.key == currentPlayerTest)
+				if(src.race != "Fullbringer")
+					src << "<b>You can't use this during a Ranked test"
+					return
 			if(src.infull&&!src.inafull||src.inafull&&!src.infull)
 				src.StartShikCool()
 				src.stolen=0

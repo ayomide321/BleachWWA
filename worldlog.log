@@ -34521,3 +34521,405 @@ proc name: Talk (/mob/DP_Shop_NPC/verb/Talk)
 {NPC}DP Shop Owner (/mob/DP_Shop_NPC): Talk()
 <font color=#607B8B>World started up on: Fri Jul 15 10:39:12 2022
 <font color=#607B8B>World started up on: Fri Jul 15 10:42:24 2022
+<font color=#607B8B>World started up on: Mon Jul 18 15:34:40 2022
+<font color=#607B8B>World started up on: Mon Jul 18 15:36:48 2022
+<font color=#607B8B>World started up on: Mon Jul 18 15:38:56 2022
+<font color=#607B8B>World started up on: Mon Jul 18 15:38:56 2022
+<font color=#607B8B>World started up on: Mon Jul 18 15:40:00 2022
+<font color=#607B8B>World started up on: Mon Jul 18 15:42:08 2022
+<font color=#607B8B>World started up on: Mon Jul 18 20:03:28 2022
+runtime error: Cannot read null.computer_id
+proc name: IDBan (/mob/GM3/verb/IDBan)
+  source file: ZagzBanSystem.dm,50
+  usr: (src)
+  src: ShiniThrom (/mob/player)
+  src.loc: DangaiFloor (144,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+ShiniThrom (/mob/player): IDBan()
+runtime error: Cannot read null.computer_id
+proc name: IDBan (/mob/GM3/verb/IDBan)
+  source file: ZagzBanSystem.dm,50
+  usr: (src)
+  src: ShiniThrom (/mob/player)
+  src.loc: DangaiFloor (144,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+ShiniThrom (/mob/player): IDBan()
+<font color=#607B8B>World started up on: Mon Jul 18 20:04:32 2022
+<font color=#607B8B>World started up on: Mon Jul 18 20:05:36 2022
+runtime error: Cannot read null.computer_id
+proc name: IDBan (/mob/GM3/verb/IDBan)
+  source file: ZagzBanSystem.dm,50
+  usr: (src)
+  src: ShiniThrom (/mob/player)
+  src.loc: DangaiFloor (144,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+ShiniThrom (/mob/player): IDBan()
+runtime error: Cannot read null.computer_id
+proc name: IDBan (/mob/GM3/verb/IDBan)
+  source file: ZagzBanSystem.dm,50
+  usr: (src)
+  src: ShiniThrom (/mob/player)
+  src.loc: DangaiFloor (144,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+ShiniThrom (/mob/player): IDBan()
+runtime error: Cannot read null.computer_id
+proc name: IDBan (/mob/GM3/verb/IDBan)
+  source file: ZagzBanSystem.dm,50
+  usr: (src)
+  src: ShiniThrom (/mob/player)
+  src.loc: DangaiFloor (144,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+ShiniThrom (/mob/player): IDBan()
+Infinite loop suspected--switching proc to background.
+If it is not an infinite loop, either do 'set background=1' or set world.loop_checks=0.
+proc name: IDBan (/mob/GM3/verb/IDBan)
+  source file: ZagzBanSystem.dm,48
+  usr: (src)
+  src: ShiniThrom (/mob/player)
+  src.loc: DangaiFloor (144,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+ShiniThrom (/mob/player): IDBan()
+Infinite loop suspected--switching proc to background.
+If it is not an infinite loop, either do 'set background=1' or set world.loop_checks=0.
+proc name: IDBan (/mob/GM3/verb/IDBan)
+  source file: ZagzBanSystem.dm,48
+  usr: (src)
+  src: ShiniThrom (/mob/player)
+  src.loc: DangaiFloor (144,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+ShiniThrom (/mob/player): IDBan()
+Infinite loop suspected--switching proc to background.
+If it is not an infinite loop, either do 'set background=1' or set world.loop_checks=0.
+proc name: IDBan (/mob/GM3/verb/IDBan)
+  source file: ZagzBanSystem.dm,48
+  usr: (src)
+  src: ShiniThrom (/mob/player)
+  src.loc: DangaiFloor (144,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+ShiniThrom (/mob/player): IDBan()
+Infinite loop suspected--switching proc to background.
+If it is not an infinite loop, either do 'set background=1' or set world.loop_checks=0.
+proc name: IDBan (/mob/GM3/verb/IDBan)
+  source file: ZagzBanSystem.dm,48
+  usr: (src)
+  src: ShiniThrom (/mob/player)
+  src.loc: DangaiFloor (144,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+ShiniThrom (/mob/player): IDBan()
+Infinite loop suspected--switching proc to background.
+If it is not an infinite loop, either do 'set background=1' or set world.loop_checks=0.
+proc name: IDBan (/mob/GM3/verb/IDBan)
+  source file: ZagzBanSystem.dm,48
+  usr: (src)
+  src: ShiniThrom (/mob/player)
+  src.loc: DangaiFloor (144,105,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+ShiniThrom (/mob/player): IDBan()
+<font color=#607B8B>World started up on: Mon Jul 18 20:10:56 2022
+<font color=#607B8B>World started up on: Mon Jul 18 20:13:04 2022
+<font color=#607B8B>World started up on: Mon Jul 18 20:16:16 2022
+<font color=#607B8B>World started up on: Mon Jul 18 21:13:52 2022
+<font color=#607B8B>World started up on: Mon Jul 18 21:23:28 2022
+<font color=#607B8B>World started up on: Mon Jul 18 21:34:08 2022
+<font color=#607B8B>World started up on: Mon Jul 18 21:37:20 2022
+<font color=#607B8B>World started up on: Mon Jul 18 21:54:24 2022
+<font color=#607B8B>World started up on: Mon Jul 18 21:59:44 2022
+<font color=#607B8B>World started up on: Tue Jul 19 10:02:56 2022
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4776
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd({Boss}Crown Prince Vandenreich (/mob/Crown_Prince))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death({Boss}Crown Prince Vandenreich (/mob/Crown_Prince), 436793, 1, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the arrowrapid (/obj/arrowrapid): Move(Mid2 (50,177,26) (/turf/NewWater500/Mid2), 8)
+<font color=#607B8B>World started up on: Fri Jul 22 21:03:12 2022
+<font color=#607B8B>World started up on: Fri Jul 22 21:04:16 2022
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd(Throm (/mob/player))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death(Throm (/mob/player), 7.75958e+011, 6, 1)
+Bot (/obj/FirePillar/Bot): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+Bot (/obj/FirePillar/Bot): Move(DangaiFloor (148,101,1) (/turf/NewDangai/DangaiFloor), 2)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd(Throm (/mob/player))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death(Throm (/mob/player), 7.89708e+011, 2, 1)
+Bot (/obj/FirePillar/Bot): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+Bot (/obj/FirePillar/Bot): Move(DangaiFloor (149,101,1) (/turf/NewDangai/DangaiFloor), 2)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd(Throm (/mob/player))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death(Throm (/mob/player), 7.75958e+011, 2, 1)
+Bot (/obj/FirePillar/Bot): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+Bot (/obj/FirePillar/Bot): Move(DangaiFloor (147,100,1) (/turf/NewDangai/DangaiFloor), 2)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd(Throm (/mob/player))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death(Throm (/mob/player), 7.91541e+011, 1, 1)
+Bot (/obj/FirePillar/Bot): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+Bot (/obj/FirePillar/Bot): Move(DangaiFloor (148,100,1) (/turf/NewDangai/DangaiFloor), 2)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 626629, 2, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+the arrowrapid (/obj/arrowrapid): Move(DangaiFloor (147,91,1) (/turf/NewDangai/DangaiFloor), 2)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 729749, 1, 0)
+the arrow (/obj/arrow): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+the arrow (/obj/arrow): Move(DangaiFloor (154,101,1) (/turf/NewDangai/DangaiFloor), 6)
+<font color=#607B8B>World started up on: Fri Jul 22 21:11:44 2022
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 497691, 2, 0)
+the arrow (/obj/arrow): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+the arrow (/obj/arrow): Move(DangaiFloor (147,100,1) (/turf/NewDangai/DangaiFloor), 4)
+<font color=#607B8B>World started up on: Fri Jul 22 21:14:56 2022
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 4687652, 1, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+the arrowrapid (/obj/arrowrapid): Move(DangaiFloor (149,104,1) (/turf/NewDangai/DangaiFloor), 6)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 4687652, 1, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+the arrowrapid (/obj/arrowrapid): Move(DangaiFloor (151,104,1) (/turf/NewDangai/DangaiFloor), 6)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 2251038, 2, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+the arrowrapid (/obj/arrowrapid): Move(DangaiFloor (150,103,1) (/turf/NewDangai/DangaiFloor), 5)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 2251038, 1, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+the arrowrapid (/obj/arrowrapid): Move(DangaiFloor (151,104,1) (/turf/NewDangai/DangaiFloor), 5)
+<font color=#607B8B>World started up on: Fri Jul 22 21:16:00 2022
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 4056025, 2, 1)
+the soukatsui (/obj/soukatsui): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd(Throm (/mob/player))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death(Throm (/mob/player), 7.93374e+011, 1, 1)
+Bot (/obj/FirePillar/Bot): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+Bot (/obj/FirePillar/Bot): Move(DangaiFloor (146,97,1) (/turf/NewDangai/DangaiFloor), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd(Throm (/mob/player))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death(Throm (/mob/player), 9.99623e+011, 3, 1)
+Bot (/obj/FirePillar/Bot): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+Bot (/obj/FirePillar/Bot): Move(DangaiFloor (147,94,1) (/turf/NewDangai/DangaiFloor), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 2278121, 1, 0)
+the haizen (/obj/haizen): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+the haizen (/obj/haizen): Move(DangaiFloor (142,97,1) (/turf/NewDangai/DangaiFloor), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 4687652, 1, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+the arrowrapid (/obj/arrowrapid): Move(DangaiFloor (147,97,1) (/turf/NewDangai/DangaiFloor), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 630664, 2, 0)
+the shakkahou (/obj/shakkahou): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 707830, 0, 0)
+Smoke (/obj/smoke): Move(DangaiFloor (148,95,1) (/turf/NewDangai/DangaiFloor), 9)
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Use Petals(3, DangaiFloor (148,96,1) (/turf/NewDangai/DangaiFloor))
+<font color=#607B8B>World started up on: Fri Jul 22 21:22:24 2022
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 4687652, 1, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+the arrowrapid (/obj/arrowrapid): Move(DangaiFloor (148,100,1) (/turf/NewDangai/DangaiFloor), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 4687652, 1, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+the arrowrapid (/obj/arrowrapid): Move(DangaiFloor (148,97,1) (/turf/NewDangai/DangaiFloor), 6)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 4687652, 1, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+the arrowrapid (/obj/arrowrapid): Move(DangaiFloor (148,99,1) (/turf/NewDangai/DangaiFloor), 10)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd({NPC}Empowered Vandereich Quin... (/mob/customVand))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death({NPC}Empowered Vandereich Quin... (/mob/customVand), 2566852, 5, 0)
+{NPC}Empowered Vandereich Quin... (/mob/customVand): shatter2({NPC}Empowered Vandereich Quin... (/mob/customVand))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd(Throm (/mob/player))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death(Throm (/mob/player), 7.97041e+011, 2, 1)
+Bot (/obj/FirePillar/Bot): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+Bot (/obj/FirePillar/Bot): Move(DangaiFloor (150,100,1) (/turf/NewDangai/DangaiFloor), 2)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Empowered Vandereich Quin... (/mob/customVand)
+  src.loc: null
+  call stack:
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Deathd(Throm (/mob/player))
+{NPC}Empowered Vandereich Quin... (/mob/customVand): Death(Throm (/mob/player), 8.52041e+011, 2, 1)
+Bot (/obj/FirePillar/Bot): Bump({NPC}Empowered Vandereich Quin... (/mob/customVand))
+Bot (/obj/FirePillar/Bot): Move(DangaiFloor (149,97,1) (/turf/NewDangai/DangaiFloor), 2)
+<font color=#607B8B>World started up on: Sun Jul 24 11:41:04 2022
+<font color=#607B8B>World started up on: Sun Jul 24 11:44:16 2022
+<font color=#607B8B>World started up on: Sun Jul 24 11:45:20 2022
+<font color=#607B8B>World started up on: Sun Jul 24 11:48:32 2022
+<font color=#607B8B>World started up on: Sun Jul 24 11:51:44 2022
+<font color=#607B8B>World started up on: Sun Jul 24 11:53:52 2022
+<font color=#607B8B>World started up on: Sun Jul 24 11:57:04 2022
+<font color=#607B8B>World started up on: Sun Jul 24 11:58:08 2022
+<font color=#607B8B>World started up on: Sun Jul 24 12:01:20 2022
+<font color=#607B8B>World started up on: Sun Jul 24 12:47:12 2022
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+  usr: 0
+  src: the cero (/obj/cero)
+  src.loc: null
+  call stack:
+the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
+the cero (/obj/cero): Move(Middle (46,7,8) (/turf/TheGateArea/Dirt/Middle), 4)
+<font color=#607B8B>World started up on: Sun Jul 24 12:48:16 2022

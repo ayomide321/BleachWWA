@@ -13,8 +13,43 @@ mob/player
 <br><font size=5>-Aw shit...here we go again.
 <br>
 <br>
+<u>07/24/2022 Updates<font size=4></u>
+<br><font size=2>-Added refunds for fuses (only 80% back)
 <br>
-
+<br>
+<u>07/22/2022 Updates<font size=4></u>
+<br><font size=2>-Fixed bug where respeccing didn't give back bought LPs
+<br><font size=2>-Fixed bug where relogging during test broke the test system
+<br><font size=2>-Fixed bug where Samurai wasn't getting its skills
+<br><font size=2>-Lowered Hell Armor requirements
+<br><font size=2>-Started new game content (Empowered Vandereich Quincies created)
+<br>
+<br>
+<u>07/19/2022 Updates<font size=4></u>
+<br><font size=2>-Fixed bug where dying from NPC didn't respawn you
+<br><font size=2>-Fixed bug where Wand didn't increase events won count
+<br><font size=2>-Added Espada Leader rank for hollows
+<br><font size=2>-Fixed bug where people with no squad could take rank test
+<br><font size=2>-Fixed bug with story not progressing
+<br>
+<br>
+<br>
+<u>07/18/2022 Updates<font size=4></u>
+<br><font size=2>-Added God of BWWA Title, look in Collectibles tabs for requirements
+<br><font size=2>-Fixed bug with Yumichika mastery
+<br><font size=2>-Update admin OOC colors
+<br><font size=2>-Fixed King of Hueco Mundo not buffing damage
+<br><font size=2>-Fixed bug where Yumichika couldn't heal
+<br><font size=2>-Disabled fuses in tests
+<br><font size=2>-Disabled heals in tests
+<br><font size=2>-Fixed bug where Bans weren't working
+<br>
+<br>
+<u>07/17/2022 Updates<font size=4></u>
+<br><font size=2>-Fixed bug with reverse damage reduction on King of Hueco Mundo rank
+<br><font size=2>-Increased test difficulty
+<br>
+<br>
 <u>07/15/2022 Updates<font size=4></u>
 <br><font size=2>-Fixed lots of bugs (too many to specify)
 <br><font size=2>-Increased sado arm chance from 0.5% to 1.5%

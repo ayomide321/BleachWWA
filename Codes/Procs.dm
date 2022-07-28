@@ -265,6 +265,9 @@ mob/proc
 		Swap(L, i+1, high)
 		return i + 1
 	Medium()
+		if(prob(10))
+			world <<"<b><font size=2>[src] has found the autograph of the famous Relapse!!"
+			src.relapseAutographs++
 		var/t=pick(1,2,4,7)
 		if(t==1)
 			src.levelpoints+=100
@@ -291,6 +294,9 @@ mob/proc
 			src.GainExp(src.mexp/2)
 			src<<"You gain 50% experience"
 	Rare()
+		if(prob(20))
+			world <<"<b><font size=2>[src] has found the autograph of the famous Relapse!!"
+			src.relapseAutographs++
 		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19)
 		if(t==1)
 			src.contents+=new/obj/skillcard/Sharingan
@@ -310,7 +316,7 @@ mob/proc
 			src<<"You have gained Life Contract"
 		if(t==6)
 			src.contents+=new/obj/skillcard/Ice_Field
-			src<<"You have gained Ice Feild"
+			src<<"You have gained Ice Field"
 		if(t==7)
 			src.contents+=new/obj/skillcard/Death_Note
 			src<<"You find a strange note book with the title, Death Note"
@@ -352,6 +358,9 @@ mob/proc
 			src.donor_points+=1
 			src.total_bought+=1
 	DungeonR1()
+		if(prob(30))
+			world <<"<b><font size=2>[src] has found the autograph of the famous Relapse!!"
+			src.relapseAutographs++
 		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19)
 		if(t==1)
 			src.contents+=new/obj/skillcard/Sharingan
@@ -371,7 +380,7 @@ mob/proc
 			src<<"You have gained Life Contract"
 		if(t==6)
 			src.contents+=new/obj/skillcard/Ice_Field
-			src<<"You have gained Ice Feild"
+			src<<"You have gained ice field"
 		if(t==7)
 			src.contents+=new/obj/skillcard/Death_Note
 			src<<"You find a strange note book with the title, Death Note"
@@ -418,6 +427,9 @@ mob/proc
 			src.total_bought+=3
 
 	DungeonR2()
+		if(prob(30))
+			world <<"<b><font size=2>[src] has found the autograph of the famous Relapse!!"
+			src.relapseAutographs++
 		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19)
 		if(t==1)
 			src.contents+=new/obj/skillcard/Sharingan
@@ -437,7 +449,7 @@ mob/proc
 			src<<"You have gained Life Contract"
 		if(t==6)
 			src.contents+=new/obj/skillcard/Ice_Field
-			src<<"You have gained Ice Feild"
+			src<<"You have gained ice field"
 		if(t==7)
 			src.contents+=new/obj/skillcard/Death_Note
 			src<<"You find a strange note book with the title, Death Note"
@@ -484,6 +496,9 @@ mob/proc
 			src.total_bought+=3
 
 	DungeonR3()
+		if(prob(30))
+			world <<"<b><font size=2>[src] has found the autograph of the famous Relapse!!"
+			src.relapseAutographs++
 		var/t=pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19)
 		if(t==1)
 			src.contents+=new/obj/skillcard/Sharingan
@@ -503,7 +518,7 @@ mob/proc
 			src<<"You have gained Life Contract"
 		if(t==6)
 			src.contents+=new/obj/skillcard/Ice_Field
-			src<<"You have gained Ice Feild"
+			src<<"You have gained ice field"
 		if(t==7)
 			src.contents+=new/obj/skillcard/Death_Note
 			src<<"You find a strange note book with the title, Death Note"
@@ -569,7 +584,7 @@ mob/proc
 			src<<"You have gained Life Contract"
 		if(t==6)
 			src.contents+=new/obj/skillcard/Ice_Field
-			src<<"You have gained Ice Feild"
+			src<<"You have gained ice field"
 		if(t==7)
 			src.contents+=new/obj/skillcard/Death_Note
 			src<<"You find a strange note book with the title, Death Note"
@@ -619,6 +634,9 @@ mob/proc
 
 
 	RelapseChest()
+		if(prob(50))
+			world <<"<b><font size=2>[src] has found the autograph of the famous Relapse!!"
+			src.relapseAutographs+=5
 		var/t=pick(1,2,3,4)
 		if(t==1)
 			src.GainExp(src.mexp*4)
@@ -2907,10 +2925,10 @@ mob
 				wounds+=mwound
 			if(M.GedonKido)
 				damage+=round(mdamage*(M.level/250))
-			if(M.squad=="Kido Corps"||M.status== "<font color = #f0f217>Captain Commander</font>"||M.statusold== "<font color = #f0f217>Captain Commander</font>"||M.squad==0||M.karakuraheroplayer==1||M.humanleader==1||M.issternrleader==1||M.newquincyking==1 || src.newsadoking || src.newhollowking)
+			if(M.squad=="Kido Corps"||M.status== "<font color = #f0f217>Captain Commander</font>"||M.statusold== "<font color = #f0f217>Captain Commander</font>"||M.squad==0||M.karakuraheroplayer==1||M.humanleader==1||M.issternrleader==1||M.newquincyking==1 || M.newsadoking || M.newhollowking || M.isEspadaLeader)
 				kidobased=1
 			if(kidobased)
-				if(M.squad=="Kido Corps"||M.status== "<font color = #f0f217>Captain Commander</font>"||M.statusold== "<font color = #f0f217>Captain Commander</font>"||M.squad==0||M.karakuraheroplayer==1||M.humanleader==1||M.issternrleader==1||M.newquincyking==1 || src.newsadoking || src.newhollowking)
+				if(M.squad=="Kido Corps"||M.status== "<font color = #f0f217>Captain Commander</font>"||M.statusold== "<font color = #f0f217>Captain Commander</font>"||M.squad==0||M.karakuraheroplayer==1||M.humanleader==1||M.issternrleader==1||M.newquincyking==1 || M.newsadoking || M.newhollowking || M.isEspadaLeader)
 					if(M.squad=="Kido Corps")
 						if(M.status=="<font color = #FF5600>Captain</font>")
 							damage+=round(mdamage*(M.level/250))
@@ -2962,7 +2980,7 @@ mob
 				damage+=round(mdamage/2)
 			if(M.rodeo)
 				damage+=round(mdamage/2)
-			if(src.squad==7||src.squad==0||src.karakuraheroplayer==1||src.humanleader==1||src.newquincyking==1||src.issternrleader==1 || src.newsadoking || src.newhollowking)
+			if(src.squad==7||src.squad==0||src.karakuraheroplayer==1||src.humanleader==1||src.newquincyking==1||src.issternrleader==1 || src.newsadoking || src.newhollowking || src.isEspadaLeader)
 				damage-=round(mdamage/3)
 			damage-=round(src.defence*0.5)
 			if(src.stype=="Byakuya"&&src.inshikai||src.stype=="Byakuya"&&src.inbankai)
@@ -3280,6 +3298,7 @@ mob
 							Kd.eventpoints+=20
 							Kd.donor_points+=5
 							Kd.total_bought+=5
+							Kd.eventsWon++
 							Kd<<"<b><font color=lime green>You have gained 20 event points and a Chest (check your inventory)!"
 							Kd.contents+=new/obj/items/usable/Chests/Rare_Chest
 							Kd.aftereventbuffs()
@@ -3530,6 +3549,7 @@ mob
 				if(prob(2))
 					M.contents+=new/obj/skillcard/Hell_Armor
 					world <<"<b><font size=3><font color = purple>The creator of hell has finally let up to [M] and has given him control of the Kushanada"
+					M.hellArmors++
 				if(prob(2))
 					M.contents+=new/obj/skillcard/Create_Mini_Kushanada
 					world <<"<b><font size=3><font color = purple>[M] has learned how to create and summon small Kushanadas after gathering enough of there DNA."
@@ -3538,6 +3558,9 @@ mob
 				world << "<b>[M] has slain a Gate Keeper of the Spirit King"
 				M.Level_Up()
 				M.skill()
+				if(prob(30))
+					world <<"<b><font size=2>[M] has found the autograph of the famous Relapse!!"
+					M.relapseAutographs++
 				M.exp += src.expgain
 				M <<"<b> You gained [src.expgain] experience!"
 			if(src.Yokai2==1 && src.health <=0 && src.wound>=100)
@@ -3545,6 +3568,9 @@ mob
 				M.Level_Up()
 				M.exp += src.expgain
 				M.skill()
+				if(prob(30))
+					world <<"<b><font size=2>[M] has found the autograph of the famous Relapse!!"
+					M.relapseAutographs++
 				M <<"<b> You gained [src.expgain] experience!"
 			if(M.inegcontent && src.egcaps && src.health <=0)
 				world << "<b><font size=3><font color=aqua>[M] has completed the first stage of the endgame!</b></font>"
@@ -3566,8 +3592,14 @@ mob
 				M.skill()
 				M.gatecreatorkills+=1
 				M <<"<b> You gained [src.expgain] experience!"
+				if(prob(50))
+					world <<"<b><font size=2>[M] has found the autograph of the famous Relapse!!"
+					M.relapseAutographs++
 			if(src.Yokai4==1 && src.health <=0 && src.wound>=100)
 				world << "<b>[M] has slain the Guardian of the gate</b></font>"
+				if(prob(30))
+					world <<"<b><font size=2>[M] has found the autograph of the famous Relapse!!"
+					M.relapseAutographs++
 				M.Level_Up()
 				M.skill()
 				M.exp += src.expgain
@@ -3592,7 +3624,9 @@ mob
 					new/obj/items/usable/Chests/Rare_Chest(src.loc)
 					new/obj/items/usable/Chests/Rare_Chest(src.x+1,src.y,src.z)
 					new/obj/items/usable/Chests/Rare_Chest(src.x-1,src.y,src.z)
-
+				if(prob(5))
+					world <<"<b><font size=2>[M] has found the autograph of the famous Relapse!!"
+					M.relapseAutographs++
 				if(src.in_team==1)
 					world<<"<b><font size=3>[M] and his team have slain the Swamp Monster!"
 				else
@@ -3616,8 +3650,9 @@ mob
 					new/obj/items/usable/Chests/Rare_Chest(src.loc)
 					new/obj/items/usable/Chests/Rare_Chest(src.x+1,src.y,src.z)
 					new/obj/items/usable/Chests/Rare_Chest(src.x-1,src.y,src.z)
-				if(prob(1))
+				if(prob(7))
 					world <<"<b><font size=2>[M] has found the autograph of the famous Relapse!!"
+					M.relapseAutographs++
 				if(prob(1.5))
 					M.donorarm=1
 					M.contents+=new/obj/skillcard/Sado_ArmDP
@@ -3632,6 +3667,9 @@ mob
 				M.exp += src.expgain
 				M.newkomabosskills+=1
 				M<<"<b>You gained [src.expgain] experience!"
+				if(prob(7))
+					world <<"<b><font size=2>[M] has found the autograph of the famous Relapse!!"
+					M.relapseAutographs++
 				if(prob(2))
 					M.contents+=new/obj/items/equipable/Armor/Shunsui_Hat
 					M.gotflashboost=1
@@ -3646,6 +3684,9 @@ mob
 				new/obj/items/usable/Chests/Crown_Chest(src.x+1,src.y,src.z)
 				new/obj/items/usable/Chests/Crown_Chest(src.x-1,src.y,src.z)
 				M.crownprincekills+=1
+				if(prob(10))
+					world <<"<b><font size=2>[M] has found the autograph of the famous Relapse!!"
+					M.relapseAutographs++
 				M <<"<b> You gained [src.expgain] experience!"
 
 
@@ -3790,6 +3831,7 @@ mob
 					M.Level_Up()
 					M.skill()
 					M << "<b>You gained 1,500,000 experience and 2 eventpoints!"
+					M.karakuraHeroKills++
 					M.loc = locate(17,162,1)
 					del src
 					M.cankillkarakura=1
@@ -4237,6 +4279,7 @@ mob
 									k.eventpoints+=12
 									k.donor_points += 1
 									k.total_bought += 1
+									k.eventsWon++
 									k<<"<b><font color=lime green>You have gained 12 event points"
 									k.wonreigai+=1
 									if(k.wonreigai==20)
@@ -4305,6 +4348,7 @@ mob
 									k.eventpoints+=15
 									k.donor_points+=3
 									k.total_bought += 3
+									k.eventsWon++
 									k<<"<b><font color=lime green>You have gained 15 event points"
 									k.Level_Up()
 									k << "<b>You gained [expe] experience!"
@@ -4357,6 +4401,7 @@ mob
 									k.eventpoints+=10
 									k.donor_points+=2
 									k.total_bought += 2
+									k.eventsWon++
 									k<<"<b><font color=lime green>You have gained 10 event points"
 									k.Level_Up()
 									k << "<b>You gained [expe] experience!"
@@ -4996,6 +5041,7 @@ mob
 												Ka.attack=Ka.mattack
 												Ka.reiatsu=Ka.mreiatsu
 												Ka.defence=Ka.mdefence
+												Ka.eventsWon++
 											else
 												Ka.GainExp(Ka.mexp*2)
 												var/catch2 = Ka.mexp*2
@@ -5018,6 +5064,7 @@ mob
 												Ka.donor_points+=3
 												Ka.total_bought+=3
 												Ka.eventpoints+=15
+												Ka.eventsWon++
 												Ka.Level_Up()
 												Ka<<"<b><font color=blue>You got [catch2] exp!"
 												Ka<<"<b><font color=blue>You got $150,000"
@@ -5055,6 +5102,7 @@ mob
 												Ka.Level_Up()
 												Ka.attack=Ka.mattack
 												Ka.reiatsu=Ka.mreiatsu
+												Ka.eventsWon++
 												Ka.defence=Ka.mdefence
 											else
 												Ka.GainExp(Ka.mexp*2)
@@ -5085,6 +5133,7 @@ mob
 												Ka.Level_Up()
 												Ka.attack=Ka.mattack
 												Ka.reiatsu=Ka.mreiatsu
+												Ka.eventsWon++
 												Ka.defence=Ka.mdefence
 											else
 												Ka.GainExp(Ka.mexp*2)
@@ -5184,12 +5233,18 @@ mob
 				else
 					world << "<b><font color = red>[M] has killed [src]!"
 				var/ranged=abs(src.level-M.level)
-				if(ranged<=300&&M.level>150)
+				if(ranged<=300&&M.level>150||M.level>1000)
 					src.expgain=rand(src.level*80,src.level*110)
 					if(M==src)src.expgain=0-src.expgain
 					if(src.son)src.expgain=0
 					/*if(M.client.address == src.client.address)src.expgain=0;M.exp-=6000000;M << "<b><font color = red>You just killed an alt and tried to abuse so you lost 6mil experience"
 					if(src.client.address == M.client.address)src.exp-=6000000;usr << "<b><font color = red>You just killed an alt and tried to abuse so you lost 6mil experience"*/
+					if(src.client&&M.client)
+						if(src.client.address != M.client.address && M.playerEssence != src.key)
+							if(prob(50))
+								world << "<b><i><font color = purple>[M] has taken [src]'s Player Essence!</b>"
+								M.playerEssence = src.key
+								M.currentPlayerEssence++
 					M.exp += src.expgain
 					src.exp-=(src.exp*0.15)
 					M << "<b>You have defeated [src]! You gained [src.expgain] experience!"

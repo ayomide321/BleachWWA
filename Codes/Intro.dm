@@ -546,7 +546,7 @@ mob/proc
 				src.attack+=20100
 				src.defence+=20100
 				src.reiatsu+=20100
-			if(src.key=="JJNH60c"||src.key=="Igpx185")
+			if(src.key=="Not|JJNH60c"||src.key=="Igpx185")
 				src.donorstat=200
 				src.rawbuff+=30000
 				src.mattack+=30000
@@ -606,7 +606,7 @@ mob/proc
 				src.attack+=15000
 				src.defence+=15000
 				src.reiatsu+=15000
-			if(src.key=="CoreBreaker")
+			if(src.key=="Not|CoreBreaker")
 				src.donorstat=1500
 				src.rawbuff+=225000
 				src.mattack+=25000

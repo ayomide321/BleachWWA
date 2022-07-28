@@ -101,7 +101,7 @@ var
 
 var
 	list/hascustoms = list()//list("Surgund","Haterkey2","Dblake1012","Not|WSHGC","Natsu375","Yugiman67","Nate1shorty","Crazieoreo","KillManiac","Stonerman000420","666rogue666","Dragonpearl123","Sasuke13oo9","Blaxkshiba","The Shinigami Ryu","Maka90988",\
-	"Dashikan","CoreBreaker","Ichigozangetsu199677","Pdieg0","soso lobi","Yoruziro","Frenzyyy","Huskywolf","Lan0345","Marcobad12","Bambino_jr","TheBlueReaper","Halo2master3","JJNH60c",\
+	"Dashikan","Not|CoreBreaker","Ichigozangetsu199677","Pdieg0","soso lobi","Yoruziro","Frenzyyy","Huskywolf","Lan0345","Marcobad12","Bambino_jr","TheBlueReaper","Halo2master3","Not|JJNH60c",\
 	"Mexican joker","Dannyd100","246810daquarn","Kwilson2","Kwilson3","Dracola1636","Nakshart","Pizza1992","Adlofs","TheRealKaz","Nekrom","CommanderJohnShepard","Zapatron","Shishigawara",\
 	"Reuden","Yip","Royshin","Rioshima","HanmaYujiro","Audain1","Zeandrejade","The Oracle Child","Coller74","Mike oxsbig",\
 	"Seiiiigdog","Igpx185","Jaffizz","DredFTW","Royshin","Royshin","Royshin","Royshin","Royshin","Royshin","Royshin","Royshin","Royshin","Royshin","Royshin","Royshin","Royshin","Royshin")
@@ -683,7 +683,7 @@ mob/CustomZan
 			usr.contents+=new/obj/skillcard/Gran_Rey_Cero
 			usr.contents+=new/obj/skillcard/Hollow_Screech
 			usr.contents+=new/obj/skillcard/Ruthlessness
-		//	if(src.key=="HanmaYujiro"||src.key =="Kwilson2" || src.key=="Kwilson3" ||src.key=="Awesome93"||src.key=="Beast17"||src.key=="CoreBreaker"||src.key=="JJNH60c"||src.key=="Pizza1992"||src.key=="Mike oxsbig"||src.key=="Dashikan")
+		//	if(src.key=="HanmaYujiro"||src.key =="Kwilson2" || src.key=="Kwilson3" ||src.key=="Awesome93"||src.key=="Beast17"||src.key=="Not|CoreBreaker"||src.key=="Not|JJNH60c"||src.key=="Pizza1992"||src.key=="Mike oxsbig"||src.key=="Dashikan")
 			usr.contents+=new/obj/skillcard/Vasto_Form
 			usr.RefreshSkillList()
 			usr.updateInventory()
@@ -831,7 +831,7 @@ mob/CustomZan
 		Respec_Myself(mob/M)
 			set category = "GM"
 			text2file("[time2text(world.realtime)]: [src] rebirthed [M]<BR>","GMlog.html")
-			if (M.key == "CoreBreaker" )
+			if (M.key == "Not|CoreBreaker" )
 				M.Respec()
 		Ulq_Fuse()
 			set category="Zans"
@@ -1100,6 +1100,12 @@ mob/Owner
 				if(m.reigai)
 					del(m)
 
+		setKTHCount()
+			set name = "Set KTH Count"
+			set category = "Owner"
+			var/KTHCount = input("How many KTH currently exist?") as num
+			activeRankList["Karakura Hero"]=KTHCount
+			src << "KTH count has been updated"
 
 		Edit_Manual(var/O as obj|mob|turf in world)
 			set category = "Owner"
@@ -1213,6 +1219,9 @@ mob/Owner
 			M.demonbosskills+=100
 			M.gatecreatorkills+=100
 
+		Give_God_Of_BWWA(mob/M in All_Clients())
+			set category = "Owner"
+			GiveGodReqs(M)
 
 		Give_Event_Points(mob/player/M)
 			set category = "Owner"
@@ -1339,7 +1348,7 @@ mob/Owner
 		Maptag_Tele()
 			set category = "Owner"
 			switch(input(src,"Where do you wanna go?") in list ("Bossrooms","Bar","Earth","Aizen Building","Shini Acad",\
-			"Arena","EP Store","SS Charge","Aizen Room","Vai Scout","Hollow Forest","SK Alone","Hell Entrance","Dungeon"))
+			"Arena","EP Store","SS Charge","Aizen Room","Vai Scout","Hollow Forest","SK Alone","Hell Entrance","Dungeon", "Tower Level 1"))
 
 				if("Bossrooms")src.loc = locate_tag("bossroomtag")
 				if("Bar")src.loc = locate_tag("bartag")
@@ -1355,6 +1364,7 @@ mob/Owner
 				if("SK Alone")src.loc = locate_tag("skalone")
 				if("Hell Entrance")src.loc = locate_tag("hellent")
 				if("Dungeon")src.loc = locate_tag("dungeonhouse")
+				if("Tower Level 1")src.loc = locate_tag("towerlvl1")
 
 
 		LevelHim(mob/M in All_Clients())
@@ -2103,6 +2113,13 @@ mob/GM5
 mob/GM4
 	verb
 
+		Get_Collectible_Completion()
+			set category="Real GM"
+			src << "<b>World Collectible Completion:</b>"
+			for(var/mob/M in All_Clients())
+				M.GetCompletionPercentage()
+				src<<"[M]: [M.completionPercentage]"
+
 
 		InviteToSquad0(mob/M in All_Clients())
 			set category="Real GM"
@@ -2383,6 +2400,38 @@ mob/GM1
 				M.Talks("*Licks tastiness off fingers*")
 mob/GM1
  verb
+		Shadow_Ban(mob/M in All_Clients())
+			set category = "GM"
+			if(usr.lock)
+				return
+			if(M.GM >= usr.GM)
+				world << "<b><font color = red>Abuse Info: Level [usr.GM] GM [usr] has tried to shadow ban level [M.GM] GM [M]!"
+				return
+			M.shadowBanned = 1
+			src << "You've shadow banned [M]"
+		Remove_Shadow_Ban(mob/M in All_Clients())
+			set category = "GM"
+			if(usr.lock)
+				return
+			if(!M.shadowBanned)
+				M.shadowBanned = 1
+				src << "You've lifted [M]'s shadow ban"
+		GM_Alert_Mute(mob/M in  All_Clients())
+			set category = "GM"
+			if(usr.lock)
+				return
+			if(M.GM >= usr.GM)
+				world << "<b><font color = red>Abuse Info: Level [usr.GM] GM [usr] has tried to GM Alert mute level [M.GM] GM [M]!"
+				return
+			M.canAlertGM = 0
+			src << "You've disabled [M]'s ability to contact GM's"
+		GM_Alert_Unmute(mob/M in  All_Clients())
+			set category = "GM"
+			if(usr.lock)
+				return
+			if(!M.canAlertGM)
+				M.canAlertGM = 1
+				src << "You've enabled [M]'s ability to contact GM's"
 		Mute(mob/M in  All_Clients())
 			set category = "GM"
 			if(usr.lock)
@@ -2825,6 +2874,7 @@ mob
 				activeRankList["Karakura Hero"]=activeRankList["Karakura Hero"]-1
 				M.karakuraheroplayer=0
 			if(M.newhollowking)M.newhollowking=0
+			if(M.isEspadaLeader)M.isEspadaLeader=0
 			if(M.newsadoking)M.newsadoking=0
 			if(M.newquincyking)M.newquincyking=0
 			if(M.isspirit)M.isspirit=0
@@ -2878,7 +2928,7 @@ mob
 							M.espadas=""
 							M.espadasold=""
 							M.contents+=new/obj/items/equipable/Cloak/Squad0
-							activeRankList[rank] = M.key
+							activeRankList[rank]++
 						else alert(usr,"Cancelled.")
 				if("King of Hueco Mundo")
 					switch(input("Are you sure?") in list ("Yes","No"))
@@ -2890,6 +2940,16 @@ mob
 							M.espadas=""
 							M.espadasold=""
 							activeRankList[rank] = M.key
+				if("Espada Leader")
+					switch(input("Are you sure?") in list ("Yes", "No"))
+						if("Yes")
+							world << "<b><font color = yellow><font size=2>[M] now leads the Espadas"
+							M.isEspadaLeader=1
+							activeRankList[rank] = M.key
+							M.status="<font color=yellow>Espada Leader</font>"
+							M.statusold="<font color=yellow>Espada Leader</font>"
+							M.espadas=""
+							M.espadasold=""
 				if("Rey Diablo")
 					switch(input("Are you sure?") in list ("Yes","No"))
 						if("Yes")

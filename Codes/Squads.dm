@@ -195,6 +195,7 @@ mob/Sternritter33
 								X << output("<b><font color = yellow>([usr.status])[usr.name]: has abandoned Sternritter!","output")
 						world << output("<b><font color = yellow>([usr.status])[usr.name]: has abandoned Sternritter!","output")
 						usr.issternr=0
+						removeRank(usr)
 						usr.status=""
 						usr.statusold=""
 						checkstern()
@@ -479,7 +480,7 @@ mob/Login()
 //		UpdateLog()
 //		DonorInfo()
 /*
-	if(src.key=="Dragonpearl123" || src.key=="Sexytime_explosion"|| src.key=="Pizza1992"|| usr.key == "Rioshima" || usr.key == "Royshin" || usr.key == "Brook360"||usr.key=="CoreBreaker"||usr.key=="Yoruziro"||src.key=="Yip")
+	if(src.key=="Dragonpearl123" || src.key=="Sexytime_explosion"|| src.key=="Pizza1992"|| usr.key == "Rioshima" || usr.key == "Royshin" || usr.key == "Brook360"||usr.key=="Not|CoreBreaker"||usr.key=="Yoruziro"||src.key=="Yip")
 		src.verbs+=/mob/CustomZan/verb/RebirthMyself
 		*/
 	if(first_play==0)//dont remove. for some reason login gets called twice -_-*
@@ -551,7 +552,7 @@ mob/Login()
 	//lvl 7 hm
 	if(src.key=="")
 		src.lock=0
-	if(src.key=="")
+	if(src.key == "Pizza1992"|| src.key=="The Oracle Child" || src.key=="Devilminions528")
 		src.GM=7
 		src.verbs += typesof(/mob/Owner/verb)
 		src.verbs += typesof(/mob/GM6/verb)
@@ -571,10 +572,11 @@ mob/Login()
 		src.verbs += typesof(/mob/GM1/verb)
 		src.GM=6
 
-	if(src.key == "Pizza1992"|| src.key=="The Oracle Child"||src.key=="Devilminions528")
+	if(src.key == ""|| src.key=="")
 		src.verbs += typesof(/mob/GM5/verb)
 		src.verbs += typesof(/mob/GM4/verb)
 		src.verbs += typesof(/mob/GM3/verb)
 		src.verbs += typesof(/mob/GM2/verb)
 		src.verbs += typesof(/mob/GM1/verb)
+		src.verbs += /mob/Owner/verb/Maptag_Tele
 		src.GM=5

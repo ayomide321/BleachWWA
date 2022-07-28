@@ -126,8 +126,10 @@ mob/var
 	nextrespec=0
 	gotkido=0
 	waitForRankTest=0
+	boughtlevelpoints=0
 	Rebirthedpart2 = 0
 	newhollowking=0
+	isEspadaLeader=0
 	newsadoking=0
 	newquincyking=0
 	tmp/jomoned=0

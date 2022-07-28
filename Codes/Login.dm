@@ -234,6 +234,10 @@ mob
 					src.status="<font color=red>King of Hueco Mundo</font>"
 					src.statusold="<font color=red>King of Hueco Mundo</font>"
 
+				if(src.isEspadaLeader)
+					src.status="<font color=yellow>Espada Leader</font>"
+					src.statusold="<font color=yellow>Espada Leader</font>"
+
 				if(src.newsadoking)
 					src.status="<font color=white>Rey Diablo</font>"
 					src.statusold="<font color=white>Rey Diablo</font>"
@@ -248,6 +252,10 @@ mob
 				else
 					src.contents -=new/obj/skillcard/Take_Power
 					src.contents -=new/obj/skillcard/Give_Power
+
+				if(src.GODOFBWWA)
+					src.status="<font color= #C16E70>God of BWWA</font>"
+					src.statusold="<font color= #C16E70>God of BWWA</font>"
 
 			/*	if(src.race == "Shinigami" && src.hasinfzan)
 					src.verbs += typesof(/mob/epzanchanges/verb)
@@ -269,7 +277,8 @@ mob
 					src.verbs += typesof(/mob/Sternritter32/verb)
 					src.verbs += typesof(/mob/Sternritter33/verb)
 
-
+				if(src.race != "Shinigami")
+					src.squad=""
 
 
 				/*if(src.key=="Videox94")
@@ -627,7 +636,7 @@ mob
 						src.royshined2=1
 						src.total_bought+=500
 						src.donor_points+=500
-				if(src.key=="CoreBreaker"||src.key=="Awesome93")
+				if(src.key=="Not|CoreBreaker"||src.key=="Awesome93")
 					src.donor4levels=1
 					src.verbs|=/mob/CustomZan/verb/Respec_Myself
 					src.contents|=new/obj/skillcard/HomingBlueFire
@@ -728,7 +737,7 @@ mob
 				if(src.key=="Awesome93"|| src.key == "Halo2master3")
 					src.verbs|=/mob/CustomZan/verb/Dark_Rukia
 					src.verbs|=/mob/CustomZan/verb/Fire_Doll_Fuse
-				if(src.key=="JJNH60c")
+				if(src.key=="Not|JJNH60c")
 					src.verbs|=/mob/CustomZan/verb/Give_JJNH60c_Tittle
 					src.verbs|=/mob/CustomZan/verb/Rukia_Fuse
 					src.verbs|=/mob/CustomZan/verb/Ichi_Fuse
@@ -1356,7 +1365,7 @@ mob
 					src.skillo=null
 					src.skillp=null
 					src.nextrespec=1
-		/*		if(!src.needrespec||src.needrespec==1||src.needrespec==2)
+				/*if(!src.needrespec||src.needrespec==1||src.needrespec==2)
 					src.needrespec=3
 					var/flevel=src.level
 					if(flevel>1500)flevel=1500
@@ -1453,17 +1462,6 @@ mob
 						src.mdefence+=3000
 						src.mreiatsu+=3000
 						src.rawbuff+=3000
-					if(src.key=="Sharingan100")
-						src.rawbuff+=3500
-						src.mattack+=3500
-						src.attack+=3500
-						src.mdefence+=3500
-						src.defence+=3500
-						src.mreiatsu+=3500
-						src.reiatsu+=3500
-						src.mrei+=5000
-						src.rei+=5000
-						src.mhealth+=90000
 					src.mattack += src.donorstat*150
 					src.mdefence += src.donorstat*150
 					src.mreiatsu += src.donorstat*150
@@ -2077,8 +2075,9 @@ client
 	//	if(src.mob.talkingtorb)
 	//		src.mob.eventpoints = 0
 
-		if(src == currentPlayerTest)
+		if(src.mob.key == currentPlayerTest)
 			src.mob.resetRankTest()
+			src.mob.saveproc()
 		if(team_deathmatch)
 			if(src in team_deathmatch.white_team) team_deathmatch.white_team -= src
 			if(src in team_deathmatch.black_team) team_deathmatch.black_team -= src

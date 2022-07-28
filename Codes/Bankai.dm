@@ -183,7 +183,7 @@ mob
 				if(ilda.owner==src)
 					return
 			if(!src.inbankai)
-				if(src.inshikai||src.race=="Quincy"/*||src.key=="Nakshart"*/)
+				if(src.inshikai||src.race=="Quincy"||src.race=="Ultra Quincy"/*||src.key=="Nakshart"*/)
 					if(src.frozen)
 						return
 					src.arm=0
@@ -282,7 +282,7 @@ mob
 						src.Load_Overlays()
 					if(src.stype == "Dark Bat" && src.client)
 						view(8) << "<b>[src]: Bankai! [src.swordname]!"
-						/*if(src.key=="CoreBreaker")
+						/*if(src.key=="Not|CoreBreaker")
 							src.reiatsu = src.mreiatsu * 36
 							src.defence = src.mdefence * 36
 							src.attack = src.mattack*36
@@ -308,7 +308,7 @@ mob
 						src.Load_Overlays()
 					if(src.stype=="Fujimaru" && src.client)
 						view(8) << "<b>[src]: Bankai! [src.swordname]!"
-						/*if(src.key=="CoreBreaker")
+						/*if(src.key=="Not|CoreBreaker")
 							src.reiatsu=src.mreiatsu*10
 							src.defence=src.mdefence*10
 						else*/
@@ -439,7 +439,7 @@ mob
 									src.reiatsu = src.mreiatsu * 4.9
 									src.defence = src.mdefence * 4.9
 									src.attack = src.mreiatsu * 4.4
-								if(src.key=="CoreBreaker")
+								if(src.key=="Not|CoreBreaker")
 									src.reiatsu = src.mreiatsu * 10
 									src.defence = src.mdefence * 10
 									src.attack = src.mreiatsu * 10

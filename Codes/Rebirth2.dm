@@ -37,7 +37,7 @@ mob/proc
 							M.Load_Overlays()
 							M.Affirm_Icon()
 						if("Shinigami")
-							world << "<b><font color = white>Race Info: [src] Has rebirthed a second time into a Shinigami!"
+							world << "<b><font color = white>Race Info: [M] Has rebirthed a second time into a Shinigami!"
 							M.race = "Shinigami"
 							M.contents+= new/obj/items/equipable/Weapon/Sword
 							M.contents+= new/obj/items/equipable/Overshirt/Shinigami1
@@ -51,7 +51,7 @@ mob/proc
 							M.Affirm_Icon()
 						if("Sado")
 							M.race="Sado"
-							world << "<b><font color = purple>Race Info: [src] Has rebirthed a second time into a Sado!"
+							world << "<b><font color = purple>Race Info: [M] Has rebirthed a second time into a Sado!"
 							M.contents+=new/obj/items/equipable/Shirt/Black
 							M.contents+=new/obj/items/equipable/Shoes/Black
 							M.contents+=new/obj/items/equipable/Pants/Black
@@ -63,7 +63,7 @@ mob/proc
 							M.Affirm_Icon()
 						if("FullBringer")
 							M.race="Fullbringer"
-							world << "<b><font color = green>Race Info: [src] Has rebirthed a second time into a Fullbringer!"
+							world << "<b><font color = green>Race Info: [M] Has rebirthed a second time into a Fullbringer!"
 							M.contents+=new/obj/items/equipable/Shirt/Black
 							M.contents+=new/obj/items/equipable/Shoes/Black
 							M.contents+=new/obj/items/equipable/Pants/Black
@@ -74,7 +74,7 @@ mob/proc
 							M.Affirm_Icon()
 						if("Hollow")
 							M.race = "Hollow"
-							world << "<b><font color = gray>Race Info: [src] Has rebirthed a second time into a Hollow!"
+							world << "<b><font color = gray>Race Info: [M] Has rebirthed a second time into a Hollow!"
 							M.rank = "Weak Hollow"
 							M.gotdevour = 1
 							M.hollowtype = "Normal"
@@ -199,6 +199,7 @@ mob/proc
 					M.humanleader = 0
 					M.karakuraheroplayer = 0
 					M.newhollowking = 0
+					M.isEspadaLeader = 0
 					M.newsadoking=0
 					M.iscaptain=0
 					M.iscaptaincommander=0
@@ -303,6 +304,7 @@ mob/proc
 					M.spiritweapon=0
 					M.gotneg=0
 					M.gotaizen=0
+					M.boughtlevelpoints=0
 					M.needrespec=0
 					M.gotfinalfb=0
 					M.gotlimitrelease= 0

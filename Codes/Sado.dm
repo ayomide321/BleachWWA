@@ -195,7 +195,7 @@ mob
 				view(usr,8) << "<b>[usr] put on his Brazo Derecha de Gigante!"
 				src.attack = round(src.mattack*3,1)
 				src.defence = round(src.mdefence*1.9,1)
-				if(src.key == "JJNH60c")
+				if(src.key == "Not|JJNH60c")
 					src.reiatsu = round(src.mreiatsu*1.9,1)
 				if(src.beerboost)
 					src.attack+=round(src.mattack/2)
@@ -251,7 +251,7 @@ mob
 				view(usr,8) << "<b>[usr] put on his Brazo Derecha de Gigante!"
 				src.attack = round(src.mattack*5.5,1)
 				src.defence = round(src.mdefence*5,1)
-				if(src.key == "JJNH60c")
+				if(src.key == "Not|JJNH60c")
 					src.reiatsu = round(src.mreiatsu*2.4,1)
 				if(src.beerboost)
 					src.attack+=round(src.mattack/2)
@@ -321,12 +321,12 @@ mob
 							src.attack=round(src.mattack*2.9,1)
 							src.defence=round(src.mdefence*3.2,1)
 						else
-							if(src.key=="CoreBreaker")
+							if(src.key=="Not|CoreBreaker")
 								src.attack=round(src.mattack*1.9,1)
 								src.defence=round(src.mdefence*2.2,1)
 							src.attack=round(src.mattack*7,1)
 							src.defence=round(src.mdefence*7,1)
-							if(src.key == "JJNH60c")
+							if(src.key == "Not|JJNH60c")
 								src.reiatsu = round(src.mreiatsu*2.9,1)
 						if(src.beerboost)
 							src.attack+=round(src.mattack/2)
@@ -361,14 +361,14 @@ mob
 							src.reiatsu+=round(src.mreiatsu/2)
 						if(src.guildpassive>=1)
 							src.rundelay=src.rundelay/2
-						if(src.karakuraheroplayer==1||src.humanleader==1 || src.newsadoking || src.newhollowking)
+						if(src.karakuraheroplayer==1||src.humanleader==1 || src.newsadoking || src.newhollowking || src.isEspadaLeader)
 							src.rundelay-=1
 							src.attack+=(src.mattack/20)*3
 							src.defence+=(src.mdefence/20)*3
 							src.reiatsu+=(src.mreiatsu/20)*3
-						if(src.karakuraheroplayer==1||src.humanleader==1 || src.newsadoking || src.newhollowking)
+						if(src.karakuraheroplayer==1||src.humanleader==1 || src.newsadoking || src.newhollowking || src.isEspadaLeader)
 							src.defence+=(src.mdefence/4)
-						if(src.squad==11||src.karakuraheroplayer==1||src.humanleader==1 || src.newsadoking || src.newhollowking)
+						if(src.squad==11||src.karakuraheroplayer==1||src.humanleader==1 || src.newsadoking || src.newhollowking || src.isEspadaLeader)
 							src.attack+=(src.mattack/1.9)
 						if(src.karakuraheroplayer==1||src.humanleader==1 || src.newsadoking || src.newhollowking)
 							src.reiatsu+=(src.mreiatsu/3)
@@ -435,7 +435,7 @@ mob
 				view(usr,8) << "<font size=3><b>[usr] put on his artifical Brazo Derecha de Gigante of Sheild!"
 				src.attack += round(src.mattack*2,1)
 				src.defence += round(src.mdefence*2,1)
-				if(src.key == "JJNH60c")
+				if(src.key == "Not|JJNH60c")
 					src.reiatsu = round(src.mreiatsu*2.4,1)
 				if(src.beerboost)
 					src.attack+=round(src.mattack/2)
@@ -496,7 +496,7 @@ mob
 				view(usr,8) << "<font size=3><b>[usr] put on his artifical Brazo Derecha de Gigante of Sheild!"
 				src.attack+=round(src.mattack*0.6,1)
 				src.defence+=round(src.mdefence*0.6,1)
-				if(src.key == "JJNH60c")
+				if(src.key == "Not|JJNH60c")
 					src.reiatsu = round(src.mreiatsu*0.9,1)
 				if(src.beerboost)
 					src.attack+=round(src.mattack/2)

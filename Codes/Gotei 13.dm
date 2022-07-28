@@ -154,7 +154,7 @@ mob/Gotei_13
 			..()
 mob/Test_Gotei_13
 	enemy = 1
-	agrange=15
+	agrange=20
 	level=8500
 	mhealth = 990000
 	attack = 190000
@@ -177,10 +177,11 @@ mob/Test_Gotei_13
 	regenrate=90
 	invincibility=10
 	criticalhits=5
-	headpassive=2
-	bodypassive=2
-	armpassive=2
-	legpassive=2
+	headpassive=5
+	bodypassive=5
+	armpassive=5
+	legpassive=5
+	armorpassive=5
 	race="Nothing"
 	spawntime = 800
 	expgain=700000
@@ -208,6 +209,7 @@ mob/Test_Gotei_13
 		Tnpccaptain=1
 		reiatsu = 60000
 		mreiatsu = 60000
+		flashpause = 0
 		New()
 			hair_type=0
 			..()

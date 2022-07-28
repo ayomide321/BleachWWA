@@ -24,6 +24,7 @@ mob/proc
 			src.levelpoints=flevel*16
 		if(src.stype!="Kido Class")
 			src.levelpoints=flevel*15
+
 		src.combos=0
 		if(src.level==50||src.level==100||src.level==200||src.level==400||src.level==1000)
 			src.combos+=1
@@ -146,7 +147,7 @@ mob/proc
 			src.rawbuff+=1000
 			src.mrei += 2000
 
-
+		src.levelpoints+=src.boughtlevelpoints
 		src.levelpoints +=eventlvpused*100
 		src.shinipassive=0
 		src.headpassive=0

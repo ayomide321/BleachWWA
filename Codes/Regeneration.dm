@@ -85,7 +85,7 @@ mob
 							src.banmastery(1)
 					if(src.rei<src.mrei) //regen mrei
 						src.rei+=round(mrei/regenrate,1)
-						if(src.squad == "Kido Corps"||src.squad==0||src.karakuraheroplayer==1||src.humanleader==1 || src.newsadoking || src.newhollowking)
+						if(src.squad == "Kido Corps"||src.squad==0||src.karakuraheroplayer==1||src.humanleader==1 || src.newsadoking || src.newhollowking || src.isEspadaLeader)
 							src.rei+=round(mrei/regenrate,1)
 						if(src.trans3==1)
 							src.rei+=round(mrei/regenrate,1)

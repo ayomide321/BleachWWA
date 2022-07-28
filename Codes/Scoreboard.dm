@@ -293,6 +293,7 @@
 		if(player.karakuraheroplayer)return
 		if(player.humanleader)return
 		if(player.newhollowking)return
+		if(player.isEspadaLeader)return
 		if(player.race!="Arrancar")return
 		var/savefile/F=new("espadas.sav")
 		var/list/level=new()

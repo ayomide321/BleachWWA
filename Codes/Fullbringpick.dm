@@ -170,6 +170,9 @@ mob/Fullbringpick
 				switch(input(usr," Samurai. He gets a great attack boost and defense boost and has amazing sword character..(Attack based)", text) in list ("Yes","No"))
 					if("Yes")
 						usr.gotshik=1
+						usr.contents+=new/obj/skillcard/Samurai_Barrage
+						usr.contents+=new/obj/skillcard/Samurai_Jab
+						usr.contents+=new/obj/skillcard/Samurai_Freeze
 
 	Jackie
 		New()

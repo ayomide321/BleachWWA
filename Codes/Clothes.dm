@@ -347,6 +347,7 @@ obj/Buy
 				alert(usr,"You don't have enough event points for the amount you entered.")
 				return
 			usr.levelpoints+=msg
+			usr.boughtlevelpoints+=msg
 			usr.eventpoints-=msg/5
 			alert(usr,"You gained [msg] level points.")
 

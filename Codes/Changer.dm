@@ -538,10 +538,17 @@ mob
 									usr.contents+=new/obj/skillcard/Power_Monsters
 									usr.RefreshSkillList()
 									usr<<"You can now power your monsters"
+								if(usr.ftype=="Samurai")
+									usr.contents+=new/obj/skillcard/Samurai_Barrage
+									usr.contents+=new/obj/skillcard/Samurai_Jab
+									usr.contents+=new/obj/skillcard/Samurai_Freeze
+									usr.RefreshSkillList()
+									usr<<"You have obtained the power of Samurai"
 mob
 	var
 		fuseCount=0
-
+		refundPercent=0.8
+		fusePrice = 750
 		/*
 		fuseList = /mob/CustomZan/verb/Kensei_Fuse,
 					/mob/CustomZan/verb/Vai_Fuse,
@@ -592,7 +599,8 @@ mob
 					/mob/CustomZan/verb/Kaien_Fuse=0,
 					/mob/CustomZan/verb/Change_To_Ginjo=0,
 					/mob/CustomZan/verb/Change_To_Tsuki=0,
-					/mob/CustomZan/verb/Change_To_Samurai=0)
+					/mob/CustomZan/verb/Change_To_Samurai=0,
+					/mob/CustomZan/verb/Ichigo_Zan=0)
 
 		fuseList = list(("Kensei Fuse") = /mob/CustomZan/verb/Kensei_Fuse,
 						("Vaizard Fuse") = /mob/CustomZan/verb/Vai_Fuse,
@@ -604,6 +612,7 @@ mob
 						("Hitsugaya Fuse") = /mob/CustomZan/verb/Hitsu_Fuse,
 						("Ulquiorra Fuse") = /mob/CustomZan/verb/Ulq_Fuse,
 						("Grimmjow Fuse") = /mob/CustomZan/verb/Grimm_Fuse,
+						("Ichigo(Shinigami) Fuse") = /mob/CustomZan/verb/Ichigo_Zan,
 						("Ichigo(Fullbring) Fuse") = /mob/CustomZan/verb/Ichi_Fuse,
 						("Halibel Fuse") = /mob/CustomZan/verb/Halibel_Fuse,
 						("Rukia Fuse") = /mob/CustomZan/verb/Rukia_Fuse,
@@ -632,78 +641,75 @@ mob
 			Talk()
 				set category = "NPC's"
 				set src in oview(2)
-				if(usr.donor_points>0)
-					var/rebirthcount = usr.timesRebirthed
-					var/list/DPList = new
-					var/mob/O
-					var/FuseCost=750
+				switch(input("Do you want to buy a fuse or refund one?", text) in list ("Buy","Return"))
+					if("Buy")
+						if(usr.donor_points>0)
+		//					var/rebirthcount = usr.timesRebirthed
+							var/list/DPList = new
+							var/mob/O
+							var/FuseCost=fusePrice
 
-					//Boosts for higher Level
+							//Boosts for higher Level
 
-					/*
-					src.contents|=new/obj/skillcard/Hollow_Zangetsu
-					src.contents|=new/obj/skillcard/Rinnegan
+							/*
+							src.contents|=new/obj/skillcard/Hollow_Zangetsu
+							src.contents|=new/obj/skillcard/Rinnegan
+							*/
 
-					*/
+							DPList += fuseList
 
-					//Fuses
-					/*
-					src.verbs|=/mob/CustomZan/verb/Kensei_Fuse
-					src.verbs|=/mob/CustomZan/verb/Vai_Fuse
-					src.verbs|=/mob/CustomZan/verb/Sado_Fuse
-					src.verbs|=/mob/CustomZan/verb/Tousen_Fuse
-					src.verbs|=/mob/CustomZan/verb/Yama_Fuse
-					src.verbs|=/mob/CustomZan/verb/Szayel_Fuse
-					src.verbs|=/mob/CustomZan/verb/Volcanica_Fuse
-					src.verbs|=/mob/CustomZan/verb/Hitsu_Fuse
-					src.verbs|=/mob/CustomZan/verb/Ulq_Fuse
-					src.verbs|=/mob/CustomZan/verb/Grimm_Fuse
-					src.verbs|=/mob/CustomZan/verb/Ichi_Fuse
-					src.verbs|=/mob/CustomZan/verb/Sado_Fuse
-					src.verbs|=/mob/CustomZan/verb/Halibel_Fuse
-					src.verbs|=/mob/CustomZan/verb/Rukia_Fuse
-					src.verbs|=/mob/CustomZan/verb/Bar_Fuse
-					src.verbs|=/mob/CustomZan/verb/Jackie_Fuse
-					src.verbs|=/mob/CustomZan/verb/Nell_Fuse
-					src.verbs|=/mob/CustomZan/verb/Gamer_Fuse
-					src.verbs|=/mob/CustomZan/verb/Fire_Doll_Fuse
-					src.verbs|=/mob/CustomZan/verb/Fuji_Fuse
-					src.verbs|=/mob/CustomZan/verb/Byak_Fuse
-					src.verbs|=/mob/CustomZan/verb/Kaien_Fuse
-					src.verbs|=/mob/CustomZan/verb/Change_To_Ginjo
-					src.verbs|=/mob/CustomZan/verb/Change_To_Tsuki
-					src.verbs|=/mob/CustomZan/verb/Change_To_Samurai
-					*/
-					DPList += fuseList
+							DPList += "Red Hakuteiken"
 
-					DPList += "Red Hakuteiken"
-
-					var/mob/U = input("Which item from the DP store do you want to purchase?", "DP Shop Owner") as null|anything in DPList
-					O = usr.fuseList[U]
-					if(!O)
-						switch(U)
-							if("Red Hakuteiken")
-								if(usr.redH==0)
-									if(usr.UseDP(2000))
-										usr.redH=1
-										usr.contents|=new/obj/skillcard/RedHakuteiken
-										usr.RefreshSkillList()
-										usr<<"You've learned the ultimate boost needed to take on your enemies."
-								else
-									usr<<"You already have Red Hakuteiken."
+							var/mob/U = input("Which item from the DP store do you want to purchase?", "DP Shop Owner") as null|anything in DPList
+							O = usr.fuseList[U]
+							if(!O)
+								switch(U)
+									if("Red Hakuteiken")
+										if(usr.redH==0)
+											if(usr.UseDP(2000))
+												usr.redH=1
+												usr.contents|=new/obj/skillcard/RedHakuteiken
+												usr.RefreshSkillList()
+												usr<<"You've learned the ultimate boost needed to take on your enemies."
+										else
+											usr<<"You already have Red Hakuteiken."
+									else
+										usr<<"Thanks for shopping!"
 							else
-								usr<<"Feature coming soon."
-					else
-						//if((O in usr.verbs)== 0 && !usr.hasFuse[O])
-						if(!usr.hasFuse[O])
-							if(usr.UseDP(FuseCost))
-								usr.hasFuse[O] = 1
-								usr.verbs|=O
-								usr<<"You've attained the [U]"
-								usr.fuseCount++
-						else
-							usr<<"You already have the [U]"
+								//if((O in usr.verbs)== 0 && !usr.hasFuse[O])
+								if(!usr.hasFuse[O])
+									if(usr.UseDP(FuseCost))
+										usr.hasFuse[O] = 1
+										usr.verbs|=O
+										usr<<"You've attained the [U]"
+										usr.fuseCount++
+								else
+									usr<<"You already have the [U]"
 
-					usr.saveproc()
-				else
-					usr<<"You don't have any donor points to spend."
+							usr.saveproc()
+						else
+							usr<<"You don't have any donor points to spend."
+					if("Return")
+						usr.refundFuse()
+mob
+	proc
+		refundFuse()
+			var/list/CurrentFuseActive = new
+			var/mob/O
+			for(var/fuseActive in src.fuseList)
+				var/currentFuse = src.fuseList[fuseActive]
+				if(src.hasFuse[currentFuse])
+					CurrentFuseActive += fuseActive
+
+			if(!CurrentFuseActive)
+				src<<"You don't have any fuses to refund"
+				return
+
+			var/mob/U = input("Which fuse do you want to refund?") as null|anything in CurrentFuseActive
+			O = src.fuseList[U]
+			if(src.hasFuse[O])
+				src.hasFuse[O] = 0
+				src<<"You've been refunded for [U]"
+				src.donor_points += round(fusePrice * refundPercent, 1)
+				src.total_bought += round(fusePrice * refundPercent, 1)
+				src.fuseCount--

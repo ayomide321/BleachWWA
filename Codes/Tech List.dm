@@ -1932,6 +1932,9 @@ mob
 			if(!M.inbankai)
 				src<<"He must be in bankai"
 				return
+			if(M.vand)
+				src<<"You cannot steal their bankai"
+				return
 			if(M.inbankai)
 				src.rei-=1000
 				M.Bankai()
@@ -4873,7 +4876,7 @@ mob
 				step(K,src.dir)
 				spawn(10)
 				src.frozen=0
-				spawn(70)
+				spawn(30)
 				src.mugetsucd = 0
 		//end matsuricopy
 		Mugetsu()
@@ -5580,7 +5583,7 @@ mob
 				return
 			if(src.key == currentPlayerTest)
 				src << "<b>You cannot use this during a ranked test!"
-			return
+				return
 			if(src.safe||src.fireback)
 				return
 			if(!src.inshikai&&!src.inbankai)
@@ -9301,8 +9304,10 @@ mob
 			if(!tpow)
 				if(gpow) return;
 				for(var/mob/player/M in All_Clients())
-					if(M.race=="Quincy")
+					if(M.race=="Quincy"&&M!=src)
 						tpow+=(M.reiatsu)
+				if(tpow==0)
+					tpow=20000
 				src.reiatsu += (tpow / 5)
 				src << "You've absorbed power from the other Quincies!"
 			else
@@ -9316,7 +9321,7 @@ mob
 				if(tpow) return;
 				gpow = src.mreiatsu
 				for(var/mob/player/M in All_Clients())
-					if(M.race=="Quincy")
+					if(M.race=="Quincy"&&M!=src)
 						M.reiatsu += gpow
 						M.haspower=gpow
 				world << "<b><font color = lightblue>World News: [src] Has Gifted Their Fellow Quincy some of their Power!"
@@ -9325,7 +9330,7 @@ mob
 				src.reiatsu=src.mreiatsu
 				for(var/mob/player/M in All_Clients())
 					if(M.race=="Quincy"&&M.haspower)
-						M.reiatsu -= M.haspower
+						M.reiatsu = max(M.mreiatsu, M.reiatsu -= M.haspower)
 						M.haspower=0
 				gpow = 0
 				world << "<b><font color = lightblue>World News: [src] Has Reclaimed their Power!"

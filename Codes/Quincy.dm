@@ -8,6 +8,7 @@ mob
 				src.seelsword=0
 				src.bowon = 1
 				src.reiatsu=src.mreiatsu*3
+				src.reiatsu+=src.haspower
 				if(src.spiritweapon==0)
 					src.icon_state = "Bow Stance"
 				else

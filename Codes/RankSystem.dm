@@ -1,6 +1,7 @@
 var
-	list/shiniCaptainList = list(("1")="",("2")="",("3")="",("4")="",("5")="",("6")="",("7")="",("8")="",("9")="",("10")="",("11")="",("12")="",("13")="",("Kido Corps")="")
-	list/activeRankList = list(("Spirit King")="",("DemiGod")="",("Karakura Hero")=0,("King of Hueco Mundo")="",("Rey Diablo")="",("Emperor of the Wandenreich")="",("Sternritter Grandmaster")="")
+	list/shiniCaptainList = list(()=0, ("1")="",("2")="",("3")="",("4")="",("5")="",("6")="",("7")="",("8")="",("9")="",("10")="",("11")="",("12")="",("13")="",("Kido Corps")="")
+	list/activeRankList = list(("Spirit King")="",("DemiGod")="",("Karakura Hero")=0,("King of Hueco Mundo")="",("Rey Diablo")="",("Emperor of the Wandenreich")="",("Sternritter Grandmaster")="",("Espada Leader")="")
+	var/maxKTH=10
 	tmp/currentRankTest=""
 	tmp/currentPlayerTest=""
 	tmp/testGoteiLeft=0
@@ -21,8 +22,6 @@ mob
 			Talk()
 				set category = "NPC's"
 				set src in oview(2)
-				var/rankTest
-				var/rankAdd
 				var/npcName = "{NPC}Rank Tester: "
 				if(usr.waitForRankTest&&(world.realtime-usr.waitForRankTest)/432000 < 1)
 					usr<<"[npcName]You need to wait 12 hours before taking this test again"
@@ -42,7 +41,16 @@ mob
 				if(usr.race != "Shinigami" && usr.race != "Sado"&& usr.race != "Chad" && usr.race != "Quincy" && usr.race != "Fullbringer" && usr.race != "Vaizard" && usr.race != "Arrancar")
 					usr<<"[npcName]There is no exam for hollows yet"
 					return
+
+				var/list/availableRank= new
+
+				//Shinigami
 				if(usr.race == "Shinigami")
+					if(usr.squad==0)
+						if(activeRankList["Spirit King"])
+							usr<<"There is already a Spirit King"
+							return
+						availableRank += "Spirit King"
 					if(!usr.iscaptain&&!usr.squad)
 						usr<<"[npcName]You need to be in a Squad before you can take a test!"
 						return
@@ -50,27 +58,27 @@ mob
 						if(shiniCaptainList["[usr.squad]"])
 							usr<<"[npcName]Unfortunately, there already exists a Captain for your squad, and you must be a Captain before you can take any other test"
 							return
-						rankTest = "Captain"
-						rankAdd = " of Squad: [usr.squad]"
-					if(usr.iscaptain&&usr.squad!=1&&usr.squad!=0||usr.squad==1)
+						availableRank += "Captain"
+					if(!usr.iscaptaincommander&&usr.iscaptain&&usr.squad!=1&&usr.squad!=0||usr.squad==1)
 						if(shiniCaptainList["1"])
 							usr<<"[npcName]Though you meet the reuqirements to take on the Captain Commander test, I cannot give you the test when one already exists."
 							return
-						rankTest = "Captain Commander"
-				var/list/availableRank= new
+						availableRank += "Captain Commander"
+					if(usr.iscaptain)
+						availableRank += "Squad 0"
+					if(usr.iscaptaincommander&&!activeRankList["Spirit King"])
+						availableRank += "Spirit King"
+
 				if(usr.race == "Arrancar")
-					availableRank += "King of Hueco Mundo"
-					availableRank += "Cancel"
-					var/U=input("Which test do you want to take?", text) in availableRank
-					if(U=="Cancel")
-						return
-					currentRankTest=U
-					startTest(usr)
-					return
-				if(usr.race == "Sado"||usr.race == "Chad"||usr.race == "Quincy"||usr.race == "Fullbringer" || usr.race == "Vaizard")
+					if(!activeRankList["King of Hueco Mundo"])
+						availableRank += "King of Hueco Mundo"
+					if(!activeRankList["Espada Leader"]&&!usr.isEspadaLeader)
+						availableRank += "Espada Leader"
+
+				if(usr.earth)
 					if(usr.karakuraheroplayer&&!activeRankList["DemiGod"])
 						availableRank += "DemiGod"
-					if(!usr.karakuraheroplayer&&!usr.humanleader&&activeRankList["Karakura Hero"]<3)
+					if(!usr.karakuraheroplayer&&!usr.humanleader&&activeRankList["Karakura Hero"]<=3)
 						availableRank += "Karakura Hero"
 					if(usr.race == "Quincy")
 						if(!usr.issternrleader&&!activeRankList["Sternritter Grandmaster"])
@@ -80,18 +88,15 @@ mob
 					if(usr.race == "Sado"||usr.race == "Chad")
 						if(!activeRankList["Rey Diablo"])
 							availableRank += "Rey Diablo"
-					availableRank += "Cancel"
-					var/U=input("Which test do you want to take?", text) in availableRank
-					if(U=="Cancel")
-						return
-					currentRankTest=U
-					startTest(usr)
+
+				availableRank += "Cancel"
+
+				var/U=input("Which test do you want to take?", text) in availableRank
+				if(U=="Cancel")
 					return
-				switch(input("Do you wish to take the test to become the [rankTest][rankAdd]?", text) in list ("Yes","No"))
-					if("Yes")
-						giveCaptainTest(usr)
-					else
-						usr<<"[npcName]I understand, these tests are quite difficult."
+				currentRankTest=U
+				startTest(usr)
+				return
 	proc
 		resetRankTest()
 			currentRankTest=""
@@ -150,8 +155,6 @@ mob
 			for(rank in shiniCaptainList)
 				if(shiniCaptainList[rank]==M.key)
 					shiniCaptainList[rank]=""
-
-
 			for(var/obj/items/equipable/Cloak/K in M)
 				del K
 				M.cloak=0
@@ -161,10 +164,12 @@ mob
 				M.humanleader=0
 				activeRankList["DemiGod"]=""
 			if(M.karakuraheroplayer)
-				activeRankList["Karakura Hero"]=activeRankList["Karakura Hero"]-1
 				M.karakuraheroplayer=0
+				activeRankList["Karakura Hero"]--
 			if(M.newhollowking)
 				M.newhollowking=0
+			if(M.isEspadaLeader)
+				M.isEspadaLeader=0
 			if(M.newsadoking)
 				M.newsadoking=0
 			if(M.newquincyking)
@@ -235,6 +240,16 @@ mob
 				src.espadas=""
 				src.espadasold=""
 				return
+			if(rank=="Espada Leader")
+				world << "<b><font color = yellow><font size=2>[src] now leads the Espadas"
+				src.isEspadaLeader=1
+				activeRankList[rank] = src.key
+				src.status="<font color=yellow>Espada Leader</font>"
+				src.statusold="<font color=yellow>Espada Leader</font>"
+				src.espadas=""
+				src.espadasold=""
+				return
+
 			if(rank=="Rey Diablo")
 				world << "<b><font color = red><font size=2>[src] is now the Sado King"
 				src.newsadoking=1
@@ -262,6 +277,13 @@ mob
 				src.espadasold=""
 				activeRankList[rank] = src.key
 				return
+			if(rank=="Squad 0")
+				world << "<b><font color = red>Soul Society News: [src] is now a member of Squad Zero"
+				src.squad=0
+				src.iscaptain=1
+				src.status="<font color=purple>Member of Squad Zero</font>"
+				src.contents+=new/obj/items/equipable/Cloak/Squad0
+				src.updateInventory()
 
 
 
@@ -328,7 +350,7 @@ mob
 			M.loc=locate(31,165,21)
 			//Spawn the tests
 			if(currentRankTest=="Captain")
-				testGoteiLeft=2
+				testGoteiLeft=1
 				if(M.squad==1)
 					M<<"Due to technical issues, your test has been postponed. Contact Throm for further assistance"
 					return;
@@ -356,9 +378,8 @@ mob
 					new/mob/Test_Gotei_13/C12(locate(31,168,21))
 				if(M.squad==13)
 					new/mob/Test_Gotei_13/C13(locate(31,168,21))
-				new/mob/Test_Gotei_13/C1(locate(31,169,21))
 
-			if(currentRankTest=="Captain Commander"||currentRankTest=="Karakura Hero"||currentRankTest=="Sternritter Grandmaster")
+			if(currentRankTest=="Captain Commander"||currentRankTest=="Karakura Hero"||currentRankTest=="Sternritter Grandmaster"||currentRankTest=="Espada Leader")
 				testGoteiLeft=12
 				new/mob/Test_Gotei_13/C1(locate(31,168,21))
 				new/mob/Test_Gotei_13/C2(locate(28,168,21))
@@ -372,7 +393,7 @@ mob
 				new/mob/Test_Gotei_13/C10(locate(34,168,21))
 				new/mob/Test_Gotei_13/C11(locate(35,168,21))
 				new/mob/Test_Gotei_13/C12(locate(32,168,21))
-			if(currentRankTest=="DemiGod"||currentRankTest=="Emperor of the Wandenreich"||currentRankTest=="Rey Diablo"||currentRankTest=="King of Hueco Mundo")
+			if(currentRankTest=="DemiGod"||currentRankTest=="Emperor of the Wandenreich"||currentRankTest=="Rey Diablo"||currentRankTest=="King of Hueco Mundo"||currentRankTest=="Squad 0")
 				testGoteiLeft=18
 				new/mob/Test_Gotei_13/C1(locate(31,168,21))
 				new/mob/Test_Gotei_13/C2(locate(28,168,21))
@@ -392,3 +413,31 @@ mob
 				new/mob/Test_Gotei_13/C3(locate(39,168,21))
 				new/mob/Test_Gotei_13/C4(locate(31,169,21))
 				new/mob/Test_Gotei_13/C5(locate(23,168,21))
+			if(currentRankTest=="Spirit King")
+				testGoteiLeft=26
+				new/mob/Test_Gotei_13/C1(locate(31,168,21))
+				new/mob/Test_Gotei_13/C2(locate(28,168,21))
+				new/mob/Test_Gotei_13/C3(locate(27,168,21))
+				new/mob/Test_Gotei_13/C4(locate(30,168,21))
+				new/mob/Test_Gotei_13/C5(locate(26,168,21))
+				new/mob/Test_Gotei_13/C6(locate(33,168,21))
+				new/mob/Test_Gotei_13/C7(locate(25,168,21))
+				new/mob/Test_Gotei_13/C8(locate(29,168,21))
+				new/mob/Test_Gotei_13/C9(locate(24,168,21))
+				new/mob/Test_Gotei_13/C10(locate(34,168,21))
+				new/mob/Test_Gotei_13/C11(locate(35,168,21))
+				new/mob/Test_Gotei_13/C12(locate(32,168,21))
+				new/mob/Test_Gotei_13/C13(locate(36,168,21))
+				new/mob/Test_Gotei_13/C1(locate(31,167,21))
+				new/mob/Test_Gotei_13/C2(locate(28,167,21))
+				new/mob/Test_Gotei_13/C3(locate(27,167,21))
+				new/mob/Test_Gotei_13/C4(locate(30,167,21))
+				new/mob/Test_Gotei_13/C5(locate(26,167,21))
+				new/mob/Test_Gotei_13/C6(locate(33,167,21))
+				new/mob/Test_Gotei_13/C7(locate(25,167,21))
+				new/mob/Test_Gotei_13/C8(locate(29,167,21))
+				new/mob/Test_Gotei_13/C9(locate(24,167,21))
+				new/mob/Test_Gotei_13/C10(locate(34,167,21))
+				new/mob/Test_Gotei_13/C11(locate(35,167,21))
+				new/mob/Test_Gotei_13/C12(locate(32,167,21))
+				new/mob/Test_Gotei_13/C13(locate(36,167,21))

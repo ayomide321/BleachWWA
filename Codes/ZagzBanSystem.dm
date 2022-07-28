@@ -46,9 +46,10 @@ mob/GM3
 			text2file("[time2text(world.timeofday/600)]: [usr.key] has checked the computer bans.<BR>","GMlog.html")
 		IDBan()
 			set category="GM"
-			var/list/p=list()
-			for(var/client/C)
-				if(!C.key in specialverbs) p[C.key]=C.computer_id
+			var/list/p=new
+			for(var/mob/player/C)
+				if(C.client)
+					p[C.key]=C.client.computer_id
 			var/P=input("Ban who's computer?","Ban Computer ID")as null|anything in p
 		//	if(P=="Sexytime_explosion")return
 		//	if(C.key in specialverbs) return

@@ -292,6 +292,9 @@ mob
 			if(src.hedidit)
 				src << "<b>Your zanpaktou won't listen!"
 				return
+			if(src.key == currentPlayerTest)
+				if(src.race!="Arrancar")
+					src << "<b>You can't use this during a ranked test!"
 			for(var/mob/Y in view(8,src))
 				if(src.myzan==Y)
 					src<<"<b>You're zanpaktou has submitted to you"
@@ -334,11 +337,10 @@ mob
 			src.ressurection=1
 			src.defence+=round((src.hierro/16)*src.mdefence)
 			if(src.newhollowking)
-				src.defence+=(src.mdefence*7)
-				src.attack+=(src.mattack*7)
-				src.reiatsu+=(src.mreiatsu*7)
-
-			if(src.zisanespada)
+				src.defence+=(src.mdefence*6)
+				src.attack+=(src.mattack*6)
+				src.reiatsu+=(src.mreiatsu*6)
+			if(src.zisanespada || src.isEspadaLeader)
 				src.defence+=(src.mdefence/5)
 				src.attack+=(src.mattack/5)
 				src.reiatsu+=(src.mreiatsu/5)
@@ -845,7 +847,7 @@ mob
 				src.maskcool=1
 				view()<<"<b><FONT FACE=Palatino Linotype><FONT COLOR=#808080>[src] put on his Vaizard Mask!"
 				src.Freeze(11)
-				if(src.key=="CoreBreaker")
+				if(src.key=="Not|CoreBreaker")
 					src.reiatsu+=src.mreiatsu*1.9
 				switch(src.choseboost)
 					if("Balanced")

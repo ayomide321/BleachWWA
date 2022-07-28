@@ -38,9 +38,14 @@ mob
 
 
 mob
+	var
+		canAlertGM=1
 	verb
 		GM_Help()
 			set hidden=1
+			if(!src.canAlertGM)
+				src << "You've been temporarily blocked from this feature"
+				return
 			switch(input("This will send an alert to all GMs, if you use this verb without reason you will be punished. Are you sure you want to use this verb?", text) in list ("Yes","No"))
 				if("Yes")
 					var/msg=input("What do you want to say?","Alert")as text
@@ -191,10 +196,10 @@ mob
 				if(M.client&&M.GM)
 					if(M.GM==1)
 						whos+={"<tr align="center"><td colspan="3"><font color = purple><font size=3> [M.name]([M.key])</td><td><font size=3>{[M.guildname]}</td><td><font size=3>Helper</td></tr>"}
-					if(M.GM>1 && M.GM<8)
-						if(M.key!=""&&M.key!="")
+					if(M.GM>1)
+						if(M.key!="Dragonpearl123"&&M.key!="")
 							whos+={"<tr align="center"><td colspan="3"><font color = purple><font size=3> [M.name]([M.key])</td><td><font size=3>{[M.guildname]}</td><td><font size=3>GM</td></tr>"}
-					if(M.GM == 8)
+					if(M.key == "Dragonpearl123")
 						whos+={"<tr align="center"><td colspan="3"><font color = purple><font size=3> [M.name]([M.key])</td><td><font size=3>{[M.guildname]}</td><td><font size=3>Owner</td></tr>"}
 			//winshow(src, "browser-popup", 1)
 			src<<browse(whos)

@@ -765,6 +765,9 @@ mob
 							src.gotvai=0
 							src<<"You may now attempt to retake your vaizard test."
 					if("Squad Change")
+						if(src.race != "Shinigami")
+							src << "You need to be a Shinigami to change your squad!"
+							return
 						if(UseDP(30))
 							src.status = ""
 							src.statusold=""
