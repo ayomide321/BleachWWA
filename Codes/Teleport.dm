@@ -1267,7 +1267,7 @@ turf
 					if(M.client&&M.redwolfkills>19)
 						usr.loc = locate(51,83,24)
 					if(M.redwolfkills<20)
-						usr<<"You must defeat 20/[usr.redwolfkills] before entering"
+						usr<<"You must defeat [usr.redwolfkills]/20 before entering"
 				else
 					if(istype(A,/obj/)) return
 		teleFromPheonix
@@ -1283,11 +1283,11 @@ turf
 				if(ismob(A))
 					var/mob/M = A
 					if(M.client)
-						if(M.demonbosskills<5)
-							usr<<"You Must kill the demon boss [usr.demonbosskills]/5 times before entering"
+						if(M.demonbosskills<10)
+							usr<<"You Must kill the demon boss [usr.demonbosskills]/10 times before entering"
 							return
-						if(M.gatecreatorkills<5)
-							usr<<"You Must kill the gate creator [usr.gatecreatorkills]/5 times before entering"
+						if(M.gatecreatorkills<10)
+							usr<<"You Must kill the gategit creator [usr.gatecreatorkills]/10 times before entering"
 							return
 						if(M.client&&M.gatecreatorkills>9&&M.demonbosskills>9)
 							usr.loc = locate(51,2,24)
