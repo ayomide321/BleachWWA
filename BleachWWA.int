@@ -1,20 +1,20 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1658883284
-DIR: _Relapse work april 20th icons Bounts\Fire Bounts\Water Codes Codes\TowerOfBWWA Icons Icons\backup Icons\firesword ssjradditz\on-screeninventory 
+LAST_COMPILE_TIME: 1660288152
 PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
+DIR: _Relapse work Bounts\Fire Bounts\Water Codes Codes\db Codes\TowerOfBWWA Icons Icons\backup Icons\firesword ssjradditz\on-screeninventory 
 AUTO_FILE_DIR: OFF
 PACKAGE_DMB_INFO: 
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_src.zip
-LAST_COMPILE_VERSION: 514.1575
-PACKAGE_TYPE: 0
+LAST_COMPILE_VERSION: 514.1585
 PACKAGE_DME_START: 
-WINDOW: Codes\Squads.dm;Codes\RankSystem.dm;Codes\Mob.dm;Codes\Procs.dm;Codes\donors.dm;Codes\Login.dm;_Relapse work\Free for All.dm;Codes\Admin.dm;Codes\Rebirth.dm;Codes\Rebirth2.dm;_Relapse work\Non DP Rewards.dm;Codes\Changer.dm;Codes\clouds.dm;Codes\Clothes.dm;Codes\Guild Critic.dm;Codes\GuildHouses.dm
+PACKAGE_TYPE: 0
+WINDOW: Codes\Procs.dm;Codes\Skillcards.dm;Codes\Tech List.dm;_Relapse work\Non DP Rewards.dm
 PACKAGE_DME_INFO: 
-FILE: Codes\GuildHouses.dm
-PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
+FILE: Codes\Tech List.dm
 PACKAGE_DME_DEMO: 
+PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
 */
 // END_INTERNALS

@@ -1,0 +1,17 @@
+6-1-21
+Admin.dm - added sternritter grandmaster to  give rank command. changed the Grandmaster From A - Almighty to B -Haschwalth
+Clothes.dm - Added Base for making customs buyable(used samurai) not done! needs work // commented out
+Login.dm - Changed sternritter leader from Ywach [A] to  Hashwalth [B]
+Mob.dm - added custom spot for samurai(as custom) as listed above //commented out
+Squads.dm - adjusted sternritter letters
+
+6-2-21
+Login.dm - Added newquincyking to Login variables to get sternritter verbs along with sternritterG grandmaster.
+Quincy.dm - added Sternritter, Sternritter Grandmaster, and quincy emperor  to file and gave 
+themboosts( Needs adjusting for balance!)
+
+Squads.dm - Finished adding Quincy Letters
+
+6-4-21
+login.dm - Quincy.dm - Admin.dm - Changed all references of "<font color= #1ac7c7>Quincy Emperor</font>" to 
+"<font color= #1ac7c7>Quincy Emperor A - The Almighty</font>"

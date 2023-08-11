@@ -34923,3 +34923,83 @@ proc name: Bump (/obj/cero/Bump)
 the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
 the cero (/obj/cero): Move(Middle (46,7,8) (/turf/TheGateArea/Dirt/Middle), 4)
 <font color=#607B8B>World started up on: Sun Jul 24 12:48:16 2022
+<font color=#607B8B>World started up on: Wed Aug 10 04:52:16 2022
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+  usr: 0
+  src: the cero (/obj/cero)
+  src.loc: null
+  call stack:
+the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
+the cero (/obj/cero): Move(Middle (46,9,8) (/turf/TheGateArea/Dirt/Middle), 4)
+<font color=#607B8B>World started up on: Wed Aug 10 05:31:44 2022
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+  usr: 0
+  src: the cero (/obj/cero)
+  src.loc: null
+  call stack:
+the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
+the cero (/obj/cero): Move(Middle (46,7,8) (/turf/TheGateArea/Dirt/Middle), 4)
+<font color=#607B8B>World started up on: Wed Aug 10 05:37:04 2022
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+  usr: 0
+  src: the cero (/obj/cero)
+  src.loc: null
+  call stack:
+the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
+the cero (/obj/cero): Move(Middle (46,7,8) (/turf/TheGateArea/Dirt/Middle), 4)
+<font color=#607B8B>World started up on: Wed Aug 10 05:39:12 2022
+<font color=#607B8B>World started up on: Wed Aug 10 05:46:40 2022
+<font color=#607B8B>World started up on: Wed Aug 10 05:47:44 2022
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+  usr: 0
+  src: the cero (/obj/cero)
+  src.loc: null
+  call stack:
+the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
+the cero (/obj/cero): Move(Middle (46,9,8) (/turf/TheGateArea/Dirt/Middle), 4)
+<font color=#607B8B>World started up on: Wed Aug 10 05:52:00 2022
+<font color=#607B8B>World started up on: Wed Aug 10 05:53:04 2022
+<font color=#607B8B>World started up on: Wed Aug 10 05:56:16 2022
+<font color=#607B8B>World started up on: Wed Aug 10 06:03:44 2022
+<font color=#607B8B>World started up on: Wed Aug 10 06:18:40 2022
+runtime error: Cannot read null.rundelay
+proc name: Cremate (/mob/proc/Cremate)
+  source file: Procs.dm,6324
+  usr: (src)
+  src: Pure Hollow (/mob/player)
+  src.loc: Sand (161,81,3) (/turf/Sand/Middle2)
+  call stack:
+Pure Hollow (/mob/player): Cremate(null)
+Pure Hollow (/mob/player): Creamation()
+M4 (/obj/hud/M4): Click(null, null, null)
+<font color=#607B8B>World started up on: Wed Aug 10 06:29:20 2022
+<font color=#607B8B>World started up on: Thu Aug 11 04:24:32 2022
+<font color=#607B8B>World started up on: Fri Aug 12 03:09:52 2022
+runtime error: Cannot read null.truereiatsu
+proc name: Click (/obj/hud/Click)
+  source file: Skillcards.dm,699
+  usr: null
+  src: M7 (/obj/hud/M7)
+  src.loc: null
+  call stack:
+M7 (/obj/hud/M7): Click(null, "mapwindow.map", "icon-x=20;icon-y=19;left=1;but...")
+<font color=#607B8B>World started up on: Thu Aug 10 23:12:25 2023
+
+Webclient users can visit this address to play:
+http://www.byond.com/play/72.228.152.160:11770
+
+Thu Aug 10 23:12:22 2023
+World opened on network port 30000.
+<font color=#607B8B>World started up on: Thu Aug 10 23:14:59 2023
+
+Webclient users can visit this address to play:
+http://www.byond.com/play/72.228.152.160:30000
+

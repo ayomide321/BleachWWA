@@ -542,7 +542,7 @@ mob
 						if(usr.level >= 220)
 							switch(input("Hollow...Do you want me to break the chains restraining you from your destiny? Do you wish to regain your consiousness? Become one of us...the Espada!", text) in list ("Yes","No"))
 								if("Yes")
-									if(usr.hollowtype!="arrancar")
+									if(usr.hollowtype!="arrancar"&&usr.IsPureH==0)
 										usr.overlays = 0
 										usr.hollowtype = "arrancar"
 										usr.icon = 'Icons/BaseTannew.dmi'
@@ -578,6 +578,9 @@ mob
 											usr.Story_Talk("You have completed all your tasks and become 1 with the Arrancars race. Now you feel the true power rushing through your vanes you must now reach a higher power ( level 250) and unlock your Resurrection form, and with this power you shall defeat all those who oppose the arrancar race.")
 										if(!usr.isfrac)Espada_Ranking(usr)
 										usr.Level_Up()
+									else
+										if(usr.IsPureH==1)
+											src.Talks(" It seems you've chosen a different path, the Hougyoku doesn't seem to have any Effect on you.")
 				if(usr.race == "Arrancar")
 					if(!usr.choseyet)
 						switch(input("Which technique would you like to master in!", text) in list ("Instant Regeneration","Releasing Power"))

@@ -13,6 +13,8 @@ I fixed numerous procs in this file that had this
 error. (Didn't do them all)
 
 */
+
+
 mob/var
 	immunetoflames=0
 	tmp
@@ -5489,27 +5491,51 @@ mob
 						src.Affirm_Icon()
 				if(src.level >= 500&&src.hollowtype == "adjucha")
 					src.rank = "Vasto Lorde"
-					src.hollowtype = "vasto"
 					src << "<b><font color = lime>Ability Info: You have learned Segunda Ress!"
 					src.contents+=new/obj/skillcard/Segunda_Ress
-					world << "<b><font color = lime>Ability Info: [src] has transformed into a Vasto Lorde!"
-					src << "<b>Your health got boosted by 25000!"
-					src.mhealth += 25000
-					src.mattack+=1500
-					src.mdefence+=1500
-					src.mreiatsu+=1500
-					src.attack+=1500
-					src.defence+=1500
-					src.reiatsu+=1500
-					src.rawbuff+=1500
-					src << "<b>Your Attack increased by 1500!"
-					src << "<b>Your Defence increased by 1500!"
-					src << "<b>Your Reiatsu increased by 1500!"
-					src << "<b>Your rei got boosted by 1500!"
-					src.mrei += 1500
-					src.wasvasto=1
-					src.Load_Overlays()
-					src.Affirm_Icon()
+
+					switch(input("Do you wish to Be a pure Hollow? Pure hollows gain  a much greater magnitude of power due to fully embracing their hollow nature but can never become arrancars", text) in list ("Yes","No"))
+						if("Yes")
+							src.IsPureH=1
+							world << "<b><font color = lime>Ability Info: [src] has transformed into a Pure Vasto Lorde!"
+							src << "<b>Your health got boosted by 125000!"
+							src.mhealth += 125000
+							src.mattack+=75000
+							src.mdefence+=75000
+							src.mreiatsu+=75000
+							src.attack+=75000
+							src.defence+=75000
+							src.reiatsu+=75000
+							src.rawbuff+=75000
+							src << "<b>Your Attack increased by 75000!"
+							src << "<b>Your Defence increased by 75000!"
+							src << "<b>Your Reiatsu increased by 75000!"
+							src << "<b>Your rei got boosted by 75000!"
+							src.mrei += 75000
+							src.waspurevasto=1
+							src.Load_Overlays()
+							src.Affirm_Icon()
+							src.hollowtype = "purevasto"
+						if("No")
+							world << "<b><font color = lime>Ability Info: [src] has transformed into a Vasto Lorde!"
+							src << "<b>Your health got boosted by 25000!"
+							src.hollowtype = "vasto"
+							src.mhealth += 25000
+							src.mattack+=1500
+							src.mdefence+=1500
+							src.mreiatsu+=1500
+							src.attack+=1500
+							src.defence+=1500
+							src.reiatsu+=1500
+							src.rawbuff+=1500
+							src << "<b>Your Attack increased by 1500!"
+							src << "<b>Your Defence increased by 1500!"
+							src << "<b>Your Reiatsu increased by 1500!"
+							src << "<b>Your rei got boosted by 1500!"
+							src.mrei += 1500
+							src.wasvasto=1
+							src.Load_Overlays()
+							src.Affirm_Icon()
 
 			if(src.race != "Hollow")
 				if(src.level >= 45)

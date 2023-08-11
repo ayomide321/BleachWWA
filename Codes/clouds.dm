@@ -140,6 +140,13 @@ mob/proc
 			src.rawbuff+=1500
 			src.mhealth += 25000
 			src.mrei += 2000
+		if(src.waspurevasto)
+			src.mattack+=75000
+			src.mdefence+=75000
+			src.mreiatsu+=75000
+			src.rawbuff+=75000
+			src.health+=125000
+			src.mrei+=75000
 		if(src.evilgood=="Good")
 			src.mattack += 1000
 			src.mdefence += 1000

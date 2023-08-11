@@ -1579,21 +1579,21 @@ mob
 			if(!src.pure)
 				src.rei-=1000
 				src<<"<b>You put everything into Reiatsu"
-				var/sa=src.attack
-				var/sd=src.defence
 				src.pure=1
 				var/d=abs(0-src.attack)
 				src.attack=0
 				var/r=abs(0-src.defence)
 				src.defence=0
 				src.reiatsu+=d+r
+				var/sa=src.attack
+				var/sd=src.defence
 				sleep(300)
 				src<<"<b>You balance out again"
 				src.reiatsu-=d+r
 				if(src.defence==sd)
-					src.defence+=r
+					src.defence=r
 				if(src.attack==sa)
-					src.attack+=d
+					src.attack=d
 				sleep(600)
 				src.pure=0
 		Pure_Def()

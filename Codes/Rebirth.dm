@@ -309,6 +309,7 @@ mob
 			M.gotscreech=0
 			M.wasadjucha=0
 			M.wasvasto=0
+			M.waspurevasto=0
 			M.respectimes=0
 			M.gotaarm=0
 			M.bowtype = 0

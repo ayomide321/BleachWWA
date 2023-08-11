@@ -359,6 +359,7 @@ mob/var
 	wasmenos=0
 	wasadjucha=0
 	wasvasto=0
+	waspurevasto=0
 	respectimes=0
 	tmp/pure=0
 	tmp/trippy=0
@@ -581,6 +582,7 @@ mob/var
 	tmp/escort=0
 	parentmission=0
 	arrancar=0
+	IsPureH=0
 	teachermission=0
 	menoskills=0
 	menos=0
