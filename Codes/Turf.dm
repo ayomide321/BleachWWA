@@ -1,8 +1,8 @@
 world
-	hub = "Stonerman000420.BWWA2.0"//"Devilminions528.BleachWorldWideAdventures"//"ZeeXHosting.BleachWorldWideAdventure"//"Deathscyth15.BleachWWAbyCritical172"
+	hub = "Critical172.Bleach: World-Wide Adventures"//"Devilminions528.BleachWorldWideAdventures"//"ZeeXHosting.BleachWorldWideAdventure"//"Deathscyth15.BleachWWAbyCritical172"
 	name = "Bleach: World Wide Adventures"
 	status = "<font size=2><font face=Algerian><font color=black>B<font face=times new roman>leach: <font face=Algerian>World<font face=times new roman> Wide<font face=Algerian> Adventure<font face=times new roman> Server Version 2.1</font>"
-	hub_password = "420420pot"
+	hub_password = "wXWaI2Qo85kY9FyA"
 	view = 8
 turf
 	EventSky
