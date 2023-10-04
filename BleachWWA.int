@@ -1,19 +1,35 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1658883284
-DIR: _Relapse work april 20th icons Bounts\Fire Bounts\Water Codes Codes\TowerOfBWWA Icons Icons\backup Icons\firesword ssjradditz\on-screeninventory 
+<<<<<<< Updated upstream
+LAST_COMPILE_TIME: 1622869151
 PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
+DIR: Bounts Bounts\Fire Bounts\Water Codes Donor Icons\backup Icons\firesword ssjradditz\on-screeninventory 
+=======
+LAST_COMPILE_TIME: 1660288152
+DIR: _Relapse work Bounts\Fire Bounts\Water Codes Codes\db Codes\TowerOfBWWA Icons Icons\backup Icons\firesword ssjradditz\on-screeninventory 
+PACKAGE_RSC_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_rsc.zip
+>>>>>>> Stashed changes
 AUTO_FILE_DIR: OFF
 PACKAGE_DMB_INFO: 
 MAP_ICON_TYPE: 0
 PACKAGE_DME_NAME: C:\Users\Zagros\Dropbox\Bleach WWA\BleachWWA\BleachWWA_src.zip
-LAST_COMPILE_VERSION: 514.1575
+<<<<<<< Updated upstream
+LAST_COMPILE_VERSION: 513.1542
+PACKAGE_DME_START: 
+PACKAGE_TYPE: 0
+WINDOW: Admin.dm;Codes\Intro.dm
+PACKAGE_DME_INFO: 
+FILE: Codes\Intro.dm
+PACKAGE_DME_DEMO: 
+=======
+LAST_COMPILE_VERSION: 514.1585
 PACKAGE_TYPE: 0
 PACKAGE_DME_START: 
-WINDOW: Codes\Squads.dm;Codes\RankSystem.dm;Codes\Mob.dm;Codes\Procs.dm;Codes\donors.dm;Codes\Login.dm;_Relapse work\Free for All.dm;Codes\Admin.dm;Codes\Rebirth.dm;Codes\Rebirth2.dm;_Relapse work\Non DP Rewards.dm;Codes\Changer.dm;Codes\clouds.dm;Codes\Clothes.dm;Codes\Guild Critic.dm;Codes\GuildHouses.dm
+WINDOW: BleachWWA.dm;Clothes.dm;Mob.dm;_Relapse work\Non DP Rewards.dm;Codes\Admin.dm;Codes\AI.dm;Codes\Procs.dm;Codes\Procs (Rhyuke bob's conflicted copy 2017-02-13).dm;Codes\Procs2.dm
 PACKAGE_DME_INFO: 
-FILE: Codes\GuildHouses.dm
+FILE: Codes\Procs.dm
+>>>>>>> Stashed changes
 PACKAGE_DMB_NAME: C:\Users\Zagros\Desktop\BleachWWA.zip
 PACKAGE_DME_DEMO: 
 */

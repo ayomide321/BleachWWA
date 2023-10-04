@@ -34923,3 +34923,2206 @@ proc name: Bump (/obj/cero/Bump)
 the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
 the cero (/obj/cero): Move(Middle (46,7,8) (/turf/TheGateArea/Dirt/Middle), 4)
 <font color=#607B8B>World started up on: Sun Jul 24 12:48:16 2022
+<font color=#607B8B>World started up on: Tue Oct 03 14:49:48 2023
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Strong Hollow (/mob/stronghollow)
+  src.loc: null
+  call stack:
+{NPC}Strong Hollow (/mob/stronghollow): Deathd(DarkyYuuya (/mob/player))
+{NPC}Strong Hollow (/mob/stronghollow): Death(DarkyYuuya (/mob/player), 216212, 2, 0)
+the bringerb (/obj/bringerb): Bump({NPC}Strong Hollow (/mob/stronghollow))
+World opened on network port 30000.
+<font color=#607B8B>World started up on: Tue Oct 03 15:17:58 2023
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(Vali Lucifer (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(Vali Lucifer (/mob/player), 1150008, 2, 0)
+the haizen (/obj/haizen): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the haizen (/obj/haizen): Move(the ground (67,52,21) (/turf/Dirts/ground), 4)
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+  usr: 0
+  src: the cero (/obj/cero)
+  src.loc: null
+  call stack:
+the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
+the cero (/obj/cero): Move(Middle (46,9,8) (/turf/TheGateArea/Dirt/Middle), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Rogue_Shinigami (/mob/DarkLord)
+  src.loc: null
+  call stack:
+{NPC}Rogue_Shinigami (/mob/DarkLord): Deathd(Howl (/mob/player))
+{NPC}Rogue_Shinigami (/mob/DarkLord): Death(Howl (/mob/player), 183129, 2, 0)
+the bluefirebarrage (/obj/bluefirebarrage): Bump({NPC}Rogue_Shinigami (/mob/DarkLord))
+the bluefirebarrage (/obj/bluefirebarrage): Move(Wood Floor 4 (154,170,9) (/turf/RhyTileSet/Wood_Floor_4), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Rogue_Shinigami (/mob/DarkLord)
+  src.loc: null
+  call stack:
+{NPC}Rogue_Shinigami (/mob/DarkLord): Deathd(Howl (/mob/player))
+{NPC}Rogue_Shinigami (/mob/DarkLord): Death(Howl (/mob/player), 183129, 2, 0)
+the bluefirebarrage (/obj/bluefirebarrage): Bump({NPC}Rogue_Shinigami (/mob/DarkLord))
+the bluefirebarrage (/obj/bluefirebarrage): Move(Wood Floor 4 (153,170,9) (/turf/RhyTileSet/Wood_Floor_4), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Rogue_Shinigami (/mob/DarkLord)
+  src.loc: null
+  call stack:
+{NPC}Rogue_Shinigami (/mob/DarkLord): Deathd(Howl (/mob/player))
+{NPC}Rogue_Shinigami (/mob/DarkLord): Death(Howl (/mob/player), 183129, 1, 0)
+the bluefirebarrage (/obj/bluefirebarrage): Bump({NPC}Rogue_Shinigami (/mob/DarkLord))
+the bluefirebarrage (/obj/bluefirebarrage): Move(Wood Floor 4 (152,170,9) (/turf/RhyTileSet/Wood_Floor_4), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Rogue_Shinigami (/mob/DarkLord)
+  src.loc: null
+  call stack:
+{NPC}Rogue_Shinigami (/mob/DarkLord): Deathd(Howl (/mob/player))
+{NPC}Rogue_Shinigami (/mob/DarkLord): Death(Howl (/mob/player), 183186, 2, 0)
+the bluefirebarrage (/obj/bluefirebarrage): Bump({NPC}Rogue_Shinigami (/mob/DarkLord))
+the bluefirebarrage (/obj/bluefirebarrage): Move(Wood Floor 4 (108,174,9) (/turf/RhyTileSet/Wood_Floor_4), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Rogue_Shinigami (/mob/DarkLord)
+  src.loc: null
+  call stack:
+{NPC}Rogue_Shinigami (/mob/DarkLord): Deathd(Howl (/mob/player))
+{NPC}Rogue_Shinigami (/mob/DarkLord): Death(Howl (/mob/player), 183186, 2, 0)
+the bluefirebarrage (/obj/bluefirebarrage): Bump({NPC}Rogue_Shinigami (/mob/DarkLord))
+the bluefirebarrage (/obj/bluefirebarrage): Move(Wood Floor 4 (107,174,9) (/turf/RhyTileSet/Wood_Floor_4), 8)
+the bluefirebarrage (/obj/bluefirebarrage): New()
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Rogue_Shinigami (/mob/DarkLord)
+  src.loc: null
+  call stack:
+{NPC}Rogue_Shinigami (/mob/DarkLord): Deathd(Howl (/mob/player))
+{NPC}Rogue_Shinigami (/mob/DarkLord): Death(Howl (/mob/player), 183206, 2, 0)
+the bluefirebarrage (/obj/bluefirebarrage): Bump({NPC}Rogue_Shinigami (/mob/DarkLord))
+the bluefirebarrage (/obj/bluefirebarrage): Move(Wood Floor 4 (106,175,9) (/turf/RhyTileSet/Wood_Floor_4), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Sub-Shinigami (/mob/subshini)
+  src.loc: null
+  call stack:
+{NPC}Sub-Shinigami (/mob/subshini): Deathd(Vali Lucifer (/mob/player))
+{NPC}Sub-Shinigami (/mob/subshini): Death(Vali Lucifer (/mob/player), 1039081, 1, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Sub-Shinigami (/mob/subshini))
+the arrowrapid (/obj/arrowrapid): Move(the redfloor (158,21,7) (/turf/lasnoches/redfloor), 2)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Sub-Shinigami (/mob/subshini)
+  src.loc: null
+  call stack:
+{NPC}Sub-Shinigami (/mob/subshini): Deathd(Vali Lucifer (/mob/player))
+{NPC}Sub-Shinigami (/mob/subshini): Death(Vali Lucifer (/mob/player), 725841, 1, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Sub-Shinigami (/mob/subshini))
+the arrowrapid (/obj/arrowrapid): Move(the redfloor (157,17,7) (/turf/lasnoches/redfloor), 2)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Sub-Shinigami (/mob/subshini)
+  src.loc: null
+  call stack:
+{NPC}Sub-Shinigami (/mob/subshini): Deathd(Vali Lucifer (/mob/player))
+{NPC}Sub-Shinigami (/mob/subshini): Death(Vali Lucifer (/mob/player), 697645, 2, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Sub-Shinigami (/mob/subshini))
+the arrowrapid (/obj/arrowrapid): Move(the redfloor (158,16,7) (/turf/lasnoches/redfloor), 2)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Sub-Shinigami (/mob/subshini)
+  src.loc: null
+  call stack:
+{NPC}Sub-Shinigami (/mob/subshini): Deathd(Vali Lucifer (/mob/player))
+{NPC}Sub-Shinigami (/mob/subshini): Death(Vali Lucifer (/mob/player), 729737, 2, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Sub-Shinigami (/mob/subshini))
+the arrowrapid (/obj/arrowrapid): Move(the redfloor (157,15,7) (/turf/lasnoches/redfloor), 2)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Sub-Shinigami (/mob/subshini)
+  src.loc: null
+  call stack:
+{NPC}Sub-Shinigami (/mob/subshini): Deathd(Vali Lucifer (/mob/player))
+{NPC}Sub-Shinigami (/mob/subshini): Death(Vali Lucifer (/mob/player), 747272, 1, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Sub-Shinigami (/mob/subshini))
+the arrowrapid (/obj/arrowrapid): Move(the redfloor (158,9,7) (/turf/lasnoches/redfloor), 2)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Rogue_Shinigami (/mob/DarkLord)
+  src.loc: null
+  call stack:
+{NPC}Rogue_Shinigami (/mob/DarkLord): Deathd(Howl (/mob/player))
+{NPC}Rogue_Shinigami (/mob/DarkLord): Death(Howl (/mob/player), 183263, 2, 0)
+the bluefirebarrage (/obj/bluefirebarrage): Bump({NPC}Rogue_Shinigami (/mob/DarkLord))
+the bluefirebarrage (/obj/bluefirebarrage): Move(Wood Floor 4 (110,171,9) (/turf/RhyTileSet/Wood_Floor_4), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Rogue_Shinigami (/mob/DarkLord)
+  src.loc: null
+  call stack:
+{NPC}Rogue_Shinigami (/mob/DarkLord): Deathd(Howl (/mob/player))
+{NPC}Rogue_Shinigami (/mob/DarkLord): Death(Howl (/mob/player), 183263, 2, 0)
+the bluefirebarrage (/obj/bluefirebarrage): Bump({NPC}Rogue_Shinigami (/mob/DarkLord))
+the bluefirebarrage (/obj/bluefirebarrage): Move(Wood Floor 4 (112,170,9) (/turf/RhyTileSet/Wood_Floor_4), 4)
+the bluefirebarrage (/obj/bluefirebarrage): New()
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Rogue_Shinigami (/mob/DarkLord)
+  src.loc: null
+  call stack:
+{NPC}Rogue_Shinigami (/mob/DarkLord): Deathd(Howl (/mob/player))
+{NPC}Rogue_Shinigami (/mob/DarkLord): Death(Howl (/mob/player), 183263, 2, 0)
+the bluefirebarrage (/obj/bluefirebarrage): Bump({NPC}Rogue_Shinigami (/mob/DarkLord))
+the bluefirebarrage (/obj/bluefirebarrage): Move(Wood Floor 4 (110,170,9) (/turf/RhyTileSet/Wood_Floor_4), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Sub-Shinigami (/mob/subshini)
+  src.loc: null
+  call stack:
+{NPC}Sub-Shinigami (/mob/subshini): Deathd(Vali Lucifer (/mob/player))
+{NPC}Sub-Shinigami (/mob/subshini): Death(Vali Lucifer (/mob/player), 1069510, 3, 0)
+the haizen (/obj/haizen): Bump({NPC}Sub-Shinigami (/mob/subshini))
+the haizen (/obj/haizen): Move(the redfloor (118,19,7) (/turf/lasnoches/redfloor), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Rogue_Shinigami (/mob/DarkLord)
+  src.loc: null
+  call stack:
+{NPC}Rogue_Shinigami (/mob/DarkLord): Deathd(Howl (/mob/player))
+{NPC}Rogue_Shinigami (/mob/DarkLord): Death(Howl (/mob/player), 183359, 2, 0)
+the bluefirebarrage (/obj/bluefirebarrage): Bump({NPC}Rogue_Shinigami (/mob/DarkLord))
+the bluefirebarrage (/obj/bluefirebarrage): Move(Wood Floor 4 (112,173,9) (/turf/RhyTileSet/Wood_Floor_4), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Rogue_Shinigami (/mob/DarkLord)
+  src.loc: null
+  call stack:
+{NPC}Rogue_Shinigami (/mob/DarkLord): Deathd(Howl (/mob/player))
+{NPC}Rogue_Shinigami (/mob/DarkLord): Death(Howl (/mob/player), 183359, 1, 0)
+the bluefirebarrage (/obj/bluefirebarrage): Bump({NPC}Rogue_Shinigami (/mob/DarkLord))
+the bluefirebarrage (/obj/bluefirebarrage): Move(Wood Floor 4 (115,172,9) (/turf/RhyTileSet/Wood_Floor_4), 4)
+the bluefirebarrage (/obj/bluefirebarrage): New()
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/arrowrapid/Bump)
+  source file: Projectiles.dm,7034
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/arrowrapid/Bump)
+  source file: Projectiles.dm,7034
+Tue Oct 03 15:50:50 2023
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+Warning: further proc crash messages are being suppressed to prevent overload...
+Tue Oct 03 18:23:56 2023
+<font color=#607B8B>World started up on: Tue Oct 03 18:24:00 2023
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+  usr: 0
+  src: the cero (/obj/cero)
+  src.loc: null
+  call stack:
+the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
+the cero (/obj/cero): Move(Middle (46,7,8) (/turf/TheGateArea/Dirt/Middle), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Menos Grande (/mob/meno)
+  src.loc: null
+  call stack:
+{NPC}Menos Grande (/mob/meno): Deathd(HowlV2 (/mob/player))
+{NPC}Menos Grande (/mob/meno): Death(HowlV2 (/mob/player), 340218, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Menos Grande (/mob/meno))
+the inouezip (/obj/inouezip): Move(the a3 (2,157,2) (/turf/Street/a3), 5)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 330978, 4, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (70,49,21) (/turf/Dirts/ground), 6)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 331183, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (91,49,21) (/turf/Dirts/ground), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 331362, 4, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (104,54,21) (/turf/Dirts/ground), 5)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 331515, 6, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (105,57,21) (/turf/Dirts/ground), 8)
+runtime error: Cannot read null.key
+proc name: Del (/client/Del)
+  source file: Login.dm,2078
+  usr: null
+  src: Guest-2073517019 (/client)
+  call stack:
+Guest-2073517019 (/client): Del()
+Guest-2073517019 (/mob/player): Login()
+Guest-2073517019 (/client): New()
+Guest-2073517019 (/client): New()
+Guest-2073517019 (/client): New()
+Guest-2073517019 (/client): New()
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Menos Grande (/mob/meno)
+  src.loc: null
+  call stack:
+{NPC}Menos Grande (/mob/meno): Deathd(HowlV2 (/mob/player))
+{NPC}Menos Grande (/mob/meno): Death(HowlV2 (/mob/player), 158500, 1, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Menos Grande (/mob/meno))
+the inouezip (/obj/inouezip): Move(the a9 (46,146,2) (/turf/Street/a9), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 363071, 4, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (71,53,21) (/turf/Dirts/ground), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 363250, 1, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (88,49,21) (/turf/Dirts/ground), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 363429, 4, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (110,55,21) (/turf/Dirts/ground), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 385050, 4, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (110,51,21) (/turf/Dirts/ground), 10)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 385230, 4, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (88,63,21) (/turf/Dirts/ground), 8)
+BYOND Error: failed to certify King Vegetaa from ip 177.189.19.16, origin (null)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 385409, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (87,52,21) (/turf/Dirts/ground), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 385588, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (72,59,21) (/turf/Dirts/ground), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 385742, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (55,56,21) (/turf/Dirts/ground), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 385895, 1, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (36,59,21) (/turf/Dirts/ground), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Hell Guardian (Kushanada) (/mob/Kushanada)
+  src.loc: null
+  call stack:
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Deathd(HowlV2 (/mob/player))
+{NPC}Hell Guardian (Kushanada) (/mob/Kushanada): Death(HowlV2 (/mob/player), 386049, 6, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Hell Guardian (Kushanada) (/mob/Kushanada))
+the inouezip (/obj/inouezip): Move(the ground (24,56,21) (/turf/Dirts/ground), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Rogue_Shinigami (/mob/DarkLord)
+  src.loc: null
+  call stack:
+{NPC}Rogue_Shinigami (/mob/DarkLord): Deathd(Vali Lucifer (/mob/player))
+{NPC}Rogue_Shinigami (/mob/DarkLord): Death(Vali Lucifer (/mob/player), 218642, 1, 0)
+LightHalberdM (/obj/LightHalberdM): Bump({NPC}Rogue_Shinigami (/mob/DarkLord))
+LightHalberdM (/obj/LightHalberdM): Move(Wood Floor 4 (94,170,9) (/turf/RhyTileSet/Wood_Floor_4), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot modify null.pixel_x.
+proc name: Clash (/mob/proc/Clash)
+  source file: Procs.dm,2199
+runtime error: Cannot read null.reiatsu
+proc name: New (/obj/LightningBolts/k1/New)
+  source file: Oversized Icons.dm,2179
+runtime error: Cannot read null.reiatsu
+proc name: New (/obj/LightningBolts/k1/New)
+  source file: Oversized Icons.dm,2179
+runtime error: Cannot read null.reiatsu
+proc name: New (/obj/LightningBolts/k1/New)
+  source file: Oversized Icons.dm,2179
+runtime error: Cannot modify null.pixel_y.
+proc name: Clash (/mob/proc/Clash)
+  source file: Procs.dm,2184
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+Warning: further proc crash messages are being suppressed to prevent overload...
+Tue Oct 03 21:30:45 2023
+<font color=#607B8B>World started up on: Tue Oct 03 21:30:52 2023
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Vali Lucifer (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Vali Lucifer (/mob/player), 746827, 1, 1)
+the byaku (/obj/byaku): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the byaku (/obj/byaku): Move(Lightgrass (147,187,26) (/turf/LMountainLorelei/Lightgrass), 9)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Vali Lucifer (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Vali Lucifer (/mob/player), 611482, 2, 0)
+Ice (/obj/Ice/Ice): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+runtime error: Cannot read null.loc
+proc name: Attack (/mob/verb/Attack)
+  source file: Attack.dm,3131
+  usr: (src)
+  src: Vali Lucifer (/mob/player)
+  src.loc: Lightgrass (155,183,26) (/turf/LMountainLorelei/Lightgrass)
+  call stack:
+Vali Lucifer (/mob/player): Attack()
+runtime error: Cannot read null.loc
+proc name: Attack (/mob/verb/Attack)
+  source file: Attack.dm,3131
+  usr: (src)
+  src: Vali Lucifer (/mob/player)
+  src.loc: Lightgrass (155,183,26) (/turf/LMountainLorelei/Lightgrass)
+  call stack:
+Vali Lucifer (/mob/player): Attack()
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd({Boss}Crown Prince Vandenreich (/mob/nodp_Crown_Prince))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death({Boss}Crown Prince Vandenreich (/mob/nodp_Crown_Prince), 233793, 2, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the arrowrapid (/obj/arrowrapid): Move(Lightgrass (156,182,26) (/turf/LMountainLorelei/Lightgrass), 8)
+runtime error: Cannot read null.loc
+proc name: Attack (/mob/verb/Attack)
+  source file: Attack.dm,3131
+  usr: (src)
+  src: Vali Lucifer (/mob/player)
+  src.loc: Lightgrass (155,183,26) (/turf/LMountainLorelei/Lightgrass)
+  call stack:
+Vali Lucifer (/mob/player): Attack()
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Vali Lucifer (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Vali Lucifer (/mob/player), 1166237, 3, 1)
+the byaku (/obj/byaku): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the byaku (/obj/byaku): Move(Lightgrass (153,185,26) (/turf/LMountainLorelei/Lightgrass), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {Boss}Swamp Monster (/mob/Swamp_Monster)
+  src.loc: null
+  call stack:
+{Boss}Swamp Monster (/mob/Swamp_Monster): Deathd(Vali Lucifer (/mob/player))
+{Boss}Swamp Monster (/mob/Swamp_Monster): Death(Vali Lucifer (/mob/player), 1075669, 2, 1)
+the byaku (/obj/byaku): Bump({Boss}Swamp Monster (/mob/Swamp_Monster))
+the byaku (/obj/byaku): Move(Lightgrass (16,58,26) (/turf/LMountainLorelei/Lightgrass), 8)
+Tue Oct 03 22:46:17 2023
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Vali Lucifer (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Vali Lucifer (/mob/player), 836824, 0, 0)
+{NPC}Vandereich Quincy (/mob/quincyvand): shatter(Vali Lucifer (/mob/player))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(James (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(James (/mob/player), 27372, 2, 1)
+the pinkbyaku (/obj/pinkbyaku): Bump({NPC}Weak Hollow (/mob/tuthollow))
+the pinkbyaku (/obj/pinkbyaku): Move(Sand (27,147,1) (/turf/Sand/Rock3), 9)
+James (/mob/player): Power Burst()
+M4 (/obj/hud/M4): Click(null, null, null)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(James (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(James (/mob/player), 27372, 1, 1)
+the pinkbyaku (/obj/pinkbyaku): Bump({NPC}Weak Hollow (/mob/tuthollow))
+the pinkbyaku (/obj/pinkbyaku): Move(Dirt (24,150,1) (/turf/Dirt/Middle), 9)
+James (/mob/player): Power Burst()
+M4 (/obj/hud/M4): Click(null, null, null)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(James (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(James (/mob/player), 27390, 1, 1)
+the pinkbyaku (/obj/pinkbyaku): Bump({NPC}Weak Hollow (/mob/tuthollow))
+the pinkbyaku (/obj/pinkbyaku): Move(Sand (27,147,1) (/turf/Sand/Rock3), 9)
+James (/mob/player): Power Burst()
+M4 (/obj/hud/M4): Click(null, null, null)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(James (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(James (/mob/player), 27408, 2, 1)
+the pinkbyaku (/obj/pinkbyaku): Bump({NPC}Weak Hollow (/mob/tuthollow))
+the pinkbyaku (/obj/pinkbyaku): Move(Dirt (24,150,1) (/turf/Dirt/Middle), 9)
+James (/mob/player): Power Burst()
+M4 (/obj/hud/M4): Click(null, null, null)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(James (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(James (/mob/player), 27408, 2, 1)
+the pinkbyaku (/obj/pinkbyaku): Bump({NPC}Weak Hollow (/mob/tuthollow))
+the pinkbyaku (/obj/pinkbyaku): Move(Sand (27,147,1) (/turf/Sand/Rock3), 9)
+James (/mob/player): Power Burst()
+M4 (/obj/hud/M4): Click(null, null, null)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Weak Hollow (/mob/tuthollow)
+  src.loc: null
+  call stack:
+{NPC}Weak Hollow (/mob/tuthollow): Deathd(James (/mob/player))
+{NPC}Weak Hollow (/mob/tuthollow): Death(James (/mob/player), 27426, 2, 1)
+the pinkbyaku (/obj/pinkbyaku): Bump({NPC}Weak Hollow (/mob/tuthollow))
+the pinkbyaku (/obj/pinkbyaku): Move(Dirt (24,150,1) (/turf/Dirt/Middle), 9)
+James (/mob/player): Power Burst()
+M4 (/obj/hud/M4): Click(null, null, null)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Vali Lucifer (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Vali Lucifer (/mob/player), 861617, 1, 1)
+the pinkbyaku (/obj/pinkbyaku): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the pinkbyaku (/obj/pinkbyaku): Move(Lightgrass (150,168,26) (/turf/LMountainLorelei/Lightgrass), 2)
+Vali Lucifer (/mob/player): Power Burst()
+M7 (/obj/hud/M7): Click(null, "mapwindow.map", "icon-x=10;icon-y=18;left=1;but...")
+runtime error: Cannot read null.loc
+proc name: Attack (/mob/verb/Attack)
+  source file: Attack.dm,3131
+  usr: (src)
+  src: Vali Lucifer (/mob/player)
+  src.loc: Lightgrass (148,175,26) (/turf/LMountainLorelei/Lightgrass)
+  call stack:
+Vali Lucifer (/mob/player): Attack()
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd({Boss}Crown Prince Vandenreich (/mob/nodp_Crown_Prince))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death({Boss}Crown Prince Vandenreich (/mob/nodp_Crown_Prince), 233793, 1, 0)
+the arrowrapid (/obj/arrowrapid): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the arrowrapid (/obj/arrowrapid): Move(Lightgrass (149,185,26) (/turf/LMountainLorelei/Lightgrass), 1)
+runtime error: Cannot read null.loc
+proc name: Attack (/mob/verb/Attack)
+  source file: Attack.dm,3131
+  usr: (src)
+  src: Vali Lucifer (/mob/player)
+  src.loc: Lightgrass (148,175,26) (/turf/LMountainLorelei/Lightgrass)
+  call stack:
+Vali Lucifer (/mob/player): Attack()
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot modify null.pixel_y.
+proc name: Clash (/mob/proc/Clash)
+  source file: Procs.dm,2184
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read null.rundelay
+proc name: Cremate (/mob/proc/Cremate)
+  source file: Procs.dm,6298
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read null.z
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,5171
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/Ice/Ice/Bump)
+  source file: Projectiles.dm,954
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/Ice/Ice/Bump)
+  source file: Projectiles.dm,954
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/Ice/Ice/Bump)
+  source file: Projectiles.dm,954
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/Ice/Ice/Bump)
+  source file: Projectiles.dm,954
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/Ice/Ice/Bump)
+  source file: Projectiles.dm,954
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+Tue Oct 03 23:47:01 2023
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read null.race
+proc name: Click (/turf/Click)
+  source file: Projectiles.dm,4441
+runtime error: Cannot read null.rundelay
+proc name: Cremate (/mob/proc/Cremate)
+  source file: Procs.dm,6298
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot modify null.encircle.
+proc name: New (/obj/Fire/New)
+  source file: Oversized Icons.dm,1915
+runtime error: Cannot modify null.encircle.
+proc name: New (/obj/Fire/New)
+  source file: Oversized Icons.dm,1915
+runtime error: Cannot modify null.encircle.
+proc name: New (/obj/Fire/New)
+  source file: Oversized Icons.dm,1915
+runtime error: Cannot modify null.encircle.
+proc name: New (/obj/Fire/New)
+  source file: Oversized Icons.dm,1915
+runtime error: Cannot modify null.encircle.
+proc name: New (/obj/Fire/New)
+  source file: Oversized Icons.dm,1915
+runtime error: Cannot modify null.encircle.
+proc name: New (/obj/Fire/New)
+  source file: Oversized Icons.dm,1915
+runtime error: Cannot modify null.encircle.
+proc name: New (/obj/Fire/New)
+  source file: Oversized Icons.dm,1915
+runtime error: Cannot modify null.encircle.
+proc name: New (/obj/Fire/New)
+  source file: Oversized Icons.dm,1915
+runtime error: Cannot modify null.encircle.
+proc name: New (/obj/Fire/New)
+  source file: Oversized Icons.dm,1915
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+runtime error: Cannot read null.rundelay
+proc name: Cremate (/mob/proc/Cremate)
+  source file: Procs.dm,6298
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot read null.rundelay
+proc name: Cremate (/mob/proc/Cremate)
+  source file: Procs.dm,6298
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+runtime error: Cannot read null.contents
+proc name: Talk (/mob/Dojo/verb/Talk)
+  source file: Mob.dm,1447
+<font color=#607B8B>World started up on: Wed Oct 04 00:37:45 2023
+Wed Oct 04 00:53:04 2023
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {Boss}Swamp Monster (/mob/Swamp_Monster)
+  src.loc: null
+  call stack:
+{Boss}Swamp Monster (/mob/Swamp_Monster): Deathd(Pestilence (/mob/player))
+{Boss}Swamp Monster (/mob/Swamp_Monster): Death(Pestilence (/mob/player), 1711121, 2, 0)
+the inouezip (/obj/inouezip): Bump({Boss}Swamp Monster (/mob/Swamp_Monster))
+the inouezip (/obj/inouezip): Move(Lightgrass (15,58,26) (/turf/LMountainLorelei/Lightgrass), 10)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 1, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (34,151,9) (/turf/RhyTileSet/Stone_3), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1945721, 1, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (22,151,9) (/turf/RhyTileSet/Stone_3), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (7,141,9) (/turf/RhyTileSet/Stone_3), 2)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 1, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (8,155,9) (/turf/RhyTileSet/Stone_3), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (6,151,9) (/turf/RhyTileSet/Stone_3), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (5,147,9) (/turf/RhyTileSet/Stone_3), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 1, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (12,152,9) (/turf/RhyTileSet/Stone_3), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (18,141,9) (/turf/RhyTileSet/Stone_3), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 4, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (7,141,9) (/turf/RhyTileSet/Stone_3), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (18,142,9) (/turf/RhyTileSet/Stone_3), 9)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1945721, 3, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (8,155,9) (/turf/RhyTileSet/Stone_3), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (6,151,9) (/turf/RhyTileSet/Stone_3), 5)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 1, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (5,148,9) (/turf/RhyTileSet/Stone_3), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(Stone 3 (5,144,9) (/turf/RhyTileSet/Stone_3), 2)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 1, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(  (23,158,9) (/turf/Soul_Society/Floor), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(  (23,178,9) (/turf/Soul_Society/Floor), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(  (27,171,9) (/turf/Soul_Society/Floor), 1)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vandereich Quincy (/mob/quincyvand)
+  src.loc: null
+  call stack:
+{NPC}Vandereich Quincy (/mob/quincyvand): Deathd(Pestilence (/mob/player))
+{NPC}Vandereich Quincy (/mob/quincyvand): Death(Pestilence (/mob/player), 1489938, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Vandereich Quincy (/mob/quincyvand))
+the inouezip (/obj/inouezip): Move(  (40,178,9) (/turf/Soul_Society/Floor), 8)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read null.key
+proc name: Del (/client/Del)
+  source file: Login.dm,2078
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+runtime error: Cannot read null.race
+proc name: Click (/turf/Click)
+  source file: Projectiles.dm,4441
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot modify null.frozen.
+proc name: Clash (/mob/proc/Clash)
+  source file: Procs.dm,2168
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+Wed Oct 04 02:02:25 2023
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+Warning: further proc crash messages are being suppressed to prevent overload...
+Wed Oct 04 03:43:57 2023
+<font color=#607B8B>World started up on: Wed Oct 04 03:43:47 2023
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Numero Arrancar (/mob/arrancar1)
+  src.loc: null
+  call stack:
+{NPC}Numero Arrancar (/mob/arrancar1): Deathd(HowlV2 (/mob/player))
+{NPC}Numero Arrancar (/mob/arrancar1): Death(HowlV2 (/mob/player), 558423, 2, 0)
+the inouezip (/obj/inouezip): Bump({NPC}Numero Arrancar (/mob/arrancar1))
+the inouezip (/obj/inouezip): Move(Sand (171,9,3) (/turf/Sand/Middle2), 1)
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: Sand (76,110,14) (/turf/Sand/Middle2)
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: Sand (76,99,14) (/turf/Sand/Middle2)
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vaizard (/mob/vaizards)
+  src.loc: null
+  call stack:
+{NPC}Vaizard (/mob/vaizards): Deathd(James (/mob/player))
+{NPC}Vaizard (/mob/vaizards): Death(James (/mob/player), 222506, 2, 0)
+the fogtrail (/obj/fogtrail): New(the grass (170,89,17) (/turf/terrain/grass))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vaizard (/mob/vaizards)
+  src.loc: null
+  call stack:
+{NPC}Vaizard (/mob/vaizards): Deathd(James (/mob/player))
+{NPC}Vaizard (/mob/vaizards): Death(James (/mob/player), 222506, 6, 0)
+the fogtrail (/obj/fogtrail): New(the grass (171,89,17) (/turf/terrain/grass))
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: null
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: the floor (1,177,14) (/turf/lasnoches/floor)
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: Sand (81,60,14) (/turf/Sand/Middle2)
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: Sand2 (171,122,19) (/turf/NewDesert/Desert/Sand2)
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: Sand2 (173,142,19) (/turf/NewDesert/Desert/Sand2)
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: Sand2 (170,136,19) (/turf/NewDesert/Desert/Sand2)
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: Sand2 (178,127,19) (/turf/NewDesert/Desert/Sand2)
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: Sand2 (183,142,19) (/turf/NewDesert/Desert/Sand2)
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vaizard (/mob/vaizards)
+  src.loc: null
+  call stack:
+{NPC}Vaizard (/mob/vaizards): Deathd(James (/mob/player))
+{NPC}Vaizard (/mob/vaizards): Death(James (/mob/player), 318573, 1, 0)
+the fogtrail (/obj/fogtrail): New(the grass (169,94,17) (/turf/terrain/grass))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Vaizard (/mob/vaizards)
+  src.loc: null
+  call stack:
+{NPC}Vaizard (/mob/vaizards): Deathd(James (/mob/player))
+{NPC}Vaizard (/mob/vaizards): Death(James (/mob/player), 246568, 1, 0)
+the fogtrail (/obj/fogtrail): New(the grass (167,94,17) (/turf/terrain/grass))
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: Outside (171,17,14) (/turf/Outside/Lines_bottom)
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: Sand2 (152,137,19) (/turf/NewDesert/Desert/Sand2)
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: Sand2 (141,137,19) (/turf/NewDesert/Desert/Sand2)
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+  usr: 0
+  src: the inouezip (/obj/inouezip)
+  src.loc: null
+  call stack:
+the inouezip (/obj/inouezip): Bump(null)
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Cannot read null.npc
+proc name: Bump (/obj/inouezip/Bump)
+  source file: Projectiles.dm,492
+runtime error: Division by zero
+proc name: LimitDrain (/world/proc/LimitDrain)
+  source file: Procs.dm,5837
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+Wed Oct 04 04:54:25 2023
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+Warning: further proc crash messages are being suppressed to prevent overload...
