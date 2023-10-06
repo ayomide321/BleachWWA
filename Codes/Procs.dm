@@ -6292,24 +6292,24 @@ mob
 			var/oz=M.z
 			M.rundelay+=5
 			if(!M.protected&&M.x==ox&&M.y==oy&&M.z==oz)
-				view(src,8) << "<b><font color = red>[src] is being cremating [M]!"
+				view(src,8) << "<b><font color = red>[src] Has begun to Cremate [M]!"
 				spawn()M.Death(src,damage,3)
 			sleep(5)
 			if(M.rundelay>=3)M.rundelay-=5
 			if(!M.protected&&M.x==ox&&M.y==oy&&M.z==oz)
-				view(src,8) << "<b><font color = red>[src] is being cremating [M]!"
+				view(src,8) << "<b><font color = red>[src] Has begun to Cremate [M]!"
 				spawn()M.Death(src,damage,3)
 			sleep(5)
 			if(!M.protected&&M.x==ox&&M.y==oy&&M.z==oz)
-				view(src,8) << "<b><font color = red>[src] is being cremating [M]!"
+				view(src,8) << "<b><font color = red>[src] Has begun to Cremate [M]!"
 				spawn()M.Death(src,damage,3)
 			sleep(5)
 			if(!M.protected&&M.x==ox&&M.y==oy&&M.z==oz)
-				view(src,8) << "<b><font color = red>[src] is being cremating [M]!"
+				view(src,8) << "<b><font color = red>[src] Has begun to Cremate [M]!"
 				spawn()M.Death(src,damage,3)
 			sleep(5)
 			if(!M.protected&&M.x==ox&&M.y==oy&&M.z==oz)
-				view(src,8) << "<b><font color = red>[src] is being cremating [M]!"
+				view(src,8) << "<b><font color = red>[src] Has begun to Cremate [M]!"
 				spawn()M.Death(src,damage,3)
 			M.trapped=0
 			for(var/obj/Fire/f in world)
