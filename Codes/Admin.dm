@@ -749,6 +749,20 @@ mob/CustomZan
 			usr.contents+=new/obj/skillcard/Secret_Skill
 			usr.RefreshSkillList()
 			usr.updateInventory()
+
+		Muramasa_Fuse()
+			set category="Zans"
+			usr.stype="Muramasa"
+			usr.contents+=new/obj/items/equipable/Weapon/Sword
+			usr.contents+=new/obj/skillcard/shikai
+			usr.contents+=new/obj/skillcard/bankai
+			usr.contents+=new/obj/skillcard/Release_Seal
+			usr.contents+=new/obj/skillcard/Boost_Negation
+			usr.contents+=new/obj/skillcard/Materialize
+			usr.RefreshSkillList()
+			usr.updateInventory()
+
+
 		Sado_Fuse()
 			set category="Zans"
 			usr.contents +=new/obj/skillcard/Arm3

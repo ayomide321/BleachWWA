@@ -378,6 +378,8 @@ mob
 					new/mob/Test_Gotei_13/C12(locate(31,168,21))
 				if(M.squad==13)
 					new/mob/Test_Gotei_13/C13(locate(31,168,21))
+				if(M.squad=="Kido Corps")
+					new/mob/Test_Gotei_13/C13(locate(31,168,21))
 
 			if(currentRankTest=="Captain Commander"||currentRankTest=="Karakura Hero"||currentRankTest=="Sternritter Grandmaster"||currentRankTest=="Espada Leader")
 				testGoteiLeft=12

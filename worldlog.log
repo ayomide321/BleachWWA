@@ -37126,3 +37126,40 @@ runtime error: Cannot read 0.team_leader
 proc name: Deathd (/mob/proc/Deathd)
   source file: Procs.dm,4777
 Warning: further proc crash messages are being suppressed to prevent overload...
+<font color=#607B8B>World started up on: Wed Oct 04 15:14:59 2023
+<font color=#607B8B>World started up on: Sat Oct 07 01:08:16 2023
+<font color=#607B8B>World started up on: Sat Oct 07 01:13:36 2023
+<font color=#607B8B>World started up on: Sat Oct 07 01:36:00 2023
+<font color=#607B8B>World started up on: Sat Oct 07 01:43:28 2023
+<font color=#607B8B>World started up on: Sat Oct 07 01:55:12 2023
+<font color=#607B8B>World started up on: Sat Oct 07 02:09:04 2023
+<font color=#607B8B>World started up on: Sun Oct 08 02:09:04 2023
+<font color=#607B8B>World started up on: Sun Oct 08 02:20:48 2023
+<font color=#607B8B>World started up on: Sun Oct 08 02:21:52 2023
+<font color=#607B8B>World started up on: Sun Oct 08 02:24:00 2023
+<font color=#607B8B>World started up on: Sun Oct 08 02:26:08 2023
+<font color=#607B8B>World started up on: Sun Oct 08 02:36:48 2023
+<font color=#607B8B>World started up on: Sun Oct 08 03:18:24 2023
+<font color=#607B8B>World started up on: Sun Oct 08 03:21:36 2023
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+  usr: 0
+  src: the cero (/obj/cero)
+  src.loc: null
+  call stack:
+the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
+the cero (/obj/cero): Move(Middle (46,9,8) (/turf/TheGateArea/Dirt/Middle), 4)
+<font color=#607B8B>World started up on: Sun Oct 08 03:25:52 2023
+<font color=#607B8B>World started up on: Sun Oct 08 03:35:28 2023
+<font color=#607B8B>World started up on: Sun Oct 08 03:35:28 2023
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+  usr: 0
+  src: the cero (/obj/cero)
+  src.loc: null
+  call stack:
+the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
+the cero (/obj/cero): Move(Middle (46,7,8) (/turf/TheGateArea/Dirt/Middle), 4)
+<font color=#607B8B>World started up on: Sun Oct 08 03:45:04 2023

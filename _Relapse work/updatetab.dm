@@ -13,6 +13,11 @@ mob/player
 <br><font size=5>-Aw shit...here we go again.
 <br>
 <br>
+<u>10/09/2023 Updates<font size=4></u>
+<br><font size=2>Fixed a bug where the KC Captain would not spawn for KC Squad.
+<br><font size=2>Added Fuses for Lightning, Aizen, Kenpachi,and Muramasa.
+<br>
+<br>
 <u>07/24/2022 Updates<font size=4></u>
 <br><font size=2>-Added refunds for fuses (only 80% back)
 <br>

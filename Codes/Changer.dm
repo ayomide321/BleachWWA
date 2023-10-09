@@ -573,7 +573,12 @@ mob
 					/mob/CustomZan/verb/Kaien_Fuse,
 					/mob/CustomZan/verb/Change_To_Ginjo,
 					/mob/CustomZan/verb/Change_To_Tsuki,
-					/mob/CustomZan/verb/Change_To_Samurai)
+					/mob/CustomZan/verb/Change_To_Samurai
+					/mob/CustomZan/verb/Lightning_Fuse=0,
+					/mob/CustomZan/verb/Add_Aizen_Skills=0,
+					/mob/CustomZan/verb/Kenpachi=0,
+					/mob/CustomZan/verb/Muramasa_Fuse=0,
+			/*		/mob/CustomZan/verb/Luppi_Change=0 */)
 
 		*/
 		hasFuse = list(/mob/CustomZan/verb/Kensei_Fuse=0,
@@ -600,7 +605,12 @@ mob
 					/mob/CustomZan/verb/Change_To_Ginjo=0,
 					/mob/CustomZan/verb/Change_To_Tsuki=0,
 					/mob/CustomZan/verb/Change_To_Samurai=0,
-					/mob/CustomZan/verb/Ichigo_Zan=0)
+					/mob/CustomZan/verb/Ichigo_Zan=0,
+					/mob/CustomZan/verb/Lightning_Fuse=0,
+					/mob/CustomZan/verb/Add_Aizen_Skills=0,
+					/mob/CustomZan/verb/Kenpachi=0,
+					/mob/CustomZan/verb/Muramasa_Fuse=0
+			/*		/mob/CustomZan/verb/Luppi_Change=0 */)
 
 		fuseList = list(("Kensei Fuse") = /mob/CustomZan/verb/Kensei_Fuse,
 						("Vaizard Fuse") = /mob/CustomZan/verb/Vai_Fuse,
@@ -627,7 +637,12 @@ mob
 						("Ginjo Fuse") = /mob/CustomZan/verb/Change_To_Ginjo,
 						("Tsukishima Fuse") = /mob/CustomZan/verb/Change_To_Tsuki,
 						("Yumichika Fuse") = /mob/CustomZan/verb/Yumichika_Fuse,
-						("Samurai Fuse") = /mob/CustomZan/verb/Change_To_Samurai)
+						("Samurai Fuse") = /mob/CustomZan/verb/Change_To_Samurai,
+						("Lightning Fuse") = /mob/CustomZan/verb/Lightning_Fuse,
+						("Aizen Fuse") = /mob/CustomZan/verb/Add_Aizen_Skills,
+						("Zaraki Fuse") = /mob/CustomZan/verb/Kenpachi,
+				/*		("Luppi Fuse") = /mob/CustomZan/verb/Luppi_Change, */
+						("Muramasa Fuse") = /mob/CustomZan/verb/Muramasa_Fuse,)
 
 	DP_Shop_NPC
 		name = "{NPC}DP Shop Owner"
