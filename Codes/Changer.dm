@@ -622,6 +622,7 @@ mob
 					/mob/CustomZan/verb/Unohana_Fuse=0,
 					/mob/CustomZan/verb/Shonsui_Fuse=0,
 					/mob/CustomZan/verb/Ukitake_Fuse=0,
+					/mob/CustomZan/verb/Inoue_Fuse=0,
 			/*		/mob/CustomZan/verb/Luppi_Change=0 */)
 
 		fuseList = list(("Kensei Fuse") = /mob/CustomZan/verb/Kensei_Fuse,
@@ -666,7 +667,8 @@ mob
 						("Kommamaru Fuse") = /mob/CustomZan/verb/Kommamaru_Fuse,
 						("Unohana Fuse") = /mob/CustomZan/verb/Unohana_Fuse,
 						("Shonsui Fuse") = /mob/CustomZan/verb/Shonsui_Fuse,
-						("Ukitake Fuse") = /mob/CustomZan/verb/Ukitake_Fuse)
+						("Ukitake Fuse") = /mob/CustomZan/verb/Ukitake_Fuse,
+						("Inoue Fuse") = /mob/CustomZan/verb/Inoue_Fuse)
 
 	DP_Shop_NPC
 		name = "{NPC}DP Shop Owner"

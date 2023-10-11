@@ -14,8 +14,9 @@ mob/player
 <br>
 <u>10/10/2023 Updates<font size=4></u>
 <br>
-<br><font size=2>Added Fuses for Gin, Shinji, Hisagi, Kira, Soi fon, Momo, Renji Ikkaku, Kommamaru, Unohanna, Shonsui, and Ukitake.
+<br><font size=2>Added Fuses for Gin, Shinji, Hisagi, Kira, Soi fon, Momo, Renji Ikkaku, Kommamaru, Unohanna, Shonsui, Ukitake and Inoue.
 <br>
+,br.
 <br>
 <u>10/09/2023 Updates<font size=4></u>
 <br><font size=2>Fixed a bug where the KC Captain would not spawn for KC Squad.
