@@ -759,19 +759,92 @@ mob/CustomZan
 			usr.contents+=new/obj/skillcard/Release_Seal
 			usr.contents+=new/obj/skillcard/Boost_Negation
 			usr.contents+=new/obj/skillcard/Materialize
+			usr.contents+=new/obj/skillcard/Zanpaktou_Seal
+			usr.contents+=new/obj/skillcard/Zanpaktou_Instincts
 			usr.RefreshSkillList()
 			usr.updateInventory()
 
-
-		Sado_Fuse()
+		Shinji_Fuse()
 			set category="Zans"
-			usr.contents +=new/obj/skillcard/Arm3
-			usr.contents +=new/obj/skillcard/Power_Blast
-			usr.contents +=new/obj/skillcard/Diablo_Besar
-			usr.contents +=new/obj/skillcard/El_Directo
-			usr.contents +=new/obj/skillcard/Lamuerte
+			usr.stype="Shinji"
+			usr.contents+=new/obj/skillcard/Sakasama_no_Sekai
 			usr.RefreshSkillList()
 			usr.updateInventory()
+
+		Hisagi_Fuse()
+			set category="Zans"
+			usr.stype="Hisagi"
+			usr.contents+=new/obj/skillcard/Reap
+			usr.contents+=new/obj/skillcard/Criss_Cross
+			usr.RefreshSkillList()
+			usr.updateInventory()
+
+		Kira_Fuse()
+			set category="Zans"
+			usr.stype="Kira"
+			usr.contents+=new/obj/skillcard/Heavy_Hit
+			usr.RefreshSkillList()
+			usr.updateInventory()
+
+		Stinger_Fuse()
+			set category="Zans"
+			usr.stype="Stinger"
+			src.contents+=new/obj/skillcard/Rocket
+			usr.RefreshSkillList()
+			usr.updateInventory()
+
+		Hinamori_Fuse()
+			set category="Zans"
+			usr.stype="Hinamori"
+			usr.contents+=new/obj/skillcard/Hinamori_Blast_Toggle
+			usr.contents+=new/obj/skillcard/Scatter_Shot
+			usr.RefreshSkillList()
+			usr.updateInventory()
+
+		Renji_Fuse()
+			set category="Zans"
+			usr.stype="Renji"
+			usr.contents+=new/obj/skillcard/Baboon_Blast
+			usr.RefreshSkillList()
+			usr.updateInventory()
+
+		Ikkaku_Fuse()
+			set category="Zans"
+			usr.stype="Ikkaku"
+			usr.contents+=new/obj/skillcard/Extend
+			usr.contents+=new/obj/skillcard/Rage_Spin
+			usr.RefreshSkillList()
+			usr.updateInventory()
+
+		Kommamaru_Fuse()
+			set category="Zans"
+			usr.stype="Kommamaru"
+			usr.RefreshSkillList()
+			usr.updateInventory()
+
+		Unohana_Fuse()
+			set category="Zans"
+			usr.stype="Unohana"
+			usr.contents+=new/obj/skillcard/Reversal_Healing
+			usr.RefreshSkillList()
+			usr.updateInventory()
+
+		Shonsui_Fuse()
+			set category="Zans"
+			usr.stype="Shonshui"
+			usr.contents+=new/obj/skillcard/Bushogoma
+			usr.contents+=new/obj/skillcard/Shadow
+			usr.RefreshSkillList()
+			usr.updateInventory()
+
+		Ukitake_Fuse()
+			set category="Zans"
+			usr.stype="Ukitake"
+			usr.contents+=new/obj/skillcard/Return_Blast
+			usr.RefreshSkillList()
+			usr.updateInventory()
+
+
 		Change_To_Floating()
 			set category="Zans"
 			usr.stype="Sword Multiplier"
@@ -800,6 +873,9 @@ mob/CustomZan
 			usr.RefreshSkillList()
 			usr.updateInventory()
 			usr.ressdrain=0
+
+
+
 		Change_To_Ginjo()
 			set category="Zans"
 			usr.ftype="Ginjo"
@@ -842,6 +918,17 @@ mob/CustomZan
 			//usr.contents+=new/obj/skillcard/Bow
 			//usr.contents+=new/obj/skillcard/Blut_Veine
 			//usr.contents+=new/obj/skillcard/Ransoutengai
+
+		Sado_Fuse()
+			set category="Zans"
+			usr.contents +=new/obj/skillcard/Arm3
+			usr.contents +=new/obj/skillcard/Power_Blast
+			usr.contents +=new/obj/skillcard/Diablo_Besar
+			usr.contents +=new/obj/skillcard/El_Directo
+			usr.contents +=new/obj/skillcard/Lamuerte
+			usr.RefreshSkillList()
+			usr.updateInventory()
+
 		Respec_Myself(mob/M)
 			set category = "GM"
 			text2file("[time2text(world.realtime)]: [src] rebirthed [M]<BR>","GMlog.html")

@@ -609,7 +609,19 @@ mob
 					/mob/CustomZan/verb/Lightning_Fuse=0,
 					/mob/CustomZan/verb/Add_Aizen_Skills=0,
 					/mob/CustomZan/verb/Kenpachi=0,
-					/mob/CustomZan/verb/Muramasa_Fuse=0
+					/mob/CustomZan/verb/Muramasa_Fuse=0,
+					/mob/CustomZan/verb/Gin_Fuse=0,
+					/mob/CustomZan/verb/Shinji_Fuse=0,
+					/mob/CustomZan/verb/Hisagi_Fuse=0,
+					/mob/CustomZan/verb/Kira_Fuse=0,
+					/mob/CustomZan/verb/Stinger_Fuse=0,
+					/mob/CustomZan/verb/Hinamori_Fuse=0,
+					/mob/CustomZan/verb/Renji_Fuse=0,
+					/mob/CustomZan/verb/Ikkaku_Fuse=0,
+					/mob/CustomZan/verb/Kommamaru_Fuse=0,
+					/mob/CustomZan/verb/Unohana_Fuse=0,
+					/mob/CustomZan/verb/Shonsui_Fuse=0,
+					/mob/CustomZan/verb/Ukitake_Fuse=0,
 			/*		/mob/CustomZan/verb/Luppi_Change=0 */)
 
 		fuseList = list(("Kensei Fuse") = /mob/CustomZan/verb/Kensei_Fuse,
@@ -642,7 +654,19 @@ mob
 						("Aizen Fuse") = /mob/CustomZan/verb/Add_Aizen_Skills,
 						("Zaraki Fuse") = /mob/CustomZan/verb/Kenpachi,
 				/*		("Luppi Fuse") = /mob/CustomZan/verb/Luppi_Change, */
-						("Muramasa Fuse") = /mob/CustomZan/verb/Muramasa_Fuse,)
+						("Muramasa Fuse") = /mob/CustomZan/verb/Muramasa_Fuse,
+						("Gin Fuse") = /mob/CustomZan/verb/Gin_Fuse,
+						("Shinji Fuse") = /mob/CustomZan/verb/Shinji_Fuse,
+						("Hisagi Fuse") = /mob/CustomZan/verb/Hisagi_Fuse,
+						("Kira Fuse") = /mob/CustomZan/verb/Kira_Fuse,
+						("Soi Fon Fuse") = /mob/CustomZan/verb/Stinger_Fuse,
+						("Momo Fuse") = /mob/CustomZan/verb/Hinamori_Fuse,
+						("Renji Fuse") = /mob/CustomZan/verb/Renji_Fuse,
+						("Ikkaku Fuse") = /mob/CustomZan/verb/Ikkaku_Fuse,
+						("Kommamaru Fuse") = /mob/CustomZan/verb/Kommamaru_Fuse,
+						("Unohana Fuse") = /mob/CustomZan/verb/Unohana_Fuse,
+						("Shonsui Fuse") = /mob/CustomZan/verb/Shonsui_Fuse,
+						("Ukitake Fuse") = /mob/CustomZan/verb/Ukitake_Fuse)
 
 	DP_Shop_NPC
 		name = "{NPC}DP Shop Owner"
@@ -670,13 +694,17 @@ mob
 							src.contents|=new/obj/skillcard/Hollow_Zangetsu
 							src.contents|=new/obj/skillcard/Rinnegan
 							*/
+							//update user
+							usr.fuseList = fuseList
+							usr.hasFuse = hasFuse
+							//
 
 							DPList += fuseList
 
 							DPList += "Red Hakuteiken"
 
 							var/mob/U = input("Which item from the DP store do you want to purchase?", "DP Shop Owner") as null|anything in DPList
-							O = usr.fuseList[U]
+							O = fuseList[U]
 							if(!O)
 								switch(U)
 									if("Red Hakuteiken")

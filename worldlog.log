@@ -37163,3 +37163,165 @@ proc name: Bump (/obj/cero/Bump)
 the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
 the cero (/obj/cero): Move(Middle (46,7,8) (/turf/TheGateArea/Dirt/Middle), 4)
 <font color=#607B8B>World started up on: Sun Oct 08 03:45:04 2023
+<font color=#607B8B>World started up on: Tue Oct 10 16:45:52 2023
+<font color=#607B8B>World started up on: Tue Oct 10 17:07:12 2023
+runtime error: bad index
+proc name: Edit (/mob/Owner/verb/Edit)
+  source file: Admin.dm,1273
+  usr: (src)
+  src: Test it (/mob/player)
+  src.loc: DangaiFloor (99,112,1) (/turf/NewDangai/DangaiFloor)
+  call stack:
+Test it (/mob/player): Edit(Test it (/mob/player))
+<font color=#607B8B>World started up on: Tue Oct 10 18:33:36 2023
+<font color=#607B8B>World started up on: Tue Oct 10 19:03:28 2023
+<font color=#607B8B>World started up on: Tue Oct 10 19:04:32 2023
+<font color=#607B8B>World started up on: Tue Oct 10 19:06:40 2023
+<font color=#607B8B>World started up on: Tue Oct 10 19:08:48 2023
+<font color=#607B8B>World started up on: Tue Oct 10 19:10:56 2023
+<font color=#607B8B>World started up on: Tue Oct 10 19:10:56 2023
+<font color=#607B8B>World started up on: Tue Oct 10 19:14:08 2023
+<font color=#607B8B>World started up on: Tue Oct 10 19:15:12 2023
+<font color=#607B8B>World started up on: Tue Oct 10 19:19:28 2023
+<font color=#607B8B>World started up on: Tue Oct 10 19:21:36 2023
+<font color=#607B8B>World started up on: Tue Oct 10 20:02:08 2023
+<font color=#607B8B>World started up on: Tue Oct 10 20:04:16 2023
+<font color=#607B8B>World started up on: Tue Oct 10 20:06:24 2023
+<font color=#607B8B>World started up on: Tue Oct 10 21:36:00 2023
+<font color=#607B8B>World started up on: Tue Oct 10 21:37:04 2023
+runtime error: Cannot read null.reiatsu
+proc name: Bump (/obj/cero/Bump)
+  source file: Projectiles.dm,5061
+  usr: 0
+  src: the cero (/obj/cero)
+  src.loc: null
+  call stack:
+the cero (/obj/cero): Bump({NPC}Shunsui Kyoraku (/mob/Storyline/Shonshui))
+the cero (/obj/cero): Move(Middle (46,9,8) (/turf/TheGateArea/Dirt/Middle), 4)
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Strong Hollow (/mob/stronghollow)
+  src.loc: null
+  call stack:
+{NPC}Strong Hollow (/mob/stronghollow): Deathd(Momo (/mob/player))
+{NPC}Strong Hollow (/mob/stronghollow): Death(Momo (/mob/player), 58646, 1, 0)
+the reiatsu blast (/obj/reiatsu_blast): Bump({NPC}Strong Hollow (/mob/stronghollow))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Strong Hollow (/mob/stronghollow)
+  src.loc: null
+  call stack:
+{NPC}Strong Hollow (/mob/stronghollow): Deathd(Momo (/mob/player))
+{NPC}Strong Hollow (/mob/stronghollow): Death(Momo (/mob/player), 58646, 1, 0)
+the reiatsu blast (/obj/reiatsu_blast): Bump({NPC}Strong Hollow (/mob/stronghollow))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Strong Hollow (/mob/stronghollow)
+  src.loc: null
+  call stack:
+{NPC}Strong Hollow (/mob/stronghollow): Deathd(Momo (/mob/player))
+{NPC}Strong Hollow (/mob/stronghollow): Death(Momo (/mob/player), 58646, 2, 0)
+the reiatsu blast (/obj/reiatsu_blast): Bump({NPC}Strong Hollow (/mob/stronghollow))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Strong Hollow (/mob/stronghollow)
+  src.loc: null
+  call stack:
+{NPC}Strong Hollow (/mob/stronghollow): Deathd(Momo (/mob/player))
+{NPC}Strong Hollow (/mob/stronghollow): Death(Momo (/mob/player), 58646, 2, 0)
+the reiatsu blast (/obj/reiatsu_blast): Bump({NPC}Strong Hollow (/mob/stronghollow))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Strong Hollow (/mob/stronghollow)
+  src.loc: null
+  call stack:
+{NPC}Strong Hollow (/mob/stronghollow): Deathd(Momo (/mob/player))
+{NPC}Strong Hollow (/mob/stronghollow): Death(Momo (/mob/player), 58646, 2, 0)
+the reiatsu blast (/obj/reiatsu_blast): Bump({NPC}Strong Hollow (/mob/stronghollow))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Strong Hollow (/mob/stronghollow)
+  src.loc: null
+  call stack:
+{NPC}Strong Hollow (/mob/stronghollow): Deathd(Momo (/mob/player))
+{NPC}Strong Hollow (/mob/stronghollow): Death(Momo (/mob/player), 58646, 2, 0)
+the reiatsu blast (/obj/reiatsu_blast): Bump({NPC}Strong Hollow (/mob/stronghollow))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Strong Hollow (/mob/stronghollow)
+  src.loc: null
+  call stack:
+{NPC}Strong Hollow (/mob/stronghollow): Deathd(Momo (/mob/player))
+{NPC}Strong Hollow (/mob/stronghollow): Death(Momo (/mob/player), 58646, 2, 0)
+the reiatsu blast (/obj/reiatsu_blast): Bump({NPC}Strong Hollow (/mob/stronghollow))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Strong Hollow (/mob/stronghollow)
+  src.loc: null
+  call stack:
+{NPC}Strong Hollow (/mob/stronghollow): Deathd(Momo (/mob/player))
+{NPC}Strong Hollow (/mob/stronghollow): Death(Momo (/mob/player), 58646, 2, 0)
+the reiatsu blast (/obj/reiatsu_blast): Bump({NPC}Strong Hollow (/mob/stronghollow))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Strong Hollow (/mob/stronghollow)
+  src.loc: null
+  call stack:
+{NPC}Strong Hollow (/mob/stronghollow): Deathd(Momo (/mob/player))
+{NPC}Strong Hollow (/mob/stronghollow): Death(Momo (/mob/player), 58646, 2, 0)
+the reiatsu blast (/obj/reiatsu_blast): Bump({NPC}Strong Hollow (/mob/stronghollow))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Strong Hollow (/mob/stronghollow)
+  src.loc: null
+  call stack:
+{NPC}Strong Hollow (/mob/stronghollow): Deathd(Momo (/mob/player))
+{NPC}Strong Hollow (/mob/stronghollow): Death(Momo (/mob/player), 58646, 2, 0)
+the reiatsu blast (/obj/reiatsu_blast): Bump({NPC}Strong Hollow (/mob/stronghollow))
+runtime error: Cannot read 0.team_leader
+proc name: Deathd (/mob/proc/Deathd)
+  source file: Procs.dm,4777
+  usr: 0
+  src: {NPC}Strong Hollow (/mob/stronghollow)
+  src.loc: null
+  call stack:
+{NPC}Strong Hollow (/mob/stronghollow): Deathd(Momo (/mob/player))
+{NPC}Strong Hollow (/mob/stronghollow): Death(Momo (/mob/player), 58646, 2, 0)
+the reiatsu blast (/obj/reiatsu_blast): Bump({NPC}Strong Hollow (/mob/stronghollow))
+runtime error: Cannot modify null.frozen.
+proc name: Clash (/mob/proc/Clash)
+  source file: Procs.dm,2168
+  usr: 0
+  src: Momo (/mob/player)
+  src.loc:   (43,38,16) (/turf/Soul_Society/KenFloor)
+  call stack:
+Momo (/mob/player): Clash({NPC}Kenpachi (/mob/Kenpachi))
+{NPC}Kenpachi (/mob/Kenpachi): Deathd(Momo (/mob/player))
+{NPC}Kenpachi (/mob/Kenpachi): Death(Momo (/mob/player), 58300, 1, 0)
+the reiatsu blast (/obj/reiatsu_blast): Bump({NPC}Kenpachi (/mob/Kenpachi))
+<font color=#607B8B>World started up on: Tue Oct 10 22:05:52 2023
+<font color=#607B8B>World started up on: Tue Oct 10 22:06:56 2023
+<font color=#607B8B>World started up on: Tue Oct 10 22:08:00 2023
+<font color=#607B8B>World started up on: Tue Oct 10 22:08:00 2023
+<font color=#607B8B>World started up on: Tue Oct 10 22:09:04 2023
+<font color=#607B8B>World started up on: Tue Oct 10 22:14:24 2023
