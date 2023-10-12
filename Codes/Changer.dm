@@ -696,10 +696,6 @@ mob
 							src.contents|=new/obj/skillcard/Hollow_Zangetsu
 							src.contents|=new/obj/skillcard/Rinnegan
 							*/
-							//update user
-							usr.fuseList = fuseList
-							usr.hasFuse = hasFuse
-							//
 
 							DPList += fuseList
 

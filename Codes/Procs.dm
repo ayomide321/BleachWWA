@@ -4277,8 +4277,8 @@ mob
 										k.GainExp(k.mexp)
 										k.Level_Up()
 									k.eventpoints+=12
-									k.donor_points += 1
-									k.total_bought += 1
+									k.donor_points += 2
+									k.total_bought += 2
 									k.eventsWon++
 									k<<"<b><font color=lime green>You have gained 12 event points"
 									k.wonreigai+=1
@@ -4296,8 +4296,8 @@ mob
 										k.Level_Up()
 										k.GainExp(k.mexp)
 										k.Level_Up()
-										k.donor_points += 2
-										k.total_bought += 2
+										k.donor_points += 4
+										k.total_bought += 4
 				else
 					M.loc = locate(11,195,5)
 				del src
@@ -4346,8 +4346,8 @@ mob
 										expe=k.mexp
 										k.Level_Up()
 									k.eventpoints+=15
-									k.donor_points+=3
-									k.total_bought += 3
+									k.donor_points+=5
+									k.total_bought += 5
 									k.eventsWon++
 									k<<"<b><font color=lime green>You have gained 15 event points"
 									k.Level_Up()
@@ -4399,8 +4399,8 @@ mob
 										expe=k.mexp
 										k.Level_Up()
 									k.eventpoints+=10
-									k.donor_points+=2
-									k.total_bought += 2
+									k.donor_points+=3
+									k.total_bought += 3
 									k.eventsWon++
 									k<<"<b><font color=lime green>You have gained 10 event points"
 									k.Level_Up()
@@ -4963,8 +4963,8 @@ mob
 						lostcaps-=1
 						if(src.dmgdone>src.mhealth||src.wnddone>=1)
 							src.eventpoints+=4
-							src.donor_points+=1
-							src.total_bought += 1
+							src.donor_points+=2
+							src.total_bought += 2
 							src.aftereventbuffs()
 							src<<"<b><font color=lime green>You have gained 4 event points"
 						if(!lostcaps)
@@ -4984,8 +4984,8 @@ mob
 						lostesp-=1
 						if(src.dmgdone>src.mhealth||src.wnddone>=1)
 							src.eventpoints+=3
-							src.donor_points+=1
-							src.total_bought += 1
+							src.donor_points+=2
+							src.total_bought += 2
 							src.aftereventbuffs()
 							src<<"<b><font color=lime green>You have gained 3 event points"
 						if(!lostesp)
@@ -5031,8 +5031,8 @@ mob
 												var/catch2 = Ka.mexp*5
 												Ka.GainMoney(150000)
 												Ka.eventpoints+=15
-												Ka.donor_points+=3
-												Ka.total_bought += 3
+												Ka.donor_points+=5
+												Ka.total_bought += 5
 												Ka.Level_Up()
 												Ka<<"<b><font color=blue>You got [catch2] exp!"
 												Ka<<"<b><font color=blue>You got $150,000"
