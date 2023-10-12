@@ -69,7 +69,7 @@ mob/proc
 					M.matadoreds=1
 				if(!M.protected)view(usr,8) << "<b><font color = red>[usr] rammed [M]!"
 				usr.gotrammed = 1
-				sleep(2.5 SECONDS)
+				sleep(0.25 SECONDS)
 				usr.gotrammed = 0
 				var/dr=M.dir
 		//		step(M,src.dir)

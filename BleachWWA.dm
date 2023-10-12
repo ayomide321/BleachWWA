@@ -291,7 +291,8 @@ mob
 			statpanel("Collectibles")
 			completionPercentage = ((min(relapseAutographs,relapseAutographReq)/relapseAutographReq)*15) + ((min(hellArmors,hellArmorReq)/hellArmorReq)*15) + ((min(karakuraHeroKills,karakuraHeroKills)/karukaHeroReq)*15) + ((min(currentPlayerEssence,playerEssenceReq)/playerEssenceReq)*15) + ((min(eventsWon,eventsWonReq)/eventsWonReq)*15) + ((min(timesRebirthed,timesRebirthedReq)/timesRebirthedReq)*25)
 			completionPercentage = min(100, completionPercentage)
-			completionPercentage = (completionPercentage * 0.95) + ((min(fuseCount, fuseCountReq)/fuseCountReq)*5)
+			completionPercentage = (completionPercentage * 0.95) + ((min(fuseCount, fuseCountReq)/fuseCountReq)*0.5)
+			completionPercentage = (completionPercentage * 0.9) + ((min(gotfiresword, yammaSwordReq)/yammaSwordReq)*0.1)
 			if(completionPercentage == 100&&!canBeGODOFBWWA)
 				canBeGODOFBWWA=1
 				src<<output("<b><font color=yellow>Congratulations, you have earned the right to take the test to become the God of BWWA!","output")
@@ -306,6 +307,7 @@ mob
 				stat("Essence of Player: [currentPlayerEssence]/[playerEssenceReq]")
 				stat("Events Won: [eventsWon]/[eventsWonReq]")
 				stat("Rebirth Count: [timesRebirthed]/[timesRebirthedReq]")
+				stat("Yamma Fire Sword: [gotfiresword]/[yammaSwordReq]")
 				stat("[hiddenQuest]: [fuseCount]/[fuseCountReq]")
 			if(canBeGODOFBWWA&&!GODOFBWWA)
 				stat("Talk to the Rank Test NPC in Cross Roads to take the challenge to become the God of BWWA")

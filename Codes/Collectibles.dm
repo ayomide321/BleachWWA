@@ -1,20 +1,23 @@
 mob
 	var
-		relapseAutographReq=250
+		relapseAutographReq=300
 		relapseAutographs=0
-		hellArmorReq=10
+		hellArmorReq=15
 		hellArmors=0
 		karukaHeroReq=150
 		karakuraHeroKills=0
-		playerEssenceReq=50
+		playerEssenceReq=100
 		currentPlayerEssence=0
 		playerEssence=""
 		hiddenQuest="???"
 		eventsWon=0
 		eventsWonReq=100
-		timesRebirthedReq=4
+		timesRebirthedReq=5
 		completionPercentage=0
 		fuseCountReq=3
+		yammaSwordReq=1
+		dualSwordReq=1
+		SKHatReq=1
 		leaderKillReq=4
 		leaderKills=0
 
