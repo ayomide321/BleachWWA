@@ -12,11 +12,15 @@ mob/player
 <br>
 <br><font size=5>-Aw shit...here we go again.
 <br>
-<u>10/10/2023 Updates<font size=4></u>
 <br>
+<u>10/18/23 Updates<font size=4></u>
+<br><font size=2>Fixed newly added Fuses not properly giving Shikai/bankai or Fullbring/Adv.Fullbring
+<br>
+<br>
+<br>
+<u>10/10/2023 Updates<font size=4></u>
 <br><font size=2>Added Fuses for Gin, Shinji, Hisagi, Kira, Soi fon, Momo, Renji Ikkaku, Kommamaru, Unohanna, Shonsui, Ukitake and Inoue.
 <br>
-,br.
 <br>
 <u>10/09/2023 Updates<font size=4></u>
 <br><font size=2>Fixed a bug where the KC Captain would not spawn for KC Squad.

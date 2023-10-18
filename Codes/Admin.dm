@@ -768,6 +768,8 @@ mob/CustomZan
 			set category="Zans"
 			usr.stype="Shinji"
 			usr.contents+=new/obj/items/equipable/Weapon/Sword
+			usr.contents+=new/obj/skillcard/shikai
+			usr.contents+=new/obj/skillcard/bankai
 			usr.contents+=new/obj/skillcard/Sakasama_no_Sekai
 			usr.RefreshSkillList()
 			usr.updateInventory()
@@ -776,6 +778,8 @@ mob/CustomZan
 			set category="Zans"
 			usr.stype="Hisagi"
 			usr.contents+=new/obj/items/equipable/Weapon/Sword
+			usr.contents+=new/obj/skillcard/shikai
+			usr.contents+=new/obj/skillcard/bankai
 			usr.contents+=new/obj/skillcard/Reap
 			usr.contents+=new/obj/skillcard/Criss_Cross
 			usr.RefreshSkillList()
@@ -785,6 +789,8 @@ mob/CustomZan
 			set category="Zans"
 			usr.stype="Kira"
 			usr.contents+=new/obj/items/equipable/Weapon/Sword
+			usr.contents+=new/obj/skillcard/shikai
+			usr.contents+=new/obj/skillcard/bankai
 			usr.contents+=new/obj/skillcard/Heavy_Hit
 			usr.contents+=new/obj/skillcard/Outrage
 			usr.RefreshSkillList()
@@ -794,6 +800,8 @@ mob/CustomZan
 			set category="Zans"
 			usr.stype="Stinger"
 			usr.contents+=new/obj/items/equipable/Weapon/Sword
+			usr.contents+=new/obj/skillcard/shikai
+			usr.contents+=new/obj/skillcard/bankai
 			src.contents+=new/obj/skillcard/Rocket
 			usr.RefreshSkillList()
 			usr.updateInventory()
@@ -802,6 +810,8 @@ mob/CustomZan
 			set category="Zans"
 			usr.stype="Hinamori"
 			usr.contents+=new/obj/items/equipable/Weapon/Sword
+			usr.contents+=new/obj/skillcard/shikai
+			usr.contents+=new/obj/skillcard/bankai
 			usr.contents+=new/obj/skillcard/Hinamori_Blast_Toggle
 			usr.contents+=new/obj/skillcard/Scatter_Shot
 			usr.RefreshSkillList()
@@ -811,6 +821,8 @@ mob/CustomZan
 			set category="Zans"
 			usr.stype="Renji"
 			usr.contents+=new/obj/items/equipable/Weapon/Sword
+			usr.contents+=new/obj/skillcard/shikai
+			usr.contents+=new/obj/skillcard/bankai
 			usr.contents+=new/obj/skillcard/Baboon_Blast
 			usr.RefreshSkillList()
 			usr.updateInventory()
@@ -819,6 +831,8 @@ mob/CustomZan
 			set category="Zans"
 			usr.stype="Ikkaku"
 			usr.contents+=new/obj/items/equipable/Weapon/Sword
+			usr.contents+=new/obj/skillcard/shikai
+			usr.contents+=new/obj/skillcard/bankai
 			usr.contents+=new/obj/skillcard/Extend
 			usr.contents+=new/obj/skillcard/Rage_Spin
 			usr.RefreshSkillList()
@@ -828,6 +842,8 @@ mob/CustomZan
 			set category="Zans"
 			usr.stype="Kommamaru"
 			usr.contents+=new/obj/items/equipable/Weapon/Sword
+			usr.contents+=new/obj/skillcard/shikai
+			usr.contents+=new/obj/skillcard/bankai
 			usr.RefreshSkillList()
 			usr.updateInventory()
 
@@ -835,6 +851,8 @@ mob/CustomZan
 			set category="Zans"
 			usr.stype="Unohana"
 			usr.contents+=new/obj/items/equipable/Weapon/Sword
+			usr.contents+=new/obj/skillcard/shikai
+			usr.contents+=new/obj/skillcard/bankai
 			usr.contents+=new/obj/skillcard/Reversal_Healing
 			usr.RefreshSkillList()
 			usr.updateInventory()
@@ -843,6 +861,8 @@ mob/CustomZan
 			set category="Zans"
 			usr.stype="Shonshui"
 			usr.contents+=new/obj/items/equipable/Weapon/Sword
+			usr.contents+=new/obj/skillcard/shikai
+			usr.contents+=new/obj/skillcard/bankai
 			usr.contents+=new/obj/skillcard/Bushogoma
 			usr.contents+=new/obj/skillcard/Shadow
 			usr.RefreshSkillList()
@@ -852,6 +872,8 @@ mob/CustomZan
 			set category="Zans"
 			usr.stype="Ukitake"
 			usr.contents+=new/obj/items/equipable/Weapon/Sword
+			usr.contents+=new/obj/skillcard/shikai
+			usr.contents+=new/obj/skillcard/bankai
 			usr.contents+=new/obj/skillcard/Return_Blast
 			usr.RefreshSkillList()
 			usr.updateInventory()
@@ -860,6 +882,8 @@ mob/CustomZan
 			set category="Zans"
 			usr.ftype="Inoue"
 			usr.contents+=new/obj/items/equipable/Weapon/Hairpins
+			usr.contents+=new/obj/skillcard/Fullbring
+			usr.contents+=new/obj/skillcard/Advanced_Fullbring
 			usr.contents+=new/obj/skillcard/Koten_Zanshun
 			usr.contents+=new/obj/skillcard/Soten_Kisshun
 			usr.contents+=new/obj/skillcard/Santen_Kesshun
